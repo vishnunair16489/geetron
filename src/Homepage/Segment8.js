@@ -59,7 +59,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       
         },[]);
   return(  
-      <div>
+    <div  data-aos="fade-in">
     <MyDivider textAlign="center">Meet Our Partners </MyDivider>
     
          
