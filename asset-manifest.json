@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/geetron/static/css/main.39d5acba.chunk.css",
-    "main.js": "/geetron/static/js/main.3702690b.chunk.js",
-    "main.js.map": "/geetron/static/js/main.3702690b.chunk.js.map",
+    "main.js": "/geetron/static/js/main.e65c6262.chunk.js",
+    "main.js.map": "/geetron/static/js/main.e65c6262.chunk.js.map",
     "runtime-main.js": "/geetron/static/js/runtime-main.e1517ed2.js",
     "runtime-main.js.map": "/geetron/static/js/runtime-main.e1517ed2.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/geetron/static/css/2.7fc9bc2b.chunk.css",
@@ -32,6 +32,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.7b49548b.chunk.js",
     "static/css/main.39d5acba.chunk.css",
-    "static/js/main.3702690b.chunk.js"
+    "static/js/main.e65c6262.chunk.js"
   ]
 }
