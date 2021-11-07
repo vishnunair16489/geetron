@@ -75,7 +75,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       
         },[]);
   return(  
-      <div  data-aos="zoom-in">
+    <div>
              <MyDivider textAlign="center">Geetron Ecosystem</MyDivider>
       
     <MyGrid container spacing={0.5} >
@@ -106,8 +106,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
    
    
   </MyGrid>
-  
-   </div>
+  </div>
 );
 }
 

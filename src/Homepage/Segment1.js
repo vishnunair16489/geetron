@@ -7,11 +7,11 @@ import { fontWeight } from '@mui/system';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({  
-      marginTop: "100px",
+      marginTop: "28px",
         alignItems:"center",
         backgroundImage: `url(${banner})`,
         backgroundPosition:'center',
-        height:'550px'
+        height:'650px'
         
     }));
 

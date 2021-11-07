@@ -8,7 +8,7 @@ import { Divider,  Typography,Grid,Stack } from '@mui/material';
 
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({  
-      marginTop: "100px",
+      marginTop: "25px",
           justifyContent:"center",
       alignItems:"center",
     }));
@@ -56,7 +56,7 @@ const App = ()=>{
     <MyGrid container >
     
     <MypicGrid container  xs={12} md={4}>
-    <img src={segment2img} width="250" alt="Logo" />
+    <img src={segment2img} height="300"  alt="Logo" />
    
     
     </MypicGrid>

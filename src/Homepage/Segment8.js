@@ -50,12 +50,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       
       }));
     
-      const PicGrid = styled(Grid)(({ theme }) => ({           
-        
-  direction:"row",
-  justifyContent:"flex-end",
-  alignItems:"center",
-      }));
+
     
 
       const App = ()=>{
@@ -63,14 +58,16 @@ const MyGrid = styled(Grid)(({ theme }) => ({
           Aos.init({duration:1000});
       
         },[]);
-        const theme = useTheme();
   return(  
-      
-      <div  data-aos="zoom-in">
-             <MyDivider textAlign="center">Meet Our Partners </MyDivider>
+      <div>
+    <MyDivider textAlign="center">Meet Our Partners </MyDivider>
+    
+         
           <MyGrid container>
+
     <MyStack direction="row" spacing={2}>
-     <Card sx={{ display: 'flex' , minHeight: 250 }}>
+ 
+     <Card sx={{ display: 'flex' , maxHeight: 250 ,maxWidth:600 }}>
      <CardMedia
         component="img"
         sx={{width: 250}}
@@ -83,7 +80,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
           Geepas
           </Header>
           <Subtext variant="subtitle1" color="text.secondary" component="div">
-          Health is happiness. More time with loved ones is happiness. When technology gives you convenience, you find yourself in a happy space. At Geepas, we are committed to creating things for you that make a happy difference to your life. Choose Geepas. Choose Happiness.
+          Health is happiness. More time with loved ones is happiness. When technology gives you convenience, you find yourself in a happy space. At Geepas, we are committed to creating things for you that make a happy difference to your life.
           </Subtext>
         </CardContent>
        
@@ -91,7 +88,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       </Box>
     
     </Card>
-    <Card sx={{ display: 'flex' }}>
+  
+    <Card sx={{ display: 'flex',maxWidth:600 , maxHeight: 250 }}>
      <CardMedia
         component="img"
         sx={{ width: 250 }}
@@ -104,7 +102,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
           Nesto
           </Header>
           <Subtext variant="subtitle1" color="text.secondary" component="div">
-          Nesto was incorporated in 2004 by K.P. Basheer as a retail venture and has captured millions of hearts over a short span of time to become the most preferred choice among customers. We have emerged as one of the fastest-growing retail chains over the years with 90 outlets operating across the GCC and India
+          Nesto is  a retail venture and has captured millions of hearts over a short span of time to become the most preferred choice among customers. We have emerged as one of the fastest-growing retail chains over the years with 90 outlets operating across the GCC and India
           </Subtext>
         </CardContent>
        
@@ -112,10 +110,11 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       </Box>
     
     </Card>
+   
     </MyStack>
     </MyGrid>
-   </div>
- 
+
+ </div>
 );
 }
 

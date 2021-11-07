@@ -37,7 +37,6 @@ function ElevationScroll(props) {
       color: "white",
       boxShadow: "0px 0px 0px 0px",
       margin: "20px 0px 0px 0px",
-      fontFamily:'SourceSansPro',
     }));
 
     const Mydivsegment3 = styled(Box)(({ theme }) => ({

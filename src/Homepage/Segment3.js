@@ -26,6 +26,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         color: '#FFFFFF',
         textAlign:'center',
         fontFamily:'SourceSansPro',
+        fontWeight:'bold',
        
         
       }));
@@ -53,11 +54,12 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       }))
       const Mysubtitle = styled(Typography)(({ theme }) => ({           
        
-        fontSize:'0.9em',
+        fontSize:'1.0em',
         textAlign: 'center',
         maxWidth:'1100px',
-        color: '#FFFFFF',
-        fontFamily:'SourceSansPro'
+        color: '#000000',
+        fontFamily:'SourceSansPro',
+        fontWeight:'bold',
         
       }))
 
@@ -65,7 +67,7 @@ const App = ()=>{
   return(  
    
     <ParallaxProvider>
-    <Parallax  y={[20, -20]} tagOuter="figure">
+    <Parallax  y={[10, -10]} tagOuter="figure">
    <MyGrid  container>
   
     <MyStack  spacing={2}>
@@ -76,7 +78,7 @@ const App = ()=>{
         <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
-        height="140"
+        height="200"
         image={water} 
         alt="green iguana"
       />
@@ -85,7 +87,7 @@ const App = ()=>{
         IoT wireless irrigation solution
         </Mytext>
         <Mypara  color="text.secondary">
-        We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra long range radio communication to eliminate all expensive in-field wiring. Our solar powered watering stations are environmentally friendly and maintenance free. 
+        We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra long range radio communication to eliminate all expensive in-field wiring.  
         </Mypara>
       </CardContent>
       <CardActions>
@@ -95,7 +97,7 @@ const App = ()=>{
     <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
-        height="140"
+        height="200"
         image={parking} 
         alt="green iguana"
       />
@@ -106,7 +108,6 @@ const App = ()=>{
         <Mypara  color="text.secondary">
         Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors. 
 
-Smart parking benefits (reduces fuel, pollution, traffic, time…)
 Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers
 Additional revenues of smart parking technology in urban and shopping areas.    </Mypara>
       </CardContent>
@@ -117,7 +118,7 @@ Additional revenues of smart parking technology in urban and shopping areas.    
     <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
-        height="140"
+        height="200"
         image={guest} 
         alt="green iguana"
       />
@@ -126,7 +127,7 @@ Additional revenues of smart parking technology in urban and shopping areas.    
         Geetron GRMS
         </Mytext>
         <Mypara  color="text.secondary">
-        <p>Geetron GRMS offers Enhanced hospitality and provides unique experience for guests. Our solutions work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p><br></br>
+        <p>Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p><br></br>
 
         </Mypara>
       </CardContent>

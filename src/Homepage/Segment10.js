@@ -58,7 +58,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       
         },[]);
   return(  
-      <div  data-aos="zoom-in">
+      <div >
              <MyDivider textAlign="center">iOS and Android Application </MyDivider>
         
     <MyGrid container spacing={0.5} >
