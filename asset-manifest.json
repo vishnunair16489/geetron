@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/geetron/static/css/main.39d5acba.chunk.css",
-    "main.js": "/geetron/static/js/main.e7ed6043.chunk.js",
-    "main.js.map": "/geetron/static/js/main.e7ed6043.chunk.js.map",
+    "main.js": "/geetron/static/js/main.3702690b.chunk.js",
+    "main.js.map": "/geetron/static/js/main.3702690b.chunk.js.map",
     "runtime-main.js": "/geetron/static/js/runtime-main.e1517ed2.js",
     "runtime-main.js.map": "/geetron/static/js/runtime-main.e1517ed2.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/geetron/static/css/2.7fc9bc2b.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/geepas.c61c6ad1.png": "/geetron/static/media/geepas.c61c6ad1.png",
     "static/media/guestroom.3cb8c96c.jpg": "/geetron/static/media/guestroom.3cb8c96c.jpg",
     "static/media/iotproducts.94dac889.jpg": "/geetron/static/media/iotproducts.94dac889.jpg",
-    "static/media/iotservices.a0f9c619.jpg": "/geetron/static/media/iotservices.a0f9c619.jpg",
+    "static/media/iotservices.20bd796e.jpg": "/geetron/static/media/iotservices.20bd796e.jpg",
     "static/media/mobile.77c38bb5.png": "/geetron/static/media/mobile.77c38bb5.png",
     "static/media/nesto.4c8c5350.png": "/geetron/static/media/nesto.4c8c5350.png",
     "static/media/parralex.b4212932.jpg": "/geetron/static/media/parralex.b4212932.jpg",
@@ -32,6 +32,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.7b49548b.chunk.js",
     "static/css/main.39d5acba.chunk.css",
-    "static/js/main.e7ed6043.chunk.js"
+    "static/js/main.3702690b.chunk.js"
   ]
 }
