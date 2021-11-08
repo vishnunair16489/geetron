@@ -26,8 +26,9 @@ import { Box } from '@mui/system';
         fontSize:'1.0em',
         textAlign: 'right',
         minWidth:'10em',
-        color: '#FFFFFF',
-        fontFamily:'SourceSansPro',
+        fontFamily:'SourceSansPro',        
+        fontWeight:'bold',
+        color: '#1268B3',
       
       }));
       const MyDivider = styled(Divider)(({ theme }) => ({
@@ -39,6 +40,7 @@ import { Box } from '@mui/system';
         marginTop: "50px",
         marginBottom: "50px",
         fontFamily:'SourceSansPro',
+        
      
       }));
       const Subtext = styled(Typography)(({ theme }) => ({
@@ -48,8 +50,9 @@ import { Box } from '@mui/system';
         paddingLeft:"110px",
         fontSize:'0.9em',
         textAlign: 'right',
-        color: '#FFFFFF',
         fontFamily:'SourceSansPro',
+     
+        fontWeight:'bold',
        
       }));
   
@@ -74,8 +77,9 @@ import { Box } from '@mui/system';
       textAlign: 'left',
       paddingLeft:"10px",
       minWidth:"1.0em",
-      color: '#FFFFFF',
-      fontFamily:'SourceSansPro',
+      fontFamily:'SourceSansPro',    
+      fontWeight:'bold',
+      color: '#1268B3',
      
     }));
     const Subtextright = styled(Typography)(({ theme }) => ({
@@ -84,8 +88,8 @@ import { Box } from '@mui/system';
       paddingLeft:"1.0em",
       fontSize:'0.9em',
       textAlign: 'left',
-      color: '#FFFFFF',
-      fontFamily:'SourceSansPro',
+      fontFamily:'SourceSansPro',        
+      fontWeight:'bold',
     
     }));
 
@@ -97,17 +101,17 @@ const App = ()=>{
   },[])
   return(  
     <Box>
-        <div  data-aos="zoom-in">
+        <div  data-aos="zoom-in" >
          <MyDivider textAlign="center">Our Vision </MyDivider>
    </div>
     <Grid container spacing={0.5} >
     
     <Grid  item xs={12} md={6} >
-    <div  data-aos="zoom-in">
+    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
  
-      <Box  sx={{background:"#4DC587",height:'290px' }}>
+      <Box  sx={{height:'290px' }}>
       <Stack  spacing={2}>
-        <Header>Reasons to Choose Geetron</Header>
+      <Header>Reasons to Choose Geetron</Header>
         <SubHeader>Innovation</SubHeader>
         <Subtext>Developed IP and Platform Solutions that are industry-proven to accelerate your product engineering needs.</Subtext>
         <SubHeader>Scalability</SubHeader>
@@ -119,26 +123,28 @@ const App = ()=>{
       </div>
     </Grid>
     <Grid item xs={12} md={6}   >
-    <div  data-aos="zoom-in">
+  
+    <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
     <img src={iot} alt="Logo" height='290px'  />
     </div>
     </Grid>
     <Grid  container xs={12} md={6}  justifyContent="flex-end" >
-    <div  data-aos="zoom-in" >
+    <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
     <img src={iotproducts} alt="Logo" height='290px'  />
     </div>
     </Grid>
     <Grid item xs={12} md={6}   >
-    <div  data-aos="zoom-in">
+    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
   
-      <Box  sx={{background:"#1268B3" ,height:'290px' }}>
+      <Box  sx={{height:'290px' }}>
       <Stack  spacing={2}>
-        <Headerright>More Reason...</Headerright>
+      <Headerright>More Reason...</Headerright>
         <SubHeaderright>Execution Excellence</SubHeaderright>
         <Subtextright>Developed IP and Platform Solutions that are industry-proven to accelerate your product engineering needs.</Subtextright>
         <SubHeaderright>Canvas to Cloud</SubHeaderright>
         <Subtextright>Developed IP and Platform Solutions that are industry-proven to accelerate your product engineering needs.</Subtextright>
    
+
       </Stack>
       </Box>
      

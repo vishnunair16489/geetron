@@ -51,6 +51,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         maxWidth:'300px',
         fontFamily:'SourceSansPro',
         fontWeight:'bold',
+        height:"200"
       }))
       const Mysubtitle = styled(Typography)(({ theme }) => ({           
        
@@ -71,11 +72,15 @@ const App = ()=>{
    <MyGrid  container>
   
     <MyStack  spacing={2}>
-  
+    <div  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
     <Header textAlign="center">Applications of IoT Technology </Header>
+    </div>
+    <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="400" >
       <Mysubtitle>IoT transforms data to productivity in any scenario. Discover now all IoT Solutions and future applications that we can offer to your company.</Mysubtitle>
+      </div>
         <MyStack direction="row"  spacing={5}>
-        <Card sx={{ maxWidth: 300 }}>
+        <div  data-aos="slide-up" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
+        <Card sx={{ width: 300 }}>
       <CardMedia
         component="img"
         height="200"
@@ -94,7 +99,9 @@ const App = ()=>{
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card sx={{ maxWidth: 300 }}>
+    </div>
+    <div  data-aos="slide-up" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
+    <Card sx={{ width: 300}}>
       <CardMedia
         component="img"
         height="200"
@@ -109,13 +116,15 @@ const App = ()=>{
         Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors. 
 
 Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers
-Additional revenues of smart parking technology in urban and shopping areas.    </Mypara>
+Additional revenues of smart parking technology areas.    </Mypara>
       </CardContent>
       <CardActions>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card sx={{ maxWidth: 300 }}>
+    </div>
+    <div  data-aos="slide-up" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="400" >
+    <Card sx={{ width: 300  }}>
       <CardMedia
         component="img"
         height="200"
@@ -127,7 +136,7 @@ Additional revenues of smart parking technology in urban and shopping areas.    
         Geetron GRMS
         </Mytext>
         <Mypara  color="text.secondary">
-        <p>Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p><br></br>
+        <p>Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p>
 
         </Mypara>
       </CardContent>
@@ -135,7 +144,7 @@ Additional revenues of smart parking technology in urban and shopping areas.    
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-      
+      </div>
 
       
       </MyStack>

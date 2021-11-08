@@ -6,7 +6,6 @@ import geepas from '../Homepage/images/geepas.png'
 import nesto from '../Homepage/images/nesto.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -25,6 +24,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         minWidth:'10em',
         color: '#1268B3',
         fontFamily:'SourceSansPro',
+        fontWeight:'bold',
       }));
       const MyDivider = styled(Divider)(({ theme }) => ({
        
@@ -38,11 +38,12 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       const Subtext = styled(Typography)(({ theme }) => ({
        
         paddingTop: "0.2em",
-        fontSize:'1.0em',
+        fontSize:'0.7em',
         textAlign: 'left',
         maxWidth:'25em',
         color: 'black',
         fontFamily:'SourceSansPro',
+        fontWeight:'bold',
         
       }));
       const MyStack = styled(Stack)(({ theme }) => ({           
@@ -59,21 +60,28 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       
         },[]);
   return(  
-    <div  data-aos="fade-in">
+   <div>
+        <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
     <MyDivider textAlign="center">Meet Our Partners </MyDivider>
-    
+    </div>
          
           <MyGrid container>
 
     <MyStack direction="row" spacing={2}>
- 
-     <Card sx={{ display: 'flex' , maxHeight: 250 ,maxWidth:600 }}>
+    
+   
+     <Card sx={{ display: 'flex' , maxHeight: 200 ,maxWidth:500}}>
+     <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
      <CardMedia
         component="img"
-        sx={{width: 250}}
+        sx={{width:225 }}
         image={geepas}
+      
         alt="Live from space album cover"
       />
+      </div>
+      
+    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="400" >
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Header component="div" variant="h5">
@@ -85,17 +93,23 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         </CardContent>
        
        
-      </Box>
-    
-    </Card>
+      </Box>  
+      </div>
+      </Card>
+   
+ 
   
-    <Card sx={{ display: 'flex',maxWidth:600 , maxHeight: 250 }}>
+    <Card sx={{ display: 'flex',maxWidth:500 , maxHeight: 200 }}>
+         
+    <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
      <CardMedia
         component="img"
-        sx={{ width: 250 }}
+        sx={{ width: 225 }}
         image={nesto}
         alt="Live from space album cover"
-      />
+      /></div>
+      
+    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="400" >
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Header component="div" variant="h5">
@@ -108,9 +122,9 @@ const MyGrid = styled(Grid)(({ theme }) => ({
        
        
       </Box>
-    
+      </div>
     </Card>
-   
+ 
     </MyStack>
     </MyGrid>
 
