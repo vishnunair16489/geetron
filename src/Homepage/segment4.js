@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
 import iot from '../Homepage/images/Iotrevolution.jpg'
 import iotproducts from '../Homepage/images/iotproducts.jpg'
-import { Typography,Grid,Stack,Divider, Container } from '@mui/material';
+import { Typography,Grid,Stack,Divider} from '@mui/material';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Box } from '@mui/system';
@@ -10,25 +10,39 @@ import { Box } from '@mui/system';
 
     const Header = styled(Typography)(({ theme }) => ({
        
-        paddingTop: "0.8em",
-        paddingRight:"1.0em",
-        fontSize:'1.12em',
-        textAlign: 'right',
+        paddingTop: "0.8em",     
+        fontSize:'1.12em',       
         minWidth:'10em',
-        color: '#FFFFFF',
         fontFamily:'SourceSansPro',
+        fontWeight:'bold',
+        [theme.breakpoints.down("xs")]: {
+          textAlign: 'left',
+          paddingLeft:"1.0em",
+         },
+          [theme.breakpoints.up("md")]: {
+            textAlign: 'right',
+            paddingRight:"1.0em",
+        
+         },
        
       }));
       const SubHeader = styled(Typography)(({ theme }) => ({
        
         paddingTop: "0.8em",
-        paddingRight:"1.0em",
-        fontSize:'1.0em',
-        textAlign: 'right',
+        fontSize:'1.0em',      
         minWidth:'10em',
         fontFamily:'SourceSansPro',        
         fontWeight:'bold',
         color: '#1268B3',
+        [theme.breakpoints.down("xs")]: {
+          textAlign: 'left',
+          paddingLeft:"1.0em",
+         },
+          [theme.breakpoints.up("md")]: {
+            textAlign: 'right',
+            paddingRight:"1.0em",
+        
+         },
       
       }));
       const MyDivider = styled(Divider)(({ theme }) => ({
@@ -46,14 +60,22 @@ import { Box } from '@mui/system';
       const Subtext = styled(Typography)(({ theme }) => ({
        
        
-        paddingRight:"1.0em",
-        paddingLeft:"110px",
-        fontSize:'0.9em',
-        textAlign: 'right',
-        fontFamily:'SourceSansPro',
-     
+        fontSize:'0.9em',      
+        fontFamily:'SourceSansPro',     
         fontWeight:'bold',
        
+       
+        [theme.breakpoints.down("xs")]: {
+          textAlign: 'left',           
+          paddingLeft:"10px",
+         },
+          [theme.breakpoints.up("md")]: {
+            textAlign: 'right',
+            paddingRight:"1.0em",
+            paddingLeft:"110px",
+            maxWidth:'600px'
+        
+         },
       }));
   
      
@@ -65,7 +87,6 @@ import { Box } from '@mui/system';
       textAlign: 'left',
       paddingLeft:"10px",
       minWidth:"1.0em",
-      color: '#FFFFFF',
       fontFamily:'SourceSansPro',
       
     }));
@@ -90,6 +111,7 @@ import { Box } from '@mui/system';
       textAlign: 'left',
       fontFamily:'SourceSansPro',        
       fontWeight:'bold',
+      maxWidth:'600px',
     
     }));
 
@@ -106,7 +128,7 @@ const App = ()=>{
    </div>
     <Grid container spacing={0.5} >
     
-    <Grid  item xs={12} md={6} >
+    <Grid container  xs={12} md={6} justifyContent="flex-end">
     <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
  
       <Box  sx={{height:'290px' }}>
@@ -125,7 +147,7 @@ const App = ()=>{
     <Grid item xs={12} md={6}   >
   
     <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
-    <img src={iot} alt="Logo" height='290px'  />
+    <img src={iot} alt="Logo" height='290px auto'  />
     </div>
     </Grid>
     <Grid  container xs={12} md={6}  justifyContent="flex-end" >

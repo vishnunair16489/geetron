@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import { styled } from '@mui/material/styles';
-import segment1img from '../Homepage/images/mobile.png';
-import { Typography, Grid, Stack, Divider } from '@mui/material';
-import android from '../Homepage/images/android.png'
-import apple from '../Homepage/images/apple.png'
+import segment1img from './images/homes.jfif';
+import { Typography, Grid,CssBaseline, Stack, Divider } from '@mui/material';
 import Aos from 'aos';
+import '../index.css';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   marginTop: "50px",
   justifyContent: "center",
   alignItems: "center",
   direction: "row",
+  
 
 }));
 
@@ -29,8 +29,18 @@ const MyDivider = styled(Divider)(({ theme }) => ({
   minWidth: '10em',
   color: '#1268B3',
   textAlign: 'center',
-  marginTop: "50px",
   fontFamily: 'SourceSansPro',
+  [theme.breakpoints.down("xs")]: {
+    justifyContent:"center",
+    alignItems:"center",
+   },
+    [theme.breakpoints.up("md")]: {
+      justifyContent:"flex-end",
+      alignItems:"center",
+      
+  marginTop: "50px",
+  
+   },
 }));
 const Subtext = styled(Typography)(({ theme }) => ({
 
@@ -81,28 +91,31 @@ const App = () => {
 
   }, []);
   return (
+    
     <div>
-      <MyDivider textAlign="center">iOS and Android Application </MyDivider>
+        <CssBaseline />
+      <MyDivider textAlign="center">G-Homes </MyDivider>
 
       <MyGrid container spacing={0.5} >
 
         <PicGrid container item xs={12} md={6}   >
-          <img src={segment1img} alt="Logo" />
+          <img src={segment1img} height="250px" alt="Logo" />
         </PicGrid>
         <Grid container item xs={12} md={6} >
           <MyStack spacing={2}>
-            <Header>At Geetron we values our customers </Header>
-            <Subtext>Proin eget purus dapibus, pharetra neque vulputate, tristique sapien. Vivamus vitae consequat est, et vestibulum erat. Nullam id lorem neroin eget purus dapibus, pharetra neque vulputate, tristique sapien. Vivamus vitaeera consequat estibulum.  lorem neroinretra lorem neroin.</Subtext>
-            <Stack direction="row" spacing={2}>
-              <img src={android} width="100" alt="Logo" />
-              <img src={apple} width="100" alt="Logo" />
-
-            </Stack>
+            <Header>GEETRON SMART HOMES</Header>
+            <Subtext>
+Homes are getting smarter, safe, and Secure. Geetron smart home solutions provide automated and innovative solutions that will have all the intelligent home features, including voice recognition.
+Our smart home solutions have intelligent switches, sensors, and controllers for homes that will seamlessly ensure the overall performances and integration with Alexa & Google assistant.
+Our mobile application lets seamlessly connect your home from anywhere around the world. Now anyone can create a personalized preference for homes with smart lighting, thermostat, smart switches & appliance controls.
+Geetron smart automation technology enables energy-saving solutions and helps you to save your home's utility costs. Our solution is a one-stop shop for bringing your family home into the future.﻿</Subtext>
+          
           </MyStack>
         </Grid>
 
-      </MyGrid>
+      </MyGrid> 
       </div>
+  
   );
 }
 

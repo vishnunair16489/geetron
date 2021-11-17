@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
-import segment1img from '../Homepage/images/mobile.png';
 import { Typography,Grid,Stack ,Divider} from '@mui/material';
 import geepas from '../Homepage/images/geepas.png'
 import nesto from '../Homepage/images/nesto.png'
@@ -46,12 +45,42 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         fontWeight:'bold',
         
       }));
-      const MyStack = styled(Stack)(({ theme }) => ({           
-        marginTop: "10px",
+      const MyGridLeft  = styled(Grid)(({ theme }) => ({
+
+  
+        direction:"row",
+        justifyContent:"center",
+        alignItems:"center",
+       
+        [theme.breakpoints.down("xs")]: {
+          justifyContent:"center",
+          alignItems:"center",
+         },
+          [theme.breakpoints.up("md")]: {
+            justifyContent:"flex-end",
+            alignItems:"center",
+        
+         },
+      
       
       }));
     
+      const MyGridRight  = styled(Grid)(({ theme }) => ({
 
+  
+        direction:"row",
+        justifyContent:"center",
+          alignItems:"center",
+       
+        [theme.breakpoints.down("xs")]: {
+          justifyContent:"center",
+          alignItems:"center",
+         },
+         [theme.breakpoints.up("md")]: {
+          justifyContent: "flex-start",
+          alignItems: "center",
+        },
+      }));
     
 
       const App = ()=>{
@@ -61,17 +90,17 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         },[]);
   return(  
    <div>
-        <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
     <MyDivider textAlign="center">Meet Our Partners </MyDivider>
-    </div>
+    
          
-          <MyGrid container>
+          <MyGrid container spacing={5} >
+          <MyGridLeft container item xs={12} md={6} >
 
-    <MyStack direction="row" spacing={2}>
+  
     
    
      <Card sx={{ display: 'flex' , maxHeight: 200 ,maxWidth:500}}>
-     <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+     <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
      <CardMedia
         component="img"
         sx={{width:225 }}
@@ -81,7 +110,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       />
       </div>
       
-    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="400" >
+    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Header component="div" variant="h5">
@@ -97,11 +126,12 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       </div>
       </Card>
    
- 
+ </MyGridLeft>
+ <MyGridRight  container item xs={12} md={6} >
   
-    <Card sx={{ display: 'flex',maxWidth:500 , maxHeight: 200 }}>
+    <Card sx={{ display: 'flex', maxHeight: 200 ,maxWidth:500}}>
          
-    <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+    <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
      <CardMedia
         component="img"
         sx={{ width: 225 }}
@@ -109,7 +139,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         alt="Live from space album cover"
       /></div>
       
-    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="400" >
+    <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Header component="div" variant="h5">
@@ -125,7 +155,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       </div>
     </Card>
  
-    </MyStack>
+    </MyGridRight>
     </MyGrid>
 
  </div>

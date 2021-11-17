@@ -4,101 +4,166 @@ import segment2img from '../Homepage/images/iotservices.jpg'
 import segment2hardware from '../Homepage/images/hardware.png'
 import segment2hconsulting from '../Homepage/images/consulting.png'
 import segment2custom from '../Homepage/images/custom-projects.png'
-import { Divider,  Typography,Grid,Stack } from '@mui/material';
+import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
-const MyGrid = styled(Grid)(({ theme }) => ({  
-      marginTop: "25px",
-          justifyContent:"center",
-      alignItems:"center",
-    }));
-    const MypicGrid = styled(Grid)(({ theme }) => ({  
-      marginTop: "100px",
-      justifyContent:"center",
-      alignItems:"center",
-      }));
+const MyGrid = styled(Grid)(({ theme }) => ({
+  justifyContent: "center",
+  alignItems: "center", 
 
-      const MyDivider = styled(Divider)(({ theme }) => ({
-       
-        fontSize:'1.5em',
-        minWidth:'10em',
-        color: '#1268B3',
-        textAlign:'center',
-        marginTop: "50px",
-        fontFamily:'SourceSansPro',
-        fontWeight:'bold'
-        
-      }));
-      const MyStack = styled(Stack)(({ theme }) => ({           
-        margin: "10px 0px 0px 0px",
-        justifyContent:"center",
-        alignItems:"center",
-      }));
-      const Mytext = styled(Typography)(({ theme }) => ({           
-       
-        fontSize:'1.0em',
-        textAlign: 'left',
-        minWidth:'10em',
-        color: '#1268B3',
-        fontFamily:'SourceSansPro',
-        fontWeight:'bold'
-        
-        
-      }))
 
-      const Mypara = styled(Typography)(({ theme }) => ({           
-       
-       
-        fontFamily:'SourceSansPro'
-        
-        
-      }))
-const App = ()=>{
-  return(  
-    <MyGrid container >
-    
-    <MypicGrid container  xs={12} md={4}>
-    <img src={segment2img} height="300"  alt="Logo" />
-   
-    
-    </MypicGrid>
-    <Grid item xs={6} md={6}>
-    <div  data-aos="flip-left">
-    <MyDivider textAlign="right">IoT Engineering Services </MyDivider>
-    </div>
-    <MyStack container spacing={2}>
-    <Mypara>Geetron designs and manufactures technological solutions to make the Internet of things possible. Libelium’s wireless sensor platform allows connecting the physical and digital worlds. Libelium is evolving from a hardware manufacturing business with the goal of becoming a whole IoT solution provider.</Mypara>
+}));
+
+const MypicGrid = styled(Grid)(({ theme }) => ({
+
+  backgroundImage: `url(${segment2img})`,
+  backgroundSize:'cover',
+  height:'300px',
   
-        <MyStack direction="row"  spacing={5}>
-        <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
-        <Stack  spacing={2}>
-        <img src={segment2hardware} width="40" alt="Logo" />
-        <Mytext>Hardware developers </Mytext>
-        <Mypara>Fully IoT Hardware Development | Check out all our products: Waspmote, Plug & Sense, Meshlium..</Mypara>
-        </Stack>
+}));
+
+const MyDivider = styled(Divider)(({ theme }) => ({
+
+  fontSize: '1.5em',
+  minWidth: '10em',
+  color: '#1268B3',
+  textAlign: 'center',
+  margin: "50px 0px",
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+
+
+}));
+
+const Mytext = styled(Typography)(({ theme }) => ({
+
+  fontSize: '1.0em',
+  textAlign: 'left',
+  minWidth: '10em',
+  maxHeight:'20em',
+  color: '#1268B3',
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  margin: "0px 30px",
+
+
+}))
+
+const Mypara = styled(Typography)(({ theme }) => ({
+
+
+  fontFamily: 'SourceSansPro',
+  [theme.breakpoints.up("xs")]: {
+  
+    margin: "0px 30px",
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    margin: "0px",
+  },
+  
+ 
+
+}))
+
+const MyStack = styled(Stack)(({ theme }) => ({
+
+ 
+  maxWidth: '1980px',
+  [theme.breakpoints.down("xs")]: {
+    marginTop: "100px",
+    marginLeft: "30px",
+  },
+   [theme.breakpoints.down("md")]: {
+    marginTop: "60px",
+    marginLeft: "30px",
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: "10px",
+    marginLeft: "10px",
+  },
+
+}))
+
+const MyStackfirst = styled(Stack)(({ theme }) => ({
+
+ 
+  maxWidth: '1980px',
+  [theme.breakpoints.down("xs")]: {
+    marginTop: "100px",
+    marginLeft: "30px",
+  },
+   [theme.breakpoints.down("md")]: {
+    marginTop: "60px",
+    marginLeft: "30px",
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: "10px",
+    marginLeft: "10px",
+  },
+  
+
+}))
+
+const App = () => {
+  return (
+
+    <MyGrid container spacing={2} >
+      <Stack>
+        <div data-aos="flip-left">
+          <MyDivider textAlign="center">IoT Engineering Services </MyDivider>
         </div>
-        <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="400" d>
-        <Stack  spacing={2}>
-        <img src={segment2hconsulting} width="40" alt="Logo" />
-        <Mytext>Consultancy experts </Mytext>
-        <Mypara>Request our Consultancy Service and our experts will share all their knowledge with you. Discover all the experience you need in the IoT with Libelium.</Mypara>
+        <MyGrid container spacing={2} >
+
+      <MypicGrid container xs={12} md={4}>
      
-        </Stack>
-        </div>
-        <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="600" >
-        <Stack  spacing={2}>
-        <img src={segment2custom} width="40" alt="Logo" />
-        <Mytext>Customized IoT projects</Mytext>
-        <Mypara>We design the IoT for you! If you do not find in our catalog what you are looking for to develop an IoT project, we can customize it for you.</Mypara>
-     
-        </Stack>
-        </div>
-      </MyStack>
-     
- </MyStack>
-    </Grid>
-  </MyGrid>
-);
+      </MypicGrid>
+      <MyGrid item xs={12} md={6}>
+      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+          <Mypara>Geetron designs and manufactures technological solutions to make the Internet of things possible. Libelium’s wireless sensor platform allows connecting the physical and digital worlds. Libelium is evolving from a hardware manufacturing business with the goal of becoming a whole IoT solution provider.</Mypara>
+          </div>
+          <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+          <Grid item xs>
+            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+              <MyStackfirst spacing={2}>
+                <img src={segment2hardware} width="40" alt="Logo" />
+                <Mytext>Hardware developers </Mytext>
+                <Mypara>Fully IoT Hardware Development | Check out all our products: Waspmote, Plug & Sense, Meshlium..</Mypara>
+              </MyStackfirst>
+            </div>
+            </Grid>
+        <Grid item xs>
+            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" d>
+              <MyStack spacing={2}>
+                <img src={segment2hconsulting} width="40" alt="Logo" />
+                <Mytext>Consultancy experts </Mytext>
+                <Mypara>Request our Consultancy Service and our experts will share all their knowledge with you. Discover all the experience you need in the IoT with Libelium.</Mypara>
+
+              </MyStack>
+            </div>
+            </Grid>
+        <Grid item xs>
+            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="600" >
+              <MyStack spacing={2}>
+                <img src={segment2custom} width="40" alt="Logo" />
+                <Mytext>Customized IoT projects</Mytext>
+                <Mypara>We design the IoT for you! If you do not find in our catalog what you are looking for to develop an IoT project, we can customize it for you.</Mypara>
+
+              </MyStack>
+            </div>
+            </Grid>
+            </Grid>
+          </Box>
+        
+      </MyGrid>
+      </MyGrid>
+      </Stack>
+</MyGrid>
+ 
+
+  );
 }
 
 export default App;
