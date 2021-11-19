@@ -18,6 +18,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
+import { createTheme, ThemeProvider} from '@mui/material/styles';
 import {useNavigate} from 'react-router-dom';
 import Logo from  '../menu/images/logo.png';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -79,6 +80,10 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
       }),
       marginRight: 0,
     }),
+    '& .css-ciy9n4-MuiPaper-root-MuiAppBar-root':
+    {
+      backgroundColor:'#FFFFFF'
+    }
   }),
 );
 
@@ -107,6 +112,14 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-start',
 }));
+const theme = createTheme({
+  '&.css-1mbri1u': {
+    'min-height':'0px',
+    },
+    '&.css-ciy9n4-MuiPaper-root-MuiAppBar-root':{
+      'background-color:':'#FFFFFFF',
+    }
+});
 
 export default function PersistentDrawerRight() {
   const theme = useTheme();
@@ -127,6 +140,7 @@ export default function PersistentDrawerRight() {
 
 
   return (
+    <ThemeProvider theme={theme}>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
@@ -223,7 +237,7 @@ export default function PersistentDrawerRight() {
            </ListItemIcon>
            <ListItemText primary="GHomes" />
          </ListItem>
-         <ListItem button key="water">
+         <ListItem button key="water" onClick={()=> navigate('Water')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
@@ -324,6 +338,7 @@ export default function PersistentDrawerRight() {
       </Accordion>
       </Drawer>
     </Box>
+    </ThemeProvider>
   );
 }
  

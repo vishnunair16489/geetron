@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Grid from '@mui/material/Grid';
 import Logo from  '../menu/images/logo.png';
-import { Hidden,Tooltip,IconButton,Avatar } from '@mui/material';
+import {Tooltip,IconButton,Avatar } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import  Water  from '../menu/images/water.svg';
@@ -39,7 +39,7 @@ const MyTab= styled(Tab)(({ theme }) => ({
        
 
   fontFamily:'SourceSansPro',
-  fontWeight:'bold'
+  fontWeight:'bold',
   
 }))
 const MyBox= styled(Grid)(({ theme }) => ({           
@@ -57,7 +57,8 @@ const MyBox2= styled(Grid)(({ theme }) => ({
   
 }))
 const MyGrid= styled(Grid)(({ theme }) => ({           
-  marginTop: "10px",
+  margin: "5px",
+ 
  
   
 }))
@@ -181,7 +182,7 @@ export default function NavTabs() {
           </div>
           </React.Fragment>
       default:
-        return 'foo';
+        return '';
     };
   }
  
@@ -191,15 +192,17 @@ export default function NavTabs() {
     
          <MyGrid container spacing={2}>
          <Grid item xs={4}>
+         <div  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
              <img src={Logo}  alt="Logo" />
+             </div>
         </Grid>
         <Grid   item xs={8} >
-        <MyGrid container
+        <Grid container
   direction="row"
   justifyContent="flex-end"
   alignItems="center">
-      <Tabs value={value} onChange={handleChange}  aria-label="nav tabs example">
-      <LinkTab    onMouseEnter={() => setValue(0)} onClick={()=> navigate('/')}   onMouseLeave={() => setValue(index)} label="Home"  />
+      <Tabs  value={value} onChange={handleChange}  aria-label="nav tabs example">
+        <LinkTab    onMouseEnter={() => setValue(0)} onClick={()=> navigate('/')}   onMouseLeave={() => setValue(index)} label="Home"  />
         <LinkTab  onMouseEnter={() => setValue(1)} onClick={()=> navigate('/Aboutus')} onMouseLeave={() => setValue(index)} label="About Us" />
         <LinkTab onMouseEnter={() =>  setValue(2)}  label="Product" href="/spam" />
         <LinkTab id="trigger"  onMouseEnter={() => setValue(3)}  label="Solution" href="/drafts" />
@@ -208,7 +211,7 @@ export default function NavTabs() {
   
       </Tabs>
       
-      </MyGrid>
+      </Grid>
         </Grid>
 
         </MyGrid>

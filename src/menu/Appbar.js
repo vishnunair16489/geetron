@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { AppBar, Toolbar, CssBaseline, useScrollTrigger, Slide } from '@mui/material';
+import { CssBaseline, useScrollTrigger, Slide } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import '../index.css';
 import Segment1 from '../Homepage/Segment1';
@@ -11,10 +11,11 @@ import Segment6 from '../Homepage/Segment6';
 import Segment8 from '../Homepage/Segment8';
 import Segment9 from '../Homepage/Segment10';
 import Footer from '../Homepage/Footer';
-import Parralex from '../Homepage/images/parralex.png'
+import Parralex from '../Homepage/images/parralex.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Box } from '@mui/system';
+
 import { Segment } from '@mui/icons-material';
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -36,18 +37,13 @@ function ElevationScroll(props) {
 
 
 const Mydivsegment3 = styled(Box)(({ theme }) => ({
-  backgroundImage: `url(${Parralex})`,
+  background: `url(${Parralex})`,
   width: '100%',
   marginTop: '10px',
   padding: '0px 0px 50px 0px'
 }));
 
-const Mydivsegment4 = styled(Box)(({ theme }) => ({
 
-  width: '100%',
-  marginTop: '10px',
-  padding: '0px 0px 50px 0px'
-}));
 
 export default function ElevateAppBar(props) {
 

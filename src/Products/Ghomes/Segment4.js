@@ -1,8 +1,8 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import water from '../Homepage/images/waiteriot.jpg'
-import guest from '../Homepage/images/guestroom.jpg'
-import parking from '../Homepage/images/smartparking.jpg'
+import Basic from '../Ghomes/images/basic.png'
+import Standard from '../Ghomes/images/standard.png'
+import Pro from '../Ghomes/images/pro.png'
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -10,7 +10,7 @@ import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 import { Parallax, ParallaxProvider} from 'react-scroll-parallax';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
-  marginTop: "100px",
+ 
   alignItems: "center",
   justifyContent: "center",
 
@@ -22,7 +22,7 @@ const Header = styled(Divider)(({ theme }) => ({
 
   fontSize: '1.5em',
   minWidth: '10em',
-  color: '#FFFFFF',
+  color: '#1268B3',
   textAlign: 'center',
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
@@ -31,7 +31,7 @@ const Header = styled(Divider)(({ theme }) => ({
 
 }));
 const MyStack = styled(Stack)(({ theme }) => ({
-  margin: "100px 0px 0px 0px",
+
   maxWidth: "1200px",
 
 }));
@@ -61,15 +61,7 @@ const Mypara = styled(Typography)(({ theme }) => ({
   
    },
 }))
-const Mysubtitle = styled(Typography)(({ theme }) => ({
 
-  fontSize: '1.0em',
-  textAlign: 'center',
-  maxWidth: '1100px',
-  fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
-  color: '#FFFFFF',
-}))
 
 const MyCard = styled(Typography)(({ theme }) => ({
 
@@ -89,17 +81,14 @@ const MyCard = styled(Typography)(({ theme }) => ({
 const App = () => {
   return (
 
-    <ParallaxProvider>
-      <Parallax y={[10, -10]} tagOuter="figure">
+  
         <MyGrid container>
 
           <MyStack spacing={2}>
             <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-              <Header textAlign="center">Applications of IoT Technology </Header>
+              <Header textAlign="center">Models </Header>
             </div>
-            <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-              <Mysubtitle>IoT transforms data to productivity in any scenario. Discover now all IoT Solutions and future applications that we can offer to your company.</Mysubtitle>
-            </div>
+          
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
                 <Grid  item xs>
@@ -108,15 +97,20 @@ const App = () => {
                       <CardMedia
                         component="img"
                         height="200"
-                        image={water}
+                        image={Basic}
                         alt="green iguana"  
                       />
                       <CardContent>
                         <Mytext gutterBottom component="div">
-                          IoT wireless irrigation solution
+                         LITE
                         </Mytext>
                         <Mypara color="text.secondary">
-                        IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers by increasing crop yield, raising productivity, and reducing the consumption of agricultural inputs
+                        <ul>
+                            <li>Wifi Controlled/RF</li>
+                            <li>Capacative Touch</li>
+                            <li>Standard AC Thermostat (FCU)</li>
+                          
+                        </ul>
                         </Mypara>
                       </CardContent>
                       <CardActions>
@@ -132,18 +126,23 @@ const App = () => {
                       <CardMedia
                         component="img"
                         height="200"
-                        image={parking}
+                        image={Standard}
+                        
                         alt="green iguana"
                       />
                       <CardContent>
                         <Mytext gutterBottom component="div">
-                          Smart Parking
+                          Standard
                         </Mytext>
                         <Mypara color="text.secondary">
-                          Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors.
-
-                          Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers)</Mypara>
-                      </CardContent>
+                        <ul>
+                            <li>Wifi Controlled/RF</li>
+                            <li>Touch Screen</li>
+                            <li>Standard AC Thermostat(FCU)</li>
+                          
+                        </ul>            
+                        </Mypara>
+                         </CardContent>
                       <CardActions>
                         <Button size="small">Learn More</Button>
                       </CardActions>
@@ -157,16 +156,19 @@ const App = () => {
                       <CardMedia
                         component="img"
                         height="200"
-                        image={guest}
+                        image={Pro}
                         alt="green iguana"
                       />
                       <CardContent>
                         <Mytext gutterBottom component="div">
-                          Geetron GRMS
+                          Pro
                         </Mytext>
                         <Mypara color="text.secondary">
-                          <p>Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p>
-
+                        <ul>
+                            <li>Wired switch (Modbus)</li>
+                            <li>Centralized Controller</li>
+                            <li>Communicating thermostat</li>
+                        </ul>     
                         </Mypara>
                       </CardContent>
                       <CardActions>
@@ -181,8 +183,7 @@ const App = () => {
           </MyStack>
 
         </MyGrid>
-      </Parallax>
-    </ParallaxProvider>
+    
 
   );
 }

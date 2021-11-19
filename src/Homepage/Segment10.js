@@ -87,7 +87,7 @@ const App = () => {
       <MyGrid container spacing={0.5} >
 
         <PicGrid container item xs={12} md={6}   >
-          <img src={segment1img} alt="Logo" />
+          <img src={segment1img} width='300px' alt="Logo" />
         </PicGrid>
         <Grid container item xs={12} md={6} >
           <MyStack spacing={2}>

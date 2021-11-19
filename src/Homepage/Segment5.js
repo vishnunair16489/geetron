@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Typography, Grid, Stack, Divider } from '@mui/material';
 import ReactPlayer from 'react-player'
 
-import video from '../Homepage/images/video.mp4'
+import parallex from '../Homepage/images/parallex.mp4'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,7 +11,6 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   marginTop: "50px",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: '#000000',
 }));
 
 const Header = styled(Typography)(({ theme }) => ({
@@ -19,7 +18,7 @@ const Header = styled(Typography)(({ theme }) => ({
   paddingTop: "0.2em",
   fontSize: '1.2em',
   minWidth: '10em',
-  color: '#FFFFFF',
+  color: '#000000',
 
   fontFamily: 'SourceSansPro',
 
@@ -47,7 +46,7 @@ const Subtext = styled(Typography)(({ theme }) => ({
   fontSize: '1.0em',
   textAlign: 'left',
   maxWidth: '25em',
-  color: '#FFFFFF',
+  color: '#000000',
   fontFamily: 'SourceSansPro',
 
 
@@ -58,7 +57,7 @@ const Counter = styled(Typography)(({ theme }) => ({
   fontSize: '1.5em',
   textAlign: 'left',
   maxWidth: '25em',
-  color: '#FFFFFF',
+  color: '#000000',
   fontFamily: 'SourceSansPro',
 
 }));
@@ -86,7 +85,7 @@ const App = () => {
         <Grid item xs={12} md={6} >
           <MyStack spacing={2}>
             <Header>Geetron Ecosystem </Header>
-            <Subtext>Geetron is powering the IoT Revolution joining efforts with an important network of partners to ensure the maximum interoperability with our worldwide certified IoT sensor hardware platform. Join us at any point of the IoT value chain: as a hardware partner, connectivity provider, cloud partner, solution partner, trusted system integrator, or distributor</Subtext>
+            <Subtext>Geetron is powering the IoT Revolution joining to ensure maximum interoperability with our worldwide certified IoT sensor hardware platform. Join the Geetron family as a trusted IoT partner</Subtext>
             <Stack direction="row" spacing={10}>
               <MyStack spacing={2}>
                 <Counter>120</Counter>
@@ -104,7 +103,7 @@ const App = () => {
           </MyStack>
         </Grid>
         <PicGrid container item xs={12} md={6}   >
-          <ReactPlayer playing={true} loop={true} volume={0} muted url={video} />
+          <ReactPlayer playing={true} loop={true} volume={0} muted url={parallex} />
         </PicGrid>
 
 

@@ -1,20 +1,35 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment1img from './images/geepas.jpg';
-import { Typography, Grid, Stack, Divider } from '@mui/material';
-import Aos from 'aos';
+import segment2img from '../Aboutus/images/geetron.jfif'
+import segment2hardware from '../Homepage/images/hardware.png'
+import segment2hconsulting from '../Homepage/images/consulting.png'
+import segment2custom from '../Homepage/images/custom-projects.png'
+import Sub1 from '../Aboutus/images/sub1.png'
+import Sub2 from '../Aboutus/images/sub2.png'
+import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
-import Footer from '../Homepage/Footer';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
-  marginTop: "50px",
-  justifyContent: "center",
-  alignItems: "center",
-  direction: "row",
-  
+    justifyContent: "center",
+    alignItems: "flex-start", 
+    direction:"row"
+
+}));
+const Myfooterpic = styled(Grid)(({ theme }) => ({
+    justifyContent: "center",
+    alignItems: "center", 
+    direction:"row"
 
 }));
 
+const MypicGrid = styled(Grid)(({ theme }) => ({
+
+  backgroundImage: `url(${segment2img})`,
+  backgroundSize:'cover',
+  height:'500px',
+  marginTop:'20px'
+
+}));
 
 const MyDivider = styled(Divider)(({ theme }) => ({
 
@@ -22,92 +37,156 @@ const MyDivider = styled(Divider)(({ theme }) => ({
   minWidth: '10em',
   color: '#1268B3',
   textAlign: 'center',
+  margin: "50px 0px",
   fontFamily: 'SourceSansPro',
-  [theme.breakpoints.down("xs")]: {
-    justifyContent:"center",
-    alignItems:"center",
-   },
-    [theme.breakpoints.up("md")]: {
-      justifyContent:"flex-end",
-      alignItems:"center",
-      
-  marginTop: "50px",
-  
-   },
-}));
-const Subtext = styled(Typography)(({ theme }) => ({
+  fontWeight: 'bold',
 
-  paddingTop: "0.2em",
+
+}));
+
+const Mytext = styled(Typography)(({ theme }) => ({
+
   fontSize: '1.0em',
   textAlign: 'left',
-
-  color: 'black',
+  minWidth: '10em',
+  maxHeight:'20em',
+  color: '#1268B3',
   fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  margin: "0px 30px",
 
+
+}))
+
+const Mypara = styled(Typography)(({ theme }) => ({
+
+
+  fontFamily: 'SourceSansPro',
+  [theme.breakpoints.up("xs")]: {
+  
+    margin: "0px 30px",
+  }, 
   [theme.breakpoints.up("md")]: {
-    justifyContent: "flex-start",
-    alignItems: "center",
-    maxWidth: '25em',
+   
+   
+    margin: "0px",
   },
-}));
-const MyStack = styled(Stack)(({ theme }) => ({
-  marginTop: "10px",
-  justifyContent: "center",
-  alignItems: "center",
-  marginLeft: "30px",
-  marginRight: "30px",
-
-}));
-
-const PicGrid = styled(Grid)(({ theme }) => ({
-
   
-  direction:"row",
-  justifyContent:"center",
-  alignItems:"flex-start",
  
+
+}))
+
+const MyStack = styled(Stack)(({ theme }) => ({
+
+ 
+  maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
-    justifyContent:"center",
-    alignItems:"flex-start",
-   },
-    [theme.breakpoints.up("md")]: {
-      justifyContent:"flex-end",
-      alignItems:"flex-start",
+    marginTop: "100px",
+    marginLeft: "30px",
+  },
+   [theme.breakpoints.down("md")]: {
+    marginTop: "60px",
+    marginLeft: "30px",
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: "10px",
+    marginLeft: "10px",
+  },
+
+}))
+
+const MyStackfirst = styled(Stack)(({ theme }) => ({
+
+ 
+  maxWidth: '1980px',
+  [theme.breakpoints.down("xs")]: {
+    marginTop: "100px",
+    marginLeft: "30px",
+  },
+   [theme.breakpoints.down("md")]: {
+    marginTop: "60px",
+    marginLeft: "30px",
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: "10px",
+    marginLeft: "10px",
+  },
   
-   },
-}));
+
+}))
 
 
 const App = () => {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-
-  }, []);
-  return (
-    <div>
-      <MyDivider textAlign="center">About Us </MyDivider>
-
-      <MyGrid container spacing={0.5} >
-
-        <PicGrid container item xs={12} md={6}   >
-          <img src={segment1img} height="250px" alt="Logo" />
-        </PicGrid>
-        <Grid container item xs={12} md={6} >
-          <MyStack spacing={2}>
-            <Subtext>
-            In addition to our extensive history and expertise, there are a few key reasons why Client will benefit from working with G Square Electronics LLC. 
-National Presence. We are an international company, but our over 13,000  employees cover the country from EUROPE to MIDDLE EAST & ASIA. With this many resources at hand, we can comfortably staff this project, no matter the timeline or specific challenges. 
-Local Experts. While we will leverage our national resources where necessary, our city HO office is located at Jebel Ali (National Industrial Park) accessible from any Client’s offices, making for easy collaboration and quick implementation and communication.
-Technology Innovator. We have developed many of the latest technologies and processes for automation systems. To date, we have installed over 100 of automation solution, which are designed developed by our own Engineers and we have our own R&D. Who are well experienced to cater and develop any complex system/solutions.
-In working with our Company, Client can rest assured that you are receiving top-quality products and installation by experts. Our history of completing similar projects both within your neighborhood and around the globe speaks to our expertise and attention to quality. We look forward to supporting Client in this phase and beyond.
-</Subtext>        
-          </MyStack>
-        </Grid>
-
-      </MyGrid> 
-      </div>
+    return (
   
-  );
-}
+      <MyGrid container spacing={2} >
+        <Stack>
+          <div data-aos="flip-left">
+            <MyDivider textAlign="center">About Us </MyDivider>
+          </div>
+          <MyGrid container spacing={2} >
+  
+        <MypicGrid container xs={12} md={4}>
+       
+        </MypicGrid>
+        <MyGrid item xs={12} md={6}>
+        <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+            <Mypara>
+<p>Geetron is a division of the Western International Group that employs over 15,000 personnel which are spread across 12 countries. The Group continues to strengthen its presence across the Middle East, Africa, South Asia, Europe, and the subcontinent with new brands and divisions constantly enriching the portfolio. Mr. Basheer, Chairman of the group is proud to lead a young dynamic team. Geetron operates as the IoT division focused on delivering performance, quality, and innovation across various sectors. </p>
 
-export default App; 
+
+<p>With a strong focus on efficiency, the Geetron division is one of the fastest-growing suppliers of IoT products and services and is recognized as the leading IoT service With a portfolio ranging from home automation, community and waste management, parking, park, and resorts to name a few. Geetron is the trusted brand in IoT products and services provider, with a framework of sales, and customer service capabilities, Geetron is working with customers to offer a great range of products. </p>
+</Mypara>
+            </div>
+            <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={0}>
+            <Grid item xs>
+              <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                <MyStackfirst spacing={2}>
+                  <img src={segment2hardware} width="40" alt="Logo" />
+                  <Mytext> Technology Innovator </Mytext>
+                  <Mypara>We have developed many of the latest technologies and processes for automation systems. To date, we have installed over 100 of automation solution, which are designed and  developed by our own Engineers with our in-house R&D.</Mypara>
+                </MyStackfirst>
+              </div>
+              </Grid>
+          <Grid item xs>
+              <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                <MyStack spacing={2}>
+                  <img src={segment2hconsulting} width="40" alt="Logo" />
+                  <Mytext>Consultancy experts </Mytext>
+                  <Mypara>We are well experienced to cater and develop any complex system/ solutions. In working with our Company, Client can rest assured that you are receiving top-quality products and installation by experts. </Mypara>
+  
+                </MyStack>
+              </div>
+              </Grid>
+          <Grid item xs>
+              <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="600" >
+                <MyStack spacing={2}>
+                  <img src={segment2custom} width="40" alt="Logo" />
+                  <Mytext>Customized IoT projects</Mytext>
+                  <Mypara>We do more than engineering!  With Geeton you will get a world-class product development team of experts in wireless connectivity, and IoT platforms. Fast, affordable, and flexible IoT solution based on Geetron's existent  IoT ecosystem. </Mypara>
+  
+                </MyStack>
+              </div>
+              </Grid>
+              </Grid>
+            </Box>
+          
+        </MyGrid>
+        </MyGrid>
+        <Myfooterpic  container  direction="row"  justifyContent="center"  alignItems="center">
+        <Grid container justifyContent="flex-end"  alignItems="flex-end" item xs>
+        <img src={Sub1} width="600" alt="Logo" />
+        </Grid>
+        <Grid  item xs>
+        <img src={Sub2} width="600" alt="Logo" />
+        </Grid>
+        </Myfooterpic>
+        </Stack>
+  </MyGrid>
+   
+  
+    );
+  }
+  
+  export default App;

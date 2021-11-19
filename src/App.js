@@ -5,14 +5,14 @@ import { BrowserRouter, Routes , Route }  from "react-router-dom";
 
 import { styled } from '@mui/material/styles';
 import { AppBar, Toolbar,Hidden } from '@mui/material';
-import Water from "./Products/Water"; 
-import Ghomes from "./Products/Ghomes"; 
+import Water from "./Products/Water/Water"; 
+import Ghomes from "./Products/Ghomes/Ghomes"; 
 import WasteManagement from "./Products/WasteManagement";
 import Home from "./menu/Appbar"; 
 import Parking from "./Products/Parking"; 
 import Desktopmenu from './menu/Desktopmenu';
 import Mobilemenu from './menu/Mobilemenu';
-import Hotels from "./Products/Hotels"; 
+import Hotels from "./Products/Hotel/Hotels"; 
 import Industry from "./Products/Industry"; 
 import Aboutus from "./Aboutus/Aboutus"; 
 import Footer from "./Homepage/Footer"; 

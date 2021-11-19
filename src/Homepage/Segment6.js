@@ -5,7 +5,6 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import {Divider} from '@mui/material';
 import Geepas from '../Homepage/images/iotproducts.jpg';
-import nesto from '../Homepage/images/nesto.png';
 
 const images = [
   {
@@ -14,7 +13,7 @@ const images = [
     width: '40%',
   },
   {
-    url: {nesto},
+    url: {Geepas},
     title: 'Burgers',
     width: '30%',
   },

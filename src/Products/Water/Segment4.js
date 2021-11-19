@@ -1,17 +1,16 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import water from '../Homepage/images/waiteriot.jpg'
-import guest from '../Homepage/images/guestroom.jpg'
-import parking from '../Homepage/images/smartparking.jpg'
+import Solar from '../Water/images/solar.png';
+import Wifi from '../Water/images/wifi.png';
+import Home from '../Water/images/home.jpg'
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
-import { Parallax, ParallaxProvider} from 'react-scroll-parallax';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
-  marginTop: "100px",
-  alignItems: "center",
+ 
+  alignItems: "flex-start",
   justifyContent: "center",
 
 
@@ -21,8 +20,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const Header = styled(Divider)(({ theme }) => ({
 
   fontSize: '1.5em',
-  minWidth: '10em',
-  color: '#FFFFFF',
+  color: '#1268B3',
   textAlign: 'center',
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
@@ -31,7 +29,7 @@ const Header = styled(Divider)(({ theme }) => ({
 
 }));
 const MyStack = styled(Stack)(({ theme }) => ({
-  margin: "100px 0px 0px 0px",
+
   maxWidth: "1200px",
 
 }));
@@ -39,7 +37,6 @@ const Mytext = styled(Typography)(({ theme }) => ({
 
   fontSize: '1.0em',
   textAlign: 'left',
-  minWidth: '10em',
   color: '#1268B3',
   fontWeight: 'bold',
   fontFamily: 'SourceSansPro'
@@ -55,29 +52,20 @@ const Mypara = styled(Typography)(({ theme }) => ({
     width:'600px',
    },
     [theme.breakpoints.up("md")]: {
-      maxWidth: '300px',
+    
     alignItems: "center",
     justifyContent: "center",
   
    },
 }))
-const Mysubtitle = styled(Typography)(({ theme }) => ({
 
-  fontSize: '1.0em',
-  textAlign: 'center',
-  maxWidth: '1100px',
-  fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
-  color: '#FFFFFF',
-}))
 
 const MyCard = styled(Typography)(({ theme }) => ({
 
  
    backgroundColor:'white ',
    [theme.breakpoints.down("md")]: {
-    maxWidth:'600px',
-    mimWidth:'600px',
+ 
    alignItems: "center",
    justifyContent: "center",
 
@@ -89,89 +77,99 @@ const MyCard = styled(Typography)(({ theme }) => ({
 const App = () => {
   return (
 
-    <ParallaxProvider>
-      <Parallax y={[10, -10]} tagOuter="figure">
+  
         <MyGrid container>
 
           <MyStack spacing={2}>
             <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-              <Header textAlign="center">Applications of IoT Technology </Header>
+              <Header textAlign="center">Models </Header>
             </div>
-            <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-              <Mysubtitle>IoT transforms data to productivity in any scenario. Discover now all IoT Solutions and future applications that we can offer to your company.</Mysubtitle>
-            </div>
+          
             <Box sx={{ flexGrow: 1 }}>
-              <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
-                <Grid  item xs>
+              <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
+                <Grid  item xs={12} md={4} >
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
-                      <CardMedia
-                        component="img"
+                      <img
+                      
                         height="200"
-                        image={water}
+                        src={Home}
                         alt="green iguana"  
                       />
                       <CardContent>
                         <Mytext gutterBottom component="div">
-                          IoT wireless irrigation solution
+                         GIS Home
                         </Mytext>
                         <Mypara color="text.secondary">
-                        IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers by increasing crop yield, raising productivity, and reducing the consumption of agricultural inputs
+                        <ul>
+                            <li>Wifi iriigation  Controlled</li>
+                            <li>Smart App</li>
+                            <li>8 channel 4 schedule controller</li>
+                            <li>24V coil voltage output</li>
+                            <li>Season mode water percentage</li>
+                            <li>mannual ******</li>
+                          
+                        </ul>
                         </Mypara>
                       </CardContent>
-                      <CardActions>
-                        <Button size="small">Learn More</Button>
-                      </CardActions>
+                    
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs>
+                  <Grid item xs={12} md={4} >
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>
-                      <CardMedia
-                        component="img"
-                        height="200"
-                        image={parking}
-                        alt="green iguana"
-                      />
+                    <img
+                      
+                      height="200"
+                      src={Wifi}
+                      alt="green iguana"  
+                    />
                       <CardContent>
                         <Mytext gutterBottom component="div">
-                          Smart Parking
+                          GIS Pro
                         </Mytext>
                         <Mypara color="text.secondary">
-                          Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors.
-
-                          Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers)</Mypara>
-                      </CardContent>
-                      <CardActions>
-                        <Button size="small">Learn More</Button>
-                      </CardActions>
+                        <ul>
+                            <li>Wireless RF connectivity</li>
+                            <li>Cloud Interration</li>
+                            <li>16 channel controller 4 schedule</li>
+                            <li>24V coil voltage output</li>
+                            <li>Mannual override</li>
+                            <li>weekend mode</li>
+                        </ul>            
+                        </Mypara>
+                         </CardContent>
+                     
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs>
+                  <Grid item xs={12} md={4} >
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >
-                      <CardMedia
-                        component="img"
-                        height="200"
-                        image={guest}
-                        alt="green iguana"
-                      />
+                    <img
+                      
+                      height="200"
+                      src={Solar}
+                      alt="green iguana"  
+                    />
                       <CardContent>
                         <Mytext gutterBottom component="div">
-                          Geetron GRMS
+                         GIS Pro Solar
                         </Mytext>
                         <Mypara color="text.secondary">
-                          <p>Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p>
-
+                        <ul>
+                            <li>Wireless RF connectivity</li>
+                            <li>1 channel controller 4 schedule</li>
+                            <li>9V lacking coil output</li>
+                            <li>Inbuilt 3.7V lipo battery </li>
+                           
+                        </ul>     
                         </Mypara>
                       </CardContent>
-                      <CardActions>
-                        <Button size="small">Learn More</Button>
-                      </CardActions>
+                     
                     </MyCard>
                   </div>
                 </Grid>
@@ -181,8 +179,7 @@ const App = () => {
           </MyStack>
 
         </MyGrid>
-      </Parallax>
-    </ParallaxProvider>
+    
 
   );
 }
