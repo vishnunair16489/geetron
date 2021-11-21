@@ -18,14 +18,12 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
-import { createTheme, ThemeProvider} from '@mui/material/styles';
 import {useNavigate} from 'react-router-dom';
 import Logo from  '../menu/images/logo.png';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -68,6 +66,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
+  
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -83,7 +82,8 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     '& .css-ciy9n4-MuiPaper-root-MuiAppBar-root':
     {
       backgroundColor:'#FFFFFF'
-    }
+    },
+   
   }),
 );
 
@@ -102,6 +102,7 @@ const AppBar = styled(MuiAppBar, {
     }),
     marginRight: drawerWidth,
   }),
+  background:'#FFFFFF'
 }));
 
 const DrawerHeader = styled('div')(({ theme }) => ({
@@ -112,14 +113,8 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-start',
 }));
-const theme = createTheme({
-  '&.css-1mbri1u': {
-    'min-height':'0px',
-    },
-    '&.css-ciy9n4-MuiPaper-root-MuiAppBar-root':{
-      'background-color:':'#FFFFFFF',
-    }
-});
+
+
 
 export default function PersistentDrawerRight() {
   const theme = useTheme();
@@ -140,7 +135,7 @@ export default function PersistentDrawerRight() {
 
 
   return (
-    <ThemeProvider theme={theme}>
+  
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
@@ -155,7 +150,7 @@ export default function PersistentDrawerRight() {
             onClick={handleDrawerOpen}
             sx={{ ...(open && { display: 'none' }) }}
           >
-            <MenuIcon />
+            <MenuIcon sx={{ color: '#1268B3' }} />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -243,7 +238,7 @@ export default function PersistentDrawerRight() {
            </ListItemIcon>
            <ListItemText primary="Water" />
          </ListItem>
-         <ListItem button key="hotel">
+         <ListItem button key="hotel" onClick={()=> navigate('Hotels')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
@@ -273,19 +268,19 @@ export default function PersistentDrawerRight() {
            </ListItemIcon>
            <ListItemText primary="Park&Resort" />
          </ListItem>
-         <ListItem button key="tracking">
+         <ListItem button key="tracking"  onClick={()=> navigate('Tracking')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
            <ListItemText primary="Tracking" />
          </ListItem>
-         <ListItem button key="digitalsignage">
+         <ListItem button key="digitalsignage" onClick={()=> navigate('Signage')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
            <ListItemText primary="Digital Signage" />
          </ListItem>
-         <ListItem button key="Hospital">
+         <ListItem button key="Hospital" onClick={()=> navigate('Hospital')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
@@ -338,7 +333,7 @@ export default function PersistentDrawerRight() {
       </Accordion>
       </Drawer>
     </Box>
-    </ThemeProvider>
+   
   );
 }
  

@@ -9,11 +9,13 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import { maxWidth } from '@mui/system';
 
 const MyGrid = styled(Grid)(({ theme }) => ({  
-      marginTop: "50px",
-      justifyContent:"center",
-        alignItems:"center"
+  marginTop: "50px",
+  justifyContent: "center",
+  alignItems: "center",
+  direction: "row",
     }));
 
     const Header = styled(Typography)(({ theme }) => ({
@@ -30,7 +32,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         fontSize:'1.5em',
         minWidth:'10em',
         color: '#1268B3',
-        textAlign:'center',
+        textAlign:'center',        
+        marginTop: "50px",
         fontFamily:'SourceSansPro',
         
       }));
@@ -50,6 +53,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         direction:"row",
         justifyContent:"center",
         alignItems:"center",
+      
        
         [theme.breakpoints.down("xs")]: {
           justifyContent:"center",
@@ -70,7 +74,6 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         direction:"row",
         justifyContent:"center",
           alignItems:"center",
-       
         [theme.breakpoints.down("xs")]: {
           justifyContent:"center",
           alignItems:"center",
@@ -80,7 +83,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
           alignItems: "center",
         },
       }));
-    
+    ;
 
       const App = ()=>{
         useEffect(()=>{
@@ -88,28 +91,29 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       
         },[]);
   return(  
-   <div>
-    <MyDivider textAlign="center">Meet Our Partners </MyDivider>
-    
-         
-          <MyGrid container spacing={5} >
-          <MyGridLeft container item xs={12} md={6} >
+    <div>
+        <MyDivider textAlign="center">Meet Our Partners </MyDivider>
+ 
+        <MyGrid container spacing={0.5} >
+   
+          <MyGridLeft  item xs={12}  md={6} >
 
   
-    
-   <Card sx={{ display: 'flex', maxHeight: 200 ,maxWidth:500}}>
+         
+   <Card sx={{ display: 'flex', maxHeight: 200 ,margin:'0px 10px'}}>
          
     <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
      <CardMedia
         component="img"
-        sx={{ height: 225 }}
+        sx={{ height: 225 ,  borderRadius: 2,
+          }}
         image={nesto}
         alt="Live from space album cover"
       /></div>
       
     <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
+      <Box>
+        <CardContent>
           <Header component="div" variant="h5">
           Nesto
           </Header>
@@ -126,13 +130,13 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     
    
  </MyGridLeft>
- <MyGridRight  container item xs={12} md={6} >
+ <MyGridRight   item xs={12} md={6} >
   
- <Card sx={{ display: 'flex' , maxHeight: 200 ,maxWidth:500}}>
+ <Card sx={{ display: 'flex' , maxHeight: 200,margin:'0px 10px'}}>
      <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
      <CardMedia
         component="img"
-        sx={{height:225 }}
+        sx={{height:225 ,borderRadius: 2,}}
         image={geepas}
       
         alt="Live from space album cover"
@@ -140,8 +144,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       </div>
       
     <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200" >
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
+      <Box>
+        <CardContent>
           <Header component="div" variant="h5">
           Geepas
           </Header>
@@ -155,8 +159,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       </div>
       </Card>
     </MyGridRight>
-    </MyGrid>
 
+ </MyGrid>
  </div>
 );
 }

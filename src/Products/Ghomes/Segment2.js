@@ -3,7 +3,6 @@ import { styled } from '@mui/material/styles';
 import segment2img from '../Ghomes/images/banner.png'
 import segment2hardware from '../Ghomes/images/android.png'
 import segment2hconsulting from '../Ghomes/images/android.png'
-import segment2custom from '../Ghomes/images/android.png'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
 
-import irrigation from '../Hotel/images/hotel.png'
+import Industry from '../Industry/images/industry.jpg'
 
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
@@ -10,16 +10,16 @@ import 'react-slideshow-image/dist/styles.css'
 import { Button, Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
-    irrigation,
-    
+    Industry,
+    Industry,
   ];
   const header = [
-    "GRMS",
-   
+    "Industry 4.0",
+    "Industry 4.0",
   ];
   const body = [
-    "Geetron GRMS offers Enhanced hospitality and provides a unique experience for guests. Our solutions work on Interactive technology that accomplishes the seamless experience you want for your guest and provides easy management for the operators.",
-   
+    "The challenge for companies in the field of Industry 4.0 is to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level.",
+    "The challenge for companies in the field of Industry 4.0 is to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level.",
   ];
   const zoomInProperties = {
     indicators: true,

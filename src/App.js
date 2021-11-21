@@ -9,11 +9,14 @@ import Water from "./Products/Water/Water";
 import Ghomes from "./Products/Ghomes/Ghomes"; 
 import WasteManagement from "./Products/WasteManagement";
 import Home from "./menu/Appbar"; 
-import Parking from "./Products/Parking"; 
+import Parking from "./Products/Parking/Parking"; 
 import Desktopmenu from './menu/Desktopmenu';
 import Mobilemenu from './menu/Mobilemenu';
 import Hotels from "./Products/Hotel/Hotels"; 
-import Industry from "./Products/Industry"; 
+import Industry from "./Products/Industry/Industry"; 
+import Signage from "./Products/Signage/Signage"; 
+import Hospital from "./Products/Hospital/Hospital"; 
+import Tracking from "./Products/Tracking/Tracking"; 
 import Aboutus from "./Aboutus/Aboutus"; 
 import Footer from "./Homepage/Footer"; 
 const MyAppBar = styled(AppBar)(({ theme }) => ({
@@ -46,6 +49,9 @@ const App = ()=>{
           <Route path='/Parking' element={<Parking/>}></Route>
           <Route path='/Hotels' element={<Hotels/>}></Route>
           <Route path='/Industry' element={<Industry/>}></Route>
+          <Route path='/Signage' element={<Signage/>}></Route>
+          <Route path='/TRacking' element={<Tracking/>}></Route>
+          <Route path='/Hospital' element={<Hospital/>}></Route>
           <Route path='/Aboutus' element={<Aboutus/>}></Route>
         </Routes>  
         <Footer/>

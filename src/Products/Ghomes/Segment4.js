@@ -7,7 +7,6 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
-import { Parallax, ParallaxProvider} from 'react-scroll-parallax';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
@@ -91,7 +90,7 @@ const App = () => {
           
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
-                <Grid  item xs>
+                <Grid  item  xs={12} sm={4} md={4}>
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
                       <CardMedia
@@ -106,7 +105,7 @@ const App = () => {
                         </Mytext>
                         <Mypara color="text.secondary">
                         <ul>
-                            <li>Wifi Controlled/RF</li>
+                            <li>Wifi/RF Controlled</li>
                             <li>Capacative Touch</li>
                             <li>Standard AC Thermostat (FCU)</li>
                           
@@ -119,7 +118,7 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs>
+                  <Grid item  xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>
@@ -136,7 +135,7 @@ const App = () => {
                         </Mytext>
                         <Mypara color="text.secondary">
                         <ul>
-                            <li>Wifi Controlled/RF</li>
+                            <li>Wifi/RF Controlled</li>
                             <li>Touch Screen</li>
                             <li>Standard AC Thermostat(FCU)</li>
                           
@@ -149,7 +148,7 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs>
+                  <Grid item  xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >

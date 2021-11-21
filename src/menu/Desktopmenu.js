@@ -54,6 +54,7 @@ const MyBox2= styled(Grid)(({ theme }) => ({
   direction:"row",
   justifyContent:"flex-end",
   alignItems:"center",
+
   
 }))
 const MyGrid= styled(Grid)(({ theme }) => ({           
@@ -122,7 +123,7 @@ export default function NavTabs() {
               </IconButton>
             </Tooltip>
             <Tooltip title="Industry">
-              <IconButton size="small" sx={{ ml: 2 }}onClick={()=> navigate('Industry')}>
+              <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Industry')}>
               <img src={Industry} alt="water" />
               </IconButton>
             </Tooltip>
@@ -136,18 +137,18 @@ export default function NavTabs() {
                 <Avatar sx={{ width: 32, height: 32 }}>P</Avatar>
               </IconButton>
             </Tooltip>
-            <Tooltip title="Tracking">
+            <Tooltip title="Tracking" onClick={()=> navigate('Tracking')}>
               <IconButton size="small" sx={{ ml: 2 }}>
               <img src={Tracking} alt="water" />
               </IconButton>
             </Tooltip>
-            <Tooltip title="Digital Signage">
+            <Tooltip title="Digital Signage" onClick={()=> navigate('Signage')}>
               <IconButton size="small" sx={{ ml: 2 }}>
                 <Avatar sx={{ width: 32, height: 32 }}>D</Avatar>
               </IconButton>
             </Tooltip>
             <Tooltip title="Hospital">
-              <IconButton size="small" sx={{ ml: 2 }}>
+              <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Hospital')}>
               <img src={Health} alt="water" />
               </IconButton>
             </Tooltip>

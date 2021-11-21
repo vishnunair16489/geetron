@@ -17,6 +17,11 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 
 }));
+const MyCardContent = styled(CardContent)(({ theme }) => ({
+  background:'white'
+
+
+}));
 
 const Header = styled(Divider)(({ theme }) => ({
 
@@ -74,13 +79,11 @@ const Mysubtitle = styled(Typography)(({ theme }) => ({
 const MyCard = styled(Typography)(({ theme }) => ({
 
  
-   backgroundColor:'white ',
    [theme.breakpoints.down("md")]: {
     maxWidth:'600px',
     mimWidth:'600px',
    alignItems: "center",
    justifyContent: "center",
-
  
   },
 
@@ -102,40 +105,43 @@ const App = () => {
             </div>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
-                <Grid  item xs>
+              <Grid item  xs={12} sm={4} md={4}>
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
-                      <CardMedia
+                      <CardMedia   sx={{  borderRadius: 5}}
+        
                         component="img"
                         height="200"
                         image={water}
+                      
                         alt="green iguana"  
                       />
-                      <CardContent>
+                      <MyCardContent>
                         <Mytext gutterBottom component="div">
                           IoT wireless irrigation solution
                         </Mytext>
                         <Mypara color="text.secondary">
                         IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers by increasing crop yield, raising productivity, and reducing the consumption of agricultural inputs
                         </Mypara>
-                      </CardContent>
-                      <CardActions>
+                         <CardActions>
                         <Button size="small">Learn More</Button>
                       </CardActions>
+                      </MyCardContent>
+                     
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs>
+                  <Grid item  xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>
-                      <CardMedia
+                      <CardMedia  sx={{  borderRadius: 5}}
                         component="img"
                         height="200"
                         image={parking}
                         alt="green iguana"
                       />
-                      <CardContent>
+                      <MyCardContent>
                         <Mytext gutterBottom component="div">
                           Smart Parking
                         </Mytext>
@@ -143,24 +149,25 @@ const App = () => {
                           Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors.
 
                           Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers)</Mypara>
-                      </CardContent>
-                      <CardActions>
+                          <CardActions>
                         <Button size="small">Learn More</Button>
                       </CardActions>
+                      </MyCardContent>
+                     
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs>
+                  <Grid item  xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >
-                      <CardMedia
+                      <CardMedia  sx={{  borderRadius: 5}}
                         component="img"
                         height="200"
                         image={guest}
                         alt="green iguana"
                       />
-                      <CardContent>
+                      <MyCardContent>
                         <Mytext gutterBottom component="div">
                           Geetron GRMS
                         </Mytext>
@@ -168,10 +175,11 @@ const App = () => {
                           <p>Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p>
 
                         </Mypara>
-                      </CardContent>
-                      <CardActions>
+                        <CardActions>
                         <Button size="small">Learn More</Button>
                       </CardActions>
+                      </MyCardContent>
+                    
                     </MyCard>
                   </div>
                 </Grid>

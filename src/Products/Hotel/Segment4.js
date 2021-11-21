@@ -3,10 +3,10 @@ import { styled } from '@mui/material/styles';
 import Solar from '../Water/images/solar.png';
 import Wifi from '../Water/images/wifi.png';
 import Home from '../Water/images/home.jpg'
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
+
 import CardMedia from '@mui/material/CardMedia';
-import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
+import CardContent from '@mui/material/CardContent';
+import { Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
@@ -26,6 +26,24 @@ const Header = styled(Divider)(({ theme }) => ({
   fontWeight: 'bold',
   
 
+
+}));
+const MyHeader = styled(Divider)(({ theme }) => ({
+
+  fontSize: '1.0em',
+  color: '#1268B3',
+  textAlign: 'center',
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  
+  [theme.breakpoints.down("xs")]: {
+    fontSize: '0.5em',
+   },
+    [theme.breakpoints.up("md")]: {
+    
+      fontSize: '1.0em',
+  
+   },
 
 }));
 const MyStack = styled(Stack)(({ theme }) => ({
@@ -87,13 +105,12 @@ const App = () => {
          
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                <Grid  item xs={12} md={4} >
+                <Grid  item  xs={12} sm={4} md={4}>
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
-                      <img
-                      
-                        height="200"
-                        src={Home}
+                    <CardMedia
+                        component="img"
+                        image={Home}
                         alt="green iguana"  
                       />
                       <CardContent>
@@ -115,44 +132,16 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={4} >
-                 
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-                    <MyCard>
-                    <img
-                      
-                      height="200"
-                      src={Wifi}
-                      alt="green iguana"  
-                    />
-                      <CardContent>
-                        <Mytext gutterBottom component="div">
-                        Grms Lite +
-                        </Mytext>
-                        <Mypara color="text.secondary">
-                        <ul>
-                        <li>DND</li>
-                            <li>MUR</li>
-                            <li>Bell</li>
-                            <li>Welcome Light </li>
-                            <li>Lock (Server updating / Card updating)</li>
-                        </ul>            
-                        </Mypara>
-                         </CardContent>
-                     
-                    </MyCard>
-                  </div>
-                  </Grid>
-                  <Grid item xs={12} md={4} >
+                
+                  <Grid item xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >
-                    <img
-                      
-                      height="200"
-                      src={Solar}
-                      alt="green iguana"  
-                    />
+                    <CardMedia
+                        component="img"
+                        image={Solar}
+                        alt="green iguana"  
+                      />
                       <CardContent>
                         <Mytext gutterBottom component="div">
                         Grms Std
@@ -172,76 +161,39 @@ const App = () => {
                     </MyCard>
                   </div>
                 </Grid>
-              </Grid>
-            </Box>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                <Grid  item xs={12} md={4} >
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-                    <MyCard >
-                      <img
-                      
-                        height="200"
-                        src={Home}
+                <Grid item xs={12} sm={4} md={4}>
+                 
+                 <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                   <MyCard>
+                   <CardMedia
+                        component="img"
+                        image={Wifi}
                         alt="green iguana"  
                       />
-                      <CardContent>
-                        <Mytext gutterBottom component="div">
-                        Grms Std +
-                        </Mytext>
-                        <Mypara color="text.secondary">
-                        <ul>
-                            <li>DND</li>
-                            <li>MUR</li>
-                            <li>Bell</li>
-                            <li>Welcome Light</li>
-                            <li>AC Controls</li>
-                            <li>Lock (Server updating / Card updating)</li>
-                         
-                          
-                        </ul>
-                        </Mypara>
-                      </CardContent>
+                     <CardContent>
+                       <Mytext gutterBottom component="div">
+                       Grms Pro
+                       </Mytext>
+                       <Mypara color="text.secondary">
+                       <ul>
+                       <li>DND</li>
+                           <li>MUR</li>
+                           <li>Bell</li>
+                           <li> Welcome Light .</li>
+                           <li>AC Controls</li>
+                           <li>Lock (Server/Card)</li>
+                           <li>Alexa Integration</li>
+                       </ul>            
+                       </Mypara>
+                        </CardContent>
                     
-                    </MyCard>
-                  </div>
-                  </Grid>
-                  <Grid item xs={12} md={4} >
-                 
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-                    <MyCard>
-                    <img
-                      
-                      height="200"
-                      src={Wifi}
-                      alt="green iguana"  
-                    />
-                      <CardContent>
-                        <Mytext gutterBottom component="div">
-                        Grms Pro
-                        </Mytext>
-                        <Mypara color="text.secondary">
-                        <ul>
-                        <li>DND</li>
-                            <li>MUR</li>
-                            <li>Bell</li>
-                            <li> Welcome Light .</li>
-                            <li>AC Controls</li>
-                            <li>Lock (Server updating / Card updating)</li>
-                            <li>Alexa Integration</li>
-                        </ul>            
-                        </Mypara>
-                         </CardContent>
-                     
-                    </MyCard>
-                  </div>
-                  </Grid>
-                  <Grid item xs={12} md={4} >
-                 
-                 
-                </Grid>
+                   </MyCard>
+                 </div>
+                 </Grid>
               </Grid>
             </Box>
+            <div data-aos="flip-left" data-aos-easing="ease-out-quart" >
+       </div>
           </MyStack>
 
         </MyGrid>

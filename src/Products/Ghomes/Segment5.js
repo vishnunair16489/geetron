@@ -36,6 +36,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     fontSize: '1.0em',
     textAlign: 'left',
     minWidth: '10em',
+    margin:'10px',
     color: '#1268B3',
     fontWeight: 'bold',
     fontFamily: 'SourceSansPro'
@@ -44,18 +45,24 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   
     fontSize: '0.9em',
     textAlign: 'left',
-   
+    margin:'10px',
     fontFamily: 'SourceSansPro',
     fontWeight: 'bold',
     [theme.breakpoints.down("xs")]: {
       width:'600px',
      },
       [theme.breakpoints.up("md")]: {
-        maxWidth: '600px',
+        maxWidth: '400px',
       alignItems: "center",
       justifyContent: "center",
     
      },
+     [theme.breakpoints.up("md")]: {
+      maxWidth: '400px',
+    alignItems: "center",
+    justifyContent: "center",
+  
+   },
   }))
   
 
@@ -68,7 +75,7 @@ const App = () => {
  
     <MyGrid  container>
 
-    <MyStack spacing={2}>
+    <MyStack spacing={0}>
       <div data-aos="flip-left" data-aos-easing="ease-out-quart" >
         <Header textAlign="center">Add-Ons </Header>
       </div>
@@ -76,7 +83,7 @@ const App = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
           
-            <Grid item xs>
+            <Grid   item xs={12} sm={6} md={4}>
            
             <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
             <Mytext gutterBottom component="div">
@@ -95,7 +102,7 @@ const App = () => {
             </div>
             
             </Grid>
-            <Grid item xs>
+            <Grid item  xs={12} sm={6} md={4}>
            
            <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
            <Mytext gutterBottom component="div">
@@ -114,7 +121,7 @@ const App = () => {
            </div>
            
            </Grid>
-           <Grid item xs>
+           <Grid item  xs={12} sm={6} md={4}>
            
            <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="400" >
            <Mytext gutterBottom component="div">
@@ -133,7 +140,7 @@ const App = () => {
            </div>
            
            </Grid>
-           <Grid  item xs>
+           <Grid  item  xs={12} sm={6} md={4}>
             <div data-aos="flip-left" data-aos-easing="ease-out-quart" data-aos-delay="500">
             
                   <Mytext gutterBottom component="div">
@@ -151,10 +158,13 @@ const App = () => {
             </div>
             </Grid>
         </Grid>
+        
       </Box>
-
+     
     </MyStack>
-
+ 
+      
+   
   </MyGrid>
   );
 }

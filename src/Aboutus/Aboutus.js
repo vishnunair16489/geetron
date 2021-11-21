@@ -4,9 +4,12 @@ import segment2img from '../Aboutus/images/geetron.jfif'
 import segment2hardware from '../Homepage/images/hardware.png'
 import segment2hconsulting from '../Homepage/images/consulting.png'
 import segment2custom from '../Homepage/images/custom-projects.png'
-import Sub1 from '../Aboutus/images/sub1.png'
-import Sub2 from '../Aboutus/images/sub2.png'
-import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
+import Sub1 from '../Aboutus/images/marquee1.png'
+import Sub2 from '../Aboutus/images/marquee2.png'
+import Sub3 from '../Aboutus/images/marquee3.png'
+import Sub4 from '../Aboutus/images/marquee4.png'
+import Marquee from "react-fast-marquee";
+import { Divider, Typography, Grid, Stack,Box,Hidden } from '@mui/material';
 
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
@@ -15,10 +18,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     direction:"row"
 
 }));
-const Myfooterpic = styled(Grid)(({ theme }) => ({
-    justifyContent: "center",
-    alignItems: "center", 
-    direction:"row"
+const Mydiv = styled('div')(({ theme }) => ({
+   marginTop:'50px'
 
 }));
 
@@ -140,7 +141,7 @@ const App = () => {
             </div>
             <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
-            <Grid item xs>
+            <Grid  xs={12} sm={4} md={4}>
               <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <MyStackfirst spacing={2}>
                   <img src={segment2hardware} width="40" alt="Logo" />
@@ -149,7 +150,7 @@ const App = () => {
                 </MyStackfirst>
               </div>
               </Grid>
-          <Grid item xs>
+          <Grid item  xs={12} sm={4} md={4}>
               <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                 <MyStack spacing={2}>
                   <img src={segment2hconsulting} width="40" alt="Logo" />
@@ -159,7 +160,7 @@ const App = () => {
                 </MyStack>
               </div>
               </Grid>
-          <Grid item xs>
+          <Grid item  xs={12} sm={4} md={4}>
               <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="600" >
                 <MyStack spacing={2}>
                   <img src={segment2custom} width="40" alt="Logo" />
@@ -174,15 +175,22 @@ const App = () => {
           
         </MyGrid>
         </MyGrid>
-        <Myfooterpic  container  direction="row"  justifyContent="center"  alignItems="center">
-        <Grid container justifyContent="flex-end"  alignItems="flex-end" item xs>
-        <img src={Sub1} width="600" alt="Logo" />
-        </Grid>
-        <Grid  item xs>
-        <img src={Sub2} width="600" alt="Logo" />
-        </Grid>
-        </Myfooterpic>
+      
+       
         </Stack>
+       
+        <div data-aos="flip-left">
+            <MyDivider textAlign="center">Our Partners</MyDivider>
+          </div>
+        <Marquee >
+        <img src={Sub1} width="600" alt="Logo" />
+        <img src={Sub2} width="600" alt="Logo" />
+        <img src={Sub3} width="600" alt="Logo" />
+        <img src={Sub4} width="600" alt="Logo" />
+  </Marquee>
+          
+      
+      
   </MyGrid>
    
   

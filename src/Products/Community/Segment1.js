@@ -1,7 +1,7 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
 
-import irrigation from '../Water/images/irrigation.png'
+import irrigation from '../Hospital/images/hospital.jpg'
 
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
@@ -14,11 +14,11 @@ const Slideshow = () => {
     
   ];
   const header = [
-    "GEETRON Water",
+    "Hospital",
    
   ];
   const body = [
-    "We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free.",
+    "Disabled person alarm system",
    
   ];
   const zoomInProperties = {

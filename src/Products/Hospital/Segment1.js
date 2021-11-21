@@ -1,31 +1,30 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
 
-import parking from '../Ghomes/images/banner.png'
+import irrigation from '../Hospital/images/hospital.jpg'
 
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
-import health from '../Ghomes/images/banner.png'
 
 import { Button, Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
-    parking,
-    health,
+    irrigation,
+    
   ];
   const header = [
-    "GEETRON SMART HOMES",
-    "G-homes",
+    "Hospital",
+   
   ];
   const body = [
-    "Homes are getting smarter, safe, and Secure. Geetron smart home solutions provide automated and innovative solutions that will have all the intelligent home features, including voice recognition.",
-    "Our smart home solutions have intelligent switches, sensors, and controllers for homes that will seamlessly ensure the overall performances and integration with Alexa & Google assistant.",
+    "Disabled person alarm system",
+   
   ];
   const zoomInProperties = {
     indicators: true,
     scale: 0.8,
-    autoplay: true,
+    autoplay: false,
     duration: 3000,
     pauseOnHover: true,
     canSwipe: true,

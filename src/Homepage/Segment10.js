@@ -37,7 +37,7 @@ const Subtext = styled(Typography)(({ theme }) => ({
   paddingTop: "0.2em",
   fontSize: '1.0em',
   textAlign: 'left',
-
+  paddingBottom: "1.0em",
   color: 'black',
   fontFamily: 'SourceSansPro',
 
@@ -85,12 +85,18 @@ const App = () => {
       <MyDivider textAlign="center">iOS and Android Application </MyDivider>
 
       <MyGrid container spacing={0.5} >
-
+    
         <PicGrid container item xs={12} md={6}   >
+        <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
           <img src={segment1img} width='300px' alt="Logo" />
+          </div>
         </PicGrid>
+    
+      
         <Grid container item xs={12} md={6} >
+    
           <MyStack spacing={2}>
+          <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
             <Header>At Geetron we values our customers </Header>
             <Subtext>Proin eget purus dapibus, pharetra neque vulputate, tristique sapien. Vivamus vitae consequat est, et vestibulum erat. Nullam id lorem neroin eget purus dapibus, pharetra neque vulputate, tristique sapien. Vivamus vitaeera consequat estibulum.  lorem neroinretra lorem neroin.</Subtext>
             <Stack direction="row" spacing={2}>
@@ -98,7 +104,9 @@ const App = () => {
               <img src={apple} width="100" alt="Logo" />
 
             </Stack>
+            </div>
           </MyStack>
+        
         </Grid>
 
       </MyGrid>

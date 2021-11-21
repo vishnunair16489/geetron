@@ -3,18 +3,14 @@ import { styled } from '@mui/material/styles';
 import Solar from '../Water/images/solar.png';
 import Wifi from '../Water/images/wifi.png';
 import Home from '../Water/images/home.jpg'
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
+import {  Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
-  alignItems: "flex-start",
+  alignItems: "center",
   justifyContent: "center",
-
-
-
 }));
 
 const Header = styled(Divider)(({ theme }) => ({
@@ -87,13 +83,12 @@ const App = () => {
           
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                <Grid  item xs={12} md={4} >
+                <Grid  item xs={12} sm={4} md={4}>
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
-                      <img
-                      
-                        height="200"
-                        src={Home}
+                    <CardMedia
+                        component="img"
+                        image={Home}
                         alt="green iguana"  
                       />
                       <CardContent>
@@ -116,16 +111,16 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={4} >
+                  <Grid item xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>
-                    <img
-                      
-                      height="200"
-                      src={Wifi}
-                      alt="green iguana"  
-                    />
+                    <CardMedia
+                        component="img"
+                        image={Wifi}
+                        alt="green iguana"  
+                      />
+                   
                       <CardContent>
                         <Mytext gutterBottom component="div">
                           GIS Pro
@@ -145,16 +140,15 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={4} >
+                  <Grid item xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >
-                    <img
-                      
-                      height="200"
-                      src={Solar}
-                      alt="green iguana"  
-                    />
+                    <CardMedia
+                        component="img"
+                        image={Solar}
+                        alt="green iguana"  
+                      />
                       <CardContent>
                         <Mytext gutterBottom component="div">
                          GIS Pro Solar

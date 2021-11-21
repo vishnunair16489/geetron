@@ -1,5 +1,5 @@
 import React from 'react'
-import Segment1 from  '../Water/Slideshow';
+import Segment1 from  '../Water/Segment1';
 import Segment2 from  '../Water/Segment2';
 import Segment4 from  '../Water/Segment4';
 import { CssBaseline } from '@mui/material';

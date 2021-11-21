@@ -19,7 +19,16 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
   backgroundImage: `url(${segment2img})`,
   backgroundSize:'cover',
   height:'300px',
+
+ [theme.breakpoints.up("xs")]: {
+  
+  borderRadius:"0%"
+}, 
+[theme.breakpoints.up("md")]: {
  
+ 
+  borderRadius:"5%"
+},
 
   
 }));
@@ -117,8 +126,10 @@ const App = () => {
           <MyDivider textAlign="center">Revolutionising IoT</MyDivider>
         </div>
         <MyGrid container spacing={2} >
-
-      <MypicGrid container xs={12} md={4}/>
+       
+        <MypicGrid container xs={12} md={4}/>
+       
+   
      
       <MyGrid item xs={12} md={6}>
       <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
@@ -128,7 +139,7 @@ const App = () => {
           </div>
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-          <Grid item xs>
+          <Grid item  xs={12}sm={4} md={4}>
             <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
               <MyStackfirst spacing={2}>
                 <img src={segment2hardware} width="40" alt="Logo" />
@@ -137,7 +148,7 @@ const App = () => {
               </MyStackfirst>
             </div>
             </Grid>
-        <Grid item xs>
+        <Grid item  xs={12} sm={4} md={4}>
             <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
               <MyStack spacing={2}>
                 <img src={segment2hconsulting} width="40" alt="Logo" />
@@ -147,7 +158,7 @@ const App = () => {
               </MyStack>
             </div>
             </Grid>
-        <Grid item xs>
+        <Grid item  xs={12} sm={4} md={4}>
             <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="600" >
               <MyStack spacing={2}>
                 <img src={segment2custom} width="40" alt="Logo" />
