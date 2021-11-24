@@ -1,18 +1,22 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
 
-import Ghomme from '../Homepage/images/banner.png'
+import Ghomme from '../Homepage/images/smarthome.jpg'
 
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
-import Irrigation from '../Homepage/images/irrigation.png'
-import Hotel from '../Homepage/images/hotel.png'
-import Parking from '../Homepage/images/parking.png'
-import Industry from '../Homepage/images/industry.png'
-import Community from '../Homepage/images/community.png'
-import Park from '../Homepage/images/park.png'
-import { Button, Typography, Grid, Stack} from '@mui/material';
+import Irrigation from '../Homepage/images/irrigation.jpg'
+import Hotel from '../Homepage/images/hotel.jpg'
+import Parking from '../Homepage/images/parking.jpg'
+import Industry from '../Homepage/images/industry.jpg'
+import Community from '../Homepage/images/community.jpg'
+import Park from '../Homepage/images/park.jpg'
+import Tracking from '../Homepage/images/tracking.jpg'
+import Digital from '../Homepage/images/signage.png'
+import Hospital from '../Homepage/images/hospital.jpg'
+import MyButtoncustom from '../ModifiedComponents/Button'
+import { Button, Typography, Grid, Stack,Box} from '@mui/material';
 const Slideshow = () => {
   const images = [
     Ghomme,
@@ -21,7 +25,10 @@ const Slideshow = () => {
     Parking,
     Industry,
     Community,
-    Park
+    Park,
+    Tracking,
+    Digital,
+    Hospital
   ];
   const header = [
     "GEETRON SMART HOMES",
@@ -30,7 +37,10 @@ const Slideshow = () => {
     "Smart Parking",
     "Industry 4.0",
     "Waste Management",
-    "Parks & Resorts"
+    "Parks & Resorts",
+    "Tracking",
+    "Digital Signage",
+    "Hospital"
   ];
   const body = [
     "Homes are getting smarter, safe and Secure. Geetron smart homes provide automated and innovative solutions that will have all the intelligent home features, including voice recognition.",
@@ -39,14 +49,28 @@ const Slideshow = () => {
     "Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors.",
     "The challenge for companies in the field of Industry 4.0 is to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level. ",
     "The waste management IoT solution enables cities and industries to manage their waste efficiently, reducing the environmental footprint and improving the quality of the service.",
-    "Parks and Resorts seek sustainable growth, reducing the impact of economic and demographic changes and taking advantage of information and communication technologies."
-
+    "Parks and Resorts seek sustainable growth, reducing the impact of economic and demographic changes and taking advantage of information and communication technologies.",
+    "We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free.",
+    "Digital Signage is capable of displaying anything desired such as video, pictures, animations, or just plain text, useful for any business which relies on constant updated information be it be your sales or advertisement. The message will be highlighted by the power of digital signage",
+    "Disabled person alarm system"
+  ];
+  const link = [
+    "Ghomes",
+    "Water",
+    "Hotels",
+    "Parking",
+    "Industry",
+    "Community",
+    "Park",
+    "Tracking",
+    "Signage",
+    "Hospital"
   ];
   const zoomInProperties = {
     indicators: true,
     scale: 1.2,
     autoplay: true,
-    duration: 2000,
+    duration: 4000,
     pauseOnHover: true,
     canSwipe: true,
     arrows: false
@@ -85,7 +109,7 @@ const Slideshow = () => {
     paddingLeft: "0.5em",
     fontSize: '1.5em',
     textAlign: 'left',
-    color: '#1268B3',
+    color: '#FFFFFF',
     fontFamily: 'SourceSansPro',
     fontWeight: 'bold',
 
@@ -98,13 +122,22 @@ const Slideshow = () => {
     fontSize: '1.0em',
     textAlign: 'left',
     maxWidth: '30em',
-    color: 'black',
+    color: 'white',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    shadowColor: "#00000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    
+    elevation: 5,
 
   }));
   const MyStack = styled(Stack)(({ theme }) => ({
-    marginTop: "10px",
+    margin: "10px",
 
 
   }));
@@ -116,17 +149,15 @@ const Slideshow = () => {
     width: "100%",
 
   }));
-  const MyButton = styled(Button)(({ theme }) => ({
-    marginLeft: "0.1em",
-    background: '#1268B3',
-    width: '10em',
-    borderRadius: 5,
-    fontFamily: 'SourceSansPro'
 
+  const MyBoxtext = styled(Box)(({ theme }) => ({
+  
+    backgroundColor: 'rgba(52, 52, 52, 0.3)'
 
   }));
   return (
     <Zoom {...zoomInProperties}>
+       
       {images.map((each, index) => (
         <MyBox key={index}>
 
@@ -134,7 +165,7 @@ const Slideshow = () => {
             <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'cover' }}>
               <MyGrid container spacing={0.5} >
 
-
+              <MyBoxtext sx={{ boxShadow: 10}}>
                 <MyStack spacing={2}>
                   <div data-aos="flip-left">
                     <Header>{header[index]}</Header>
@@ -143,11 +174,11 @@ const Slideshow = () => {
                     <Subtext>{body[index]}</Subtext>
                   </div>
                   <div data-aos="flip-left" data-aos-delay="500">
-                    <MyButton variant="contained" >Contact Us</MyButton>
+                    <MyButtoncustom links={link[index]}/>
                   </div>
 
                 </MyStack>
-
+</MyBoxtext>
 
               </MyGrid>
             </MyBox>

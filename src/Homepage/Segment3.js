@@ -1,8 +1,8 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import water from '../Homepage/images/waiteriot.jpg'
-import guest from '../Homepage/images/guestroom.jpg'
-import parking from '../Homepage/images/smartparking.jpg'
+import water from '../Homepage/images/iotagri.jpg'
+import guest from '../Homepage/images/iothome.jpg'
+import parking from '../Homepage/images/iotparking.jpg'
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -106,7 +106,9 @@ const App = () => {
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
               <Grid item  xs={12} sm={4} md={4}>
+            
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
+                  <Box sx={{ boxShadow: 10 }}>
                     <MyCard >
                       <CardMedia   sx={{  borderRadius: 5}}
         
@@ -128,12 +130,15 @@ const App = () => {
                       </CardActions>
                       </MyCardContent>
                      
-                    </MyCard>
+                    </MyCard> 
+                     </Box>
                   </div>
+                
                   </Grid>
                   <Grid item  xs={12} sm={4} md={4}>
-                 
+                
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                  <Box sx={{ boxShadow: 10 }}>
                     <MyCard>
                       <CardMedia  sx={{  borderRadius: 5}}
                         component="img"
@@ -155,11 +160,14 @@ const App = () => {
                       </MyCardContent>
                      
                     </MyCard>
+                    </Box>
                   </div>
+                  
                   </Grid>
                   <Grid item  xs={12} sm={4} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                  <Box sx={{ boxShadow: 10 }}>
                     <MyCard >
                       <CardMedia  sx={{  borderRadius: 5}}
                         component="img"
@@ -181,6 +189,7 @@ const App = () => {
                       </MyCardContent>
                     
                     </MyCard>
+                    </Box>
                   </div>
                 </Grid>
               </Grid>

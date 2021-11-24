@@ -196,23 +196,35 @@ export default function PersistentDrawerRight() {
         <AccordionDetails>
         <List>
          
-         <ListItem button key="switch">
+         <ListItem button key="switch"  onClick={()=> navigate('Switch')}>
            <ListItemIcon>
               <InboxIcon /> 
            </ListItemIcon>
            <ListItemText primary="Switch" />
          </ListItem>
-         <ListItem button key="timmer">
+         <ListItem button key="timmer" onClick={()=> navigate('Timmer')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
            <ListItemText primary="Timmer" />
          </ListItem>
-         <ListItem button key="controller">
+         <ListItem button key="controller" onClick={()=> navigate('Controller')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
-           <ListItemText primary="Controller" />
+           <ListItemText primary="Locks" />
+         </ListItem>
+         <ListItem button key="Locks" onClick={()=> navigate('Locks')}>
+           <ListItemIcon>
+              <MailIcon />
+           </ListItemIcon>
+           <ListItemText primary="Locks" />
+         </ListItem>
+         <ListItem button key="Relays" onClick={()=> navigate('Relay')}>
+           <ListItemIcon>
+              <MailIcon />
+           </ListItemIcon>
+           <ListItemText primary="Relays" />
          </ListItem>
         
        
@@ -244,25 +256,25 @@ export default function PersistentDrawerRight() {
            </ListItemIcon>
            <ListItemText primary="Hotel" />
          </ListItem>
-         <ListItem button key="parking">
+         <ListItem button key="parking"  onClick={()=> navigate('Parking')}>
            <ListItemIcon>
               <InboxIcon /> 
            </ListItemIcon>
            <ListItemText primary="Parking" />
          </ListItem>
-         <ListItem button key="Industry">
+         <ListItem button key="Industry" onClick={()=> navigate('Industry')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
            <ListItemText primary="Industry" />
          </ListItem>
-         <ListItem button key="Communities">
+         <ListItem button key="Communities" onClick={()=> navigate('Community')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
            <ListItemText primary="Communities" />
          </ListItem>
-         <ListItem button key="park">
+         <ListItem button key="park" onClick={()=> navigate('Park')}>
            <ListItemIcon>
               <InboxIcon /> 
            </ListItemIcon>
@@ -298,19 +310,19 @@ export default function PersistentDrawerRight() {
         <AccordionDetails>
         <List>
          
-         <ListItem button key="iot">
+         <ListItem button key="iot" onClick={()=> navigate('Dashboard')}>
            <ListItemIcon>
               <InboxIcon /> 
            </ListItemIcon>
            <ListItemText primary="Iot Dashboard" />
          </ListItem>
-         <ListItem button key="mobile">
+         <ListItem button key="mobile"onClick={()=> navigate('Mobile')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>
            <ListItemText primary="Mobile Application" />
          </ListItem>
-         <ListItem button key="r&d">
+         <ListItem button key="r&d" onClick={()=> navigate('R&D')}>
            <ListItemIcon>
               <MailIcon />
            </ListItemIcon>

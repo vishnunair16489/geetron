@@ -1,0 +1,191 @@
+import React from 'react'
+import { styled } from '@mui/material/styles';
+import segment2img from '../Ghomes/images/smarthome02.jpg'
+import segment2hardware from '../Ghomes/images/android.png'
+import segment2hconsulting from '../Ghomes/images/android.png'
+import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
+
+import 'aos/dist/aos.css';
+const MyGrid = styled(Grid)(({ theme }) => ({
+  justifyContent: "center",
+  alignItems: "center", 
+
+
+}));
+
+const MypicGrid = styled(Grid)(({ theme }) => ({
+
+  backgroundImage: `url(${segment2img})`,
+  backgroundSize:'cover',
+  height:'300px',
+ 
+
+  
+}));
+
+const MyDivider = styled(Divider)(({ theme }) => ({
+
+  
+  minWidth: '10em',
+  color: '#1268B3',
+  textAlign: 'center',
+  margin: "50px 0px",
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  [theme.breakpoints.down("xs")]: {
+  
+    fontSize: '1.2em',
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    fontSize: '1.5em',
+  },
+
+}));
+
+const Mytext = styled(Typography)(({ theme }) => ({
+
+  fontSize: '1.0em',
+  textAlign: 'left',
+  minWidth: '10em',
+  maxHeight:'20em',
+  color: '#1268B3',
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  margin: "0px 30px",
+
+
+}))
+
+const Mypara = styled(Typography)(({ theme }) => ({
+
+
+  fontFamily: 'SourceSansPro',
+  [theme.breakpoints.up("xs")]: {
+  
+    margin: "0px 30px",
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    margin: "0px",
+  },
+  
+ 
+
+}))
+
+const MyStack = styled(Stack)(({ theme }) => ({
+
+ 
+  maxWidth: '1980px',
+  [theme.breakpoints.down("xs")]: {
+    marginTop: "100px",
+    marginLeft: "30px",
+  },
+   [theme.breakpoints.down("md")]: {
+    marginTop: "60px",
+    marginLeft: "30px",
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: "10px",
+    marginLeft: "10px",
+  },
+
+}))
+
+const MyStackfirst = styled(Stack)(({ theme }) => ({
+
+ 
+  maxWidth: '1980px',
+  [theme.breakpoints.down("xs")]: {
+    marginTop: "100px",
+    marginLeft: "30px",
+  },
+   [theme.breakpoints.down("md")]: {
+    marginTop: "60px",
+    marginLeft: "30px",
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: "10px",
+    marginLeft: "10px",
+  },
+  
+
+}))
+
+const App = () => {
+  return (
+
+    <MyGrid container spacing={2} >
+      <Stack>
+        <div data-aos="flip-left">
+          <MyDivider textAlign="right">Why we developed Geetron smart Homes?</MyDivider>
+        </div>
+        <MyGrid container spacing={2} >
+      
+      <MypicGrid container xs={12} md={4}></MypicGrid>
+    
+      <MyGrid item xs={12} md={6}>
+      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+         
+          </div>
+          <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+          <Grid item  xs={12}  sm={6} md={6}>
+            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+              <MyStackfirst spacing={2}>
+                <img src={segment2hardware} width="40" alt="Logo" />
+                <Mytext>Different Venders</Mytext>
+                <Mypara>In this space many venders are using different technology to connect to their iot devices, thus making the life of customers who buy them hard. But here in geetron we try to make the steps as easy as possible and try to give the customers a seemless expericence</Mypara>
+              </MyStackfirst>
+            </div>
+            </Grid>
+        <Grid item  xs={12}  sm={6} md={6}>
+            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+              <MyStack spacing={2}>
+                <img src={segment2hconsulting} width="40" alt="Logo" />
+                <Mytext>Open Data </Mytext>
+                <Mypara>In almostt all the iot smart Homes service the user data is send direclty to the servers which could be used for advertisemnt purposes, But we make sure that your data is kept locally in your server and if need  by you it will be connected to  our secure online server.</Mypara>
+
+              </MyStack>
+            </div>
+            </Grid>
+      
+            </Grid>
+          </Box>
+          <Grid container spacing={0}>
+          <Grid item  xs={12}  sm={6} md={6}>
+            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="600" >
+              <MyStackfirst spacing={2}>
+                <img src={segment2hardware} width="40" alt="Logo" />
+                <Mytext>Service  Difficulties</Mytext>
+                <Mypara>All the main players that are in the Iot sector focuses onlly on their sales and not after sales services,  we at geetron mainly focuses on the after sales services as a happy customer is always a good customer for business,we make it a point that you stay happy all the time
+
+                </Mypara>
+              </MyStackfirst>
+            </div>
+            </Grid>
+        <Grid item  xs={12}  sm={6} md={6}>
+            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="800" >
+              <MyStack spacing={2}>
+                <img src={segment2hconsulting} width="40" alt="Logo" />
+                <Mytext>High Cost</Mytext>
+                <Mypara>The initital cost of making your home a smart home make a deep hole in your pocket, we know that and thus we make it a point that we deliver the best products to our cusotmers at the most reasonable price so that they can enjoy all the featuers that a Iot has to offer them</Mypara>
+
+              </MyStack>
+            </div>
+            </Grid>
+      
+            </Grid>
+      </MyGrid>
+      </MyGrid>
+      </Stack>
+</MyGrid>
+ 
+
+  );
+}
+
+export default App;

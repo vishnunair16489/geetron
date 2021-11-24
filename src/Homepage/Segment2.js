@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Homepage/images/iotservices.jpg'
+import segment2img from '../Homepage/images/iot.jpg'
 import segment2hardware from '../Homepage/images/hardware.png'
 import segment2hconsulting from '../Homepage/images/consulting.png'
 import segment2custom from '../Homepage/images/custom-projects.png'
@@ -16,8 +16,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
-  backgroundImage: `url(${segment2img})`,
-  backgroundSize:'cover',
+
   height:'300px',
 
  [theme.breakpoints.up("xs")]: {
@@ -27,7 +26,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
 [theme.breakpoints.up("md")]: {
  
  
-  borderRadius:"5%"
+  borderRadius:"0%"
 },
 
   
@@ -126,9 +125,11 @@ const App = () => {
           <MyDivider textAlign="center">Revolutionising IoT</MyDivider>
         </div>
         <MyGrid container spacing={2} >
-       
-        <MypicGrid container xs={12} md={4}/>
-       
+        <Box sx={{ boxShadow: 20 }}>
+        <MypicGrid item xs={12} md={4}>
+        <img src={segment2img} height='300'alt='img'/>
+          </MypicGrid>
+        </Box>
    
      
       <MyGrid item xs={12} md={6}>
