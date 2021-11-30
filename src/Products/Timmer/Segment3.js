@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import img from '../Switch/images/touchswitch.png'
+import img from '../Timmer/images/modbus.png'
 
 import {Divider, Grid, Stack,Box ,Hidden} from '@mui/material';
 
@@ -43,7 +43,6 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
  
-  height:'300px',
   [theme.breakpoints.up("xs")]: {
     justifyContent: "center",
     alignItems: "flex-end", 
@@ -90,11 +89,11 @@ const App = () => {
       
        
           <Hidden mdUp>
-          <div data-aos="flip-left">
-        
-       
-      <MypicGrid container xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
+          <MypicGrid container xs={12} md={4}>
+      <div data-aos="flip-right"   data-aos-delay="200" >
+      <img src={img} width='300' alt="logo"/>
       </div>
+      </MypicGrid>
           </Hidden>
       <MyGrid item xs={12} md={6}>
       <div data-aos="fade-in" data-aos-easing="ease-out-quart" data-aos-delay="200" >
@@ -160,11 +159,11 @@ const App = () => {
       </MyGrid>
       
       <Hidden mdDown>
-      <div data-aos="flip-left">
-        
-     
-      <MypicGrid container xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
-        </div>
+      <MypicGrid container xs={12} md={4}>
+      <div data-aos="flip-right"   data-aos-delay="200" >
+      <img src={img} width='300' alt="logo"/>
+      </div>
+      </MypicGrid>
           </Hidden>
     
       </MyGrid>

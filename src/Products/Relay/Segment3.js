@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import img from '../Switch/images/touchswitch.png'
+import img from '../Relay/images/sevenchannel.png'
 
 import {Divider, Grid, Stack,Box ,Hidden,Typography} from '@mui/material';
 

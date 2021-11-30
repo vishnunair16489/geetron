@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import img from '../Switch/images/capswitch.jpg'
+import img from '../Controller/images/lightcontroller.png'
 import { Grid, Stack,Divider } from '@mui/material';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
@@ -77,7 +77,7 @@ const App = () => {
       
         <MypicGrid container xs={12} md={4}>
         <div data-aos="flip-right"   data-aos-delay="200" >
-      <img src={img} width='200' alt="logo"/>
+      <img src={img} width='350' alt="logo"/>
       </div>
       </MypicGrid>
     

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Home from '../Hotel/images/noimage.jpg';
+import Home from '../Hotel/images/radar.png';
 
 import Parralex from './images/parallex.jpg'
 

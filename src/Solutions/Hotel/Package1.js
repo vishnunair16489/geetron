@@ -9,9 +9,10 @@ import Switch from  './Switch';
 import RMS from  './RMS';
 import Relay from  './Relay';
 import Dimmer from  './Dimmer';
+import switchimg from '../Hotel/images/switch.png';
 const images = [
   {
-    url: img, 
+    url: switchimg, 
     title: 'Swtich',
     width: '25%',
     index:1

@@ -23,7 +23,6 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
   const MyStack = styled(Stack)(({ theme }) => ({           
   
-    maxWidth:"1200px",
    
   }));
   const MyLink = styled(Link)(({ theme }) => ({           
@@ -68,13 +67,12 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   }));
 const App = ()=>{
   return(  
-      <MyGrid>
+      <MyGrid container   justifyContent="center"  alignItems="center">
        <CssBaseline/>
             <Hidden mdDown>
           
           <MyStack style={{marginLeft:'50px'}} direction="row"  spacing={5}>
-          <MyStack  spacing={5}></MyStack>
-         
+        
               <MyStack style={{marginTop:'20px'}}  spacing={0.5}>
               Product
               <MyLink href="#" underline="none">{'Switch'}</MyLink>

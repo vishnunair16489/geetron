@@ -9,9 +9,10 @@ import Sensor from  './Sensor';
 import Curtains from  './Curtains';
 import Roomservice from  './Roomservice';
 import Thermostat from  './Thermostat';
+import radar from '../Hotel/images/radar.png'
 const images = [
   {
-    url: img, 
+    url: radar, 
     title: 'Sensor',
     width: '25%',
     index:1

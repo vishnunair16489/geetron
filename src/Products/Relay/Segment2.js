@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import img from '../Switch/images/capswitch.jpg'
+import img from '../Relay/images/eightchannelrelay.png'
 import { Grid, Stack,Divider,Typography } from '@mui/material';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
@@ -36,7 +36,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
    
     justifyContent: "center",
-    alignItems: "center", 
+    alignItems: "flex-start", 
   },
 
  
@@ -70,9 +70,9 @@ const App = () => {
        <MyDivider textAlign="right">8 Channel Relay</MyDivider>
         <MyGrid container spacing={2} >
       
-      <MypicGrid container xs={12} md={4}>
+      <MypicGrid container item xs={12} md={4}>
       <div data-aos="flip-right"   data-aos-delay="200" >
-      <img src={img} width='200' alt="logo"/>
+      <img src={img} width='350' alt="logo"/>
       </div>
       </MypicGrid>
     
