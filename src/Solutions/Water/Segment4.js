@@ -20,6 +20,7 @@ const Header = styled(Divider)(({ theme }) => ({
   textAlign: 'center',
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
+  marginTop:'50px'
   
 
 
@@ -69,6 +70,22 @@ const MyCard = styled(Typography)(({ theme }) => ({
   },
 
 }))
+const MyCardmedia = styled(CardMedia)(({ theme }) => ({
+
+
+  [theme.breakpoints.up("xs")]: {
+
+      width:'200px',
+
+
+ },
+ [theme.breakpoints.up("md")]: {
+
+  width:'150px',
+ },
+
+
+}))
 
 const App = () => {
   return (
@@ -82,15 +99,17 @@ const App = () => {
             </div>
           
             <Box sx={{ flexGrow: 1 }}>
-              <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                <Grid  item xs={12} sm={4} md={4}>
+              <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
+                <Grid  item xs={12} sm={6} md={4}>
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
-                    <CardMedia
+                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
+                    <MyCardmedia
                         component="img"
                         image={Home}
                         alt="green iguana"  
                       />
+                      </Grid>
                       <CardContent>
                         <Mytext gutterBottom component="div">
                          GIS Home
@@ -111,16 +130,17 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} sm={4} md={4}>
+                  <Grid item xs={12} sm={6} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>
-                    <CardMedia
+                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
+                    <MyCardmedia
                         component="img"
                         image={Wifi}
                         alt="green iguana"  
                       />
-                   
+                   </Grid>
                       <CardContent>
                         <Mytext gutterBottom component="div">
                           GIS Pro
@@ -140,15 +160,17 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} sm={4} md={4}>
+                  <Grid item xs={12} sm={6} md={4}>
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >
-                    <CardMedia
+                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
+                    <MyCardmedia
                         component="img"
                         image={Solar}
                         alt="green iguana"  
                       />
+                      </Grid>
                       <CardContent>
                         <Mytext gutterBottom component="div">
                          GIS Pro Solar

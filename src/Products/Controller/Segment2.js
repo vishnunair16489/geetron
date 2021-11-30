@@ -1,52 +1,100 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import img from '../Switch/images/capswitch.jpg'
-import { Grid, Stack,Box } from '@mui/material';
+import { Grid, Stack,Divider } from '@mui/material';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
-  alignItems: "center", 
-  marginLeft:'5px'
+  alignItems: "flex-start", 
+  padding:'0px 10px',
+}));
+const ContentGrid = styled(Grid)(({ theme }) => ({
+  padding:'0px 10px',
+  justifyContent: "flex-start",
+  alignItems: "flex-start", 
 
 }));
-
 
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
-  justifyContent: "center",
-  alignItems: "center", 
-  height:'300px',
  
+  height:'300px',
+  [theme.breakpoints.up("xs")]: {
+    justifyContent: "center",
+    alignItems: "flex-end", 
+   [theme.breakpoints.up("md")]: {
+  
+    justifyContent: "center",
+    alignItems: "center", 
+  },
+
+
+ 
+  }}));
+const MyDivider = styled(Divider)(({ theme }) => ({
+  
+    
+  minWidth: '10em',
+  color: '#1268B3',
+  textAlign: 'center',
+  margin: "50px 0px",
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  [theme.breakpoints.down("xs")]: {
+  
+    fontSize: '1.2em',
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    fontSize: '1.5em',
+  },
+
 }));
 
-
+const Myp = styled('p')(({ theme }) => ({
+ 
+ 
+  fontFamily: 'SourceSansPro',
+  padding:'10px',
+  [theme.breakpoints.up("xs")]: {
+  
+    margin: "0px 20px",
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    margin: "0px",
+  },
+ }));
 const App = () => {
   return (
 
   
       <Stack>
-       
+         <MyDivider textAlign="right">Light Controller</MyDivider>
         <MyGrid container spacing={2} >
       
-      <MypicGrid item xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
+        <MypicGrid container xs={12} md={4}>
+        <div data-aos="flip-right"   data-aos-delay="200" >
+      <img src={img} width='200' alt="logo"/>
+      </div>
+      </MypicGrid>
     
       <Grid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
-          <Box sx={{ flexGrow: 1 }}>
+     
+        
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-          <div data-aos="flip-left">
-          <p>Light Controller</p>
-        </div>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+        
+         
           
               
              
                 <Grid container direction="row" spacing={0}>
-                <Grid item  xs={12}  sm={6} md={6}>
-                <p> <b>Hardware Overview</b>
+                <ContentGrid container item  xs={12}  sm={6} md={6}> 
+                  <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                <Myp> <b>Hardware Overview</b>
                   <ul>
                     <li>Remote System setup using inbuilt LORA transciever</li>
                     <li>4 Latching Relay with 20A Contact</li>
@@ -56,10 +104,12 @@ const App = () => {
                     <li>Programmable address settings</li>
                     <li>4 Digital Inputs</li>
                   </ul>
-                  </p>
-                  </Grid>
-                  <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
+                  </Myp>
+                  </div>
+                  </ContentGrid>
+                  <ContentGrid container item  xs={12}  sm={6} md={6}>
+                  <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="300" >
+                  <Myp>
                   <b>External Interface</b>
                   <ul>
 
@@ -69,10 +119,12 @@ const App = () => {
                     <li>8x2 LCD</li>
                     <li> Manual relay switch</li>
                   </ul>
-                  </p>
-                  </Grid>
-                  <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
+                  </Myp>
+                  </div>
+                  </ContentGrid>
+                  <ContentGrid container item  xs={12}  sm={6} md={6}>
+                  <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                  <Myp>
                   <b>Firmware Features</b>
                   <ul>
 
@@ -84,10 +136,12 @@ const App = () => {
                     <li>Control Relay directly from server</li>
                     <li>Get Digital IO status</li>
                   </ul>
-                  </p>
-                  </Grid>
-                  <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
+                  </Myp>
+                  </div>
+                  </ContentGrid>
+                  <ContentGrid container item  xs={12}  sm={6} md={6}>
+                  <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="500" >
+                  <Myp>
                   <b>Device Parameterss</b>
                   <ul>
 
@@ -99,17 +153,18 @@ const App = () => {
                     <li>Wireless RF : LoRa 868Mhz</li>
                     <li>Antenna : 3dbi 868 Mhz Lora</li>
                   </ul>
-                  </p>
-                  </Grid>
+                  </Myp>
+                  </div>
+                  </ContentGrid>
                   </Grid>
            
               
-            </div>
+           
             </Grid>
        
       
             </Grid>
-            </Box>
+          
       </Grid>
       </MyGrid>
       </Stack>

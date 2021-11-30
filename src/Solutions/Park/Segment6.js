@@ -47,7 +47,8 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
   fontFamily: 'SourceSansPro',
-  
+  extAlign:'justify',
+  padding:'10px',
   [theme.breakpoints.up("xs")]: {
   
     margin: "0px 10px",
@@ -73,12 +74,12 @@ const App = () => {
           <MyDivider textAlign="center">Panic Button</MyDivider>
         </div>
         <MyGrid container spacing={2} >
-        <Hidden xsup>
-      <MypicGrid container xs={12} md={4}></MypicGrid>
-     
-          </Hidden>
-    
-    
+      
+       
+          
+          <Hidden mdUp>
+          <MypicGrid container xs={12} md={4}></MypicGrid>
+      </Hidden>
       <MyGrid item xs={12} md={6}>
       <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
          
@@ -112,14 +113,13 @@ const App = () => {
        
       
             </Grid>
+            
             </Box>
       </MyGrid>
       
       <Hidden mdDown>
-      <MypicGrid container xs={12} md={4}></MypicGrid>
-     
+          <MypicGrid container xs={12} md={4}></MypicGrid>
           </Hidden>
-    
       </MyGrid>
       </Stack>
 

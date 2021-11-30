@@ -16,7 +16,7 @@ import Tracking from '../Homepage/images/tracking.jpg'
 import Digital from '../Homepage/images/signage.png'
 import Hospital from '../Homepage/images/hospital.jpg'
 import MyButtoncustom from '../ModifiedComponents/Button'
-import { Button, Typography, Grid, Stack,Box} from '@mui/material';
+import {  Typography, Grid, Stack,Box} from '@mui/material';
 const Slideshow = () => {
   const images = [
     Ghomme,
@@ -81,6 +81,7 @@ const Slideshow = () => {
 
     alignItems: "center",
     height: '650px',
+   
 
     [theme.breakpoints.up("xs")]: {
       marginLeft: "25px",
@@ -120,7 +121,7 @@ const Slideshow = () => {
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
     fontSize: '1.0em',
-    textAlign: 'left',
+    textAlign: 'justify',
     maxWidth: '30em',
     color: 'white',
     fontFamily: 'SourceSansPro',
@@ -147,6 +148,7 @@ const Slideshow = () => {
     backgroundPosition: 'center',
     height: '650px',
     width: "100%",
+    backgroundColor:'#f0f0f0',
 
   }));
 

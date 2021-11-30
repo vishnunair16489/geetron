@@ -2,9 +2,11 @@ import React from 'react'
 import './index.css';
 import { BrowserRouter, Routes , Route }  from "react-router-dom";
 
+import {  useScrollTrigger } from '@mui/material';
 
+import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
-import { AppBar, Toolbar,Hidden } from '@mui/material';
+import { AppBar, Toolbar,Hidden,Slide } from '@mui/material';
 import Water from "./Solutions/Water/Water"; 
 import Ghomes from "./Solutions/Ghomes/Ghomes"; 
 import Home from "./menu/Appbar"; 
@@ -28,17 +30,37 @@ import RD from "./Services/R&D/R&D";
 import Mobile from "./Services/Mobile/Mobile"; 
 import Aboutus from "./Aboutus/Aboutus"; 
 import Footer from "./Homepage/Footer"; 
+import Contact from "./Homepage/Segment9"; 
 const MyAppBar = styled(AppBar)(({ theme }) => ({
+  
   backgroundColor: 'rgba(0,0,0,0.3)',
+ 
   '&:hover': {
     backgroundColor: 'rgba(255,255,255,0.9)',
     color: 'black',
   },
  
 }));
+
+function ElevationScroll(props) {
+  const { children, window } = props;
+  
+  const trigger = useScrollTrigger({
+    disableHysteresis: false,
+    threshold: 1,
+    target: window ? window() : undefined,
+  });
+  return React.cloneElement(children, {
+    elevation: trigger ? 10 : 0,
+    backgroundColor: trigger ?  'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0.3)',
+  });
+}
+
+
 const App = ()=>{
   return(  
     <BrowserRouter>
+      <ElevationScroll  >
       <MyAppBar>
         <Toolbar >
         <Hidden mdDown>
@@ -47,6 +69,8 @@ const App = ()=>{
       
         </Toolbar>
       </MyAppBar>
+      </ElevationScroll >
+
       <Hidden mdUp>
       <Mobilemenu/>
       </Hidden>
@@ -72,6 +96,7 @@ const App = ()=>{
           <Route path='/Dashboard' element={<Dashboard/>}></Route>
           <Route path='/Mobile' element={<Mobile/>}></Route>
           <Route path='/R&D' element={<RD/>}></Route>
+          <Route path='/Contact' element={<Contact/>}></Route>
         </Routes>  
         <Footer/>
 </BrowserRouter>

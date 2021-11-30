@@ -6,21 +6,28 @@ import Grid from '@mui/material/Grid';
 import Logo from  '../menu/images/logolight.png';
 import {Tooltip,IconButton,Avatar } from '@mui/material';
 import { styled } from '@mui/material/styles';  
-import  Water  from '../menu/images/water.svg';
-import  City  from '../menu/images/cities.svg';
-import  Tourism  from '../menu/images/tourism.svg';
-import  Industry  from '../menu/images/industry.svg';
-import  Parking  from '../menu/images/parking-solution.svg';
-import  Health  from '../menu/images/e-health.svg';
-import  Tracking  from '../menu/images/tracker-red.svg';
-import  Enviroment  from '../menu/images/enviroment.svg';
-import  Switch  from '../menu/images/AQS.svg';
-import  Timmer  from '../menu/images/meshlium.svg';
-import  Controller  from '../menu/images/plug-and-sense.svg';
-import  iot  from '../menu/images/reports.svg';
-import  mobile  from '../menu/images/mysignals.svg';
-import  rad  from '../menu/images/rad.svg';
-import  software  from '../menu/images/projects.svg';
+
+
+import  Switch  from '../menu/images/switch.png';
+import  Timmer  from '../menu/images/timer.png';
+import  Controller  from '../menu/images/controller.png';
+import  Locks  from '../menu/images/locks.png';
+import  Relays  from '../menu/images/relay.png';
+
+import Ghome from  '../menu/images/ghome.png';
+import Water from  '../menu/images/water.png';
+import Hotel from  '../menu/images/hotel.png';
+import Parking from  '../menu/images/parking.png';
+import Industry from  '../menu/images/factory.png';
+import Community from  '../menu/images/community.png';
+import Resort from  '../menu/images/resort.png';
+import Tracking from  '../menu/images/tracking.png';
+import Signage from  '../menu/images/signage.png';
+import Hospital from  '../menu/images/hospital.png';
+
+import Dashboard from  '../menu/images/dashboard.png';
+import Application from  '../menu/images/application.png';
+import RD from  '../menu/images/R&D.png';
 import {useNavigate} from 'react-router-dom';
 function LinkTab(props) {
   return (
@@ -53,8 +60,11 @@ const MyBox= styled(Grid)(({ theme }) => ({
  
   direction:"row",
   justifyContent:"flex-end",
+  maxWidth: `calc(100% - 20%)`,
+  
   alignItems:"center",
   marginTop: "10px",
+ 
 
  
 }))
@@ -63,8 +73,8 @@ const MyBox2= styled(Grid)(({ theme }) => ({
   direction:"row",
   justifyContent:"flex-end",
   alignItems:"center",
-  marginTop: "10px",
-  
+  marginTop: "10px",  
+  maxWidth: `calc(100% - 210px)`,
   
 }))
 const MyGrid= styled(Grid)(({ theme }) => ({           
@@ -73,12 +83,17 @@ const MyGrid= styled(Grid)(({ theme }) => ({
   alignItems:"center",
   
   margin: "0px",
+  '&:hover': {
+  
+    color: '#1268B3',
+  },
  
   
 }))
-const Mydiv= styled('div')(({ theme }) => ({           
-  marginLeft: "170px",
-  
+const Mydiv= styled(Grid)(({ theme }) => ({           
+
+ justifyContent:"center",
+  alignItems:"center",
  
   
 }))
@@ -104,27 +119,27 @@ export default function NavTabs() {
            <MyBox  container onMouseLeave={() => setValue(index)} >
          <Tooltip title="Switch">
           <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Switch')}>
-          <img src={Switch} alt="water" />
+          <img src={Switch} height='30px' alt="water" />
           </IconButton>
         </Tooltip>
         <Tooltip title="Timmer">
           <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Timmer')}>
-          <img src={Timmer} alt="water" />
+          <img src={Timmer}  height='30px'  alt="water" />
           </IconButton>
         </Tooltip>
         <Tooltip title="Controller">
           <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Controller')}>
-          <img src={Controller} alt="water" />
+          <img src={Controller}  height='30px'  alt="water" />
           </IconButton>
         </Tooltip>
         <Tooltip title="Locks">
           <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Locks')}>
-          <img src={Controller} alt="water" />
+          <img src={Locks}  height='30px'  alt="water" />
           </IconButton>
         </Tooltip>
         <Tooltip title="Relays">
           <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Relay')}>
-          <img src={Controller} alt="water" />
+          <img src={Relays}  height='30px'  alt="water" />
           </IconButton>
         </Tooltip>
       </MyBox>
@@ -136,52 +151,52 @@ export default function NavTabs() {
                <MyBox container onMouseLeave={() => setValue(index)} >
              <Tooltip title="GHomes">
              <IconButton aria-label="delete" onClick={()=> navigate('Ghomes')}>
-             <img src={City} alt="water" />
+             <img src={Ghome}  height='30px'  alt="water" />
       </IconButton>
             </Tooltip>
             <Tooltip title="Water">
               <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Water')}>
-              <img src={Water} alt="water"  />
+              <img src={Water}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Hotel">
               <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Hotels')}>
-              <img src={Tourism} alt="water" />
+              <img src={Hotel}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Parking">
               <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Parking')}>
-              <img src={Parking} alt="water" />
+              <img src={Parking}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Industry">
               <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Industry')}>
-              <img src={Industry} alt="water" />
+              <img src={Industry}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Communities" onClick={()=> navigate('Community')}>
               <IconButton size="small" sx={{ ml: 2 }}>
-              <img src={Enviroment} alt="water" />
+              <img src={Community}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Parks&Resorts" onClick={()=> navigate('Park')}>
               <IconButton size="small" sx={{ ml: 2 }}>
-                <Avatar sx={{ width: 32, height: 32 }}>P</Avatar>
+              <img src={Resort}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Tracking" onClick={()=> navigate('Tracking')}>
               <IconButton size="small" sx={{ ml: 2 }}>
-              <img src={Tracking} alt="water" />
+              <img src={Tracking}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Digital Signage" onClick={()=> navigate('Signage')}>
               <IconButton size="small" sx={{ ml: 2 }}>
-                <Avatar sx={{ width: 32, height: 32 }}>D</Avatar>
+              <img src={Signage}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Hospital">
               <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Hospital')}>
-              <img src={Health} alt="water" />
+              <img src={Hospital}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
           </MyBox>
@@ -193,24 +208,20 @@ export default function NavTabs() {
                <MyBox2 container onMouseLeave={() => setValue(index)} >
              <Tooltip title="IoT Dashboard">
               <IconButton size="small" sx={{ ml: 2 }}onClick={()=> navigate('Dashboard')}>
-              <img src={iot} alt="water" />
+              <img src={Dashboard}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="Mob Applications">
               <IconButton size="small" sx={{ ml: 2 }}onClick={()=> navigate('Mobile')}>
-              <img src={mobile} alt="water" />
+              <img src={Application}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
             <Tooltip title="R&D">
               <IconButton  size="small" sx={{ ml: 2 }}onClick={()=> navigate('R&D')}>
-              <img src={rad} alt="water" />
+              <img src={RD}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
-            <Tooltip title="Software integration&D">
-              <IconButton  size="small" sx={{ ml: 2 }}>
-              <img src={software} alt="water" />
-              </IconButton>
-            </Tooltip>
+          
           </MyBox2>
           </div>
           </React.Fragment>
@@ -224,20 +235,20 @@ export default function NavTabs() {
     <Box sx={{ flexGrow: 1 }}>
     
          <MyGrid container spacing={2}>
-         <Grid item xs={4}>
-         <Mydiv  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
+       
+         <Mydiv container item xs={4}  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
              <img src={Logo}  alt="Logo" height="25" />
              </Mydiv>
-        </Grid>
+     
         <Grid   item xs={8} >
         <Grid container  direction="row"  justifyContent="center"  alignItems="center">
         <Tabs textColor="white"   value={value} onChange={handleChange}  aria-label="nav tabs example">
         <LinkTab    onMouseEnter={() => setValue(0)} onClick={()=> navigate('/')}   onMouseLeave={() => setValue(index)} label="Home"  />
         <LinkTab  onMouseEnter={() => setValue(1)} onClick={()=> navigate('/Aboutus')} onMouseLeave={() => setValue(index)} label="About Us" />
-        <LinkTab onMouseEnter={() =>  setValue(2)}  label="Product" href="/spam" />
-        <LinkTab id="trigger"  onMouseEnter={() => setValue(3)}  label="Solution" href="/drafts" />
-        <LinkTab  onMouseEnter={() => setValue(4)}  label="Services" href="/trash" />
-        <LinkTab  onMouseEnter={() => setValue(5)}  onMouseLeave={() => setValue(index)}label="Contact us" href="/spam" />
+        <LinkTab onMouseEnter={() =>  setValue(2)}  label="Product"  />
+        <LinkTab id="trigger"  onMouseEnter={() => setValue(3)}  label="Solution"/>
+        <LinkTab  onMouseEnter={() => setValue(4)}  label="Services" />
+        <LinkTab  onMouseEnter={() => setValue(5)}  onMouseLeave={() => setValue(index)} label="Contact Us" onClick={()=> navigate('Contact')} />
   
       </Tabs>
       

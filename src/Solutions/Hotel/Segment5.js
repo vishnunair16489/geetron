@@ -96,12 +96,13 @@ const App = () => {
               
      
   return (
- 
+    <div>
+    <div data-aos="flip-left" data-aos-easing="ease-out-quart" >
+    <Header textAlign="center">Packages </Header>
+  </div>
     <Grid  container   spacing={2}>
 
-      <div data-aos="flip-left" data-aos-easing="ease-out-quart" >
-        <Header textAlign="center">Packages </Header>
-      </div>
+    
      
         <MyGrid container spacing={2}>
         <div  onClick={() => setValue(2)} data-aos="fade-in"  data-aos-easing="ease-in-quart" data-aos-delay="200" >
@@ -224,6 +225,7 @@ const App = () => {
     {submenuswitch()}
   
   </Grid>
+  </div>
   );
 }
 

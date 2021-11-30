@@ -7,7 +7,7 @@ import apple from '../Homepage/images/apple.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
-  marginTop: "50px",
+  
   justifyContent: "center",
   alignItems: "center",
   direction: "row",
@@ -23,20 +23,12 @@ const Header = styled(Typography)(({ theme }) => ({
   fontFamily: 'SourceSansPro',
 
 }));
-const MyDivider = styled(Divider)(({ theme }) => ({
 
-  fontSize: '1.5em',
-  minWidth: '10em',
-  color: '#1268B3',
-  textAlign: 'center',
-  marginTop: "50px",
-  fontFamily: 'SourceSansPro',
-}));
 const Subtext = styled(Typography)(({ theme }) => ({
 
   paddingTop: "0.2em",
   fontSize: '1.0em',
-  textAlign: 'left',
+  textAlign: 'justify',
   paddingBottom: "1.0em",
   color: 'black',
   fontFamily: 'SourceSansPro',
@@ -82,29 +74,28 @@ const App = () => {
   }, []);
   return (
     <div>
-      <MyDivider textAlign="center">iOS and Android Application </MyDivider>
 
       <MyGrid container spacing={0.5} >
     
         <PicGrid container item xs={12} md={6}   >
-        <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
+     
           <img src={segment1img} width='300px' alt="Logo" />
-          </div>
+       
         </PicGrid>
     
       
         <Grid container item xs={12} md={6} >
     
           <MyStack spacing={2}>
-          <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
-            <Header>At Geetron we values our customers </Header>
-            <Subtext>Proin eget purus dapibus, pharetra neque vulputate, tristique sapien. Vivamus vitae consequat est, et vestibulum erat. Nullam id lorem neroin eget purus dapibus, pharetra neque vulputate, tristique sapien. Vivamus vitaeera consequat estibulum.  lorem neroinretra lorem neroin.</Subtext>
+       
+            <Header>Connect With Geetron Network </Header>
+            <Subtext>At geetron we value our customers and we make it a point that you can reach us at anytime and our ecosystem is available to you in every poss manner ,thus introducing Geetron mobile application both availble in Android and IOS</Subtext>
             <Stack direction="row" spacing={2}>
               <img src={android} width="100" alt="Logo" />
               <img src={apple} width="100" alt="Logo" />
 
             </Stack>
-            </div>
+         
           </MyStack>
         
         </Grid>

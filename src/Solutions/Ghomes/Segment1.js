@@ -1,10 +1,10 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
-import smarthome from '../Ghomes/images/smarthome02.jpg'
+import smarthome from '../Ghomes/images/ghmomes.jpg'
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
-import { Button, Typography, Grid, Stack} from '@mui/material';
+import {  Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
     smarthome
@@ -18,9 +18,9 @@ const Slideshow = () => {
     "Homes are getting smarter, safe, and Secure. Geetron smart home solutions provide automated and innovative solutions that will have all the intelligent home features, including voice recognition."
    ];
   const zoomInProperties = {
-    indicators: true,
+    indicators: false,
     scale: 0.8,
-    autoplay: true,
+    autoplay: false,
     duration: 3000,
     pauseOnHover: true,
     canSwipe: true,
@@ -92,15 +92,7 @@ const Slideshow = () => {
     width: "100%"
 
   }));
-  const MyButton = styled(Button)(({ theme }) => ({
-    marginLeft: "0.1em",
-    background: '#1268B3',
-    width: '10em',
-    borderRadius: 5,
-    fontFamily: 'SourceSansPro'
-
-
-  }));
+ 
   return (
     <Zoom {...zoomInProperties}>
       {images.map((each, index) => (
@@ -118,9 +110,7 @@ const Slideshow = () => {
                   <div data-aos="flip-left" data-aos-anchor data-aos-delay="300">
                     <Subtext>{body[index]}</Subtext>
                   </div>
-                  <div data-aos="flip-left" data-aos-delay="500">
-                    <MyButton variant="contained" >Contact Us</MyButton>
-                  </div>
+                
 
                 </MyStack>
 

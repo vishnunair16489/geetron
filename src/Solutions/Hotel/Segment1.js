@@ -1,28 +1,28 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
 
-import irrigation from '../Hotel/images/hotel.png'
+import irrigation from '../Hotel/images/banner.jpg'
 
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
 
-import { Button, Typography, Grid, Stack} from '@mui/material';
+import {Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
-    irrigation,
+    irrigation
     
   ];
   const header = [
-    "GRMS",
+    "GRMS"
    
   ];
   const body = [
-    "Geetron GRMS offers Enhanced hospitality and provides a unique experience for guests. Our solutions work on Interactive technology that accomplishes the seamless experience you want for your guest and provides easy management for the operators.",
+    "Geetron GRMS offers Enhanced hospitality and provides a unique experience for guests. Our solutions work on Interactive technology that accomplishes the seamless experience you want for your guest and provides easy management for the operators."
    
   ];
   const zoomInProperties = {
-    indicators: true,
+    indicators: false,
     scale: 0.8,
     autoplay: false,
     duration: 3000,
@@ -64,7 +64,7 @@ const Slideshow = () => {
     paddingLeft: "0.5em",
     fontSize: '1.5em',
     textAlign: 'left',
-    color: '#1268B3',
+    color: 'white',
     fontFamily: 'SourceSansPro',
     fontWeight: 'bold',
 
@@ -77,14 +77,20 @@ const Slideshow = () => {
     fontSize: '1.0em',
     textAlign: 'left',
     maxWidth: '30em',
-    color: 'black',
-    fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
+    color: 'white',
+    fontFamily: 'SourceSansPro',  
     align:'justify'
 
   }));
   const MyStack = styled(Stack)(({ theme }) => ({
-    marginTop: "10px",
+    marginTop: "-50px",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "10px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "10px",
+    },
+   
 
 
   }));
@@ -96,15 +102,8 @@ const Slideshow = () => {
     width: "100%"
 
   }));
-  const MyButton = styled(Button)(({ theme }) => ({
-    marginLeft: "0.1em",
-    background: '#1268B3',
-    width: '10em',
-    borderRadius: 5,
-    fontFamily: 'SourceSansPro'
+ 
 
-
-  }));
   return (
     <Zoom {...zoomInProperties}>
       {images.map((each, index) => (
@@ -112,7 +111,7 @@ const Slideshow = () => {
 
           <div className="each-slide">
             <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'cover' }}>
-              <MyGrid container spacing={0.5} >
+              <MyGrid xs container spacing={0.5} >
 
 
                 <MyStack spacing={2}>
@@ -122,9 +121,7 @@ const Slideshow = () => {
                   <div data-aos="flip-left" data-aos-anchor data-aos-delay="300">
                     <Subtext>{body[index]}</Subtext>
                   </div>
-                  <div data-aos="flip-left" data-aos-delay="500">
-                    <MyButton variant="contained" >Contact Us</MyButton>
-                  </div>
+                
 
                 </MyStack>
 

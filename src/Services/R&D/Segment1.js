@@ -7,15 +7,14 @@ import Irrigation from '../R&D/images/r&d.jpg'
 import {  Grid} from '@mui/material';
 const Slideshow = () => {
   const images = [  
-    Irrigation,
-    Irrigation,
+    Irrigation
   
   ];
  
   const zoomInProperties = {
     indicators: true,
     scale: 1.2,
-    autoplay: true,
+    autoplay: false,
     duration: 2000,
     pauseOnHover: true,
     canSwipe: true,

@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Homepage/images/iot.jpg'
+import segment2img from '../Homepage/images/geetronconnectionblue.png'
 import segment2hardware from '../Homepage/images/hardware.png'
 import segment2hconsulting from '../Homepage/images/consulting.png'
 import segment2custom from '../Homepage/images/custom-projects.png'
@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center", 
+  backgroundColor:'#f0f0f0',
 
 
 }));
@@ -17,17 +18,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
 
-  height:'300px',
+  height:'250px'
 
- [theme.breakpoints.up("xs")]: {
-  
-  borderRadius:"0%"
-}, 
-[theme.breakpoints.up("md")]: {
- 
- 
-  borderRadius:"0%"
-},
 
   
 }));
@@ -63,6 +55,7 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
   align:'justify',
   fontFamily: 'SourceSansPro',
+  textAlign:'justify',
   [theme.breakpoints.up("xs")]: {
   
     margin: "0px 30px",
@@ -82,16 +75,16 @@ const MyStack = styled(Stack)(({ theme }) => ({
  
   maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
-    marginTop: "100px",
-    marginLeft: "30px",
+    marginTop: "100px",  
+    margin: "0 30px",
   },
    [theme.breakpoints.down("md")]: {
-    marginTop: "60px",
-    marginLeft: "30px",
+  
+    margin: "30px",
   },
   [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
-    marginLeft: "10px",
+   
+    margin: "10px",
   },
 
 }))
@@ -102,17 +95,39 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
   maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",
-    marginLeft: "30px",
+  
+    margin: "0 30px",
   },
    [theme.breakpoints.down("md")]: {
-    marginTop: "60px",
-    marginLeft: "30px",
+  
+    margin: "30px",
   },
   [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
-    marginLeft: "10px",
+   
+    margin: "10px 10px",
   },
   
+
+}))
+
+const Myimg = styled('img')(({ theme }) => ({
+
+  src:{segment2img} ,
+  alt:'img',
+  backgroundSize:'fit',
+ 
+  [theme.breakpoints.down("xs")]: {
+    
+    height:'150px'
+  },
+   [theme.breakpoints.down("md")]: {
+  
+    height:'150px'
+  },
+  [theme.breakpoints.up("md")]: {
+   
+    height:'300px'
+  },
 
 }))
 
@@ -125,15 +140,17 @@ const App = () => {
           <MyDivider textAlign="center">Revolutionising IoT</MyDivider>
         </div>
         <MyGrid container spacing={2} >
-        <Box sx={{ boxShadow: 20 }}>
-        <MypicGrid item xs={12} md={4}>
-        <img src={segment2img} height='300'alt='img'/>
-          </MypicGrid>
+        <Box >  <div data-aos="fade-right">
+        <MypicGrid item    xs={12} md={4}>
+      
+        <Myimg  src={segment2img}/>
+        
+          </MypicGrid></div>
         </Box>
    
      
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-in-out-back" data-aos-delay="200" >
           <Mypara>
           Geetron’s Primary Goal is to evolve from a hardware manufacturing business intending to become a whole IoT solution provider. We design and develop IoT solutions to make electronics works seamlessly with each other. We specialize in wireless sensor platform that allows you to connect the physical with the digital world.
 </Mypara>
@@ -141,7 +158,7 @@ const App = () => {
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}sm={4} md={4}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+            <div data-aos="fade-up" data-aos-offset="" data-aos-easing="ease-in-out-back" data-aos-delay="200" >
               <MyStackfirst spacing={2}>
                 <img src={segment2hardware} width="40" alt="Logo" />
                 <Mytext>Hardware developers </Mytext>
@@ -150,7 +167,7 @@ const App = () => {
             </div>
             </Grid>
         <Grid item  xs={12} sm={4} md={4}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+            <div data-aos="fade-up" data-aos-offset="" data-aos-easing="ease-in-out-back" data-aos-delay="300" >
               <MyStack spacing={2}>
                 <img src={segment2hconsulting} width="40" alt="Logo" />
                 <Mytext>Consultancy experts </Mytext>
@@ -160,7 +177,7 @@ const App = () => {
             </div>
             </Grid>
         <Grid item  xs={12} sm={4} md={4}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="600" >
+            <div data-aos="fade-up" data-aos-offset="" data-aos-easing="ease-in-out-back" data-aos-delay="400" >
               <MyStack spacing={2}>
                 <img src={segment2custom} width="40" alt="Logo" />
                 <Mytext>Customized IoT projects</Mytext>

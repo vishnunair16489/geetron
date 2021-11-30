@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react'
 import { styled } from '@mui/material/styles';
-import { Divider, Typography, Grid, Stack,Box  } from '@mui/material';
+import { Divider, Typography, Grid, Stack } from '@mui/material';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
-   
-    direction:"row",
     justifyContent:"center",
-    alignItems:"flex-start",
+    alignItems:"center",
   
   
   }));
@@ -22,47 +20,30 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     textAlign: 'center',
     fontFamily: 'SourceSansPro',
     fontWeight: 'bold',
-    
-  
+    margin: "50px 0px",
   
   }));
   const MyStack = styled(Stack)(({ theme }) => ({
   
-    maxWidth: "1200px",
+ 
   
   }));
   const Mytext = styled(Typography)(({ theme }) => ({
   
     fontSize: '1.0em',
-    textAlign: 'left',
-    minWidth: '10em',
-    margin:'10px',
     color: '#1268B3',
     fontWeight: 'bold',
-    fontFamily: 'SourceSansPro'
+    fontFamily: 'SourceSansPro',
+    padding:'0 20px'
   }));
   const Mypara = styled(Typography)(({ theme }) => ({
   
-    fontSize: '0.9em',
-    textAlign: 'left',
-    margin:'10px',
+    fontSize: '0.9em',  
     fontFamily: 'SourceSansPro',
     fontWeight: 'bold',
-    [theme.breakpoints.down("xs")]: {
-      width:'600px',
-     },
-      [theme.breakpoints.up("md")]: {
-        maxWidth: '400px',
-      alignItems: "center",
-      justifyContent: "center",
-    
-     },
-     [theme.breakpoints.up("md")]: {
-      maxWidth: '400px',
-    alignItems: "center",
-    justifyContent: "center",
+    padding:'0 20px'
   
-   },
+ 
   }))
   
 
@@ -76,19 +57,20 @@ const App = () => {
     <MyGrid  container>
 
     <MyStack spacing={0}>
-      <div data-aos="flip-left" data-aos-easing="ease-out-quart" >
+      
+    <div data-aos="flip-left" data-aos-easing="ease-out-quart" >
         <Header textAlign="center">Add-Ons </Header>
       </div>
      
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
+        <Grid container   justifyContent="center"  alignItems="center" >
           
-            <Grid   item xs={12} sm={6} md={4}>
+            <Grid  container   justifyContent="center"  alignItems="center"  item xs={12} sm={6} md={6}>
            
-            <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
+         
             <Mytext gutterBottom component="div">
+            <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
             Pro Plus
-                  </Mytext>
+                
                   <Mypara color="text.secondary">
                   <ul>
                     <li>G-Homes Integration with AMX, Creston or Savant </li>
@@ -98,16 +80,19 @@ const App = () => {
 
                     
                 </ul>
-                  </Mypara>
-            </div>
+                </Mypara>
+               </div>
+                </Mytext>
+          
             
             </Grid>
-            <Grid item  xs={12} sm={6} md={4}>
+            <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={6}>
            
-           <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
+         
            <Mytext gutterBottom component="div">
+           <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
            Audio
-                 </Mytext>
+                
                  <Mypara color="text.secondary">
                  <ul>
                    <li>Aadhan Integrated BGM</li>
@@ -117,16 +102,19 @@ const App = () => {
 
                    
                </ul>
-                 </Mypara>
-           </div>
+               </Mypara>
+               </div>
+                </Mytext>
+           
            
            </Grid>
-           <Grid item  xs={12} sm={6} md={4}>
+           <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={6}>
            
-           <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="400" >
+        
            <Mytext gutterBottom component="div">
+           <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="400" >
            Security
-                 </Mytext>
+              
                  <Mypara color="text.secondary">
                  <ul>
                    <li>Smart Door Lock</li>
@@ -136,16 +124,19 @@ const App = () => {
 
                    
                </ul>
-                 </Mypara>
-           </div>
+              </Mypara>
+               </div>
+                </Mytext>
+          
            
            </Grid>
-           <Grid  item  xs={12} sm={6} md={4}>
-            <div data-aos="flip-left" data-aos-easing="ease-out-quart" data-aos-delay="500">
+           <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={6}>
+       
             
                   <Mytext gutterBottom component="div">
+                  <div data-aos="flip-left" data-aos-easing="ease-out-quart" data-aos-delay="500">
                   Smart Plus
-                  </Mytext>
+                 
                   <Mypara color="text.secondary">
                   <ul>
                     <li>Smart Door Bell</li>
@@ -153,13 +144,16 @@ const App = () => {
                     <li>Smart Camera Integration</li>
                     
                 </ul>
+            
                   </Mypara>
+                  </div>
+                </Mytext>
              
-            </div>
+           
             </Grid>
         </Grid>
         
-      </Box>
+     
      
     </MyStack>
  

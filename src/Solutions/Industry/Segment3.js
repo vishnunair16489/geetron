@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Ghomes/images/banner.png'
-import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
+import segment2img from '../Industry/images/industrychallenges.jpg'
+import { Divider, Typography, Grid, Stack,Box,Hidden } from '@mui/material';
 
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
@@ -91,7 +91,13 @@ const App = () => {
           <MyDivider textAlign="left">Industy 4.0 </MyDivider>
         </div>
         <MyGrid container spacing={2} >
-      
+        <Hidden mdUp>
+    
+        
+     
+    <MypicGrid container xs={12} md={4}></MypicGrid>
+    
+        </Hidden>
   
     
       <MyGrid item xs={12} md={6}>
@@ -105,7 +111,7 @@ const App = () => {
               <MyStackfirst spacing={2}>
               
                 <Mypara>
-            Challenges
+          <b>  Challenges</b>
             <ul>
               <li>Key data gathering for digital transformation </li>
               <li>Real-time prevention of errors </li>
@@ -123,7 +129,14 @@ const App = () => {
             </Grid>
             </Box>
       </MyGrid>
+      <Hidden mdDown>
+    
+        
+     
       <MypicGrid container xs={12} md={4}></MypicGrid>
+      
+          </Hidden>
+    
       </MyGrid>
       </Stack>
 

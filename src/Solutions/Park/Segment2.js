@@ -2,7 +2,6 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import segment2img from '../Community/images/light.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
-
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
@@ -47,6 +46,8 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
   fontFamily: 'SourceSansPro',
+  textAlign:'justify',
+  padding:'10px',
   [theme.breakpoints.up("xs")]: {
   
     margin: "0px 10px",

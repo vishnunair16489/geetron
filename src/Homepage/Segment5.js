@@ -13,21 +13,13 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   alignItems: "center",
 }));
 
-const Header = styled(Typography)(({ theme }) => ({
 
-  paddingTop: "0.2em",
-  fontSize: '1.2em',
-  minWidth: '10em',
-  color: '#000000',
-  fontFamily: 'SourceSansPro',
-
-}));
 const MyStack = styled(Stack)(({ theme }) => ({
 
   direction: "row",
-  justifyContent: "flex-end",
+  justifyContent: "center",
   alignItems: "center",
-  marginLeft:'10PX',
+  margin:'10pX',
 }));
 
 const MyDivider = styled(Divider)(({ theme }) => ({
@@ -44,10 +36,11 @@ const Subtext = styled(Typography)(({ theme }) => ({
 
   paddingTop: "0.2em",
   fontSize: '1.0em',
-  textAlign: 'left',
+  textAlign: 'justify',
   maxWidth: '25em',
   color: '#000000',
   fontFamily: 'SourceSansPro',
+
 
 
 }));
@@ -55,7 +48,7 @@ const Counter = styled(Typography)(({ theme }) => ({
 
   paddingTop: "0.2em",
   fontSize: '1.5em',
-  textAlign: 'left',
+  textAlign: 'justify',
   maxWidth: '25em',
   color: '#000000',
   fontFamily: 'SourceSansPro',
@@ -77,10 +70,10 @@ const App = () => {
 
   }, []);
   return (
-    <div>
+    <div style={{ backgroundColor:'#f0f0f0'}}>
       <MyDivider textAlign="center">Geetron Ecosystem</MyDivider>
 
-      <MyGrid container spacing={0.5} >
+      <MyGrid container spacing={0} >
 
       <Grid item  xs={12} sm={12} md={4}>
      
@@ -92,30 +85,39 @@ const App = () => {
        
           </Hidden>
         
-          <MyStack spacing={2}>
-          <div  data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart"  >
-            <Header>Geetron Ecosystem </Header>
+          <MyStack spacing={5}>
+          <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
+          
             <Subtext>Geetron is powering the IoT Revolution joining to ensure maximum interoperability with our worldwide certified IoT sensor hardware platform. Join the Geetron family as a trusted IoT partner</Subtext>
-            <Stack direction="row" spacing={10}>
+              </div> 
+              <Stack direction="row" spacing={5}>
               <MyStack spacing={2}>
+              <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="100" >
                 <Counter>120</Counter>
                 <Subtext>Countries</Subtext>
+                </div> 
               </MyStack>
               <MyStack spacing={2}>
+              <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="200"  >
                 <Counter>100+</Counter>
                 <Subtext>Partners</Subtext>
+                </div> 
               </MyStack>
               <MyStack spacing={2}>
+              <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="300" >
                 <Counter>30</Counter>
                 <Subtext>Distributors</Subtext>
+                </div> 
               </MyStack>
             </Stack>
-            </div>
+         
           </MyStack>
         </Grid> 
         <Hidden mdDown>
            <PicGrid container item xs={12} md={6}   >
+           <div  data-aos="Zoom-in" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="300" >
           <ReactPlayer playing={true} loop={true} volume={0} muted url={parallex} />
+          </div>
         </PicGrid>
          
        

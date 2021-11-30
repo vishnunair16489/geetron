@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Ghomes/images/banner.png'
+import segment2img from './images/smartparking.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -14,8 +14,12 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
-  backgroundSize:'cover',
-  height:'300px',
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  width: '50vw',
+  height: '50vh'
+ 
  
 
   

@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Ghomes/images/banner.png'
+import segment2img from '../Industry/images/industryinfo.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -15,7 +15,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
   backgroundSize:'cover',
-  height:'300px',
+  height:'250px',
  
 
   
@@ -51,12 +51,7 @@ const Mypara = styled(Typography)(({ theme }) => ({
   
     margin: "0px 10px",
   }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
-  
+ 
  
 
 }))
@@ -105,7 +100,7 @@ const App = () => {
               <MyStackfirst spacing={2}>
               
                 <Mypara>
-            Challenges
+           <b> Challenges</b>
             <ul>
               <li>The challenges of every industry are to get collective information of getting quality data along with providing efficient and reliable data for manufacturing in industries like manufacturing and logistics</li>
               <li>Trustworthy and real-time data is required to improve techniques such as Lean Manufacturing, Six Sigma, TPM to be implemented</li>

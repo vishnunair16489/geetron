@@ -19,7 +19,29 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
 import {useNavigate} from 'react-router-dom';
+import Switch from  '../menu/images/switch.png';
+import Timmer from  '../menu/images/timer.png';
+import Controller from  '../menu/images/controller.png';
+import Locks from  '../menu/images/locks.png';
+import Relays from  '../menu/images/relay.png';
 import Logo from  '../menu/images/logo.png';
+
+import Ghome from  '../menu/images/ghome.png';
+import Water from  '../menu/images/water.png';
+import Hotel from  '../menu/images/hotel.png';
+import Parking from  '../menu/images/parking.png';
+import Industry from  '../menu/images/factory.png';
+import Community from  '../menu/images/community.png';
+import Resort from  '../menu/images/resort.png';
+import Tracking from  '../menu/images/tracking.png';
+import Signage from  '../menu/images/signage.png';
+import Hospital from  '../menu/images/hospital.png';
+
+import Dashboard from  '../menu/images/dashboard.png';
+import Application from  '../menu/images/application.png';
+import RD from  '../menu/images/R&D.png';
+
+
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
@@ -124,8 +146,9 @@ export default function PersistentDrawerRight() {
     setOpen(true);
   };
 
-  const handleDrawerClose = () => {
+  const handleDrawerClose = (value) => {
     setOpen(false);
+    navigate(value)
   };
   const [expanded, setExpanded] = React.useState('0');
 
@@ -158,6 +181,7 @@ export default function PersistentDrawerRight() {
         <DrawerHeader />
       
       </Main>
+    
       <Drawer
         sx={{
           width: drawerWidth,
@@ -177,52 +201,52 @@ export default function PersistentDrawerRight() {
         </DrawerHeader>
         <Divider />
         <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
-        <AccordionSummary   expandIcon={<MailIcon />} aria-controls="panel5a-content" id="panel5a-header">
-          <Typography button  onClick={()=> navigate('/')}>Home</Typography>
+        <AccordionSummary   aria-controls="panel5a-content" id="panel5a-header">
+          <Typography button  onClick={()=> handleDrawerClose("/")  }>Home</Typography>
         </AccordionSummary>      
       </Accordion>
         <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary   expandIcon={<MailIcon />} aria-controls="panel4a-content" id="panel4a-header">
-          <Typography  button  onClick={()=> navigate('/Aboutus')}>About us</Typography>
+        <AccordionSummary   aria-controls="panel4a-content" id="panel4a-header">
+          <Typography  button  onClick={()=> handleDrawerClose('/Aboutus')}>About us</Typography>
         </AccordionSummary>      
       </Accordion>
         <Divider />
       
  
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary   expandIcon={<MailIcon />} aria-controls="panel1a-content" id="panel1a-header">
+        <AccordionSummary   aria-controls="panel1a-content" id="panel1a-header">
           <Typography>Products</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <List>
          
-         <ListItem button key="switch"  onClick={()=> navigate('Switch')}>
+         <ListItem button key="switch"  onClick={()=> handleDrawerClose('Switch')}>
            <ListItemIcon>
-              <InboxIcon /> 
+           <img src={Switch}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Switch" />
          </ListItem>
-         <ListItem button key="timmer" onClick={()=> navigate('Timmer')}>
+         <ListItem button key="timmer" onClick={()=> handleDrawerClose('Timmer')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Timmer}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Timmer" />
          </ListItem>
-         <ListItem button key="controller" onClick={()=> navigate('Controller')}>
+         <ListItem button key="controller" onClick={()=> handleDrawerClose('Controller')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Controller}  height='30px'  alt="water" />
            </ListItemIcon>
-           <ListItemText primary="Locks" />
+           <ListItemText primary="Controller" />
          </ListItem>
-         <ListItem button key="Locks" onClick={()=> navigate('Locks')}>
+         <ListItem button key="Locks" onClick={()=> handleDrawerClose('Locks')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Locks}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Locks" />
          </ListItem>
          <ListItem button key="Relays" onClick={()=> navigate('Relay')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Relays}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Relays" />
          </ListItem>
@@ -232,69 +256,69 @@ export default function PersistentDrawerRight() {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary  expandIcon={<MailIcon />} aria-controls="panel2d-content" id="panel2d-header">
+        <AccordionSummary  aria-controls="panel2d-content" id="panel2d-header">
           <Typography>Solution</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <List>
          
-         <ListItem button key="ghomes"  onClick={()=> navigate('Ghomes')}>
+         <ListItem button key="ghomes"  onClick={()=> handleDrawerClose('Ghomes')}>
            <ListItemIcon>
-              <InboxIcon /> 
+           <img src={Ghome}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="GHomes" />
          </ListItem>
-         <ListItem button key="water" onClick={()=> navigate('Water')}>
+         <ListItem button key="water" onClick={()=> handleDrawerClose('Water')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Water}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Water" />
          </ListItem>
-         <ListItem button key="hotel" onClick={()=> navigate('Hotels')}>
+         <ListItem button key="hotel" onClick={()=> handleDrawerClose('Hotels')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Hotel}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Hotel" />
          </ListItem>
-         <ListItem button key="parking"  onClick={()=> navigate('Parking')}>
+         <ListItem button key="parking"  onClick={()=> handleDrawerClose('Parking')}>
            <ListItemIcon>
-              <InboxIcon /> 
+           <img src={Parking}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Parking" />
          </ListItem>
-         <ListItem button key="Industry" onClick={()=> navigate('Industry')}>
+         <ListItem button key="Industry" onClick={()=> handleDrawerClose('Industry')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Industry}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Industry" />
          </ListItem>
-         <ListItem button key="Communities" onClick={()=> navigate('Community')}>
+         <ListItem button key="Communities" onClick={()=> handleDrawerClose('Community')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Community}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Communities" />
          </ListItem>
-         <ListItem button key="park" onClick={()=> navigate('Park')}>
+         <ListItem button key="park" onClick={()=> handleDrawerClose('Park')}>
            <ListItemIcon>
-              <InboxIcon /> 
+           <img src={Resort}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Park&Resort" />
          </ListItem>
-         <ListItem button key="tracking"  onClick={()=> navigate('Tracking')}>
+         <ListItem button key="tracking"  onClick={()=> handleDrawerClose('Tracking')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Tracking}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Tracking" />
          </ListItem>
-         <ListItem button key="digitalsignage" onClick={()=> navigate('Signage')}>
+         <ListItem button key="digitalsignage" onClick={()=> handleDrawerClose('Signage')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Signage}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Digital Signage" />
          </ListItem>
-         <ListItem button key="Hospital" onClick={()=> navigate('Hospital')}>
+         <ListItem button key="Hospital" onClick={()=> handleDrawerClose('Hospital')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Hospital}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Hospital" />
          </ListItem>
@@ -304,47 +328,43 @@ export default function PersistentDrawerRight() {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-        <AccordionSummary  expandIcon={<MailIcon />} aria-controls="panel3d-content" id="panel3d-header">
+        <AccordionSummary  aria-controls="panel3d-content" id="panel3d-header">
         <Typography>Services</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <List>
          
-         <ListItem button key="iot" onClick={()=> navigate('Dashboard')}>
+         <ListItem button key="iot" onClick={()=> handleDrawerClose('Dashboard')}>
            <ListItemIcon>
-              <InboxIcon /> 
+           <img src={Dashboard}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Iot Dashboard" />
          </ListItem>
-         <ListItem button key="mobile"onClick={()=> navigate('Mobile')}>
+         <ListItem button key="mobile"onClick={()=> handleDrawerClose('Mobile')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={Application}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="Mobile Application" />
          </ListItem>
-         <ListItem button key="r&d" onClick={()=> navigate('R&D')}>
+         <ListItem button key="r&d" onClick={()=> handleDrawerClose('R&D')}>
            <ListItemIcon>
-              <MailIcon />
+           <img src={RD}  height='30px'  alt="water" />
            </ListItemIcon>
            <ListItemText primary="R&D" />
          </ListItem>
-         <ListItem button key="software">
-           <ListItemIcon>
-              <MailIcon />
-           </ListItemIcon>
-           <ListItemText primary="Software Integration" />
-         </ListItem>
+       
        
      </List>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
-        <AccordionSummary   expandIcon={<MailIcon />} aria-controls="panel6a-content" id="panel6a-header">
-          <Typography>Contact us</Typography>
+        <AccordionSummary   aria-controls="panel6a-content" id="panel6a-header">
+          <Typography onClick={()=> handleDrawerClose("Contact")  }>Contact us</Typography>
         </AccordionSummary>      
       </Accordion>
       </Drawer>
     </Box>
+  
    
   );
 }

@@ -1,10 +1,11 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import Solar from '../Water/images/solar.png';
-import Wifi from '../Water/images/wifi.png';
-import Home from '../Water/images/home.jpg'
+import Parking from './images/parkingsystem.jpg'
+import Parkingcounter from './images/parkingcounter.jpg'
 import CardContent from '@mui/material/CardContent';
-import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
+
+import CardMedia from '@mui/material/CardMedia';
+import { Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
@@ -22,6 +23,7 @@ const Header = styled(Divider)(({ theme }) => ({
   textAlign: 'center',
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
+  margin:'50px 0px'
   
 
 
@@ -71,6 +73,22 @@ const MyCard = styled(Typography)(({ theme }) => ({
   },
 
 }))
+const MyCardmedia = styled(CardMedia)(({ theme }) => ({
+
+
+  [theme.breakpoints.up("xs")]: {
+
+      width:'200px',
+
+
+ },
+ [theme.breakpoints.up("md")]: {
+
+  width:'150px',
+ },
+
+
+}))
 
 const App = () => {
   return (
@@ -85,18 +103,19 @@ const App = () => {
           
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                <Grid  item xs={12} md={4} >
+                <Grid  item xs={12} sm={6} md={ 4 } >
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
-                      <img
-                      
-                        height="200"
-                        src={Home}
+                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
+                    <MyCardmedia
+                        component="img"
+                        image={Parking}
                         alt="green iguana"  
                       />
+                      </Grid>
                       <CardContent>
                         <Mytext gutterBottom component="div">
-                        PArking Counter system
+                        Parking Counter system
                         </Mytext>
                         <Mypara color="text.secondary">
                         <ul>
@@ -111,16 +130,17 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={4} >
+                  <Grid item xs={12} sm={6} md={4} >
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>
-                    <img
-                      
-                      height="200"
-                      src={Wifi}
-                      alt="green iguana"  
-                    />
+                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
+                      <MyCardmedia
+                        component="img"
+                        image={Parking}
+                        alt="green iguana"  
+                      />
+                      </Grid>
                       <CardContent>
                         <Mytext gutterBottom component="div">
                         Parking management System
@@ -138,16 +158,17 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={4} >
+                  <Grid item xs={12} sm={6} md={4} >
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >
-                    <img
-                      
-                      height="200"
-                      src={Solar}
-                      alt="green iguana"  
-                    />
+                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
+                    <MyCardmedia
+                        component="img"
+                        image={Parkingcounter}
+                        alt="green iguana"  
+                      />
+                      </Grid>
                       <CardContent>
                         <Mytext gutterBottom component="div">
                         Parking Billing System

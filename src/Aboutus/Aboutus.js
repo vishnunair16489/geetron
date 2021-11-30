@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
 import segment2img from '../Aboutus/images/geetron.jfif'
 import segment2hardware from '../Homepage/images/hardware.png'
@@ -9,17 +9,35 @@ import Sub2 from '../Aboutus/images/marquee2.png'
 import Sub3 from '../Aboutus/images/marquee3.png'
 import Sub4 from '../Aboutus/images/marquee4.png'
 import Marquee from "react-fast-marquee";
-import { Divider, Typography, Grid, Stack,Box,Hidden } from '@mui/material';
+import { Divider, Typography, Grid, Stack ,Hidden} from '@mui/material';
 
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
     justifyContent: "center",
     alignItems: "flex-start", 
-    direction:"row"
-
+    direction:"row",
+  
+  
+  
 }));
-const Mydiv = styled('div')(({ theme }) => ({
-   marginTop:'50px'
+const MyGridMain = styled(Grid)(({ theme }) => ({
+  justifyContent: "center",
+  alignItems: "flex-start", 
+  direction:"row",
+   backgroundColor:'#f0f0f0',
+  [theme.breakpoints.up("xs")]: {
+    marginTop:'-165px'
+
+  },
+   [theme.breakpoints.up("md")]: {
+    marginTop:'10px'
+
+  },
+  [theme.breakpoints.up("md")]: {
+   
+    marginTop:'1px'
+  },
+
 
 }));
 
@@ -48,13 +66,12 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 const Mytext = styled(Typography)(({ theme }) => ({
 
   fontSize: '1.0em',
-  textAlign: 'left',
+  textAlign: 'justify',
   minWidth: '10em',
   maxHeight:'20em',
   color: '#1268B3',
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
-  margin: "0px 30px",
 
 
 }))
@@ -63,9 +80,11 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
   fontFamily: 'SourceSansPro',
+  textAlign: 'justify',
+  padding:'10px',
   [theme.breakpoints.up("xs")]: {
   
-    margin: "0px 30px",
+    margin: "0px 20px",
   }, 
   [theme.breakpoints.up("md")]: {
    
@@ -118,20 +137,32 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
 
 
 const App = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
     return (
+
   
-      <MyGrid container spacing={2} >
+      <MyGridMain container spacing={2} >
         <Stack>
           <div data-aos="flip-left">
-            <MyDivider textAlign="center">About Us </MyDivider>
+          <Hidden mdDown>
+          <MyDivider textAlign="center">About Us </MyDivider>
+          </Hidden>
+           
           </div>
           <MyGrid container spacing={2} >
   
         <MypicGrid container xs={12} md={4}>
        
         </MypicGrid>
+        <Hidden mdUp>
+          <MyDivider textAlign="center">About Us </MyDivider>
+          </Hidden>
         <MyGrid item xs={12} md={6}>
-        <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+        <div  data-aos="fade-up"  data-aos-easing="ease-in-out-back"  data-aos-delay="200" >
             <Mypara>
 <p>Geetron is a division of the Western International Group that employs over 15,000 personnel which are spread across 12 countries. The Group continues to strengthen its presence across the Middle East, Africa, South Asia, Europe, and the subcontinent with new brands and divisions constantly enriching the portfolio. Mr. Basheer, Chairman of the group is proud to lead a young dynamic team. Geetron operates as the IoT division focused on delivering performance, quality, and innovation across various sectors. </p>
 
@@ -139,10 +170,10 @@ const App = () => {
 <p>With a strong focus on efficiency, the Geetron division is one of the fastest-growing suppliers of IoT products and services and is recognized as the leading IoT service With a portfolio ranging from home automation, community and waste management, parking, park, and resorts to name a few. Geetron is the trusted brand in IoT products and services provider, with a framework of sales, and customer service capabilities, Geetron is working with customers to offer a great range of products. </p>
 </Mypara>
             </div>
-            <Box sx={{ flexGrow: 1 }}>
+           
             <Grid container spacing={0}>
             <Grid  xs={12} sm={4} md={4}>
-              <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+            <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  data-aos-delay="200" >
                 <MyStackfirst spacing={2}>
                   <img src={segment2hardware} width="40" alt="Logo" />
                   <Mytext> Technology Innovator </Mytext>
@@ -151,7 +182,7 @@ const App = () => {
               </div>
               </Grid>
           <Grid item  xs={12} sm={4} md={4}>
-              <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+          <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  data-aos-delay="300" >
                 <MyStack spacing={2}>
                   <img src={segment2hconsulting} width="40" alt="Logo" />
                   <Mytext>Consultancy experts </Mytext>
@@ -161,7 +192,7 @@ const App = () => {
               </div>
               </Grid>
           <Grid item  xs={12} sm={4} md={4}>
-              <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="600" >
+          <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  data-aos-delay="400" >
                 <MyStack spacing={2}>
                   <img src={segment2custom} width="40" alt="Logo" />
                   <Mytext>Customized IoT projects</Mytext>
@@ -171,7 +202,7 @@ const App = () => {
               </div>
               </Grid>
               </Grid>
-            </Box>
+          
           
         </MyGrid>
         </MyGrid>
@@ -191,7 +222,7 @@ const App = () => {
           
       
       
-  </MyGrid>
+  </MyGridMain>
    
   
     );

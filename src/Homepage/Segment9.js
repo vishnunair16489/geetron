@@ -1,9 +1,10 @@
 import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
-import { Typography,Grid,Stack ,Divider,TextField,Button} from '@mui/material';
+import { Typography,Grid,Stack ,Divider,TextField} from '@mui/material';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import MyButtoncustom from '../ModifiedComponents/Button'
 const MyGrid = styled(Grid)(({ theme }) => ({  
       marginTop: "50px",
       justifyContent:"center",
@@ -49,14 +50,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       const PicGrid = styled(Grid)(({ theme }) => ({           
         marginTop: "10px",
       }));
-      const MyButton = styled(Button)(({ theme }) => ({           
-        marginLeft:"0.1em",
-        background: '#1268B3',
-        width:'10em',
-        borderRadius:5,
-        
-        
-      }));
+   
 
       const App = ()=>{
         useEffect(()=>{
@@ -64,7 +58,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
       
         },[]);
   return(  
-      <div  data-aos="zoom-in">
+      <div >
              <MyDivider textAlign="left">Reach to Us </MyDivider>
         
     <MyGrid container spacing={0.5} >
@@ -77,8 +71,9 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     </Grid>
      <PicGrid  container item xs={12} md={6}   >
     <Stack  direction="row" spacing={2}>
+      
      <MyStack  spacing={2}>
-        <TextField  sx={{ m: 1, width: '30ch' }}
+        <TextField  sx={{ m: 1, width: '30ch'}}
           id="outlined-required"
           label="Full Name"
         />
@@ -86,29 +81,34 @@ const MyGrid = styled(Grid)(({ theme }) => ({
          <TextField  sx={{ m: 1, width: '30ch' }}
           id="outlined-required"
           label="E-Mail"
-        />
+        /></MyStack>
+          <MyStack  spacing={2}>
          <TextField  sx={{ m: 1, width: '30ch' }}
           id="outlined-required"
           label="Phone Number"
         />
-         <TextField  sx={{ m: 1, width: '30ch' }}
+         <TextField  sx={{ m:0, width: '30ch' }}
           id="outlined-required"
           label="Country"
         />
         
          </MyStack>
-         <MyStack  spacing={2}    justifyContent="space-between"  alignItems="center">
-         <TextField  sx={{ m: 1, width: '30ch' }}
+       
+         </Stack>
+         <MyStack  spacing={3}    justifyContent="space-between"  alignItems="center">
+         <TextField  sx={{ m: 1, width: '64ch' }}
           id="outlined-multiline-static"
           label="Message"
           multiline
-          rows={4}
+          rows={10}
         />
-        <MyButton variant="contained" >Contact Us</MyButton>
+     
          </MyStack>
-         </Stack>
+      
     </PicGrid>
-   
+      <MyStack  spacing={3}    justifyContent="flex-end"  alignItems="flex-end">
+         <MyButtoncustom/>
+         </MyStack>
   
   </MyGrid>
    </div>

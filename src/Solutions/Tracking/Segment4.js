@@ -84,7 +84,7 @@ const App = () => {
           
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                <Grid  item xs={12} md={6} >
+              <Grid item xs={12} sm={6} md={6} >
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
                       <img
@@ -113,7 +113,7 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={6} >
+                  <Grid item xs={12} sm={6} md={6} >
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>

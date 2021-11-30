@@ -1,10 +1,10 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import Solar from '../Water/images/solar.png';
-import Wifi from '../Water/images/wifi.png';
-import Home from '../Water/images/home.jpg'
+import Airsensor from '../Industry/images/airsensor.png';
+import Co2 from '../Industry/images/co2.png';
+import Waterquality from '../Industry/images/waterquality.png'
 import CardContent from '@mui/material/CardContent';
-import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
+import {  Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
@@ -69,13 +69,13 @@ const App = () => {
           
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="center" spacing={0}>
-                <Grid  item xs={12} md={4} >
+                <Grid container   justifyContent="center"  alignItems="center" item xs={12} sm={6} md={4} >
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
                       <img
                       
                         height="200"
-                        src={Home}
+                        src={Airsensor}
                         alt="green iguana"  
                       />
                       <CardContent>
@@ -88,14 +88,15 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={4} >
+                  
+                  <Grid container   justifyContent="center"  alignItems="center" item xs={12}  sm={6} md={4} >
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCard>
                     <img
                       
                       height="200"
-                      src={Wifi}
+                      src={Co2}
                       alt="green iguana"  
                     />
                       <CardContent>
@@ -108,14 +109,14 @@ const App = () => {
                     </MyCard>
                   </div>
                   </Grid>
-                  <Grid item xs={12} md={4} >
+                  <Grid container   justifyContent="center"  alignItems="center" item xs={12}  sm={6} md={4} >
                  
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <MyCard >
                     <img
                       
                       height="200"
-                      src={Solar}
+                      src={Waterquality}
                       alt="green iguana"  
                     />
                       <CardContent>
@@ -129,14 +130,14 @@ const App = () => {
                   </div>
                   
                 </Grid>
-                <Grid item xs={12} md={4} >
+                <Grid container   justifyContent="center"  alignItems="center" item xs={12}  sm={6} md={4} >
                  
                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                    <MyCard >
                    <img
                      
                      height="200"
-                     src={Solar}
+                     src={Waterquality}
                      alt="green iguana"  
                    />
                      <CardContent>

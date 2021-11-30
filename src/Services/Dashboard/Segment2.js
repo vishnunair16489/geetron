@@ -7,7 +7,7 @@ import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
-  alignItems: "flex-start", 
+  alignItems: "center", 
 
 
 }));
@@ -46,11 +46,11 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 
 const Mypara = styled(Typography)(({ theme }) => ({
 
-
+    textAlign: 'justify',
   fontFamily: 'SourceSansPro',
   [theme.breakpoints.up("xs")]: {
   
-    margin: "0px 10px",
+    padding: "0px 20px",
   }, 
   [theme.breakpoints.up("md")]: {
    
@@ -63,25 +63,6 @@ const Mypara = styled(Typography)(({ theme }) => ({
 }))
 
 
-const MyStackfirst = styled(Stack)(({ theme }) => ({
-
- 
-  maxWidth: '1980px',
-  [theme.breakpoints.down("xs")]: {
-    marginTop: "100px",
-    marginLeft: "15px",
-  },
-   [theme.breakpoints.down("md")]: {
-    marginTop: "60px",
-    marginLeft: "15px",
-  },
-  [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
-    marginLeft: "15px",
-  },
-  
-
-}))
 
 const App = () => {
   return (
@@ -103,12 +84,13 @@ const App = () => {
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
             <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-              <MyStackfirst spacing={2}>
+              <Stack spacing={2}>
               
                 <Mypara>An IoT dashboard is a user interface that allows users to connect, monitor, and interact in real-time with IoT-connected devices. Varies Ui elements like graphs charts and other tools can be used to fetch various information. Visualization of your device data and connected device information can be managed using an IoT dashboard</Mypara>
                 <Mypara>Customizing of dashboard without altering the core functionality of the IoT platform makes IoT dashboard easy to use along with real-time upgrades. Sending and retrieving data in real-time from connected devices can be done using Dashboard. Graphical data representation, reporting, analysis are some of the basic features that are included inside the Dashboard.</Mypara>
                 <Grid container direction="row" spacing={0}>
                 <Grid item  xs={12}  sm={6} md={6}>
+                <Mypara>
                 <p> <b>Our Features:</b>
                   <ul>
                   <li>Design custom IoT dashboards</li>
@@ -120,8 +102,10 @@ const App = () => {
                   
                   </ul>
                   </p>
+                  </Mypara>
                   </Grid>
                   <Grid item  xs={12}  sm={6} md={6}>
+                  <Mypara>
                   <p>
                <b>Benefits</b>
                <p>Geetrons highly customizable dashboard gives you insight information about all of the key metrics </p>
@@ -138,9 +122,10 @@ const App = () => {
                     
                   
                   </ul></p>
+                  </Mypara>
                   </Grid>
                   </Grid>
-              </MyStackfirst>
+              </Stack>
             </div>
             </Grid>
        

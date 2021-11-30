@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Community/images/waste.jpg'
+import segment2img from '../Community/images/waste.png'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -45,8 +45,9 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 
 const Mypara = styled(Typography)(({ theme }) => ({
 
-
+  extAlign:'justify',
   fontFamily: 'SourceSansPro',
+  padding:'10px',
   [theme.breakpoints.up("xs")]: {
   
     margin: "0px 10px",

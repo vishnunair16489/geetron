@@ -48,9 +48,10 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
   fontFamily: 'SourceSansPro',
+  textAlign: 'justify',
   [theme.breakpoints.up("xs")]: {
   
-    margin: "0px 10px",
+    padding: "0px 20px",
   }, 
   [theme.breakpoints.up("md")]: {
    
@@ -62,26 +63,6 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 }))
 
-
-const MyStackfirst = styled(Stack)(({ theme }) => ({
-
- 
-  maxWidth: '1980px',
-  [theme.breakpoints.down("xs")]: {
-    marginTop: "100px",
-    marginLeft: "15px",
-  },
-   [theme.breakpoints.down("md")]: {
-    marginTop: "60px",
-    marginLeft: "15px",
-  },
-  [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
-    marginLeft: "15px",
-  },
-  
-
-}))
 
 const App = () => {
   return (
@@ -103,17 +84,19 @@ const App = () => {
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
             <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-              <MyStackfirst spacing={2}>
+              <Stack spacing={2}>
               
                  <Grid container direction="row" spacing={0}>
                 <Grid item  xs={12}  sm={12} md={12}>
               
-                 <p>Geetron R&D  is well equipped with a
+                 <Mypara>Geetron R&D  is well equipped with a
 unique development process, helping the clients to
 fulfill their ideas and requirements
 
-                  </p>
-                  <p> The Services offered by Geetron mainly include Systems
+
+                  </Mypara>
+                  <br></br>
+                  <Mypara> The Services offered by Geetron mainly include Systems
 Design a Engineering, Equipment Installation and
 Commissioning including Support for On Board
 Systems, Maintenance of Electronic and Electrical
@@ -123,19 +106,17 @@ Programming and System Commissioning and Systems
 Integration Activities.
 
 
-                  </p>
-                  <p>
+                  </Mypara>
+                  <br></br>
+                  <Mypara>
                   Our software team is expertised in developing low-level device drivers and board support packages. We can integrate internet connectivity for any device using Wifi , Ethernet or GPRS. We also integrate Bluetooth , Zigbee, CAN, MODBUS and LoRa to the application software. We also   develop a touch screen HMI . We do scripting in python and Php for web applications like data   logging and gps tracking.
             
-                 </p>
+                 </Mypara>
+                 <br></br>
                   </Grid>
                 
-                  <Grid item  xs={12}  sm={12} md={12}>
-                
-               
                   </Grid>
-                  </Grid>
-              </MyStackfirst>
+              </Stack>
             </div>
             </Grid>
        
@@ -144,13 +125,14 @@ Integration Activities.
             </Box>
       </MyGrid>
       </MyGrid>
+      <MyDivider/>
       <MyGrid container spacing={2} >
-      <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
+      <Grid  item  xs={12}  sm={6} md={4}>
+      <Mypara>
                <b>Our major Services</b>
             
-                 </p>
-                 <p>
+               </Mypara>
+                 <Mypara>
                    <ul>
                      <li>Electronic Design, Manufacturing, Products and Systems Integration Services </li>
                      <li>Prototyping, Sourcing, Turnkey Manufacturing and Support Services</li>
@@ -161,16 +143,17 @@ Integration Activities.
                      <li> Pcb Designing and Prototyping..</li>
                    </ul>
 
-</p>
+</Mypara>
                   </Grid>
-                  <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
+                  <Grid item  xs={12}  sm={6} md={4}>
+                  <Mypara>
                <b>Hardware Design and Development</b>
-            
-                 </p>
-                 <p>  Our digital design experience includes system-level, board-level and FPGA-Level design. The  the hardware team consists of the hardware engineers, supported by the PCB, Reliability andRegulatory Compliance Engineers. We can integrate communication like Wifi, Bluetooth, Lora, CAN, RS232, RS485, 12C, SPI, TCP IP etc to any device. Which helps customers with flexible connectivity  solutions.
+           
+               </Mypara>
+               <br></br>
+                 <Mypara>  Our digital design experience includes system-level, board-level and FPGA-Level design. The  the hardware team consists of the hardware engineers, supported by the PCB, Reliability andRegulatory Compliance Engineers. We can integrate communication like Wifi, Bluetooth, Lora, CAN, RS232, RS485, 12C, SPI, TCP IP etc to any device. Which helps customers with flexible connectivity  solutions.
 
-</p>
+</Mypara>
                   </Grid>
                   </MyGrid>
       </Stack>

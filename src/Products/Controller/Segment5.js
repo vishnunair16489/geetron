@@ -1,86 +1,148 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import img from '../Switch/images/touchswitch.jpg'
-import { Typography, Grid, Stack,Box ,Hidden} from '@mui/material';
+
+import img from '../Controller/images/Masterloopcontroller.png'
+
+import {Divider, Grid, Stack,Box ,Hidden} from '@mui/material';
 
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 
+  padding:'40px 10px',
+  background:'#82b1ff'
 
+}));
+const Myp = styled('p')(({ theme }) => ({
+ color:'white',
+ 
+ fontFamily: 'SourceSansPro',
+ padding:'10px',
+ [theme.breakpoints.up("xs")]: {
+ 
+   margin: "0px 20px",
+ }, 
+ [theme.breakpoints.up("md")]: {
+  
+  
+   margin: "0px",
+ },
 
 }));
 
+const MyDivider = styled(Divider)(({ theme }) => ({
+  
+    
+  minWidth: '10em',
+  color: 'white',
+  textAlign: 'center',
+  margin: "50px 0px",
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  [theme.breakpoints.down("xs")]: {
+  
+    fontSize: '1.2em',
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    fontSize: '1.5em',
+  },
+
+}));
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
-  height:'300px',
  
-}));
+  height:'300px',
+  [theme.breakpoints.up("xs")]: {
+    justifyContent: "center",
+    alignItems: "flex-end", 
+   [theme.breakpoints.up("md")]: {
+  
+    justifyContent: "center",
+    alignItems: "center", 
+  },
 
+  [theme.breakpoints.up("md")]: {
+   
+    justifyContent: "center",
+    alignItems: "center", 
+  },
+
+ 
+  }}));
+  const MyGridmain = styled(Grid)(({ theme }) => ({
+ 
+    background:'#82b1ff'
+  
+  }));
 
 const App = () => {
   return (
 
   
       <Stack>
-       
+          <MyGridmain>
+        <MyDivider textAlign="left">Master Loop Controller</MyDivider>
         <MyGrid container spacing={2} >
-        <Hidden xsUp>
-      <MypicGrid container xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
-     
+      
+       
+          <Hidden mdUp>
+          <div data-aos="flip-left">
+        
+       
+      <MypicGrid container  item justifyContent= "flex-end" alignItems= "flex-end" xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
+      </div>
           </Hidden>
-    
-    
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+      <div data-aos="fade-in" data-aos-easing="ease-out-quart" data-aos-delay="200" >
          
           </div>
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-          <div data-aos="flip-left">
-          <p>Master Loop Controller</p>
-        </div>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+         
+          
              
 
               
                      <Grid container direction="row" spacing={0}>
-                <Grid item  xs={12}  sm={6} md={6}>
-                <p> <b>Features</b>
-                  <ul>
-                  <li>ID setting switch present inside</li>
-                  <li>MODERN & ARTISTIC DESIGN</li>
-                    <li>GREAT STANDARD</li>
-                    <li>EASY INSTALLATION</li>
-                    <li>SAFETY PROTECTION</li>
-                    <li>OUR SERVICES</li>
+                    
+                <Grid item  xs={12}  sm={6} md={6}> 
+                <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                <Myp> <b>Features</b>
+                <ul>
+                  <li>Work directly with geetron thermostat</li>
+                    <li>Address setting switch present inside</li>
                   
                   </ul>
-               </p>
+               </Myp> 
+                 </div>
                   </Grid>
+               
+              
                   <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
+                  <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                  <Myp>
                <b>Specification</b>
-                  <ul>
+               <ul>
 
-                   <li>Supply: 230V AC 50 50Hz</li>
-                    <li>Output:<ul>
-                      <li>8A No Relay-2 Output</li>
-                      <li>4 Loop sense input</li>
-                      <li>Slave reset Switch</li>
-                      </ul></li>
-                  
-                    <li>Interface: RS485 Modbus RTU </li>
-                    <li>Working temperature: -20~+70℃</li>
-                    
-                  
-                  </ul></p>
+<li>Supply: 230V AC 50 50Hz</li>
+ <li>Output:8A No Relay-2 Output,4 Loop sense input,Slave reset Switch</li>
+   
+
+ <li>Interface: RS485 Modbus RTU </li>
+ <li>Working temperature: -20~+70℃</li>
+ 
+
+</ul></Myp> 
+                  </div>
                   </Grid>
+                   
                   </Grid>
                
                
-            </div>
+          
             </Grid>
        
       
@@ -89,11 +151,15 @@ const App = () => {
       </MyGrid>
       
       <Hidden mdDown>
-      <MypicGrid container xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
+    
+        
+     
+      <MypicGrid container  item justifyContent= "center" alignItems= "center" xs={12} md={4}>  <div data-aos="flip-left"><img src={img} height='300' alt='img'/>   </div></MypicGrid>
      
           </Hidden>
     
       </MyGrid>
+      </MyGridmain>
       </Stack>
 
  

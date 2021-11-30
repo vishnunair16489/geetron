@@ -1,91 +1,202 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
-import Home from '../Hotel/images/noimage.jpg'
+import Box from '@mui/material/Box';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Home from '../Hotel/images/noimage.jpg';
 
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  '& .MuiDialogContent-root': {
-    padding: theme.spacing(2),
-  },
-  '& .MuiDialogActions-root': {
-    padding: theme.spacing(1),
-  },
+import Parralex from './images/parallex.jpg'
+
+import { styled } from '@mui/material/styles';
+
+import { Grid, Stack, Divider,Hidden } from '@mui/material';
+const MyGrid = styled(Grid)(({ theme }) => ({
+  justifyContent: "center",
+  alignItems: "flex-start", 
+  padding:'40px 10px',
+ 
+ 
+  
+
+}));
+const MyGridmain = styled(Grid)(({ theme }) => ({
+ 
+  background: `url(${Parralex})`,
+
 }));
 
-const BootstrapDialogTitle = (props) => {
-  const { children, onClose, ...other } = props;
 
-  return (
-    <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
-      {children}
-      {onClose ? (
-        <IconButton
-          aria-label="close"
-          onClick={onClose}
-          sx={{
-            position: 'absolute',
-            right: 8,
-            top: 8,
-            color: (theme) => theme.palette.grey[500],
-          }}
-        >
-          <CloseIcon />
-        </IconButton>
-      ) : null}
-    </DialogTitle>
-  );
-};
+const MyDivider = styled(Divider)(({ theme }) => ({
+  
+    
+  minWidth: '10em',
+  color: 'black',
+  textAlign: 'center',
+  margin: "50px 0px",
+  fontFamily: 'SourceSansPro',
+  fontWeight: 'bold',
+  [theme.breakpoints.down("xs")]: {
+  
+    fontSize: '1.2em',
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    fontSize: '1.5em',
+  },
 
-BootstrapDialogTitle.propTypes = {
-  children: PropTypes.node,
-  onClose: PropTypes.func.isRequired,
-};
-
-export default function CustomizedDialogs() {
-  const [open, setOpen] = React.useState(true);
+}));
+const MypicGrid = styled(Grid)(({ theme }) => ({
 
  
-  const handleClose = () => {
-    setOpen(false);
+  height:'300px',
+  [theme.breakpoints.up("xs")]: {
+    justifyContent: "center",
+    alignItems: "flex-end", 
+   [theme.breakpoints.up("md")]: {
+  
+    justifyContent: "center",
+    alignItems: "center", 
+  },
+
+  [theme.breakpoints.up("md")]: {
+   
+    justifyContent: "center",
+    alignItems: "center", 
+  },
+
+ 
+  }}));
+
+  const Myp = styled('p')(({ theme }) => ({
+ 
+ 
+    fontFamily: 'SourceSansPro',
+    textAlign: 'justify',
+    color:'black',
+    padding:'10px',
+    [theme.breakpoints.up("xs")]: {
+    
+      margin: "0px 20px",
+    }, 
+    [theme.breakpoints.up("md")]: {
+     
+     
+      margin: "0px",
+    },
+   }));
+
+export default function SwipeableTemporaryDrawer(props) {
+  const [state, setState] = React.useState({
+    bottom: true,
+
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event &&
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
   };
 
-  return (
-    <div>
-    
-      <BootstrapDialog
-        onClose={handleClose}
-        aria-labelledby="customized-dialog-title"
-        open={open}
+  const list = (anchor) => (
+    <div data-aos="fade-up" data-aos-easing="ease-out-quart" >
+      <Box
+        sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+        role="presentation"
+        onClick={toggleDrawer(anchor, false)}
+        onKeyDown={toggleDrawer(anchor, false)}
       >
-        <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-        Switch
-        </BootstrapDialogTitle>
-        <DialogContent dividers>
-        <img
-                      
-                      height="200"
-                      src={Home}
-                      alt="green iguana"  
-                    />
-             <ul>
-               <li>Toggle Switch</li>
-               <li>Capacitive touch Button Switch</li>
-               <li>TouchScrenn Capacitive Touch</li>
-             </ul>
-        </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            OK
-          </Button>
-        </DialogActions>
-      </BootstrapDialog>
+       
+
+      </Box>
+    </div>
+  );
+
+  return (
+    <div >
+
+      <React.Fragment key={'bottom'}>
+      <div data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+        <SwipeableDrawer
+          anchor={'bottom'}
+          open={state['bottom']}
+          onClose={toggleDrawer('bottom', false)}
+          onOpen={toggleDrawer('bottom', true)} >
+               
+                <Stack>
+        <MyGridmain>
+        <MyDivider textAlign="left">Switch</MyDivider>
+        <MyGrid container spacing={2} >
+      
+       
+          <Hidden mdUp>
+          <div data-aos="flip-left">
+        
+       
+      <MypicGrid container xs={12} md={4}><img src={Home} height='300' alt='img'/></MypicGrid>
+      </div>
+          </Hidden>
+      <MyGrid item xs={12} md={6}>
+      <div data-aos="fade-in" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+         
+          </div>
+          <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+          <Grid item  xs={12}  sm={12} md={12}>
+         
+          
+             
+
+              
+                     <Grid container direction="row" spacing={0}>
+                    
+                <Grid item  xs={12}  sm={6} md={6}> 
+                <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                <Myp> <b>Features</b>
+                <ul>
+              <li>Toggle Switch</li>
+              <li>Capacitive touch Button Switch</li>
+              <li>TouchScrenn Capacitive Touch</li>
+            </ul>
+               </Myp> 
+                 </div>
+                  </Grid>
+               
+              
+                
+                   
+                  </Grid>
+               
+               
+          
+            </Grid>
+       
+      
+            </Grid>
+            </Box>
+      </MyGrid>
+      
+      <Hidden mdDown>
+      <div data-aos="flip-left">
+        
+     
+      <MypicGrid container xs={12} md={4}><img src={Home} height='300' alt='img'/></MypicGrid>
+        </div>
+          </Hidden>
+    
+      </MyGrid>
+      </MyGridmain>
+      </Stack>
+          {list('bottom')}  
+        
+        </SwipeableDrawer>
+        </div>
+      </React.Fragment>
+
     </div>
   );
 }

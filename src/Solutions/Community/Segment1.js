@@ -1,6 +1,6 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
-import park from '../Community/images/park.jpg';
+import park from '../Community/images/community.jpg';
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css';
@@ -8,19 +8,19 @@ import 'react-slideshow-image/dist/styles.css';
 import { Button, Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
-    park,
+    park
     
   ];
   const header = [
-    "Community",
+    "Community"
    
   ];
   const body = [
-    "Disabled person alarm system",
+    "Disabled person alarm system"
    
   ];
   const zoomInProperties = {
-    indicators: true,
+    indicators: false,
     scale: 0.8,
     autoplay: false,
     duration: 3000,

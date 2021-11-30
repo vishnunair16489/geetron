@@ -2,6 +2,7 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import Logo from  '../menu/images/logo.png';
 
+import Segment9 from '../Homepage/Segment10';
 import Fb from  '../Homepage/images/facebook.png';
 import Youtube from  '../Homepage/images/youtube.png';
 import Linkin from  '../Homepage/images/linkedin.png';
@@ -11,17 +12,17 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import {Hidden,Stack,Divider ,Link,CssBaseline} from '@mui/material';
 
+
 const MyGrid = styled(Grid)(({ theme }) => ({  
      marginTop: "28px",
       alignItems:"center",
-      backgroundColor:"#EEEEEE",
       backgroundPosition:'center',
      
       
   }));
 
   const MyStack = styled(Stack)(({ theme }) => ({           
-    margin: "10px 0px 0px 0px",
+  
     maxWidth:"1200px",
    
   }));
@@ -69,7 +70,7 @@ const App = ()=>{
   return(  
       <MyGrid>
        <CssBaseline/>
-            <Hidden smDown>
+            <Hidden mdDown>
           
           <MyStack style={{marginLeft:'50px'}} direction="row"  spacing={5}>
           <MyStack  spacing={5}></MyStack>
@@ -114,6 +115,7 @@ const App = ()=>{
              
            
               </MyStack>
+              <Segment9/>
               </MyStack>
               <Header textAlign="center">- </Header>
 

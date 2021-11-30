@@ -1,8 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import segment2img from '../Community/images/panic.jpg'
-import { Divider,  Grid, Stack ,Chip,Avatar} from '@mui/material';
-
+import { Divider,  Grid, Stack ,Avatar} from '@mui/material';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
@@ -30,22 +29,6 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 
 }));
 
-const MypicGrid = styled(Grid)(({ theme }) => ({
-
-    borderRadius:"50%",
-  
-   [theme.breakpoints.up("xs")]: {
-    
-    borderRadius:"0%"
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    borderRadius:"50%"
-  },
-  
-    
-  }));
 
 const App = () => {
   return (
@@ -56,12 +39,24 @@ const App = () => {
           <MyDivider textAlign="left">Modules</MyDivider>
         </div>
         <MyGrid container spacing={2} >
+        <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-delay="100" >
+       <a href='#section5'>  <Avatar alt="Remy Sharp" src={segment2img} sx={{ width: 100, height:100   }} />  </a>
+        </div>
+        <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-delay="300" >
         <Avatar alt="Remy Sharp" src={segment2img} sx={{ width: 100, height:100   }} />
-        <Chip label="Clickable" onClick={null} />
-        <Chip label="Clickable" onClick={null} />
-        <Chip label="Clickable" onClick={null} />
-        <Chip label="Clickable" onClick={null} />
-        <Chip label="Clickable" onClick={null} />
+        </div>
+        <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-delay="500" >
+        <Avatar alt="Remy Sharp" src={segment2img} sx={{ width: 100, height:100   }} />
+        </div>
+        <div data-aos="fade-up"  data-aos-easing="ease-in-back" data-aos-delay="700" >
+        <Avatar alt="Remy Sharp" src={segment2img} sx={{ width: 100, height:100   }} />
+        </div>
+        <div data-aos="fade-up"  data-aos-easing="ease-in-back" data-aos-delay="900" >
+        <Avatar alt="Remy Sharp" src={segment2img} sx={{ width: 100, height:100   }} />
+        </div>
+        <div data-aos="fade-up"  data-aos-easing="ease-in-back" data-aos-delay="1100" >
+        <Avatar alt="Remy Sharp" src={segment2img} sx={{ width: 100, height:100   }} />
+        </div>
       </MyGrid>
       </Stack>
 

@@ -47,7 +47,8 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
   fontFamily: 'SourceSansPro',
-  
+  extAlign:'justify',
+  padding:'10px',
   [theme.breakpoints.up("xs")]: {
   
     margin: "0px 10px",

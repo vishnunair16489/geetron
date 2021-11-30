@@ -1,21 +1,40 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import Basic from '../Ghomes/images/basic.png'
+import Basic from '../Ghomes/images/smarthswitch.png'
 import Standard from '../Ghomes/images/standard.png'
 import Pro from '../Ghomes/images/pro.png'
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
+import {  Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
-  alignItems: "center",
+  padding:'40px 10px',
+  background:'#82b1ff',
   justifyContent: "center",
-
-
+  alignItems: "flex-start", 
+ 
 
 }));
+const MypicGrid = styled(Grid)(({ theme }) => ({
+
+ 
+  [theme.breakpoints.up("xs")]: {
+    justifyContent: "center",
+    alignItems: "flex-end", 
+   [theme.breakpoints.up("md")]: {
+  
+    justifyContent: "center",
+    alignItems: "center", 
+  },
+
+  [theme.breakpoints.up("md")]: {
+   
+    justifyContent: "center",
+    alignItems: "center", 
+  },
+
+ 
+  }}));
 
 const Header = styled(Divider)(({ theme }) => ({
 
@@ -39,7 +58,7 @@ const Mytext = styled(Typography)(({ theme }) => ({
   fontSize: '1.0em',
   textAlign: 'left',
   minWidth: '10em',
-  color: '#1268B3',
+  color: 'white',
   fontWeight: 'bold',
   fontFamily: 'SourceSansPro'
 }));
@@ -47,6 +66,7 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
   fontSize: '0.9em',
   textAlign: 'left',
+  color:'white',
  
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
@@ -65,7 +85,6 @@ const Mypara = styled(Typography)(({ theme }) => ({
 const MyCard = styled(Typography)(({ theme }) => ({
 
  
-   backgroundColor:'white ',
    [theme.breakpoints.down("md")]: {
     maxWidth:'600px',
     mimWidth:'600px',
@@ -90,15 +109,15 @@ const App = () => {
           
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
-                <Grid  item  xs={12} sm={4} md={4}>
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
+                <Grid   item  xs={12} sm={6} md={4}>
+               
                     <MyCard >
-                      <CardMedia
-                        component="img"
-                        height="200"
-                        image={Basic}
-                        alt="green iguana"  
-                      />
+                    <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-quart" >
+                    <MypicGrid  container   justifyContent="center"  alignItems="center">
+                      <img src={Basic} width='150' alt='img'/>
+                      </MypicGrid>
+                      </div>
+                      <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="100" >
                       <CardContent>
                         <Mytext gutterBottom component="div">
                          LITE
@@ -112,24 +131,22 @@ const App = () => {
                         </ul>
                         </Mypara>
                       </CardContent>
-                      <CardActions>
-                        <Button size="small">Learn More</Button>
-                      </CardActions>
+                     </div>
                     </MyCard>
-                  </div>
-                  </Grid>
-                  <Grid item  xs={12} sm={4} md={4}>
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                  </Grid>
+                  <Grid item  xs={12} sm={6} md={4}>
+                 
+                
                     <MyCard>
-                      <CardMedia
-                        component="img"
-                        height="200"
-                        image={Standard}
-                        
-                        alt="green iguana"
-                      />
-                      <CardContent>
+                    <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="300" >
+                    <MypicGrid  container   justifyContent="center"  alignItems="center">
+                      <img src={Standard} width='140' alt='img'/>
+                      </MypicGrid> 
+                        </div>
+                      <CardContent> 
+                      
+                         <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                         <Mytext gutterBottom component="div">
                           Standard
                         </Mytext>
@@ -141,23 +158,22 @@ const App = () => {
                           
                         </ul>            
                         </Mypara>
+                        </div>
                          </CardContent>
-                      <CardActions>
-                        <Button size="small">Learn More</Button>
-                      </CardActions>
-                    </MyCard>
-                  </div>
+                                      </MyCard>
+                
                   </Grid>
-                  <Grid item  xs={12} sm={4} md={4}>
+                  <Grid item  xs={12} sm={6} md={4}>
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                
                     <MyCard >
-                      <CardMedia
-                        component="img"
-                        height="200"
-                        image={Pro}
-                        alt="green iguana"
-                      />
+                    <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="600" >
+                    <MypicGrid  container   justifyContent="center"  alignItems="center">
+                    
+                      <img src={Pro} width='150' alt='img'/>
+                      </MypicGrid> 
+                       </div>
+                      <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="800" >
                       <CardContent>
                         <Mytext gutterBottom component="div">
                           Pro
@@ -170,11 +186,9 @@ const App = () => {
                         </ul>     
                         </Mypara>
                       </CardContent>
-                      <CardActions>
-                        <Button size="small">Learn More</Button>
-                      </CardActions>
+                      </div>
                     </MyCard>
-                  </div>
+                
                 </Grid>
               </Grid>
             </Box>

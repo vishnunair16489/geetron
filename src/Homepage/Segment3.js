@@ -19,8 +19,6 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 }));
 const MyCardContent = styled(CardContent)(({ theme }) => ({
   background:'white'
-
-
 }));
 
 const Header = styled(Divider)(({ theme }) => ({
@@ -46,16 +44,12 @@ const Mytext = styled(Typography)(({ theme }) => ({
   textAlign: 'left',
   minWidth: '10em',
   color: '#1268B3',
-  fontWeight: 'bold',
-  fontFamily: 'SourceSansPro'
 }));
 const Mypara = styled(Typography)(({ theme }) => ({
 
   fontSize: '0.9em',
-  textAlign: 'left',
- 
-  fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
+  textAlign: 'justify',
+  
   [theme.breakpoints.down("xs")]: {
     width:'600px',
    },
@@ -71,13 +65,11 @@ const Mysubtitle = styled(Typography)(({ theme }) => ({
   fontSize: '1.0em',
   textAlign: 'center',
   maxWidth: '1100px',
-  fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
   color: '#FFFFFF',
 }))
 
 const MyCard = styled(Typography)(({ theme }) => ({
-
+ 
  
    [theme.breakpoints.down("md")]: {
     maxWidth:'600px',
@@ -97,33 +89,33 @@ const App = () => {
         <MyGrid container>
 
           <MyStack spacing={2}>
-            <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
+            <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-out-back" >
               <Header textAlign="center">Applications of IoT Technology </Header>
             </div>
-            <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+            <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="200" >
               <Mysubtitle>IoT transforms data to productivity in any scenario. Discover now all IoT Solutions and future applications that we can offer to your company.</Mysubtitle>
             </div>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
               <Grid item  xs={12} sm={4} md={4}>
             
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-                  <Box sx={{ boxShadow: 10 }}>
-                    <MyCard >
-                      <CardMedia   sx={{  borderRadius: 5}}
-        
+                  <div style={{borderRadius: 5}} data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back" >
+                  <Box>
+                    <MyCard sx={{ boxShadow: 10 }} >
+                      <CardMedia  
+     
                         component="img"
                         height="200"
                         image={water}
                       
                         alt="green iguana"  
                       />
-                      <MyCardContent>
+                      <MyCardContent >
                         <Mytext gutterBottom component="div">
-                          IoT wireless irrigation solution
+                         Smart Community
                         </Mytext>
                         <Mypara color="text.secondary">
-                        IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers by increasing crop yield, raising productivity, and reducing the consumption of agricultural inputs
+                        We provide sustainable services required to meet this urban influx effectively. We have a wide product range suitable for managing communities and districts. We have enginered varoius solutons  
                         </Mypara>
                          <CardActions>
                         <Button size="small">Learn More</Button>
@@ -137,10 +129,10 @@ const App = () => {
                   </Grid>
                   <Grid item  xs={12} sm={4} md={4}>
                 
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                  <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="200" >
                   <Box sx={{ boxShadow: 10 }}>
                     <MyCard>
-                      <CardMedia  sx={{  borderRadius: 5}}
+                      <CardMedia 
                         component="img"
                         height="200"
                         image={parking}
@@ -166,10 +158,10 @@ const App = () => {
                   </Grid>
                   <Grid item  xs={12} sm={4} md={4}>
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                  <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="400" >
                   <Box sx={{ boxShadow: 10 }}>
                     <MyCard >
-                      <CardMedia  sx={{  borderRadius: 5}}
+                      <CardMedia 
                         component="img"
                         height="200"
                         image={guest}
@@ -177,10 +169,10 @@ const App = () => {
                       />
                       <MyCardContent>
                         <Mytext gutterBottom component="div">
-                          Geetron GRMS
+                          Smart GRMS
                         </Mytext>
                         <Mypara color="text.secondary">
-                          <p>Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.</p>
+                         Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.
 
                         </Mypara>
                         <CardActions>

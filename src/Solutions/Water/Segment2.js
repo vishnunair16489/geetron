@@ -1,7 +1,8 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Ghomes/images/banner.png'
-import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
+import smartimg from './images/irrigationpc.png';
+import smartimg1 from './images/irrigationsmart.jpg';
+import { Divider, Typography, Grid, Stack,Box,Hidden } from '@mui/material';
 
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
@@ -13,10 +14,18 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
-  backgroundImage: `url(${segment2img})`,
+  
   backgroundSize:'cover',
   height:'300px',
- 
+  [theme.breakpoints.down("md")]: {
+  
+    backgroundImage: `url(${smartimg1})`,
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    backgroundImage: `url(${smartimg})`,
+  },
 
   
 }));
@@ -47,6 +56,7 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
   fontFamily: 'SourceSansPro',
+  textAlign:'justify',
   [theme.breakpoints.up("xs")]: {
   
     margin: "0px 10px",
@@ -71,11 +81,11 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
     marginLeft: "15px",
   },
    [theme.breakpoints.down("md")]: {
-    marginTop: "60px",
+   
     marginLeft: "15px",
   },
   [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
+   
     marginLeft: "15px",
   },
   
@@ -92,12 +102,16 @@ const App = () => {
         </div>
         <MyGrid container spacing={2} >
       
-      <MypicGrid container xs={12} md={4}></MypicGrid>
+        <Hidden mdUp>
+    
+        
+     
+    <MypicGrid container xs={12} md={4}></MypicGrid>
+    
+        </Hidden>
     
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
+   
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
@@ -115,6 +129,16 @@ Future of irrigation is now with wireless irrigation systems by using the latest
             </Grid>
             </Box>
       </MyGrid>
+     
+    
+      <Hidden mdDown>
+    
+        
+     
+    <MypicGrid container xs={12} md={4}></MypicGrid>
+    
+        </Hidden>
+    
       </MyGrid>
       </Stack>
 
