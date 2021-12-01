@@ -7,12 +7,12 @@ import Segment1 from '../Homepage/Segment1';
 import Segment2 from '../Homepage/Segment2';
 import Segment3 from '../Homepage/Segment3';
 import Segment5 from '../Homepage/Segment5';
+import Segment4 from '../Homepage/Segment4';
 import Segment8 from '../Homepage/Segment8';
 import Parralex from '../Homepage/images/parallex.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Box } from '@mui/system';
-
 
 
 const Mydivsegment3 = styled(Box)(({ theme }) => ({
@@ -41,6 +41,7 @@ export default function ElevateAppBar(props) {
     <div style={{  backgroundColor:'#f0f0f0'}}>
       <Segment1 />
       <Segment2 />
+      <Segment4 />
       <Mydivsegment3 >
 
         <Segment3 />

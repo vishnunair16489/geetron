@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Dashboard/images/dashboard.png'
+import segment2img from '../Dashboard/images/dashboardright.png'
 
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
@@ -15,7 +15,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
-  backgroundSize:'cover',
+  backgroundSize:'contain',
+  backgroundRepeat:'no-repeat',
   height:'300px',
  
 

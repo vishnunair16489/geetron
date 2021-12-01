@@ -13,7 +13,15 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   alignItems: "center",
 }));
 
+const Header = styled(Typography)(({ theme }) => ({
 
+  paddingTop: "0.2em",
+  fontSize: '1.2em',
+  minWidth: '10em',
+  color: '#000000',
+  fontFamily: 'SourceSansPro',
+
+}));
 const MyStack = styled(Stack)(({ theme }) => ({
 
   direction: "row",
@@ -70,7 +78,7 @@ const App = () => {
 
   }, []);
   return (
-    <div style={{ backgroundColor:'#f0f0f0'}}>
+    <div>
       <MyDivider textAlign="center">Geetron Ecosystem</MyDivider>
 
       <MyGrid container spacing={0} >
@@ -86,7 +94,7 @@ const App = () => {
           </Hidden>
         
           <MyStack spacing={5}>
-          <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
+          <div  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
           
             <Subtext>Geetron is powering the IoT Revolution joining to ensure maximum interoperability with our worldwide certified IoT sensor hardware platform. Join the Geetron family as a trusted IoT partner</Subtext>
               </div> 

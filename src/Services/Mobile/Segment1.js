@@ -3,19 +3,18 @@ import { Zoom } from 'react-slideshow-image';
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
-import Irrigation from '../Dashboard/images/dashboard.png'
+import Irrigation from '../Mobile/images/mobiledevelopment.jpg'
 import {  Grid} from '@mui/material';
 const Slideshow = () => {
   const images = [  
-    Irrigation,
-    Irrigation,
+    Irrigation
   
   ];
  
   const zoomInProperties = {
-    indicators: true,
+    indicators: false,
     scale: 1.2,
-    autoplay: true,
+    autoplay: false,
     duration: 2000,
     pauseOnHover: true,
     canSwipe: true,

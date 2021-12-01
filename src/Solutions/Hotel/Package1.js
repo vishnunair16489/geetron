@@ -10,6 +10,9 @@ import RMS from  './RMS';
 import Relay from  './Relay';
 import Dimmer from  './Dimmer';
 import switchimg from '../Hotel/images/switch.png';
+import Rms from '../Hotel/images/rms.png'
+import Dimmerimg from '../Hotel/images/dimmer.png';
+import Relayimg from '../Hotel/images/relay.png'
 const images = [
   {
     url: switchimg, 
@@ -18,19 +21,19 @@ const images = [
     index:1
   },
   {
-    url: img, 
+    url: Rms, 
     title: 'RMS',
     width: '25%',
     index:2
   },
   {
-    url: img, 
+    url: Relayimg, 
     title: 'Relay',
     width: '25%',
     index:3
   },
   {
-    url: img, 
+    url: Dimmerimg, 
     title: 'Dimmer',
     width: '25%',
     index:4

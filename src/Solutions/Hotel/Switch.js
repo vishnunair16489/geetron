@@ -7,7 +7,7 @@ import Parralex from './images/parallex.jpg'
 
 import { styled } from '@mui/material/styles';
 
-import { Grid, Stack, Divider,Hidden } from '@mui/material';
+import { Grid, Stack, Divider,Hidden,Typography} from '@mui/material';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 
@@ -17,10 +17,13 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   
 
 }));
+
+
 const MyGridmain = styled(Grid)(({ theme }) => ({
  
   background: `url(${Parralex})`,
-
+  backgroundSize:'1980px 500px',
+  backgroundRepeat: 'no-repeat'
 }));
 
 
@@ -152,7 +155,7 @@ export default function SwipeableTemporaryDrawer(props) {
              
 
               
-                     <Grid container direction="row" spacing={0}>
+                     <Grid container justifyContent= "center" alignItems= "flex-start" direction="row"  spacing={0}>
                     
                 <Grid item  xs={12}  sm={6} md={6}> 
                 <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >

@@ -1,13 +1,13 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Home from '../Hotel/images/noimage.jpg';
+import Home from '../Hotel/images/rms.png';
 
 import Parralex from './images/parallex.jpg'
 
 import { styled } from '@mui/material/styles';
 
-import { Grid, Stack, Divider,Hidden } from '@mui/material';
+import { Grid, Stack, Divider,Hidden, Typography } from '@mui/material';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 
@@ -20,7 +20,9 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MyGridmain = styled(Grid)(({ theme }) => ({
  
   background: `url(${Parralex})`,
-
+  backgroundSize:'1980px 650px',
+  backgroundRepeat: 'no-repeat'
+ 
 }));
 
 
@@ -65,24 +67,13 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
 
  
   }}));
-
-  const Myp = styled('p')(({ theme }) => ({
- 
+  const MyP = styled(Typography)(({ theme }) => ({
  
     fontFamily: 'SourceSansPro',
-    textAlign: 'justify',
-    color:'black',
-    padding:'10px',
-    [theme.breakpoints.up("xs")]: {
-    
-      margin: "0px 20px",
-    }, 
-    [theme.breakpoints.up("md")]: {
-     
-     
-      margin: "0px",
-    },
-   }));
+   
+  }));
+
+
 
 export default function SwipeableTemporaryDrawer(props) {
   const [state, setState] = React.useState({
@@ -152,8 +143,9 @@ export default function SwipeableTemporaryDrawer(props) {
              
 
               
-                     <Grid container direction="row" spacing={0}>
+                     <Grid container justifyContent= "flex-start" alignItems= "flex-start" direction="row" spacing={0}>
                      <Grid item xs={12} sm={6}>
+                       <MyP>
                     8 Channel input
                     <ul>
                  <li>Door Sensor</li>
@@ -162,8 +154,10 @@ export default function SwipeableTemporaryDrawer(props) {
                  <li>Manual Mode</li>
               
                </ul>
+               </MyP>
                     </Grid>
                     <Grid item xs={12} sm={6}>
+                    <MyP>
                     4 channel 0-10V output
                     <ul>
                  <li>Cove light Dimming</li>
@@ -172,17 +166,20 @@ export default function SwipeableTemporaryDrawer(props) {
                  <li>Reading light dimming</li>
               
                </ul>
+               </MyP>
                     </Grid>
                     <Grid item xs={12} sm={6}>
+                    <MyP>
                     Dali Dimmer integration
                     <ul>
-                 <li>Light Comtroler</li>
+                 <li>Light Controlling</li>
                  <li>Light Dimming</li>
            
                  </ul>
-                
+                 </MyP>
                     </Grid>
                     <Grid item xs={12} sm={6}>
+                    <MyP>
                     5 Channel relay output
                     <ul>
                  <li>Door Bell</li>
@@ -190,14 +187,17 @@ export default function SwipeableTemporaryDrawer(props) {
                  <li>Master Relay</li>
               
                  </ul>  
+                 </MyP>
                     </Grid>
                     <Grid item xs={12} sm={6}>
+                    <MyP>
                    ModBus
                     <ul>
                  <li>Modbus Software Communication</li>
                  <li>Modbus Thermmostat</li>
 
                  </ul>
+                 </MyP>
                     </Grid>
                
               
@@ -218,7 +218,7 @@ export default function SwipeableTemporaryDrawer(props) {
       <div data-aos="flip-left">
         
      
-      <MypicGrid container xs={12} md={4}><img src={Home} height='300' alt='img'/></MypicGrid>
+      <MypicGrid container xs={12} md={4}><img src={Home} height='400' alt='img'/></MypicGrid>
         </div>
           </Hidden>
     

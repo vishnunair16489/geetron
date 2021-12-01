@@ -10,6 +10,8 @@ import Curtains from  './Curtains';
 import Roomservice from  './Roomservice';
 import Thermostat from  './Thermostat';
 import radar from '../Hotel/images/radar.png'
+import thermostatimg from '../Hotel/images/thermostat.jpg'
+import Roomserviceimg from '../Hotel/images/roomservice.png'
 const images = [
   {
     url: radar, 
@@ -24,13 +26,13 @@ const images = [
     index:2
   },
   {
-    url: img, 
+    url: Roomserviceimg, 
     title: 'Room Service',
     width: '25%',
     index:3
   },
   {
-    url: img, 
+    url: thermostatimg, 
     title: 'Thermostat',
     width: '25%',
     index:4

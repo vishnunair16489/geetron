@@ -121,7 +121,7 @@ const App = ()=>{
               <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
-          <Item>  <Grid  style={{marginLeft:'110px'}}  item xs={4}>
+          <Item>  <Grid   item xs={4}>
              <img src={Logo}  alt="Logo" width='100px' />
             </Grid></Item>
         </Grid>

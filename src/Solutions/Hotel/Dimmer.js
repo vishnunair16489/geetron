@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Home from '../Hotel/images/noimage.jpg';
+import Home from '../Hotel/images/dimmer.png';
 
 import Parralex from './images/parallex.jpg'
 
@@ -20,7 +20,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MyGridmain = styled(Grid)(({ theme }) => ({
  
   background: `url(${Parralex})`,
-
+  backgroundSize:'1980px 600px',
+  backgroundRepeat: 'no-repeat'
 }));
 
 
@@ -46,8 +47,6 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 }));
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
- 
-  height:'300px',
   [theme.breakpoints.up("xs")]: {
     justifyContent: "center",
     alignItems: "flex-end", 
@@ -60,7 +59,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
    
     justifyContent: "center",
-    alignItems: "center", 
+    alignItems: "flex-start", 
   },
 
  
@@ -152,7 +151,7 @@ export default function SwipeableTemporaryDrawer(props) {
              
 
               
-                     <Grid container direction="row" spacing={0}>
+                     <Grid container justifyContent= "center" alignItems= "flex-start" direction="row"  spacing={0}>
                     
                 <Grid item  xs={12}  sm={6} md={6}> 
                 <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
@@ -186,7 +185,7 @@ export default function SwipeableTemporaryDrawer(props) {
       <div data-aos="flip-left">
         
      
-      <MypicGrid container xs={12} md={4}><img src={Home} height='300' alt='img'/></MypicGrid>
+      <MypicGrid container xs={12} md={4}><img src={Home} height='400' alt='img'/></MypicGrid>
         </div>
           </Hidden>
     

@@ -1,8 +1,8 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import water from '../Homepage/images/iotagri.jpg'
-import guest from '../Homepage/images/iothome.jpg'
-import parking from '../Homepage/images/iotparking.jpg'
+import water from '../Homepage/images/home.jpg'
+import guest from '../Homepage/images/hotel.jpg'
+import parking from '../Homepage/images/parking.jpg'
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';

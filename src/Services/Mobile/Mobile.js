@@ -5,21 +5,20 @@ import Segment1 from  './Segment1';
 import Segment2 from  './Segment2';
 import 'aos/dist/aos.css';
  
-const MyGridMain = styled(Grid)(({ theme }) => ({
-  justifyContent: "center",
-  alignItems: "flex-start", 
-  direction:"row",
+ 
+const MyGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
-    marginTop:'-120px'
-
+  
+  
+    marginTop:'-110px'
   },
    [theme.breakpoints.up("md")]: {
-    marginTop:'10px'
-
+  
+    marginTop:'-65px'
   },
   [theme.breakpoints.up("md")]: {
    
-    marginTop:'1px'
+    marginTop:'-65px'
   },
 
 
@@ -29,11 +28,11 @@ const App = () => {
  
   return (  
     <div data-aos="flip-left">
-   <MyGridMain>
+   <MyGrid>
            <Segment1/>
-           <Divider></Divider>
+      
            <Segment2/>
-           </MyGridMain>
+           </MyGrid>
         </div>
        
   );

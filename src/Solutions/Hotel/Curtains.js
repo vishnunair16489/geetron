@@ -83,7 +83,6 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
       margin: "0px",
     },
    }));
-
 export default function SwipeableTemporaryDrawer(props) {
   const [state, setState] = React.useState({
     bottom: true,
@@ -152,22 +151,19 @@ export default function SwipeableTemporaryDrawer(props) {
              
 
               
-                     <Grid container direction="row" spacing={0}>
+                     <Grid container justifyContent= "center" alignItems= "flex-start" direction="row"  spacing={0}>
                     
                 <Grid item  xs={12}  sm={8} md={8}> 
                 <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Myp> <b>Features</b>
-                <ul><b>
+                <ul>
                            <li> Smart phone app control</li>
                            <li>Timer function, can be set when to open and close</li>
                            <li> Heavy-duty super quiet smart WiFi motorized curtain motor work with mobile Apps</li>
                            <li> Strong mains powered motor, anodized aluminum. DIY length by cutting. Automatically configure and remember travel limit</li>
                            <li> Open and close via smartphone, tablet, remote control, or voice commands from App</li>
-                           <li>Powered by Li-ion battery/ Cable( included ), up to 3 - 6 months stand by time</li>
-                           <li> RF remote control or wire into other automation systems. Free to operate manually during
-power-cut</li>
-                           <li>Light touch trigger, manual pulling to trigger the motor to react and operate automatically</li>
-                           </b> </ul>
+                         
+                           </ul>
                </Myp> 
                  </div>
                   </Grid>

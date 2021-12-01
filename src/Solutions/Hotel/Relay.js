@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Home from '../Hotel/images/noimage.jpg';
+import Home from '../Hotel/images/relay.png';
 
 import Parralex from './images/parallex.jpg'
 
@@ -20,6 +20,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MyGridmain = styled(Grid)(({ theme }) => ({
  
   background: `url(${Parralex})`,
+  backgroundSize:'1980px 600px',
+  backgroundRepeat: 'no-repeat'
 
 }));
 
@@ -152,9 +154,10 @@ export default function SwipeableTemporaryDrawer(props) {
              
 
               
-                     <Grid container direction="row" spacing={0}>
+                     <Grid container justifyContent= "flex-start" alignItems= "flex-start" direction="row" spacing={0}>
                     
                      <Grid item xs={12} sm={6}>
+                     <Myp>
                     8 Channel Relay
                     <ul>
                  <li>Dynalite compatible</li>
@@ -163,8 +166,10 @@ export default function SwipeableTemporaryDrawer(props) {
                  <li>Easily replacable realy</li>
               
                </ul>
+               </Myp>
                     </Grid>
                     <Grid item xs={12} sm={6}>
+                    <Myp>
                     2 channel Relay
                     <ul>
                  <li>Latching relay</li>
@@ -173,8 +178,10 @@ export default function SwipeableTemporaryDrawer(props) {
                  <li>Zero working power</li>
               
                </ul>
+               </Myp>
                     </Grid>
                     <Grid item xs={12} sm={6}>
+                    <Myp>
                     7 cahnnel latch relay
                     <ul>
                  <li>Latching relay</li>
@@ -182,6 +189,7 @@ export default function SwipeableTemporaryDrawer(props) {
                  <li>Manual Mode</li>
                  <li>Zero working power</li>
                  </ul>
+                 </Myp>
                     </Grid>
                
               

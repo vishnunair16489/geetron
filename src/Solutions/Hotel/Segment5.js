@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@vishnunair16489 
+vishnunair16489
+/
+geetron
+Public
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+geetron/src/Solutions/Hotel/Segment5.js /
+
+vishnunair16489 initial commit
+Latest commit a511956 19 hours ago
+ History
+ 0 contributors
+232 lines (159 sloc)  6.04 KB
+   
 import React, { useEffect } from 'react'
 import { styled } from '@mui/material/styles';
 import { Divider,  Grid, Stack,Box  } from '@mui/material';
@@ -230,3 +261,4 @@ const App = () => {
 }
 
 export default App;
+
