@@ -1,13 +1,11 @@
 import React,{useEffect,useState} from 'react'
 import { styled } from '@mui/material/styles';
 import Googlemaps from './googleapi'
-import Sub1 from '../Aboutus/images/marquee1.png'
-import Sub2 from '../Aboutus/images/marquee2.png'
-import Sub3 from '../Aboutus/images/marquee3.png'
-import Sub4 from '../Aboutus/images/marquee4.png'
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 
+import {useNavigate} from 'react-router-dom';
 import firebase from "./Firebase";
-import Marquee from "react-fast-marquee";
 import { Divider, Button, Grid, Stack ,TextField} from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -62,15 +60,30 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 
 
 }));
-
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const App = () => {
+  const [open, setOpen] = React.useState(false);
 
+ 
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      navigate('/');
+      return;
+    }
+    navigate('/');
+    setOpen(false);
+  };
   const [name , setName] = useState();
   const [phone , setPhone] = useState();
   const [email , setEmail] = useState();
   const [country , setCountry] = useState();
   const [message , setMessage] = useState();
+  
+  const navigate = useNavigate();
   const db = firebase.firestore();
 
     const Push = () => {
@@ -80,6 +93,8 @@ const App = () => {
     email : email,
     country :country,
     message : message})
+   
+    setOpen(true);
 
       
     }
@@ -168,7 +183,14 @@ const App = () => {
  
     <Button onClick={Push}>Send Message</Button>
    
-      
+    <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+       Thanks for your mail. Will Get back Soon.
+        </Alert>
+      </Snackbar>
+    
+    
+  
 
 
            
@@ -181,16 +203,7 @@ const App = () => {
       
        
         </Stack>
-       
-        <div data-aos="flip-left">
-            <MyDivider textAlign="center">Our Partners</MyDivider>
-          </div>
-        <Marquee >
-        <img src={Sub1} width="600" alt="Logo" />
-        <img src={Sub2} width="600" alt="Logo" />
-        <img src={Sub3} width="600" alt="Logo" />
-        <img src={Sub4} width="600" alt="Logo" />
-  </Marquee>
+    
           
       
       
