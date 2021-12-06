@@ -12,10 +12,10 @@ const Slideshow = () => {
   ];
  
   const zoomInProperties = {
-    indicators: true,
+    indicators: false,
     scale: 1.2,
     autoplay: false,
-    duration: 2000,
+    duration: 122000,
     pauseOnHover: true,
     canSwipe: true,
     arrows: false

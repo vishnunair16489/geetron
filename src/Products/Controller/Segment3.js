@@ -114,7 +114,9 @@ const App = () => {
                 <ul>
                   <li>Work directly with geetron thermostat</li>
                     <li>Address setting switch present inside</li>
-                  
+                    <li>3 Fan speed</li>
+                    <li>Digital and Analog Compressor Controller</li>
+                     <li>Supports other Modbus thermostats(optional)</li>
                   </ul>
                </Myp> 
                  </div>

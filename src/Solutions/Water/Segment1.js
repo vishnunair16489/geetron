@@ -7,7 +7,7 @@ import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
 
-import { Button, Typography, Grid, Stack} from '@mui/material';
+import {  Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
     irrigation
@@ -79,7 +79,6 @@ const Slideshow = () => {
     maxWidth: '30em',
     color: 'white ',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
     align:'justify'
 
   }));

@@ -3,8 +3,9 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Grid from '@mui/material/Grid';
-import Logo from  '../menu/images/logolight.png';
-import {Tooltip,IconButton,Avatar } from '@mui/material';
+import Logodark from  '../menu/images/logodark.png';
+import Logolight from  '../menu/images/logolight.png';
+import {Tooltip,IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';  
 
 
@@ -46,10 +47,8 @@ const MyTab= styled(Tab)(({ theme }) => ({
 
   fontFamily:'SourceSansPro',
   fontWeight:'bold',
-  '&:hover': {
-  
-    color: '#1268B3',
-  },
+  color: '#1268B3',
+ 
   
   
 }))
@@ -84,7 +83,6 @@ const MyGrid= styled(Grid)(({ theme }) => ({
   
   margin: "0px",
   '&:hover': {
-  
     color: '#1268B3',
   },
  
@@ -103,6 +101,7 @@ const Mydiv= styled(Grid)(({ theme }) => ({
 export default function NavTabs() {
   const [value, setValue] = React.useState(0);
   const [index, setIndex] = React.useState(0);
+  const [image, setImage] = React.useState('');
   const handleChange = (event, newValue) => {
     setIndex(newValue);
   
@@ -115,19 +114,19 @@ export default function NavTabs() {
     switch(value) {
       case 2:
         return    <React.Fragment>
-            <div  data-aos="slide-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
+            <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
            <MyBox  container onMouseLeave={() => setValue(index)} >
          <Tooltip title="Switch">
           <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Switch')}>
           <img src={Switch} height='30px' alt="water" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Timmer">
+        <Tooltip title="Timer">
           <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Timmer')}>
           <img src={Timmer}  height='30px'  alt="water" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Controller">
+        <Tooltip title="Controllers">
           <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Controller')}>
           <img src={Controller}  height='30px'  alt="water" />
           </IconButton>
@@ -147,7 +146,7 @@ export default function NavTabs() {
         </React.Fragment>;
           case 3:
             return    <React.Fragment>
-               <div  data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-anchor="trigger" data-aos-anchor-placement="top-top"  >
+               <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
                <MyBox container onMouseLeave={() => setValue(index)} >
              <Tooltip title="GHomes">
              <IconButton aria-label="delete" onClick={()=> navigate('Ghomes')}>
@@ -204,7 +203,7 @@ export default function NavTabs() {
             </React.Fragment>;
           case 4:
             return    <React.Fragment>
-                <div  data-aos="slide-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
+                <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
                <MyBox2 container onMouseLeave={() => setValue(index)} >
              <Tooltip title="IoT Dashboard">
               <IconButton size="small" sx={{ ml: 2 }}onClick={()=> navigate('Dashboard')}>
@@ -237,12 +236,12 @@ export default function NavTabs() {
          <MyGrid container spacing={2}>
        
          <Mydiv container item xs={4}  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
-             <img src={Logo}  alt="Logo" height="25" />
+             <img src={Logodark}  alt="Logo" width="200" />
              </Mydiv>
      
         <Grid   item xs={8} >
         <Grid container  direction="row"  justifyContent="center"  alignItems="center">
-        <Tabs textColor="white"   value={value} onChange={handleChange}  aria-label="nav tabs example">
+        <Tabs textColor="#1268B3"   value={value} onChange={handleChange} onMouseEnter ={()=>setImage({Logodark})} onMouseLeave={()=>setImage({Logolight})} aria-label="nav tabs example">
         <LinkTab    onMouseEnter={() => setValue(0)} onClick={()=> navigate('/')}   onMouseLeave={() => setValue(index)} label="Home"  />
         <LinkTab  onMouseEnter={() => setValue(1)} onClick={()=> navigate('/Aboutus')} onMouseLeave={() => setValue(index)} label="About Us" />
         <LinkTab onMouseEnter={() =>  setValue(2)}  label="Product"  />

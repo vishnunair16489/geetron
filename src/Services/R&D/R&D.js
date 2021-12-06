@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
 import { Grid,Divider } from '@mui/material';
 import Segment1 from  './Segment1';
@@ -24,9 +24,12 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 }));
  
 const App = () => {
- 
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   return (  
-    <div data-aos="flip-left">
+    <div data-aos="fade-right">
    <MyGrid>
            <Segment1/>
         

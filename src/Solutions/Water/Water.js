@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Segment1 from  './Segment1';
 import Segment2 from  './Segment2';
 import Segment4 from  './Segment4';
@@ -21,11 +21,13 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 
 }));
-const App = () => {
- 
+  const App = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   return (
     
-    <div>
+    <div data-aos="fade-up">
         <CssBaseline />
         <MyGrid>
         <Segment1/> 

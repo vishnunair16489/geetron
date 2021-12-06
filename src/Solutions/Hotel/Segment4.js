@@ -94,27 +94,30 @@ const App = () => {
   return (
 
   <div>
-        <MyGrid container spacing={5}>
+        <MyGrid container spacing={0}>
 
-          <MyStack spacing={5}>
+          <MyStack spacing={0}>
             <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-              <Header textAlign="center">Packages </Header>
+              <Header textAlign="center">Models </Header>
             </div>
           
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
                 <Grid  item xs={12} sm={6} md={4}>
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
+                
                     <MyCard >
                     <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
+                    <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCardmedia
                         component="img"
                         image={Basic}
                         
                         alt="green iguana"  
                       />
+                      </div>
                       </Grid>
                       <CardContent>
+                      <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" >
                         <Mytext gutterBottom component="div">
                          GRMS Lite
                         </Mytext>
@@ -127,25 +130,28 @@ const App = () => {
                           
                         </ul>
                         </Mypara>
+                        </div>
                       </CardContent>
                     
                     </MyCard>
-                  </div>
+               
                   </Grid>
                   <Grid item xs={12} sm={6} md={4}>
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+               
                     <MyCard>
-                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
+                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}> 
+                      <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <MyCardmedia
                         component="img"
                         image={Standard}
                         alt="green iguana"  
                      
                       />
-                      
+                      </div>
                    </Grid>
                       <CardContent>
+                      <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                         <Mytext gutterBottom component="div">
                           GRMS Standard
                         </Mytext>
@@ -158,17 +164,18 @@ const App = () => {
                             <li>AC Controls</li>
                         </ul>            
                         </Mypara>
+                        </div>
                          </CardContent>
                      
                     </MyCard>
-                  </div>
+ 
                   </Grid>
                   <Grid item xs={12} sm={6} md={4}>
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                
                     <MyCard >
                     <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                    
+                    <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                       <ReactImageMagnify     {...{
     smallImage: {
         alt: 'img',
@@ -183,8 +190,10 @@ const App = () => {
      
     }
 }} />
+</div>
                       </Grid>
                       <CardContent>
+                      <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                         <Mytext gutterBottom component="div">
                          GRMS Pro 
                         </Mytext>
@@ -199,10 +208,10 @@ const App = () => {
                            <li>Alexa Integration</li>
                         </ul>     
                         </Mypara>
+                        </div>
                       </CardContent>
                      
-                    </MyCard>
-                  </div>
+                    </MyCard> 
                 </Grid>
               </Grid>
             </Box>

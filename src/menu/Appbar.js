@@ -38,7 +38,7 @@ export default function ElevateAppBar(props) {
     <React.Fragment>
       <CssBaseline />
     
-    <div style={{  backgroundColor:'#f0f0f0'}}>
+    <div style={{  backgroundColor:'#ffffff'}}>
       <Segment1 />
       <Segment2 />
       <Segment4 />

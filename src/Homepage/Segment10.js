@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { styled } from '@mui/material/styles';
 import segment1img from '../Homepage/images/mobile.png';
-import { Typography, Grid, Stack, Divider } from '@mui/material';
+import { Typography, Grid, Stack } from '@mui/material';
 import android from '../Homepage/images/android.png'
 import apple from '../Homepage/images/apple.png'
 import Aos from 'aos';
@@ -43,8 +43,6 @@ const MyStack = styled(Stack)(({ theme }) => ({
   marginTop: "10px",
   justifyContent: "center",
   alignItems: "center",
-  marginLeft: "30px",
-  marginRight: "30px",
 
 }));
 

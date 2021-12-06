@@ -20,9 +20,16 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MyGridmain = styled(Grid)(({ theme }) => ({
  
   background: `url(${Parralex})`,
-  backgroundSize:'1980px 650px',
-  backgroundRepeat: 'no-repeat'
- 
+  [theme.breakpoints.down("md")]: {
+  
+    backgroundSize:'auto'
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    backgroundSize:'1980px 650px',
+    backgroundRepeat: 'no-repeat',
+  },
 }));
 
 

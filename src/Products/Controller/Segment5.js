@@ -112,9 +112,13 @@ const App = () => {
                 <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Myp> <b>Features</b>
                 <ul>
-                  <li>Work directly with geetron thermostat</li>
-                    <li>Address setting switch present inside</li>
-                  
+                  <li> Sync Mulitple loop interfaces</li>
+                    <li>Calculate the in and out</li>
+                    <li>Direct Modbus interface to LED display</li>
+                    <li>Inbuilt 4 Loop sensor interface</li>
+                    <li>Inbuilt power supply</li>
+                    <li>Din Rail mount design </li>
+                    
                   </ul>
                </Myp> 
                  </div>

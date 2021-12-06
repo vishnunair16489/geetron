@@ -113,11 +113,13 @@ const App = () => {
                 <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Myp> <b>Features</b>
                 <ul>
-                <li>Mordern & Artistic Design</li>
+                <li>Din Rail Mount design</li>
                     <li>Great Standard</li>
-                    <li>Easy Installation</li>
-                    <li>Safety Pprotection</li>
-                    <li>Our services</li>
+                    <li>In-built wifi server</li>
+                    <li>Safety Porotection</li>
+                    <li>Factory Programmed Sun Timer</li>
+                    <li>In Built RTC</li>
+                    <li>Manual Override Latching Relays</li>
                   
                   </ul>
                </Myp> 
@@ -135,8 +137,6 @@ const App = () => {
 
   <li>Working temperature:-25~+60℃</li>
 <li>Max. Current:20A Latching relay</li>
-<li>Mechanical Life:100000 Times</li>
-<li>factory programmed Sun timmer</li>
  
 <li>Interface
   <ul>

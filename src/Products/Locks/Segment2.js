@@ -3,11 +3,9 @@ import { styled } from '@mui/material/styles';
 import img from '../Locks/images/locks.png'
 import { Grid, Stack,Divider, Typography } from '@mui/material';
 import 'aos/dist/aos.css';
-import { textAlign } from '@mui/system';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 
-  padding:'0px 10px',
 
 }));
 const ContentGrid = styled(Grid)(({ theme }) => ({
@@ -26,7 +24,8 @@ const MyParaGrid = styled(Grid)(({ theme }) => ({
   
   fontFamily: 'SourceSansPro',
   maxWidth:'1000px',
-  textAlign:'justify'
+  textAlign:'justify',
+  padding:'0px 20px'
 
 }));
 const MypicGrid = styled(Grid)(({ theme }) => ({
@@ -35,7 +34,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
   height:'300px',
   [theme.breakpoints.up("xs")]: {
     justifyContent: "center",
-    alignItems: "flex-end", 
+    alignItems: "center", 
    [theme.breakpoints.up("md")]: {
   
     justifyContent: "center",
@@ -78,10 +77,11 @@ const App = () => {
        
        <MyDivider textAlign="right">Locks</MyDivider>
    
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
+        <div  data-aos="fade-down">
         <MyParaGrid >Geetron provides a wide variety of locks with different technologies like Rfid, fingerprint, number lock along with wireless connectivity like Wifi, Rs485, Zigbee, zwave
 Geetron lock is a next-generation technology that never compromises its security. It allows you to get information about the visitors and check door status from anywhere.</MyParaGrid>
-   
+   </div>
          <MypicGrid container xs={12} md={6}>
       <div data-aos="flip-right"   data-aos-delay="200" >
       <img src={img} width='150' alt="logo"/>

@@ -114,10 +114,10 @@ const App = () => {
                 <Myp> <b>Features</b>
                   <ul>
                   <li>Mordern & Artistic Design</li>
-                    <li>Great Sstandard</li>
+                    <li>Wired or Wireless Options</li>
                     <li>Easy Installation</li>
-                    <li>Safety Protection</li>
-                    <li>Our Service</li>
+                    <li>Ultra Clear Tempered Glass</li>
+                    <li>Create Custom Graphics Keypad</li>
                   
                   </ul>
                </Myp> 
@@ -133,7 +133,7 @@ const App = () => {
 
                     <li>Max. Voltage:250V</li>
                     <li>Working temperature:-25~+60℃</li>
-                    <li>Max. Current:10A</li>
+                    <li>Max. Current:5A</li>
                     <li>Mechanical Life:100000 Times</li>
                     
                   

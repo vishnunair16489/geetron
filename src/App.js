@@ -2,11 +2,10 @@ import React from 'react'
 import './index.css';
 import { BrowserRouter, Routes , Route }  from "react-router-dom";
 
-import {  useScrollTrigger } from '@mui/material';
+import {  Divider, useScrollTrigger } from '@mui/material';
 
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
-import { AppBar, Toolbar,Hidden,Slide } from '@mui/material';
+import { AppBar, Toolbar,Hidden } from '@mui/material';
 import Water from "./Solutions/Water/Water"; 
 import Ghomes from "./Solutions/Ghomes/Ghomes"; 
 import Home from "./menu/Appbar"; 
@@ -30,14 +29,14 @@ import RD from "./Services/R&D/R&D";
 import Mobile from "./Services/Mobile/Mobile"; 
 import Aboutus from "./Aboutus/Aboutus"; 
 import Footer from "./Homepage/Footer"; 
-import Contact from "./Homepage/Segment9"; 
+import Contact from "./Contactus/Segment9"; 
 const MyAppBar = styled(AppBar)(({ theme }) => ({
   
-  backgroundColor: 'rgba(0,0,0,0.3)',
+  backgroundColor: 'rgba(255,255,255,0.95)',
  
   '&:hover': {
-    backgroundColor: 'rgba(255,255,255,0.9)',
-    color: 'black',
+    backgroundColor: 'rgba(255,255,255,0.95)',
+ 
   },
  
 }));
@@ -51,8 +50,8 @@ function ElevationScroll(props) {
     target: window ? window() : undefined,
   });
   return React.cloneElement(children, {
-    elevation: trigger ? 10 : 0,
-    backgroundColor: trigger ?  'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0.3)',
+    elevation: trigger ? 15 : 0,
+    backgroundColor: trigger ?  'white' : 'black',
   });
 }
 
@@ -76,6 +75,7 @@ const App = ()=>{
       </Hidden>
       <Toolbar />
     <Routes>
+          <Route path='/geetron' element={<Home/>}></Route>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/Ghomes' element={<Ghomes/>}></Route>
           <Route path='/Water' element={<Water/>}></Route>
@@ -98,6 +98,7 @@ const App = ()=>{
           <Route path='/R&D' element={<RD/>}></Route>
           <Route path='/Contact' element={<Contact/>}></Route>
         </Routes>  
+        <Divider/>
         <Footer/>
 </BrowserRouter>
 );

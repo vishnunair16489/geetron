@@ -10,7 +10,6 @@ import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center", 
-  backgroundColor:'#f0f0f0',
 
 
 }));
@@ -58,12 +57,12 @@ const Mypara = styled(Typography)(({ theme }) => ({
   textAlign:'justify',
   [theme.breakpoints.up("xs")]: {
   
-    margin: "0px 30px",
+    margin: "0px 15px 0px 30px",
   }, 
   [theme.breakpoints.up("md")]: {
    
    
-    margin: "0px",
+    margin: "30px",
   },
   
  
@@ -76,11 +75,11 @@ const MyStack = styled(Stack)(({ theme }) => ({
   maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",  
-    margin: "0 30px",
+    margin: "0px 15px 0px 30px",
   },
    [theme.breakpoints.down("md")]: {
   
-    margin: "30px",
+    margin: "0px 15px 0px 30px",
   },
   [theme.breakpoints.up("md")]: {
    
@@ -96,11 +95,11 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",
   
-    margin: "0 30px",
+    margin: "0px 15px 0px 30px",
   },
    [theme.breakpoints.down("md")]: {
-  
-    margin: "30px",
+
+    margin: "0px 15px 0px 30px",
   },
   [theme.breakpoints.up("md")]: {
    
@@ -118,7 +117,7 @@ const Myimg = styled('img')(({ theme }) => ({
  
   [theme.breakpoints.down("xs")]: {
     
-    height:'150px'
+    height:'300px'
   },
    [theme.breakpoints.down("md")]: {
   
@@ -141,7 +140,7 @@ const App = () => {
         </div>
         <MyGrid container spacing={2} >
         <Box >  <div data-aos="fade-right">
-        <MypicGrid item    xs={12} md={4}>
+        <MypicGrid item    xs={12} sm={12} md={4} >
       
         <Myimg  src={segment2img}/>
         
@@ -149,7 +148,7 @@ const App = () => {
         </Box>
    
      
-      <MyGrid item xs={12} md={6}>
+      <MyGrid item xs={12} sm={12} md={6}>
       <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-in-out-back" data-aos-delay="200" >
           <Mypara>
           Geetron’s Primary Goal is to evolve from a hardware manufacturing business intending to become a whole IoT solution provider. We design and develop IoT solutions to make electronics works seamlessly with each other. We specialize in wireless sensor platform that allows you to connect the physical with the digital world.

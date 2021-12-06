@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Aboutus/images/geetron.jfif'
+import segment2img from '../Aboutus/images/aboutus.jpeg'
 import segment2hardware from '../Homepage/images/hardware.png'
 import segment2hconsulting from '../Homepage/images/consulting.png'
 import segment2custom from '../Homepage/images/custom-projects.png'
@@ -16,6 +16,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     justifyContent: "center",
     alignItems: "flex-start", 
     direction:"row",
+    
   
   
   
@@ -45,7 +46,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
   backgroundSize:'cover',
-  height:'500px',
+  height:'250px',
   marginTop:'20px'
 
 }));
@@ -81,60 +82,40 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
   fontFamily: 'SourceSansPro',
   textAlign: 'justify',
-  padding:'10px',
-  [theme.breakpoints.up("xs")]: {
-  
-    margin: "0px 20px",
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
+ 
   
  
 
 }))
+const Myparamain = styled(Typography)(({ theme }) => ({
 
+
+  fontFamily: 'SourceSansPro',
+  textAlign: 'justify',
+  padding: "0px 20px",
+  
+ 
+
+}))
 const MyStack = styled(Stack)(({ theme }) => ({
 
  
   maxWidth: '1980px',
+  padding:'0px 10px',
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",
-    marginLeft: "30px",
-  },
-   [theme.breakpoints.down("md")]: {
-    marginTop: "60px",
-    marginLeft: "30px",
-  },
-  [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
-    marginLeft: "10px",
-  },
-
-}))
-
-const MyStackfirst = styled(Stack)(({ theme }) => ({
-
- 
-  maxWidth: '1980px',
-  [theme.breakpoints.down("xs")]: {
-    marginTop: "100px",
-    marginLeft: "30px",
-  },
-   [theme.breakpoints.down("md")]: {
-    marginTop: "60px",
-    marginLeft: "30px",
-  },
-  [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
-    marginLeft: "10px",
-  },
   
+  },
+   [theme.breakpoints.down("md")]: {
+    marginTop: "60px",
+  
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: "10px",
+  
+  },
 
 }))
-
 
 const App = () => {
 
@@ -144,8 +125,8 @@ const App = () => {
 
     return (
 
-  
-      <MyGridMain container spacing={2} >
+      <div data-aos="fade-up">
+      <MyGridMain container spacing={0} >
         <Stack>
           <div data-aos="flip-left">
           <Hidden mdDown>
@@ -153,7 +134,7 @@ const App = () => {
           </Hidden>
            
           </div>
-          <MyGrid container spacing={2} >
+          <MyGrid container spacing={0} >
   
         <MypicGrid container xs={12} md={4}>
        
@@ -163,27 +144,32 @@ const App = () => {
           </Hidden>
         <MyGrid item xs={12} md={6}>
         <div  data-aos="fade-up"  data-aos-easing="ease-in-out-back"  data-aos-delay="200" >
-            <Mypara>
-<p>Geetron is a division of the Western International Group that employs over 15,000 personnel which are spread across 12 countries. The Group continues to strengthen its presence across the Middle East, Africa, South Asia, Europe, and the subcontinent with new brands and divisions constantly enriching the portfolio. Mr. Basheer, Chairman of the group is proud to lead a young dynamic team. Geetron operates as the IoT division focused on delivering performance, quality, and innovation across various sectors. </p>
+            <Myparamain>
+              <p>Geetron is a division of the Western International Group that employs over 15,000 personnel which are spread across 12 countries. The Group continues to strengthen its presence across the Middle East, Africa, South Asia, Europe, and the subcontinent with new brands and divisions constantly enriching the portfolio. Geetron operates as the IoT division focused on delivering performance, quality, and innovation across various sectors. </p>
 
 
 <p>With a strong focus on efficiency, the Geetron division is one of the fastest-growing suppliers of IoT products and services and is recognized as the leading IoT service With a portfolio ranging from home automation, community and waste management, parking, park, and resorts to name a few. Geetron is the trusted brand in IoT products and services provider, with a framework of sales, and customer service capabilities, Geetron is working with customers to offer a great range of products. </p>
-</Mypara>
+</Myparamain>
             </div>
            
-            <Grid container spacing={0}>
+          
+          
+          
+        </MyGrid>
+        <Grid container  xs={12} sm={12} md={10} spacing={0}>
+       
             <Grid  xs={12} sm={4} md={4}>
             <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  data-aos-delay="200" >
-                <MyStackfirst spacing={2}>
+                <MyStack spacing={0}>
                   <img src={segment2hardware} width="40" alt="Logo" />
                   <Mytext> Technology Innovator </Mytext>
                   <Mypara>We have developed many of the latest technologies and processes for automation systems. To date, we have installed over 100 of automation solution, which are designed and  developed by our own Engineers with our in-house R&D.</Mypara>
-                </MyStackfirst>
+                </MyStack>
               </div>
               </Grid>
           <Grid item  xs={12} sm={4} md={4}>
           <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  data-aos-delay="300" >
-                <MyStack spacing={2}>
+                <MyStack spacing={0}>
                   <img src={segment2hconsulting} width="40" alt="Logo" />
                   <Mytext>Consultancy experts </Mytext>
                   <Mypara>We are well experienced to cater and develop any complex system/ solutions. In working with our Company, Client can rest assured that you are receiving top-quality products and installation by experts. </Mypara>
@@ -193,7 +179,7 @@ const App = () => {
               </Grid>
           <Grid item  xs={12} sm={4} md={4}>
           <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  data-aos-delay="400" >
-                <MyStack spacing={2}>
+                <MyStack spacing={0}>
                   <img src={segment2custom} width="40" alt="Logo" />
                   <Mytext>Customized IoT projects</Mytext>
                   <Mypara>We do more than engineering!  With Geeton you will get a world-class product development team of experts in wireless connectivity, and IoT platforms. Fast, affordable, and flexible IoT solution based on Geetron's existent  IoT ecosystem. </Mypara>
@@ -202,9 +188,6 @@ const App = () => {
               </div>
               </Grid>
               </Grid>
-          
-          
-        </MyGrid>
         </MyGrid>
       
        
@@ -223,6 +206,7 @@ const App = () => {
       
       
   </MyGridMain>
+  </div>
    
   
     );

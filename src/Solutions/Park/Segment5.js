@@ -14,7 +14,8 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
-  backgroundSize:'cover',
+  backgroundSize:'100%',
+  backgroundRepeat:'no-repeat',
   height:'300px',
  
 
@@ -45,19 +46,10 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 
 const Mypara = styled(Typography)(({ theme }) => ({
 
-  extAlign:'justify',
+  textAlign:'justify',
   fontFamily: 'SourceSansPro',
-  padding:'10px',
-  [theme.breakpoints.up("xs")]: {
-  
-    margin: "0px 10px",
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
-  
+  padding:'15px',
+ 
  
 
 }))
@@ -70,36 +62,38 @@ const App = () => {
   
       <Stack>
         <div data-aos="flip-left">
-          <MyDivider textAlign="center">Waste Management</MyDivider>
+          <MyDivider textAlign="center">Waste Bin Automation</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
       <MypicGrid container xs={12} md={4}></MypicGrid>
     
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
+   
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+          <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" >
           
-              
-                <Mypara>Reducing the enivromental foot print and inproving the quality of life waste management is a vital part of community 
+          
+                <Mypara>We have designed an automated waste bin capable of updating bin status to an IoT dashboard. Dashboard displays fill level of each zone  which increases the time management and employee efficiency</Mypara>
+                </div>
                 <Grid container direction="row" spacing={0}>
                 <Grid item  xs={12}  sm={6} md={6}>
-                <p> <b>Features</b>
+                <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                <Mypara> <b>Features</b>
                   <ul>
                     <li>Automatic alert</li>
                     <li>Route Planner</li>
-                    <li>REduces operation cosr</li>
+                    <li>Reduces operation cost</li>
                     <li>Solar powered</li>
                   </ul>
-                  </p>
+                  </Mypara>
+                  </div>
                   </Grid>
                   <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
+                  <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                  <Mypara>
                   <b>Benifits</b>
                   <ul>
 
@@ -109,13 +103,11 @@ const App = () => {
                     <li>Auto alert wihen bins are full</li>
                     <li>Delay the semi loasd and collect the full load </li>
                   </ul>
-                  </p>
+                  </Mypara>
+                  </div>
                   </Grid>
                   </Grid>
-                </Mypara>
-               
-              
-            </div>
+      
             </Grid>
        
       

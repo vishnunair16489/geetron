@@ -16,7 +16,7 @@ const Slideshow = () => {
    
   ];
   const body = [
-    "Parks and Resorts seek sustainable growth, reducing the impact of economic and demographic changes and taking advantage of information and communication technologies.",
+    "All in one facility management solution with a centralized IoT dashboard. Lighting, waste management, irrigation, and Security  comes under one roof with our smart intergartion techique",
    
   ];
   const zoomInProperties = {
@@ -77,7 +77,6 @@ const Slideshow = () => {
     maxWidth: '30em',
     color: 'white',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
     align:'justify'
 
   }));

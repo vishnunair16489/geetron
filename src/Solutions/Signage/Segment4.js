@@ -4,7 +4,7 @@ import Signage1 from '../Signage/images/signage1.jpg';
 import Signage2 from '../Signage/images/signage2.jpg';
 import Signage3 from '../Signage/images/signage3.jpg'
 import CardContent from '@mui/material/CardContent';
-import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
+import { Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 
 const MyGrid = styled(Grid)(({ theme }) => ({
  
@@ -17,11 +17,22 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 const Header = styled(Divider)(({ theme }) => ({
 
-  fontSize: '1.5em',
+ 
+  minWidth: '10em',
   color: '#1268B3',
   textAlign: 'center',
+  margin: "50px 0px",
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
+  [theme.breakpoints.down("xs")]: {
+  
+    fontSize: '1.2em',
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    fontSize: '1.5em',
+  },
   
 
 
@@ -39,23 +50,7 @@ const Mytext = styled(Typography)(({ theme }) => ({
   fontWeight: 'bold',
   fontFamily: 'SourceSansPro'
 }));
-const Mypara = styled(Typography)(({ theme }) => ({
 
-  fontSize: '0.9em',
-  textAlign: 'left',
- 
-  fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
-  [theme.breakpoints.down("xs")]: {
-    width:'600px',
-   },
-    [theme.breakpoints.up("md")]: {
-    
-    alignItems: "center",
-    justifyContent: "center",
-  
-   },
-}))
 
 
 const MyCard = styled(Typography)(({ theme }) => ({
@@ -78,7 +73,7 @@ const App = () => {
   
         <MyGrid container>
 
-          <MyStack spacing={2}>
+          <MyStack spacing={0}>
             <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
               <Header textAlign="center">Models </Header>
             </div>

@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "geetron-72a38",
+    "private_key_id": "bc487da68e570fdef4f23c7542dafaad2d8a6951",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbPSZYBgSPZuW4\nc0DnACHanIPQ+yHK11bRlpXth0n3PAJ52t+CyFmn+ABb5HlqugnmzGG40LiYZIJT\nI9JybCLTgjaS4NWX//AWYEkayt9Em+05wf3yzSQWR7ZmDqIZkaExoF9AAdQ65/4J\nYWElnuCz95w0f0iNJr9TK8kN8eASDmg/AnsRyrAkmQGroy297GPp5iEYTzNRBspv\nXbsoKkSCTf71m2uL+HiEncZaAHVbVAFvS0LZq2Bzc+hmeLEJxrkIdKgQX28kyWc8\njXRSpnuSHKKRTcRs955jSl9anJxq5MF1VtDI3fxWIf6V6ArJI+7nvjJ/kl/Jy0HY\ny3vi5Xr1AgMBAAECggEACCvATGrIq6mdVseON3pszb5mO8Y0IaKS+cYkzxNLY91/\nPd203QPhoDMwBaYxc9ol8kV4sUsfJDpKF8kvZwFlFd/pMnLuGymIAA2CW4wpE0nn\nwx4AWVrN1vRgV9/WTWU6aEvKJ6rQ+mbCmsjK3bmOlzpluOeoMHHFKUIJO5grFJgj\niLEITxSPRvbi33LbdjXoP7eE4sHxOJOruwXZRKT7vF73L5oBzVnIYIZw43i78meA\n9f7FCUA7OO8KbSLSmdObuJiJY1aqtxs9vg8Pe1lDas+EdAY3QzQTn+vv6nxqgnQo\no6EvvvH4fMiNfQNL47rfvMKjw2skTZNwpu7f6ktgEQKBgQDPprWDXO0VvIPWQ/nT\nwvGSxqfRTJ+k4tUjggDPwGefka7T4Mit4ertSOFeHeQQgZiIJFZIaeP99yXLC6z5\naDmPvQZ3daaw9OSgt5y1o6MsquQ0laImV7r//RMklxGX3p8zIP1DbplBAxweIWBX\nzg4+MCvAM2K+pqCjCCOG2hMWyQKBgQC/YlengqH7qWpqf7COjkQ3nhWPj87gSWRa\nsgX057kd4cOaXBdSSaSgQARKHE0fCtQMa+QEo7VjzyUou7zIZGvC+dm6BS1UHZDs\n3ZDumGWMH70towJ2m3bQpF12LXVZA0LEHOzWoPpf6U15CJovgmTN8oG/JDqiPAKQ\nr9CGtAxczQKBgA3f6sLzQ5gvN3PqqNfAb9nJ0k7G2ufujCVKO3mmNoZP+qmHnIEZ\n1lOyifR69NExh5qZKva9tJE0oV7W0eD8WNRE4hi7UL8ELf6bJipw26dRZ9wnn2UG\neaU/KLdKLM/D/UkyTBnkWvMgHRHaUxCq4QLAvzuhc1if053xHkaVba8ZAoGBAJML\nCw/PxYbnLrTusIeG9RDKbARmWGto2Cr61qrJEyjLWg8SLHTz0gGxzdnnDrYICs4U\nYxfRdD9gW0uFmtFYnpcqgkdzTNVw9fWXcpBvFK5pgF88/FqGre42KvzuhlfCspyd\nILby7guc5AJXQqe4Bp1ZcqiaPFaDxvDFtHCai1kNAoGAGQ5L0G8rrSmibdrsiQbv\nc+qbsjbTMGfULq1e4e7PCerr6UXScJHWliw5AroqEnFZgoeHYjrzfpWSwZXs+Eu7\nHt+TeFoW4IFMu+iF5Lb9bipnt7iAmejA5PY/wsm0eIgH/xjGhhynvMUX6RgsZ1eb\ndT2Z6IQpwWx8wTEkFZVTWI0=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-tp5dc@geetron-72a38.iam.gserviceaccount.com",
+    "client_id": "101659282757825643476",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-tp5dc%40geetron-72a38.iam.gserviceaccount.com"
+  }

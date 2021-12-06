@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Industry/images/industrychallenges.jpg'
+import segment2img from '../Industry/images/industrychallenges.png'
 import { Divider, Typography, Grid, Stack,Box,Hidden } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -15,9 +15,22 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
   backgroundSize:'cover',
-  height:'300px',
  
-
+ 
+  [theme.breakpoints.down("xs")]: {
+  
+    height:'200px',
+  }, 
+  [theme.breakpoints.down("md")]: {
+   
+   
+    height:'200px',
+  },
+  [theme.breakpoints.up("md")]: {
+   
+   
+    height:'300px',
+  },
   
 }));
 
@@ -45,18 +58,9 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 
 const Mypara = styled(Typography)(({ theme }) => ({
 
-
   fontFamily: 'SourceSansPro',
-  [theme.breakpoints.up("xs")]: {
-  
-    margin: "0px 10px",
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
-  
+  padding:'0px 15px',
+  textAlign:'justify',
  
 
 }))
@@ -68,15 +72,12 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
   maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",
-    marginLeft: "15px",
   },
    [theme.breakpoints.down("md")]: {
     marginTop: "60px",
-    marginLeft: "15px",
   },
   [theme.breakpoints.up("md")]: {
     marginTop: "10px",
-    marginLeft: "15px",
   },
   
 
@@ -90,7 +91,7 @@ const App = () => {
         <div data-aos="flip-left">
           <MyDivider textAlign="left">Industy 4.0 </MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
         <Hidden mdUp>
     
         
@@ -101,28 +102,29 @@ const App = () => {
   
     
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
+      
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-              <MyStackfirst spacing={2}>
-              
+           
+              <MyStackfirst spacing={0}>
+              <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" >
                 <Mypara>
-          <b>  Challenges</b>
+                  We have both software and hardware solutions for industries to automate and control devices & equipments. Our software can be  customisable according to factory needs with various analytical graphs to monitor factory operation. Our hardware is fully customisable from PCB level to reduce the production cost and to fit the client requirements<br/> <br/> 
+          <b>  Features</b>
             <ul>
-              <li>Key data gathering for digital transformation </li>
-              <li>Real-time prevention of errors </li>
-              <li>Integration with ERP Solutions</li>
-              <li>Deep case study in areas such as manufacturing, logistics and services</li>
-              <li>Use of standard communication protocols</li>
+         
+              <li>Customisable IIoT software </li>
+              <li>Customisable IIoT hardware </li>
+              <li>API for third party integration</li>
+              <li>Wide range of IoT devices for  warehouse, cold storage, logistics and service centers</li>
+              <li>Varoius communication protocols like TCP,HTTP, MQTT etc </li>
              
             </ul>
                 </Mypara>
+                </div>
               </MyStackfirst>
-            </div>
+        
             </Grid>
        
       

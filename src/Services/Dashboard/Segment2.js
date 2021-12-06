@@ -84,13 +84,17 @@ const App = () => {
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+          
               <Stack spacing={2}>
-              
+              <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Mypara>An IoT dashboard is a user interface that allows users to connect, monitor, and interact in real-time with IoT-connected devices. Varies Ui elements like graphs charts and other tools can be used to fetch various information. Visualization of your device data and connected device information can be managed using an IoT dashboard</Mypara>
+              </div>
+               <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="300" >
                 <Mypara>Customizing of dashboard without altering the core functionality of the IoT platform makes IoT dashboard easy to use along with real-time upgrades. Sending and retrieving data in real-time from connected devices can be done using Dashboard. Graphical data representation, reporting, analysis are some of the basic features that are included inside the Dashboard.</Mypara>
+                </div>
                 <Grid container direction="row" spacing={0}>
                 <Grid item  xs={12}  sm={6} md={6}>
+                <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                 <Mypara>
                 <p> <b>Our Features:</b>
                   <ul>
@@ -104,9 +108,11 @@ const App = () => {
                   </ul>
                   </p>
                   </Mypara>
+                  </div>
                   </Grid>
                   <Grid item  xs={12}  sm={6} md={6}>
                   <Mypara>
+                  <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="500" >
                   <p>
                <b>Benefits</b>
                <p>Geetrons highly customizable dashboard gives you insight information about all of the key metrics </p>
@@ -123,11 +129,12 @@ const App = () => {
                     
                   
                   </ul></p>
+                  </div>
                   </Mypara>
                   </Grid>
                   </Grid>
               </Stack>
-            </div>
+          
             </Grid>
        
       

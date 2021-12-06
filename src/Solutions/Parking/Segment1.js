@@ -77,7 +77,6 @@ const Slideshow = () => {
     maxWidth: '30em',
     color: 'white',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
     align:'justify'
 
   }));

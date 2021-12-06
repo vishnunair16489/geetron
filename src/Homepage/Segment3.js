@@ -9,6 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { Button, Divider, Typography, Grid, Stack,Box  } from '@mui/material';
 import { Parallax, ParallaxProvider} from 'react-scroll-parallax';
 
+import {useNavigate} from 'react-router-dom';
 const MyGrid = styled(Grid)(({ theme }) => ({
   marginTop: "100px",
   alignItems: "center",
@@ -25,16 +26,15 @@ const Header = styled(Divider)(({ theme }) => ({
 
   fontSize: '1.5em',
   minWidth: '10em',
-  color: '#FFFFFF',
+  color: 'black',
   textAlign: 'center',
   fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
   
 
 
 }));
 const MyStack = styled(Stack)(({ theme }) => ({
-  margin: "100px 0px 0px 0px",
+  marginTop: "100px",
   maxWidth: "1200px",
 
 }));
@@ -43,12 +43,15 @@ const Mytext = styled(Typography)(({ theme }) => ({
   fontSize: '1.0em',
   textAlign: 'left',
   minWidth: '10em',
-  color: '#1268B3',
+  color: '#1268B3',  
+  fontFamily: 'SourceSansPro',
 }));
 const Mypara = styled(Typography)(({ theme }) => ({
 
   fontSize: '0.9em',
   textAlign: 'justify',
+  
+  fontFamily: 'SourceSansPro',
   
   [theme.breakpoints.down("xs")]: {
     width:'600px',
@@ -65,7 +68,8 @@ const Mysubtitle = styled(Typography)(({ theme }) => ({
   fontSize: '1.0em',
   textAlign: 'center',
   maxWidth: '1100px',
-  color: '#FFFFFF',
+  color: 'black',  
+  fontFamily: 'SourceSansPro',
 }))
 
 const MyCard = styled(Typography)(({ theme }) => ({
@@ -82,6 +86,7 @@ const MyCard = styled(Typography)(({ theme }) => ({
 }))
 
 const App = () => {
+  const navigate = useNavigate();
   return (
 
     <ParallaxProvider>
@@ -118,7 +123,7 @@ const App = () => {
                         We provide sustainable services required to meet this urban influx effectively. We have a wide product range suitable for managing communities and districts. We have enginered varoius solutons  
                         </Mypara>
                          <CardActions>
-                        <Button size="small">Learn More</Button>
+                        <Button onClick={()=> navigate('Community')} size="small">Learn More</Button>
                       </CardActions>
                       </MyCardContent>
                      
@@ -147,7 +152,7 @@ const App = () => {
 
                           Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers)</Mypara>
                           <CardActions>
-                        <Button size="small">Learn More</Button>
+                        <Button  onClick={()=> navigate('Parking')} size="small">Learn More</Button>
                       </CardActions>
                       </MyCardContent>
                      
@@ -176,7 +181,7 @@ const App = () => {
 
                         </Mypara>
                         <CardActions>
-                        <Button size="small">Learn More</Button>
+                        <Button  onClick={()=> navigate('hotels')} size="small">Learn More</Button>
                       </CardActions>
                       </MyCardContent>
                     

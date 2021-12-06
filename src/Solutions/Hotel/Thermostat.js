@@ -20,6 +20,16 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MyGridmain = styled(Grid)(({ theme }) => ({
  
   background: `url(${Parralex})`,
+  [theme.breakpoints.down("md")]: {
+  
+    backgroundSize:'auto'
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    backgroundSize:'1980px 500px',
+    backgroundRepeat: 'no-repeat',
+  },
 
 }));
 
@@ -159,9 +169,9 @@ export default function SwipeableTemporaryDrawer(props) {
                 <Myp> <b>Features</b>
               
            <ul>
-                           <li>Intergationn with geetron smart home</li>
-                           <li>Third party integration</li>
-                          
+                           <li>Geetron Capacative modbus thermostat</li>
+                           <li>Geetron LCD and button type  Modbus thermostat</li>
+                           <li>Third Party Thermostat</li>
                          </ul>
 
                </Myp> 

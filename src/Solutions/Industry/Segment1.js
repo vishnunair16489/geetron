@@ -1,24 +1,24 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
 
-import Industry from '../Industry/images/industry.jpg'
+import Industry from '../Industry/images/industrybanner.jpg'
 
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
 
-import { Button, Typography, Grid, Stack} from '@mui/material';
+import { Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
     Industry
  
   ];
   const header = [
-    "Industry 4.0"
+    "IIoT-Industry 4.0"
    
   ];
   const body = [
-    "The challenge for companies in the field of Industry 4.0 is to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level."
+    "We fulfil the challenge of companies in the field of Industry 4.0 to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level."
   ];
   const zoomInProperties = {
     indicators: false,
@@ -78,7 +78,6 @@ const Slideshow = () => {
     maxWidth: '30em',
     color: 'white',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
     align:'justify'
 
   }));
@@ -95,22 +94,14 @@ const Slideshow = () => {
     width: "100%"
 
   }));
-  const MyButton = styled(Button)(({ theme }) => ({
-    marginLeft: "0.1em",
-    background: '#1268B3',
-    width: '10em',
-    borderRadius: 5,
-    fontFamily: 'SourceSansPro'
-
-
-  }));
+ 
   return (
     <Zoom {...zoomInProperties}>
       {images.map((each, index) => (
         <MyBox key={index}>
 
           <div className="each-slide">
-            <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'cover' }}>
+            <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'fit' }}>
               <MyGrid container spacing={0.5} >
 
 

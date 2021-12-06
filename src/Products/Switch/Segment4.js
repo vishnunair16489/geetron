@@ -102,11 +102,11 @@ const App = () => {
                 <div  data-aos="fade-right"   data-aos-delay="200" >
                 <Myp> <b>Features</b>
                 <ul>
-                  <li>Work with Alexa and Google home</li>
-                    <li>Set time in advance and light can still be used normally without network</li>
-                    <li>Easy installation</li>
-                    <li>Safety Protection</li>
-                    <li>Our Services</li>
+                <li>Mordern & Artistic Design</li>
+                    <li>Wired or Wireless Options</li>
+                    <li>Easy Installation</li>
+                    <li>Ultra Clear Tempered Glass</li>
+                    <li>1, 2 and  3 Button variants</li>
                   </ul>
                   </Myp>
                   </div>
@@ -119,7 +119,7 @@ const App = () => {
                   <b>Specifications</b>
                   <ul>
                   <li>Max Voltage: 110V-220V</li>
-                    <li>Max Current: 5A-10A</li>
+                    <li>Max Current: 5A</li>
                     <li>Working temperature: -20~+70℃</li>
                     <li>1 million contact life </li>
                     <li>Wireless Standard: IEEE 802.11 B/g/n 2.4G</li>

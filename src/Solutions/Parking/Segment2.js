@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from './images/smartparking.jpg'
+import segment2img from './images/smartparking.png'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -51,15 +51,9 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
   fontFamily: 'SourceSansPro',
-  [theme.breakpoints.up("xs")]: {
-  
-    margin: "0px 10px",
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
+  padding:'0px 15px',
+  textAlign:'justify'
+ 
   
  
 
@@ -72,15 +66,15 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
   maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",
-    marginLeft: "15px",
+   
   },
    [theme.breakpoints.down("md")]: {
     marginTop: "60px",
-    marginLeft: "15px",
+  
   },
   [theme.breakpoints.up("md")]: {
     marginTop: "10px",
-    marginLeft: "15px",
+  
   },
   
 
@@ -94,21 +88,20 @@ const App = () => {
         <div data-aos="flip-left">
           <MyDivider textAlign="right">Smart parking benefits</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
       <MypicGrid container xs={12} md={4}></MypicGrid>
     
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
+     
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-              <MyStackfirst spacing={2}>
+        
+              <MyStackfirst spacing={0}>
               
                 <Mypara>
+                  <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" >
                   <ul>
                     <li>Increases parking revenues by up to 35%.</li>
                     <li>Avoids parking violations on disabled and loading/unloading areas.</li>
@@ -116,7 +109,9 @@ const App = () => {
                     <li>Improves driver experience reducing time loss.</li>
                     <li>Helps to learn patterns of behavior to adapt traffic and surveillance resources for better mobility.</li>
                   </ul>
-                  Reduces:
+                  </div>
+                  <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                  <b>Reduces:</b>
                   <ul>
                     <li>KM traveled for parking spot -30%</li>
                     <li>Time spent for looking parking slot -43%</li>
@@ -124,9 +119,10 @@ const App = () => {
                     <li>Traffic Volume -8%</li>
                     <li>Helps to learn patterns of behavior to adapt traffic and surveillance resources for better mobility.</li>
                   </ul>
+                  </div>
                 </Mypara>
               </MyStackfirst>
-            </div>
+          
             </Grid>
        
       

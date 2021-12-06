@@ -3,15 +3,14 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import img from '../Hotel/images/hotel.jpg'
-import Curtainsimg from '../Hotel/images/curtains.png'
+import Curtainsimg from '../Hotel/images/curtainssmall.png'
 import Sensor from  './Sensor';
 import Curtains from  './Curtains';
 import Roomservice from  './Roomservice';
 import Thermostat from  './Thermostat';
-import radar from '../Hotel/images/radar.png'
-import thermostatimg from '../Hotel/images/thermostat.jpg'
-import Roomserviceimg from '../Hotel/images/roomservice.png'
+import radar from '../Hotel/images/radarsmall.png'
+import thermostatimg from '../Hotel/images/thermostatsmall.png'
+import Roomserviceimg from '../Hotel/images/roomservicesmall.png'
 const images = [
   {
     url: radar, 

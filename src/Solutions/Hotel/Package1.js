@@ -3,16 +3,15 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import img from '../Hotel/images/hotel.jpg'
 import { Divider } from '@mui/material';
 import Switch from  './Switch';
 import RMS from  './RMS';
 import Relay from  './Relay';
 import Dimmer from  './Dimmer';
-import switchimg from '../Hotel/images/switch.png';
-import Rms from '../Hotel/images/rms.png'
-import Dimmerimg from '../Hotel/images/dimmer.png';
-import Relayimg from '../Hotel/images/relay.png'
+import switchimg from '../Hotel/images/switchsmall.png';
+import Rms from '../Hotel/images/rmssmall.png'
+import Dimmerimg from '../Hotel/images/dimmersmall.png';
+import Relayimg from '../Hotel/images/relaysmall.png'
 const images = [
   {
     url: switchimg, 

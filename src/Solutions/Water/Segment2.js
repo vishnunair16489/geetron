@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import smartimg from './images/irrigationpc.png';
-import smartimg1 from './images/irrigationsmart.jpg';
+import smartimg1 from './images/irrigationsmart.png';
 import { Divider, Typography, Grid, Stack,Box,Hidden } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -76,18 +76,12 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
 
  
   maxWidth: '1980px',
+  padding:'0px 15px',
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",
-    marginLeft: "15px",
-  },
-   [theme.breakpoints.down("md")]: {
    
-    marginLeft: "15px",
   },
-  [theme.breakpoints.up("md")]: {
-   
-    marginLeft: "15px",
-  },
+  
   
 
 }))
@@ -100,7 +94,7 @@ const App = () => {
         <div data-aos="flip-left">
           <MyDivider textAlign="right">Why we developed GIS?</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
         <Hidden mdUp>
     
@@ -115,14 +109,18 @@ const App = () => {
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-              <MyStackfirst spacing={2}>
-              
-                <Mypara><p>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra long range radio communication to eliminate all expensive in-field wiring. Our solar powered watering stations are environmentally friendly and maintenance free. In the backbone we have a full scale industrial irrigation controller, including access to IoT cloud for controller, intelligence, alarms and weather forecast trough mobile and web apps.
-                </p><p>
-Future of irrigation is now with wireless irrigation systems by using the latest radio technology, multiple sensors connected to cloud platform. Every water valve is controlled without any wires and runs on solar power. Saves 50% of water, increases crop yield by 30% and saves hundreds of work hours. Our irrigation system controls electrically operated valves from the central computer. Geetron Wireless Irrigation Controller use wireless two-way communication to open and close valves. ﻿The solution consists of several parts – Wireless Irrigation Controller, Cloud Based Control and Monitoring.</p></Mypara>
+          
+              <MyStackfirst spacing={0}>
+              <div data-aos="fade-right"  data-aos-easing="ease-out-quart" >
+                <Mypara>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra long range radio communication to eliminate all expensive in-field wiring. Our solar powered watering stations are environmentally friendly and maintenance free. In the backbone we have a full scale industrial irrigation controller, including access to IoT cloud for controller, intelligence, alarms and weather forecast trough mobile and web apps.
+                </Mypara>
+                </div>
+                <Mypara>
+                <div data-aos="fade-right"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
+Future of irrigation is now with wireless irrigation systems by using the latest radio technology, multiple sensors connected to cloud platform. Every water valve is controlled without any wires and runs on solar power. Saves 50% of water, increases crop yield by 30% and saves hundreds of work hours. Our irrigation system controls electrically operated valves from the central computer. Geetron Wireless Irrigation Controller use wireless two-way communication to open and close valves. ﻿The solution consists of several parts – Wireless Irrigation Controller, Cloud Based Control and Monitoring.
+</div></Mypara>
               </MyStackfirst>
-            </div>
+        
             </Grid>
        
       

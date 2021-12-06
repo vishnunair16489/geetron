@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import Parking from './images/parkingsystem.jpg'
+import Parking from './images/parkingsystem.png'
 import Parkingcounter from './images/parkingcounter.jpg'
 import CardContent from '@mui/material/CardContent';
 
@@ -96,98 +96,90 @@ const App = () => {
   
         <MyGrid container>
 
-          <MyStack spacing={2}>
+          <MyStack spacing={0}>
             <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
               <Header textAlign="center">Models </Header>
             </div>
           
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                <Grid  item xs={12} sm={6} md={ 4 } >
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-                    <MyCard >
-                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                    <MyCardmedia
-                        component="img"
-                        image={Parking}
+        
+              <Grid container direction='row'   justifyContent="center"  alignItems="center" spacing={0}>
+                <Grid item >
+                <img
+                        height='180px'
+                        src={Parking}
                         alt="green iguana"  
                       />
-                      </Grid>
-                      <CardContent>
-                        <Mytext gutterBottom component="div">
-                        Parking Counter system
-                        </Mytext>
-                        <Mypara color="text.secondary">
-                        <ul>
-                            <li>Loop Sensing</li>
-                            <li>Display Single</li>
-                            <li>Display Tower</li>
-                           
-                        </ul>
-                        </Mypara>
-                      </CardContent>
-                    
-                    </MyCard>
-                  </div>
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={4} >
-                 
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-                    <MyCard>
-                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                      <MyCardmedia
-                        component="img"
-                        image={Parking}
-                        alt="green iguana"  
-                      />
-                      </Grid>
-                      <CardContent>
-                        <Mytext gutterBottom component="div">
-                        Parking management System
-                        </Mytext>
-                        <Mypara color="text.secondary">
-                        <ul>
-                            <li>Parking Lot Senser</li>
-                            <li>Display Single</li>
-                            <li>Display Tower</li>
-                          
-                        </ul>            
-                        </Mypara>
-                         </CardContent>
-                     
-                    </MyCard>
-                  </div>
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={4} >
-                 
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
-                    <MyCard >
-                    <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
-                    <MyCardmedia
-                        component="img"
-                        image={Parkingcounter}
-                        alt="green iguana"  
-                      />
-                      </Grid>
-                      <CardContent>
-                        <Mytext gutterBottom component="div">
-                        Parking Billing System
-                        </Mytext>
-                        <Mypara color="text.secondary">
-                        <ul>
-                            <li>Billng System/kisok</li>
-                            <li>Token Printer</li>
-                            <li>Barrier Controller</li>
-                           
-                        </ul>     
-                        </Mypara>
-                      </CardContent>
-                     
-                    </MyCard>
-                  </div>
                 </Grid>
+                <Grid container   justifyContent="center"  alignItems="center" >
+          
+          <Grid  container   justifyContent="center"  alignItems="center"  item xs={12} sm={4} md={4}>
+         
+       
+          <Mytext width='350px' >
+          <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
+          Parking Counter system
+              
+                <Mypara color="text.secondary">
+                <ul>
+                <li>Loop Sensing</li>
+                            <li>Display Single</li>
+                            <li>Display Tower</li>       
+
+                  
+              </ul>
+              </Mypara>
+             </div>
+              </Mytext>
+        
+          
+          </Grid>
+          <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={4} md={4}>
+         
+       
+         <Mytext width='350px'>
+         <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
+         Parking management System
+              
+               <Mypara color="text.secondary">
+               <ul>
+               <li>Parking Lot Senser</li>
+                            <li>Display Single</li>
+                            <li>Display Tower</li>            
+
+                 
+             </ul>
+             </Mypara>
+             </div>
+              </Mytext>
+         
+         
+         </Grid>
+         <Grid container  justifyContent="center"  alignItems="center" item  xs={12} sm={4} md={4}>
+         
+      
+         <Mytext width='350px'>
+         <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="400" >
+         Parking Billing System
+            
+               <Mypara color="text.secondary">
+               <ul>
+               <li>Billng System/kisok</li>
+                            <li>Token Printer</li>
+                            <li>Barrier Controller</li>          
+
+                 
+             </ul>
+            </Mypara>
+             </div>
+              </Mytext>
+        
+         
+         </Grid>
+        
+      </Grid>
+                 
               </Grid>
-            </Box>
+           
 
           </MyStack>
 

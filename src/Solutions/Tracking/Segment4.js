@@ -40,20 +40,10 @@ const Mytext = styled(Typography)(({ theme }) => ({
 }));
 const Mypara = styled(Typography)(({ theme }) => ({
 
-  fontSize: '0.9em',
-  textAlign: 'left',
- 
   fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
-  [theme.breakpoints.down("xs")]: {
-    width:'600px',
-   },
-    [theme.breakpoints.up("md")]: {
-    
-    alignItems: "center",
-    justifyContent: "center",
-  
-   },
+  textAlign: 'justify',
+  padding: '15px',
+ 
 }))
 
 
@@ -77,7 +67,7 @@ const App = () => {
   
         <MyGrid container>
 
-          <MyStack spacing={2}>
+          <MyStack spacing={0}>
             <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
               <Header textAlign="center">Models </Header>
             </div>
@@ -85,15 +75,17 @@ const App = () => {
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="flex-start" spacing={5}>
               <Grid item xs={12} sm={6} md={6} >
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-                    <MyCard >
+                
+                    <MyCard > 
+                       <div data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                       <img
                       
                         height="200"
                         src={Tracker1}
                         alt="green iguana"  
-                      />
+                      /> </div>
                       <CardContent>
+                      <div data-aos="fade-right"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
                         <Mytext gutterBottom component="div">
                          Gps Tracker Basic
                         </Mytext>
@@ -108,22 +100,27 @@ const App = () => {
                           
                         </ul>
                         </Mypara>
+                           </div>
                       </CardContent>
+                   
                     
                     </MyCard>
-                  </div>
+                 
                   </Grid>
                   <Grid item xs={12} sm={6} md={6} >
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-                    <MyCard>
+                
+                    <MyCard> 
+                       <div data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                     <img
                       
                       height="200"
                       src={Tracker2}
                       alt="green iguana"  
                     />
+                    </div>
                       <CardContent>
+                      <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                         <Mytext gutterBottom component="div">
                         Gps Tracker Stanadrd
                         </Mytext>
@@ -140,11 +137,12 @@ const App = () => {
                             <li>Bluetooth 5.0 Gateway for tagged asset management and sensor monitoring</li>
                             <li>RS-232 Interface to connect optional iridium edge module or interface with controllers and sensors</li>
                         </ul>            
-                        </Mypara>
+                        </Mypara> 
+                        </div>
                          </CardContent>
                      
                     </MyCard>
-                  </div>
+                 
                   </Grid>
                 
               </Grid>

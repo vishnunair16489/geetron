@@ -47,18 +47,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
       
   }));
-  const Header = styled(Divider)(({ theme }) => ({
 
-    fontSize: '1.5em',
-    minWidth: '10em',
-    color: '#FFFFFF',
-    textAlign: 'center',
-    fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
-    
-  
-  
-  }));
   const Item = styled(Grid)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
@@ -75,9 +64,11 @@ const App = ()=>{
         
               <MyStack style={{marginTop:'20px'}}  spacing={0.5}>
               Product
-              <MyLink href="#" underline="none">{'Switch'}</MyLink>
-              <MyLink href="#" underline="none">{'Timmer'}</MyLink>
-              <MyLink href="#" underline="none">{'Controller'}</MyLink>
+              <MyLink href="Switch" underline="none">{'Switch'}</MyLink>
+              <MyLink href="Timmer" underline="none">{'Timmer'}</MyLink>
+              <MyLink href="Controller" underline="none">{'Controller'}</MyLink>
+              <MyLink href="Locks" underline="none">{'Locks'}</MyLink>
+              <MyLink href="Relay" underline="none">{'Relays'}</MyLink>
               </MyStack>
            
             
@@ -86,37 +77,35 @@ const App = ()=>{
               Solution
               <MyLink href="/Ghomes" underline="none">{'GHomes'}</MyLink>
               <MyLink href="/Water" underline="none">{'Water'}</MyLink>
-              <MyLink href="#" underline="none">{'Hotel'}</MyLink>
-              <MyLink href="#" underline="none">{'Parking'}</MyLink>
-              <MyLink href="#" underline="none">{'Industry'}</MyLink>
-              <MyLink href="#" underline="none">{'Communities'}</MyLink>
-              <MyLink href="#" underline="none">{'Park&Rsort'}</MyLink>
-              <MyLink href="#" underline="none">{'Tracking'}</MyLink>
-              <MyLink href="#" underline="none">{'Digital Signage'}</MyLink>
-              <MyLink href="#" underline="none">{'Hospital'}</MyLink>
+              <MyLink href="Hotel" underline="none">{'Hotel'}</MyLink>
+              <MyLink href="Parking" underline="none">{'Parking'}</MyLink>
+              <MyLink href="Industry" underline="none">{'Industry'}</MyLink>
+              <MyLink href="Community" underline="none">{'Communities'}</MyLink>
+              <MyLink href="Park" underline="none">{'Park&Rsort'}</MyLink>
+              <MyLink href="Tracking" underline="none">{'Tracking'}</MyLink>
+              <MyLink href="Signage" underline="none">{'Digital Signage'}</MyLink>
+              <MyLink href="Hospital" underline="none">{'Hospital'}</MyLink>
            
               </MyStack>
               <MyStack style={{marginTop:'20px'}}  spacing={0.5}>
                 Services
-              <MyLink href="#" underline="none">{'Iot Dashboard'}</MyLink>
-              <MyLink href="#" underline="none">{'Mobile Application'}</MyLink>
-              <MyLink href="#" underline="none">{'R&D'}</MyLink>
-              <MyLink href="#" underline="none">{'Software Integration'}</MyLink>        
+              <MyLink href="Dashboard" underline="none">{'Iot Dashboard'}</MyLink>
+              <MyLink href="Mobile" underline="none">{'Mobile Application'}</MyLink>
+              <MyLink href="R&D" underline="none">{'R&D'}</MyLink> 
              
            
               </MyStack>
               <MyStack style={{marginTop:'20px'}} spacing={0.5}>
                 Company
                 <MyLink href="/" underline="none">{'Home'}</MyLink>
-              <MyLink href="#" underline="none">{'About Us'}</MyLink>
-              <MyLink href="#" underline="none">{'Comtact Us'}</MyLink>     
+              <MyLink href="Aboutus" underline="none">{'About Us'}</MyLink>
+              <MyLink href="Contact" underline="none">{'Contact Us'}</MyLink>     
              
            
               </MyStack>
               <Segment9/>
               </MyStack>
-              <Header textAlign="center">- </Header>
-
+            
 
               <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
@@ -135,11 +124,11 @@ const App = ()=>{
         <Grid item xs={4}>
           <Item>  <Link  style={{fontSize:'1em',color:'#54D692'}} underline="none">{'Follow us'}</Link>
      
-     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Fb}  alt="Logo" width='20px' /></Link>                  
-     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Linkin}  alt="Logo" width='20px' /></Link>  
-     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Insta}  alt="Logo" width='20px' /></Link>       
-     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Twitter}  alt="Logo" width='20px'/></Link>   
-     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Youtube}  alt="Logo" width='20px' /></Link></Item>
+     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Fb}  alt="Logo" width='20px' height='20px' /></Link>                  
+     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Linkin}  alt="Logo" width='20px' height='20px' /></Link>  
+     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Insta}  alt="Logo" width='20px' height='20px'/></Link>       
+     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Twitter}  alt="Logo" width='20px' height='20px'/></Link>   
+     <Link  style={{color:'#000000'}} href="/Water" underline="none"> <img src={Youtube}  alt="Logo" width='20px' height='20px' /></Link></Item>
         </Grid>
       </Grid>
     </Box>

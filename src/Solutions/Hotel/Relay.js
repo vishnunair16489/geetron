@@ -20,8 +20,16 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 const MyGridmain = styled(Grid)(({ theme }) => ({
  
   background: `url(${Parralex})`,
-  backgroundSize:'1980px 600px',
-  backgroundRepeat: 'no-repeat'
+  [theme.breakpoints.down("md")]: {
+  
+    backgroundSize:'auto'
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    backgroundSize:'1980px 600px',
+    backgroundRepeat: 'no-repeat',
+  },
 
 }));
 
@@ -131,7 +139,7 @@ export default function SwipeableTemporaryDrawer(props) {
                
                 <Stack>
         <MyGridmain>
-        <MyDivider textAlign="left">Switch</MyDivider>
+        <MyDivider textAlign="left">Relay</MyDivider>
         <MyGrid container spacing={2} >
       
        

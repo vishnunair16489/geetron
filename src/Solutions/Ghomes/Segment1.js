@@ -42,12 +42,12 @@ const Slideshow = () => {
       maxWidth: '300px',
     },
     [theme.breakpoints.up("md")]: {
-      marginLeft: "100px",
+      marginLeft: "50px",
       maxWidth: '300px',
     },
     [theme.breakpoints.up("lg")]: {
 
-      marginLeft: "200px",
+      marginLeft: "100px",
       maxWidth: '700px',
     },
 
@@ -73,9 +73,8 @@ const Slideshow = () => {
     fontSize: '1.0em',
     textAlign: 'left',
     maxWidth: '30em',
-    color: 'white',
+    color: 'black',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
     align:'justify'
 
   }));
@@ -100,10 +99,10 @@ const Slideshow = () => {
 
           <div className="each-slide">
             <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'cover' }}>
-              <MyGrid container spacing={0.5} >
+              <MyGrid container spacing={0} >
 
 
-                <MyStack spacing={2}>
+                <MyStack spacing={1}>
                   <div data-aos="flip-left">
                     <Header>{header[index]}</Header>
                   </div>

@@ -62,13 +62,13 @@ const App = () => {
   
         <MyGrid container>
 
-          <MyStack spacing={2}>
+          <MyStack spacing={5}>
             <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
               <Header textAlign="center">Prducts </Header>
             </div>
           
             <Box sx={{ flexGrow: 1 }}>
-              <Grid container   justifyContent="center"  alignItems="center" spacing={0}>
+              <Grid container   justifyContent="center"  alignItems="center" spacing={5}>
                 <Grid container   justifyContent="center"  alignItems="center" item xs={12} sm={6} md={4} >
                   <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <MyCard >
@@ -132,23 +132,7 @@ const App = () => {
                 </Grid>
                 <Grid container   justifyContent="center"  alignItems="center" item xs={12}  sm={6} md={4} >
                  
-                 <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
-                   <MyCard >
-                   <img
-                     
-                     height="200"
-                     src={Waterquality}
-                     alt="green iguana"  
-                   />
-                     <CardContent>
-                       <Mytext gutterBottom component="div">
-                      IoT Box
-                       </Mytext>
-                    
-                     </CardContent>
-                    
-                   </MyCard>
-                 </div>
+                
                  
                </Grid>
               </Grid>

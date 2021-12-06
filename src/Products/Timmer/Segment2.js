@@ -79,7 +79,7 @@ const App = () => {
   
       <Stack>
        
-       <MyDivider textAlign="right">Wifi Timmer</MyDivider>
+       <MyDivider textAlign="right">Wifi Timer</MyDivider>
         <MyGrid container spacing={2} >
       
       <MypicGrid container xs={12} md={4}>
@@ -102,11 +102,13 @@ const App = () => {
                 <div  data-aos="fade-right"  data-aos-delay="200" >
                 <Myp> <b>Features</b>
                 <ul>
-                    <li>Mordern & Artistic Design</li>
+                    <li>Din Rail Mount design</li>
                     <li>Great Standard</li>
-                    <li>Easy Installation</li>
-                    <li>Safety Pprotection</li>
-                    <li>Our services</li>
+                    <li>In-built wifi server</li>
+                    <li>Safety Porotection</li>
+                    <li>Factory Programmed Sun Timer</li>
+                    <li>In Built RTC</li>
+                    <li>Manual Override Latching Relays</li>
                   </ul>
                   </Myp>
                   </div>
@@ -124,9 +126,8 @@ const App = () => {
                     
                     <li>OutPut: 20A latching relay 2</li>
                     <li>Working temperature: -20~+70℃</li>
-                    <li>In-built wifi server</li>
-                    <li>Factory Programmed</li>
-                    <li>Sun Timmer</li>
+                
+                   
                     
                     <li>Interface: Wifi http/Mqtt/Telnet</li>
                   </ul>

@@ -102,8 +102,12 @@ const App = () => {
                 <Myp> <b>Features</b>
                 <ul>
                   <li>Programmable dali controller</li>
-                  <li>Built inn micro processor</li>
+                  <li>Built in micro processor</li>
                   <li>Address setting switch preset inside</li>
+                  <li> 9 Digital sensor interface</li>
+                  <li>4 Analog Dimming Control </li>
+                  <li>Direct Interface for  bell and welcome light</li>
+                  <li>simultanious DALI and Modbus interface</li>
                   </ul>
                   </Myp>
                   </div>
@@ -122,7 +126,6 @@ const App = () => {
   <li>Input: 9 dry contact input</li>
   <li>Interface: RS485 Modbus RTU </li>
   <li>Working temperature: -20~+70℃</li>
-  <li>Mechaincal Life: 100000 times</li>
 </ul>
                   </Myp>  
                    </div>

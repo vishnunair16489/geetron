@@ -7,25 +7,25 @@ import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
 
-import { Button, Typography, Grid, Stack} from '@mui/material';
+import {  Typography, Grid, Stack} from '@mui/material';
 const Slideshow = () => {
   const images = [
     Tracking,
     
   ];
   const header = [
-    "G-Tracker",
+    "G-Tracker"
    
   ];
   const body = [
-    "We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free.",
+    ""
    
   ];
   const zoomInProperties = {
-    indicators: true,
+    indicators: false,
     scale: 0.8,
     autoplay: false,
-    duration: 3000,
+    duration: 1000000,
     pauseOnHover: true,
     canSwipe: true,
     arrows: false
@@ -79,7 +79,6 @@ const Slideshow = () => {
     maxWidth: '30em',
     color: 'white',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
     align:'justify'
 
   }));
@@ -96,15 +95,7 @@ const Slideshow = () => {
     width: "100%"
 
   }));
-  const MyButton = styled(Button)(({ theme }) => ({
-    marginLeft: "0.1em",
-    background: '#1268B3',
-    width: '10em',
-    borderRadius: 5,
-    fontFamily: 'SourceSansPro'
-
-
-  }));
+ 
   return (
     <Zoom {...zoomInProperties}>
       {images.map((each, index) => (
@@ -122,9 +113,7 @@ const Slideshow = () => {
                   <div data-aos="flip-left" data-aos-anchor data-aos-delay="300">
                     <Subtext>{body[index]}</Subtext>
                   </div>
-                  <div data-aos="flip-left" data-aos-delay="500">
-                    <MyButton variant="contained" >Contact Us</MyButton>
-                  </div>
+                
 
                 </MyStack>
 

@@ -101,8 +101,9 @@ const App = () => {
             <Box sx={{ flexGrow: 1 }}>
               <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
                 <Grid  item xs={12} sm={6} md={4}>
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
+                
                     <MyCard >
+                    <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                     <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
                     <MyCardmedia
                         component="img"
@@ -110,6 +111,8 @@ const App = () => {
                         alt="green iguana"  
                       />
                       </Grid>
+                      </div>
+                      <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-quart" >
                       <CardContent>
                         <Mytext gutterBottom component="div">
                          GIS Home
@@ -126,21 +129,25 @@ const App = () => {
                         </ul>
                         </Mypara>
                       </CardContent>
+                      </div>
                     
                     </MyCard>
-                  </div>
+                 
                   </Grid>
                   <Grid item xs={12} sm={6} md={4}>
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+               
                     <MyCard>
+                    <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart"  data-aos-delay="200">
                     <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
                     <MyCardmedia
                         component="img"
                         image={Wifi}
                         alt="green iguana"  
                       />
-                   </Grid>
+                      </Grid>
+                      </div>
+                      <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                       <CardContent>
                         <Mytext gutterBottom component="div">
                           GIS Pro
@@ -157,13 +164,15 @@ const App = () => {
                         </Mypara>
                          </CardContent>
                      
+                     </div>
                     </MyCard>
-                  </div>
+                
                   </Grid>
                   <Grid item xs={12} sm={6} md={4}>
                  
-                  <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                 
                     <MyCard >
+                    <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                     <Grid container   justifyContent="center"  alignItems="flex-start" spacing={2}>
                     <MyCardmedia
                         component="img"
@@ -171,6 +180,8 @@ const App = () => {
                         alt="green iguana"  
                       />
                       </Grid>
+                      </div>
+                      <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                       <CardContent>
                         <Mytext gutterBottom component="div">
                          GIS Pro Solar
@@ -185,9 +196,9 @@ const App = () => {
                         </ul>     
                         </Mypara>
                       </CardContent>
-                     
+                     </div>
                     </MyCard>
-                  </div>
+                
                 </Grid>
               </Grid>
             </Box>

@@ -73,7 +73,6 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         fontSize: '1.0em',
         justifyContent:"center",
         alignItems:"center",
-        paddingBottom: "1.0em",
         color: 'black',
         fontFamily: 'SourceSansPro',
       
@@ -92,7 +91,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         },[]);
   return(  
 
-    <div style={{ backgroundColor:'#f0f0f0'}}>
+    <div >
     <MyDivider textAlign="center">Meet Our Partners </MyDivider>
     <MyGrid container spacing={0.5} > 
     <MyGridLeft>   

@@ -12,11 +12,11 @@ const Slideshow = () => {
     
   ];
   const header = [
-    "Community"
+    "Smart Community"
    
   ];
   const body = [
-    "Disabled person alarm system"
+    "All in one facility management solution with a centralized IoT dashboard. Lighting, waste management, irrigation, and Security  comes under one roof with our smart intergartion techique"
    
   ];
   const zoomInProperties = {
@@ -33,24 +33,28 @@ const Slideshow = () => {
   const MyGrid = styled(Grid)(({ theme }) => ({
 
     alignItems: "center",
+    justifyContent: "flex-end",
     height: '650px',
+    width:'100%',
+   
 
     [theme.breakpoints.up("xs")]: {
       marginLeft: "25px",
-      maxWidth: '250px',
+      paddingRight:'50px',
     },
     [theme.breakpoints.up("sm")]: {
       marginLeft: "50px",
-      maxWidth: '300px',
+      paddingRight:'50px',
+   
     },
     [theme.breakpoints.up("md")]: {
       marginLeft: "100px",
-      maxWidth: '300px',
+      paddingRight:'300px',
     },
     [theme.breakpoints.up("lg")]: {
-
+      paddingRight:'300px',
       marginLeft: "200px",
-      maxWidth: '700px',
+     
     },
 
 
@@ -61,8 +65,8 @@ const Slideshow = () => {
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
     fontSize: '1.5em',
-    textAlign: 'left',
-    color: '#1268B3',
+    textAlign: 'right',
+    color: 'black',
     fontFamily: 'SourceSansPro',
     fontWeight: 'bold',
 
@@ -73,11 +77,10 @@ const Slideshow = () => {
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
     fontSize: '1.0em',
-    textAlign: 'left',
+    textAlign: 'right',
     maxWidth: '30em',
     color: 'black',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
     align:'justify'
 
   }));
@@ -94,15 +97,7 @@ const Slideshow = () => {
     width: "100%"
 
   }));
-  const MyButton = styled(Button)(({ theme }) => ({
-    marginLeft: "0.1em",
-    background: '#1268B3',
-    width: '10em',
-    borderRadius: 5,
-    fontFamily: 'SourceSansPro'
 
-
-  }));
   return (
     <Zoom {...zoomInProperties}>
       {images.map((each, index) => (
@@ -110,7 +105,7 @@ const Slideshow = () => {
 
           <div className="each-slide">
             <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'cover' }}>
-              <MyGrid container spacing={0.5} >
+              <MyGrid container spacing={0} >
 
 
                 <MyStack spacing={2}>
@@ -120,9 +115,7 @@ const Slideshow = () => {
                   <div data-aos="flip-left" data-aos-anchor data-aos-delay="300">
                     <Subtext>{body[index]}</Subtext>
                   </div>
-                  <div data-aos="flip-left" data-aos-delay="500">
-                    <MyButton variant="contained" >Contact Us</MyButton>
-                  </div>
+                
 
                 </MyStack>
 

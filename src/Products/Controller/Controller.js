@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
-import { Divider ,Grid} from '@mui/material';
+import { Grid} from '@mui/material';
 import Segment2 from  './Segment2';
 import Segment3 from  './Segment3';
 import Segment4 from  './Segment4';
@@ -30,9 +30,11 @@ import 'aos/dist/aos.css';
   
   }));
 const App = () => {
- 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (  
-  
+    <div data-aos="fade-up">
       <MyGridMain>         
            <Segment2/>       
            <Segment3/>       
@@ -40,7 +42,7 @@ const App = () => {
            <Segment5/>       
            <Segment6/>
         </MyGridMain>
-    
+    </div>
        
   );
 }

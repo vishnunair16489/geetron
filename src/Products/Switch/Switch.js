@@ -31,7 +31,7 @@ import 'aos/dist/aos.css';
 const App = () => {
  
   return (  
-  
+    <div data-aos="fade-up">
       <MyGridMain>
          
            <Segment2/>
@@ -40,7 +40,7 @@ const App = () => {
        
            <Segment4/>
         </MyGridMain>
-      
+      </div>
        
   );
 }

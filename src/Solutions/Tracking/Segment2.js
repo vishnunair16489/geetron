@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Ghomes/images/ghmomes.jpg'
+import segment2img from '../Tracking/images/trackingside.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -46,16 +46,11 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 const Mypara = styled(Typography)(({ theme }) => ({
 
 
+
   fontFamily: 'SourceSansPro',
-  [theme.breakpoints.up("xs")]: {
-  
-    margin: "0px 10px",
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
+  textAlign: 'justify',
+  padding: '15px',
+ 
   
  
 
@@ -68,15 +63,14 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
   maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
     marginTop: "100px",
-    marginLeft: "15px",
   },
    [theme.breakpoints.down("md")]: {
     marginTop: "60px",
-    marginLeft: "15px",
+
   },
   [theme.breakpoints.up("md")]: {
     marginTop: "10px",
-    marginLeft: "15px",
+  
   },
   
 
@@ -90,20 +84,18 @@ const App = () => {
         <div data-aos="flip-left">
           <MyDivider textAlign="center">Features</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
       <MypicGrid container xs={12} md={4}></MypicGrid>
     
       <MyGrid item xs={12} md={4}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
+  
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12 }>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+         
               <MyStackfirst spacing={2}>
-              
+              <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Mypara>
                   <ul>
                   <li>High Precision GPS</li>
@@ -119,8 +111,9 @@ const App = () => {
                   <li>Flexible Configuration</li>
                 
                   </ul></Mypara>
+                   </div>
               </MyStackfirst>
-            </div>
+           
             </Grid>
        
       

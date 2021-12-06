@@ -19,7 +19,6 @@ const MyStack = styled(Stack)(({ theme }) => ({
   direction: "row",
   justifyContent: "center",
   alignItems: "center",
-  margin:'10pX',
 }));
 
 const MyDivider = styled(Divider)(({ theme }) => ({
@@ -66,8 +65,8 @@ const App = () => {
 
   }, []);
   return (
-    <div style={{ backgroundColor:'#f0f0f0'}}>
-      <MyDivider textAlign="right">Geetron IoT DashBoard</MyDivider>
+    <div style={{ backgroundColor:'#ffffff'}}>
+      <MyDivider textAlign="center">Geetron IoT DashBoard</MyDivider>
 
       <MyGrid container spacing={0} >
 

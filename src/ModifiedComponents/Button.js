@@ -9,6 +9,8 @@ import {useNavigate} from 'react-router-dom';
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(purple[500]),
   backgroundColor: '#1268B3',
+  
+  fontFamily: 'SourceSansPro',
   borderRadius: '20px',
   width:'150px',
   '&:hover': {

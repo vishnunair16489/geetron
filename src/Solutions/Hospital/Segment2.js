@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Ghomes/images/ghmomes.jpg'
+import segment2img from '../Hospital/images/hospital1.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -46,16 +46,10 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 const Mypara = styled(Typography)(({ theme }) => ({
 
 
+
+  textAlign:'justify',
   fontFamily: 'SourceSansPro',
-  [theme.breakpoints.up("xs")]: {
-  
-    margin: "0px 10px",
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
+  padding:'15px',
   
  
 
@@ -67,16 +61,12 @@ const MyStackfirst = styled(Stack)(({ theme }) => ({
  
   maxWidth: '1980px',
   [theme.breakpoints.down("xs")]: {
-    marginTop: "100px",
-    marginLeft: "15px",
   },
    [theme.breakpoints.down("md")]: {
     marginTop: "60px",
-    marginLeft: "15px",
   },
   [theme.breakpoints.up("md")]: {
     marginTop: "10px",
-    marginLeft: "15px",
   },
   
 
@@ -88,41 +78,30 @@ const App = () => {
   
       <Stack>
         <div data-aos="flip-left">
-          <MyDivider textAlign="right">Why we developed It?</MyDivider>
+          <MyDivider textAlign="right">Medical IoT</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
       <MypicGrid container xs={12} md={4}></MypicGrid>
     
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
+      
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
               <MyStackfirst spacing={2}>
-              
-                <Mypara>A simple and effective alarm system is a must for every hospital and old age home where urgent assistance may be required
-                <p> <b>Features</b>
-                  <ul>
-                    <li>Ceiling mounted activation unit with pull cord </li>
-                    <li>2 position handles</li>
-                    <li>Toilet installed reset panel</li>
-                    <li>Over-door light and sounder</li>
-                  </ul>
-                  <b>Benifits</b>
-                  <ul>
-
-                    <li>The alarm can be activated from both toilet height seat and also from the floor</li>
-                    <li>Attracts attention by both light and sounder</li>
-                    <li>Provides 24hrs typical backup if power fails</li>
-                  
-                  </ul></p>
-                </Mypara>
+              <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" >
+            <Mypara>  We provide both hardware and software solutions to make Hospital management Smart and efficient. The patient monitoring system is gaining importance in the modern connected world, which increases patient engagement and satisfaction as interactions with doctors have become easier and more efficient. Patient health monitoring helps in reducing the length of hospital stay thus preventing re-admissions.  A growing number of IoT systems have made it affordable for normal people. Our dashboard can integrate various such devices into one portal</Mypara>
+          
+            <Mypara> We have engineered our own IoT hardware to be an integral part of this emerging IoT revolution. 
+              <ul><li>One of our major products is a microwave motion sensor which can detect even the minute motion form a paralysed patient and then update along with alert it to the Dashboard and  to the concerned person</li>
+              <li>we have also integrated a pulse oximeter and blood pressure meter with our dashboard </li></ul></Mypara>
+   
+               
+                  </div>
+             
               </MyStackfirst>
-            </div>
+           
             </Grid>
        
       

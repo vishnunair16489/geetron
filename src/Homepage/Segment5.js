@@ -13,21 +13,11 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   alignItems: "center",
 }));
 
-const Header = styled(Typography)(({ theme }) => ({
-
-  paddingTop: "0.2em",
-  fontSize: '1.2em',
-  minWidth: '10em',
-  color: '#000000',
-  fontFamily: 'SourceSansPro',
-
-}));
 const MyStack = styled(Stack)(({ theme }) => ({
 
   direction: "row",
   justifyContent: "center",
   alignItems: "center",
-  margin:'10pX',
 }));
 
 const MyDivider = styled(Divider)(({ theme }) => ({
@@ -42,7 +32,7 @@ const MyDivider = styled(Divider)(({ theme }) => ({
 }));
 const Subtext = styled(Typography)(({ theme }) => ({
 
-  paddingTop: "0.2em",
+  padding: "0.2em",
   fontSize: '1.0em',
   textAlign: 'justify',
   maxWidth: '25em',
@@ -54,7 +44,7 @@ const Subtext = styled(Typography)(({ theme }) => ({
 }));
 const Counter = styled(Typography)(({ theme }) => ({
 
-  paddingTop: "0.2em",
+  padding: "0.2em",
   fontSize: '1.5em',
   textAlign: 'justify',
   maxWidth: '25em',

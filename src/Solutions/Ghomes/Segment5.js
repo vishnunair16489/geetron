@@ -64,10 +64,10 @@ const App = () => {
      
         <Grid container   justifyContent="center"  alignItems="center" >
           
-            <Grid  container   justifyContent="center"  alignItems="center"  item xs={12} sm={6} md={6}>
+            <Grid  container   justifyContent="center"  alignItems="center"  item xs={12} sm={6} md={3}>
            
          
-            <Mytext gutterBottom component="div">
+            <Mytext width='350px' >
             <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
             Pro Plus
                 
@@ -86,10 +86,10 @@ const App = () => {
           
             
             </Grid>
-            <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={6}>
+            <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={3}>
            
          
-           <Mytext gutterBottom component="div">
+           <Mytext width='350px'>
            <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
            Audio
                 
@@ -108,10 +108,10 @@ const App = () => {
            
            
            </Grid>
-           <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={6}>
+           <Grid container  justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={3}>
            
         
-           <Mytext gutterBottom component="div">
+           <Mytext width='350px'>
            <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="400" >
            Security
               
@@ -130,10 +130,10 @@ const App = () => {
           
            
            </Grid>
-           <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={6}>
+           <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={6} md={3}>
        
             
-                  <Mytext gutterBottom component="div">
+                  <Mytext width='350px'>
                   <div data-aos="flip-left" data-aos-easing="ease-out-quart" data-aos-delay="500">
                   Smart Plus
                  

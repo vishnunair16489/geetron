@@ -47,16 +47,8 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
   fontFamily: 'SourceSansPro',
   textAlign:'justify',
-  padding:'10px',
-  [theme.breakpoints.up("xs")]: {
-  
-    margin: "0px 10px",
-  }, 
-  [theme.breakpoints.up("md")]: {
-   
-   
-    margin: "0px",
-  },
+  padding:'15px',
+
   
  
 
@@ -71,50 +63,56 @@ const App = () => {
         <div data-aos="flip-left">
           <MyDivider textAlign="center  ">Light Automation</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
       <MypicGrid container xs={12} md={4}></MypicGrid>
     
       <MyGrid item xs={12} md={6}>
-      <div data-aos="fade-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
-         
-          </div>
+  
           <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
           <Grid item  xs={12}  sm={12} md={12}>
-            <div data-aos="zoom-in" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+            <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart"  >
           
               
-                <Mypara>A Smart and effective lighting system is a must for every Community for energy saving and convinence
+                <Mypara>We Provide an IoT dashboard based lighting management system which is Smart and effective for every Community for energy saving and convinence. This system is equiped with specially engineered light automation hardware and software. Connectivity of the software with the hardware can be wired or wireless.   System status, energy reading  all can be monitored in realtime using our system.
+                  
+                </Mypara>
+                </div>
                 <Grid container direction="row" spacing={0}>
                 <Grid item  xs={12}  sm={6} md={6}>
-                <p> <b>Features</b>
+                <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
+                <Mypara> <b>Software Features</b>
                   <ul>
-                    <li>Automatic on/off using light sensors</li>
-                    <li>Day/Night auto  timmer</li>
-                    <li>mannual timer override</li>
-                    <li>Dimming options</li>
-                    <li>Wifi Controller with smart app</li>
+                   <li>Catagorizing lights</li>
+                    <li>Catagorizing  zones </li>
+                    <li>Geo tagging</li>
+                    <li>Manual Control</li>
+                    <li>Scheduling of lights</li>
+                    <li>Secured Communition</li>
                   </ul>
-                  </p>
+                  </Mypara>
+                  </div>
                   </Grid>
                   <Grid item  xs={12}  sm={6} md={6}>
-                  <p>
-                  <b>Benifits</b>
+                  <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="400" >
+                  <Mypara> <b>Hardware Features</b>
                   <ul>
-
-                    <li>Energy Efficient</li>
-                    <li>Solar Powered</li>
-                    <li>Easy to operate</li>
-                  
+                   <li>Inbuilt sun time</li>
+                    <li>4 in 1 control </li>
+                    <li>Modbus Master for metering</li>
+                    <li>Inbuilt real time clock</li>
+                    <li>Inbuilt LCD display</li>
+                    <li>Wireless Communition</li>
                   </ul>
-                  </p>
+                  </Mypara>
+                  </div>
                   </Grid>
                   </Grid>
-                </Mypara>
+               
                
               
-            </div>
+          
             </Grid>
        
       

@@ -96,7 +96,7 @@ const App = () => {
                   <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Myp> <b>Hardware Overview</b>
                   <ul>
-                    <li>Remote System setup using inbuilt LORA transciever</li>
+                    <li>Remote System setup using inbuilt LORA/GSM </li>
                     <li>4 Latching Relay with 20A Contact</li>
                     <li>LCD to show Time,Date,Schedules and Signal DB </li>
                     <li>ModBus interface for Energy meter Interfacing</li>
