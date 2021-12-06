@@ -23,7 +23,7 @@ import Timmer from  '../menu/images/timer.png';
 import Controller from  '../menu/images/controller.png';
 import Locks from  '../menu/images/locks.png';
 import Relays from  '../menu/images/relay.png';
-import Logo from  '../menu/images/logo.png';
+import Logo from  '../menu/images/logodark.png';
 
 import Ghome from  '../menu/images/ghome.png';
 import Water from  '../menu/images/water.png';
