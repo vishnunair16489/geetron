@@ -72,7 +72,7 @@ const App = () => {
       
       <MypicGrid container item xs={12} md={4}>
       <div data-aos="flip-right"   data-aos-delay="200" >
-      <img src={img} width='350' alt="logo"/>
+      <img src={img} width='300' alt="logo"/>
       </div>
       </MypicGrid>
     

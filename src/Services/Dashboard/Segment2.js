@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Dashboard/images/dashboardright.png'
+import segment2img from '../Dashboard/images/dashboardright.jpg'
 
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
@@ -73,7 +73,7 @@ const App = () => {
         <div data-aos="flip-left">
           <MyDivider textAlign="right">Why IoT Dashboard?</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
       <MypicGrid container xs={12} md={4}></MypicGrid>
     

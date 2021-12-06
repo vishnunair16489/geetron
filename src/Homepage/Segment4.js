@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Typography, Grid, Stack, Divider ,Hidden} from '@mui/material';
 
 
-import img from '../Homepage/images/dashboard.png'
+import img from '../Homepage/images/dashboard.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -65,7 +65,7 @@ const App = () => {
 
   }, []);
   return (
-    <div style={{ backgroundColor:'#ffffff'}}>
+    <div style={{ minHeight:'500px'}}>
       <MyDivider textAlign="center">Geetron IoT DashBoard</MyDivider>
 
       <MyGrid container spacing={0} >

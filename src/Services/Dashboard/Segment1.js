@@ -3,7 +3,7 @@ import { Zoom } from 'react-slideshow-image';
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
-import Irrigation from '../Dashboard/images/dashboardmain.png'
+import Irrigation from '../Dashboard/images/dashboard.jpg'
 import {  Grid} from '@mui/material';
 const Slideshow = () => {
   const images = [  

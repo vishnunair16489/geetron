@@ -1,121 +1,90 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import Parking from './images/parkingsystem.png'
-import Parkingcounter from './images/parkingcounter.jpg'
-import CardContent from '@mui/material/CardContent';
+import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
-import CardMedia from '@mui/material/CardMedia';
-import { Divider, Typography, Grid, Stack,Box  } from '@mui/material';
-
+import 'aos/dist/aos.css';
+import { padding } from '@mui/system';
 const MyGrid = styled(Grid)(({ theme }) => ({
- 
-  alignItems: "flex-start",
   justifyContent: "center",
-
+  alignItems: "flex-start", 
 
 
 }));
 
-const Header = styled(Divider)(({ theme }) => ({
+const MypicGrid = styled(Grid)(({ theme }) => ({
 
-  fontSize: '1.5em',
+  backgroundImage: `url(${Parking})`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+ 
+  height: '250px'
+ 
+ 
+
+  
+}));
+
+const MyDivider = styled(Divider)(({ theme }) => ({
+
+  
+  minWidth: '10em',
   color: '#1268B3',
   textAlign: 'center',
+  margin: "50px 0px",
   fontFamily: 'SourceSansPro',
   fontWeight: 'bold',
-  margin:'50px 0px'
+  [theme.breakpoints.down("xs")]: {
   
-
+    fontSize: '1.2em',
+  }, 
+  [theme.breakpoints.up("md")]: {
+   
+   
+    fontSize: '1.5em',
+  },
 
 }));
-const MyStack = styled(Stack)(({ theme }) => ({
 
-  maxWidth: "1200px",
 
-}));
+const Mypara = styled(Typography)(({ theme }) => ({
+
+
+  fontFamily: 'SourceSansPro',
+  padding:'0px 15px',
+  textAlign:'justify'
+ 
+  
+ 
+
+}))
 const Mytext = styled(Typography)(({ theme }) => ({
 
   fontSize: '1.0em',
   textAlign: 'left',
   color: '#1268B3',
   fontWeight: 'bold',
-  fontFamily: 'SourceSansPro'
-}));
-const Mypara = styled(Typography)(({ theme }) => ({
-
-  fontSize: '0.9em',
-  textAlign: 'left',
- 
   fontFamily: 'SourceSansPro',
-  fontWeight: 'bold',
-  [theme.breakpoints.down("xs")]: {
-    width:'600px',
-   },
-    [theme.breakpoints.up("md")]: {
-    
-    alignItems: "center",
-    justifyContent: "center",
-  
-   },
-}))
-
-
-const MyCard = styled(Typography)(({ theme }) => ({
-
- 
-   backgroundColor:'white ',
-   [theme.breakpoints.down("md")]: {
- 
-   alignItems: "center",
-   justifyContent: "center",
-
- 
-  },
-
-}))
-const MyCardmedia = styled(CardMedia)(({ theme }) => ({
-
-
-  [theme.breakpoints.up("xs")]: {
-
-      width:'200px',
-
-
- },
- [theme.breakpoints.up("md")]: {
-
-  width:'150px',
- },
-
-
-}))
-
+  padding:'15px'
+}));
 const App = () => {
   return (
 
   
-        <MyGrid container>
-
-          <MyStack spacing={0}>
-            <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-              <Header textAlign="center">Models </Header>
-            </div>
+      <Stack>
+        <div data-aos="flip-left">
+          <MyDivider textAlign="right">Smart parking benefits</MyDivider>
+        </div>
+        <MyGrid container spacing={2} >
+      
+      <MypicGrid container xs={12} md={4}></MypicGrid>
+    
+      <MyGrid item container xs={12} md={6} spacing={2}>
+     
           
-        
-              <Grid container direction='row'   justifyContent="center"  alignItems="center" spacing={0}>
-                <Grid item >
-                <img
-                        height='180px'
-                        src={Parking}
-                        alt="green iguana"  
-                      />
-                </Grid>
-                <Grid container   justifyContent="center"  alignItems="center" >
-          
-          <Grid  container   justifyContent="center"  alignItems="center"  item xs={12} sm={4} md={4}>
-         
-       
-          <Mytext width='350px' >
+          <Grid item  xs={12}  sm={4} md={4}>
+          <Mytext >
           <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
           Parking Counter system
               
@@ -133,10 +102,10 @@ const App = () => {
         
           
           </Grid>
-          <Grid container   justifyContent="center"  alignItems="center" item  xs={12} sm={4} md={4}>
+          <Grid item  xs={12} sm={4} md={4}>
          
        
-         <Mytext width='350px'>
+         <Mytext >
          <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
          Parking management System
               
@@ -154,10 +123,10 @@ const App = () => {
          
          
          </Grid>
-         <Grid container  justifyContent="center"  alignItems="center" item  xs={12} sm={4} md={4}>
+         <Grid item  xs={12} sm={4} md={4}>
          
       
-         <Mytext width='350px'>
+         <Mytext>
          <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="400" >
          Parking Billing System
             
@@ -172,19 +141,16 @@ const App = () => {
             </Mypara>
              </div>
               </Mytext>
+          
         
-         
-         </Grid>
-        
-      </Grid>
-                 
-              </Grid>
-           
+      
+            </Grid>
+          
+      </MyGrid>
+      </MyGrid>
+      </Stack>
 
-          </MyStack>
-
-        </MyGrid>
-    
+ 
 
   );
 }

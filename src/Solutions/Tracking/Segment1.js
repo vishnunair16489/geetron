@@ -18,7 +18,7 @@ const Slideshow = () => {
    
   ];
   const body = [
-    ""
+    "The smart-tracking solution allows companies to track and manage the assets that power any business."
    
   ];
   const zoomInProperties = {

@@ -5,8 +5,7 @@ import Segment4 from  '../Hotel/Segment4';
 import { CssBaseline,Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-import Imagebutton from  './Package1';
-import Imagebutton1 from  './Package2';
+import Trail from  './trial';
 const MyGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
   
@@ -19,7 +18,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   },
   [theme.breakpoints.up("md")]: {
    
-    marginTop:'-65px'
+    marginTop:'0px'
   },
 
 
@@ -39,8 +38,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         <Segment4/>
       
       
-        <Imagebutton/>
-        <Imagebutton1/>
+        <Trail/>
      </MyGrid>
        
       </div>

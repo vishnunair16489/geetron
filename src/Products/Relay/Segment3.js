@@ -73,7 +73,7 @@ const App = () => {
           <div data-aos="flip-left">
         
        
-      <MypicGrid container xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
+      <MypicGrid container xs={12} md={4}><img src={img} height='200' alt='img'/></MypicGrid>
       </div>
           </Hidden>
       <MyGrid item xs={12} md={6}>
@@ -122,7 +122,7 @@ const App = () => {
       <div data-aos="flip-left">
         
      
-      <MypicGrid container xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
+      <MypicGrid container xs={12} md={4}><img src={img} height='200' alt='img'/></MypicGrid>
         </div>
           </Hidden>
     

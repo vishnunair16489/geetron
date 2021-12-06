@@ -50,7 +50,7 @@ const Slideshow = () => {
     "The challenge for companies in the field of Industry 4.0 is to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level. ",
     "All in one facility management solution with a centralized IoT dashboard. Lighting, waste management, irrigation, and Security comes under one roof with our smart intergartion techiqueThe waste management IoT solution enables cities and industries to manage their waste efficiently, reducing the environmental footprint and improving the quality of the service.",
     "Parks and Resorts seek sustainable growth, reducing the impact of economic and demographic changes and taking advantage of information and communication technologies.",
-    "We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free.",
+    "The smart-tracking solution allows companies to track and manage the assets that power any business.",
     "Digital Signage is capable of displaying anything desired such as video, pictures, animations, or just plain text, useful for any business which relies on constant updated information be it be your sales or advertisement. The message will be highlighted by the power of digital signage",
     "We integrate IoT enabled medical devices with our dashboard, enabling easy access to patient medical history and current status. "
   ];
@@ -71,7 +71,7 @@ const Slideshow = () => {
     scale: 1.2,
     autoplay: true,
     duration: 4000,
-    pauseOnHover: true,
+    pauseOnHover: false,
     canSwipe: true,
     arrows: false
 
@@ -103,19 +103,10 @@ const Slideshow = () => {
 
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
-    fontSize: '1.0em',
     textAlign: 'justify',
     color: 'white',
     fontFamily: 'SourceSansPro',
-    shadowColor: "#00000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
     
-    elevation: 5,
 
   }));
   const MyStack = styled(Stack)(({ theme }) => ({
@@ -154,12 +145,12 @@ const Slideshow = () => {
                 <MyStack  spacing={1}>
                   <Grid container spacing={2} direction="row" >
                     <Grid item  xs={6} sm={10}>
-                    <div data-aos="flip-left">
+                    <div data-aos="flip-left" data-aos-anchor>
                     <Header>{header[index]}</Header>
                   </div>
                     </Grid>
                     <Grid item   xs={6} sm={2} container  alignItems= "flex-end"  justifyContent= "flex-end" >
-                    <div data-aos="flip-left" data-aos-delay="500">
+                    <div data-aos="flip-left" data-aos-anchor >
                     <MyButtoncustom links={link[index]}/>
                   </div>
                     </Grid>

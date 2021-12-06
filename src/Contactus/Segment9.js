@@ -99,12 +99,12 @@ const App = () => {
            
           </div>
           <MyGrid container spacing={2} >
-  <MypicGrid>
+  <MypicGrid item xs={12} md={6}>
      <Googlemaps/>
        
         </MypicGrid>
       
-        <MyGrid item xs={12} md={8}>
+        <MyGrid item xs={12} md={6}>
       
         <Grid  container  xs={12} md={12}>
   

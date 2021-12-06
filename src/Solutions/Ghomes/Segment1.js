@@ -21,7 +21,7 @@ const Slideshow = () => {
     indicators: false,
     scale: 0.8,
     autoplay: false,
-    duration: 3000,
+    duration: 123000,
     pauseOnHover: true,
     canSwipe: true,
     arrows: false

@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Ghomes/images/ghmomes.jpg'
+import segment2img from '../Hospital/images/disabledalarmsystem.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -15,7 +15,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
   backgroundSize:'cover',
-  height:'300px',
+  height:'500px',
  
 
   

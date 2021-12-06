@@ -91,7 +91,7 @@ const App = () => {
           <div data-aos="flip-left">
         
        
-      <MypicGrid container  item justifyContent= "flex-end" alignItems= "flex-end" xs={12} md={4}><img src={img} height='300' alt='img'/></MypicGrid>
+      <MypicGrid container  item justifyContent= "flex-end" alignItems= "flex-end" xs={12} md={4}><img src={img} height='250' alt='img'/></MypicGrid>
       </div>
           </Hidden>
       <MyGrid item xs={12} md={6}>
@@ -158,7 +158,7 @@ const App = () => {
     
         
      
-      <MypicGrid container  item justifyContent= "center" alignItems= "center" xs={12} md={4}>  <div data-aos="flip-left"><img src={img} height='300' alt='img'/>   </div></MypicGrid>
+      <MypicGrid container  item justifyContent= "center" alignItems= "center" xs={12} md={4}>  <div data-aos="flip-left"><img src={img} height='250' alt='img'/>   </div></MypicGrid>
      
           </Hidden>
     

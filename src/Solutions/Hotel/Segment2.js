@@ -6,8 +6,8 @@ import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 import parallex from '../Hotel/images/switch.mp4'
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
-  justifyContent: "center",
-  alignItems: "center", 
+    justifyContent: "center",
+    alignItems: "center", 
 
 
 }));
