@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import segment2img from '../Community/images/waste.png'
+import segment2img from '../Community/images/waste.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
