@@ -19,12 +19,12 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
  
   [theme.breakpoints.down("xs")]: {
   
-    height:'200px',
+    height:'220px',
   }, 
   [theme.breakpoints.down("md")]: {
    
    
-    height:'200px',
+    height:'220px',
   },
   [theme.breakpoints.up("md")]: {
    
@@ -92,7 +92,7 @@ const App = () => {
   
       <Stack>
         <div data-aos="flip-left">
-          <MyDivider textAlign="right">Industy 4.0 </MyDivider>
+          <MyDivider textAlign="right">Industy 4.0  </MyDivider>
         </div>
         <MyGrid container spacing={0} >
       
