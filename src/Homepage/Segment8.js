@@ -92,7 +92,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
   return(  
 
     <div >
-    <MyDivider textAlign="center">Meet Our Partners </MyDivider>
+    <MyDivider textAlign="center">Our Group </MyDivider>
     <MyGrid container spacing={0.5} > 
     <MyGridLeft>   
     <div   data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >   

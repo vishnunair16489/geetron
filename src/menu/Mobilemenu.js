@@ -223,19 +223,19 @@ export default function PersistentDrawerRight() {
            <ListItemIcon>
            <img src={Switch}  height='30px'  alt="water" />
            </ListItemIcon>
-           <ListItemText primary="Switch" />
+           <ListItemText primary="Switches" />
          </ListItem>
          <ListItem button key="timmer" onClick={()=> handleDrawerClose('Timmer')}>
            <ListItemIcon>
            <img src={Timmer}  height='30px'  alt="water" />
            </ListItemIcon>
-           <ListItemText primary="Timmer" />
+           <ListItemText primary="Timers" />
          </ListItem>
          <ListItem button key="controller" onClick={()=> handleDrawerClose('Controller')}>
            <ListItemIcon>
            <img src={Controller}  height='30px'  alt="water" />
            </ListItemIcon>
-           <ListItemText primary="Controller" />
+           <ListItemText primary="Controllers" />
          </ListItem>
          <ListItem button key="Locks" onClick={()=> handleDrawerClose('Locks')}>
            <ListItemIcon>
@@ -256,7 +256,7 @@ export default function PersistentDrawerRight() {
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary  aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Solution</Typography>
+          <Typography>Solutions</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <List>

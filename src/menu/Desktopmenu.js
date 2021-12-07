@@ -116,7 +116,7 @@ export default function NavTabs() {
         return    <React.Fragment>
             <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
            <MyBox  container onMouseLeave={() => setValue(index)} >
-         <Tooltip title="Switchs">
+         <Tooltip title="Switches">
           <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Switch')}>
           <img src={Switch} height='30px' alt="water" />
           </IconButton>
@@ -245,7 +245,7 @@ export default function NavTabs() {
         <LinkTab    onMouseEnter={() => setValue(0)} onClick={()=> navigate('/')}   onMouseLeave={() => setValue(index)} label="Home"  />
         <LinkTab  onMouseEnter={() => setValue(1)} onClick={()=> navigate('/Aboutus')} onMouseLeave={() => setValue(index)} label="About Us" />
         <LinkTab onMouseEnter={() =>  setValue(2)}  label="Product"  />
-        <LinkTab id="trigger"  onMouseEnter={() => setValue(3)}  label="Solution"/>
+        <LinkTab id="trigger"  onMouseEnter={() => setValue(3)}  label="Solutions"/>
         <LinkTab  onMouseEnter={() => setValue(4)}  label="Services" />
         <LinkTab  onMouseEnter={() => setValue(5)}  onMouseLeave={() => setValue(index)} label="Contact Us" onClick={()=> navigate('Contact')} />
   

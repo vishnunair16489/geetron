@@ -194,7 +194,7 @@ const App = () => {
         </Stack>
        
         <div data-aos="flip-left">
-            <MyDivider textAlign="center">Our Partners</MyDivider>
+            <MyDivider textAlign="center">Our Group</MyDivider>
           </div>
         <Marquee >
         <img src={Sub1} width="600" alt="Logo" />
