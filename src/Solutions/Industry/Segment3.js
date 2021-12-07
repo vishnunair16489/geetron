@@ -19,7 +19,7 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
  
   [theme.breakpoints.down("xs")]: {
   
-    height:'200px',
+    width:'200px',
   }, 
   [theme.breakpoints.down("md")]: {
    

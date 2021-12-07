@@ -140,7 +140,6 @@ Integration Activities.
                    <ul>
                      <li>Electronic Design, Manufacturing, Products and Systems Integration Services </li>
                      <li>Prototyping, Sourcing, Turnkey Manufacturing and Support Services</li>
-                     <li> Prototyping, Sourcing, Turnkey Manufacturing and Support Services</li>
                      <li>Design and Development of Embedded Products / Systems/FPGA based Systems</li>
                      <li> Component level Hardware Design Development and re-engineering.</li>
                      <li> Software Development for Tablets and PCs</li>

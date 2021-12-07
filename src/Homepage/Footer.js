@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import Logo from  '../menu/images/logo.png';
+import Logo from  '../menu/images/logodark.png';
 
 import Segment9 from '../Homepage/Segment10';
 import Fb from  '../Homepage/images/facebook.png';
@@ -10,7 +10,7 @@ import Twitter from  '../Homepage/images/twitter.png';
 import Insta from  '../Homepage/images/instagram.png';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import {Hidden,Stack,Divider ,Link,CssBaseline} from '@mui/material';
+import {Hidden,Stack,Link,CssBaseline} from '@mui/material';
 
 
 const MyGrid = styled(Grid)(({ theme }) => ({  
@@ -71,7 +71,7 @@ const App = ()=>{
               <MyLink href="Relay" underline="none">{'Relays'}</MyLink>
               </MyStack>
            
-            
+             
             
               <MyStack style={{marginTop:'20px'}} spacing={0.5}>
               Solution
@@ -109,17 +109,14 @@ const App = ()=>{
 
               <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
-        <Grid item xs={4}>
-          <Item>  <Grid   item xs={4}>
+        <Grid item container xs={4}>
+          <Item>  <Grid     item xs={4}>
              <img src={Logo}  alt="Logo" width='100px' />
             </Grid></Item>
         </Grid>
         <Grid item xs={4}>
           <Item> <Link  style={{fontSize:'1em',color:'#54D692'}} underline="none">{'© Geetron Iot Solution'}</Link>
-          <Link  style={{color:'#000000'}} underline="none">{'|'}</Link>
-          <Link  style={{fontSize:'1em'}} href="/" underline="none">{'Terms & Condition'}</Link>
-          <Link  style={{color:'#000000'}} underline="none">{'|'}</Link>
-          <Link  style={{fontSize:'1em'}} href="/" underline="none">{'Privacy Policy'}</Link></Item>
+        </Item>
         </Grid>
         <Grid item xs={4}>
           <Item>  <Link  style={{fontSize:'1em',color:'#54D692'}} underline="none">{'Follow us'}</Link>

@@ -19,12 +19,12 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
  
   [theme.breakpoints.down("xs")]: {
   
-    height:'220px',
+    height:'200px',
   }, 
   [theme.breakpoints.down("md")]: {
    
    
-    height:'220px',
+    height:'200px',
   },
   [theme.breakpoints.up("md")]: {
    
@@ -96,7 +96,7 @@ const App = () => {
         </div>
         <MyGrid container spacing={0} >
       
-      <MypicGrid container xs={12} md={4}></MypicGrid>
+      <MypicGrid container xs={12} md={6}></MypicGrid>
     
       <MyGrid item xs={12} md={6}>
      

@@ -116,12 +116,12 @@ export default function NavTabs() {
         return    <React.Fragment>
             <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
            <MyBox  container onMouseLeave={() => setValue(index)} >
-         <Tooltip title="Switch">
+         <Tooltip title="Switchs">
           <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Switch')}>
           <img src={Switch} height='30px' alt="water" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Timer">
+        <Tooltip title="Timers">
           <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Timmer')}>
           <img src={Timmer}  height='30px'  alt="water" />
           </IconButton>
