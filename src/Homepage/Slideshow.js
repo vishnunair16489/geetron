@@ -31,7 +31,7 @@ const Slideshow = () => {
     Hospital
   ];
   const header = [
-    "SMART HOMES",
+    "Smart Homes",
     "New IoT Solution for Water Management",
     "Hotel Management System",
     "Smart Parking System",
@@ -43,17 +43,16 @@ const Slideshow = () => {
     "Hospital"
   ];
   const body = [
-    "Homes are getting smarter, safe and Secure. Geetron smart homes provide automated and innovative solutions that will have all the intelligent home features, including voice recognition.",
+    "Homes are getting smarter, safe, and Secure. Geetron smart homes provide automated and innovative solutions that will have all the intelligent home features, including voice recognition.",
     "We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free.",
     "Geetron GRMS offers Enhanced hospitality and provides a unique experience for guests. Our solutions work on Interactive technology that accomplishes the seamless experience you want for your guest and provides easy management for the operators.",
     "Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors.",
     "The challenge for companies in the field of Industry 4.0 is to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level. ",
-    "All in one facility management solution with a centralized IoT dashboard. Lighting, waste management, irrigation, and Security comes under one roof with our smart intergartion techiqueThe waste management IoT solution enables cities and industries to manage their waste efficiently, reducing the environmental footprint and improving the quality of the service.",
+    "All in one facility management solution with a centralized IoT dashboard. Lighting, waste management, irrigation, and Security come under one roof with our smart integration technique. The waste management IoT solution enables cities and industries to manage their waste efficiently, reducing the environmental footprint and improving the quality of the service.",
     "Parks and Resorts seek sustainable growth, reducing the impact of economic and demographic changes and taking advantage of information and communication technologies.",
     "The smart-tracking solution allows companies to track and manage the assets that power any business.",
-    "Digital Signage is capable of displaying anything desired such as video, pictures, animations, or just plain text, useful for any business which relies on constant updated information be it be your sales or advertisement. The message will be highlighted by the power of digital signage",
-    "We integrate IoT enabled medical devices with our dashboard, enabling easy access to patient medical history and current status. "
-  ];
+    "Digital Signage is capable of displaying anything desired such as video, pictures, animations, or just plain text, useful for any business which relies on constantly updated information be it be your sales or advertisement. The message will be highlighted by the power of digital signage",
+    "We integrate IoT-enabled medical devices with our dashboard, enabling easy access to patient medical history and current status. "  ];
   const link = [
     "Ghomes",
     "Water",

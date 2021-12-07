@@ -85,7 +85,7 @@ const App = () => {
               <Stack direction="row" spacing={5}>
               <MyStack spacing={2}>
               <div  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out-back" data-aos-delay="100" >
-                <Counter>120</Counter>
+                <Counter>50+</Counter>
                 <Subtext>Countries</Subtext>
                 </div> 
               </MyStack>

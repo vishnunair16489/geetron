@@ -148,9 +148,7 @@ const App = () => {
                           Smart Parking
                         </Mytext>
                         <Mypara color="text.secondary">
-                          Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors.
-
-                          Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers)</Mypara>
+                        Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors. Smart parking applications (cities, hospitals, public areas, malls, universities, sports centers)</Mypara>
                           <CardActions>
                         <Button  onClick={()=> navigate('Parking')} size="small">Learn More</Button>
                       </CardActions>
@@ -177,7 +175,7 @@ const App = () => {
                           Smart GRMS
                         </Mytext>
                         <Mypara color="text.secondary">
-                         Geetron GRMS offers  solutions that  work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.
+                        Geetron GRMS offers solutions that work on Interactive technology that accomplish the seamless experience you want for your guest and provide easy management for the operators.
 
                         </Mypara>
                         <CardActions>

@@ -8,6 +8,7 @@ import {useNavigate} from 'react-router-dom';
 import firebase from "./Firebase";
 import { Divider, Button, Grid, Stack ,TextField} from '@mui/material';
 
+
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
     justifyContent: "center",
@@ -109,17 +110,17 @@ const App = () => {
         <Stack>
           <div data-aos="flip-left">
         
-          <MyDivider textAlign="center">About Us </MyDivider>
+          <MyDivider textAlign="center">Contact  Us </MyDivider>
          
            
           </div>
           <MyGrid container spacing={2} >
-  <MypicGrid item xs={12} md={6}>
+  <MypicGrid item xs={12} md={4}>
      <Googlemaps/>
-       
+     
         </MypicGrid>
       
-        <MyGrid item xs={12} md={6}>
+        <MyGrid item xs={12} md={4}>
       
         <Grid  container  xs={12} md={12}>
   
@@ -131,6 +132,7 @@ const App = () => {
         label="Full Name"
         value={name} 
         fullWidth
+        size="small"
         onChange={(e) => setName(e.target.value)}
       />
        </Grid>
@@ -139,6 +141,7 @@ const App = () => {
         id="outlined-required"
         label="E-Mail"
         fullWidth
+        size="small"
         value={email} 
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -148,6 +151,8 @@ const App = () => {
        <TextField  sx={{ m: 0,marginTop:'20px'}}
         id="outlined-required"
         fullWidth
+
+        size="small"
         label="Phone Number"
         value={phone} 
         onChange={(e) => setPhone(e.target.value)}
@@ -158,6 +163,7 @@ const App = () => {
         id="outlined-required"
         label="Country"
         fullWidth
+        size="small"
         value={country} 
         onChange={(e) => setCountry(e.target.value)}
       />

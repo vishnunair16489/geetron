@@ -142,7 +142,7 @@ const App = () => {
                   <ContentGrid container item  xs={12}  sm={6} md={6}>
                   <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="500" >
                   <Myp>
-                  <b>Device Parameterss</b>
+                  <b>Device Parameters</b>
                   <ul>
 
                     <li>Supply : 230V 50Hz</li>

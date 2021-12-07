@@ -31,24 +31,28 @@ const Slideshow = () => {
   const MyGrid = styled(Grid)(({ theme }) => ({
 
     alignItems: "center",
+    justifyContent: "flex-end",
     height: '650px',
+    width:'100%',
+   
 
     [theme.breakpoints.up("xs")]: {
       marginLeft: "25px",
-      maxWidth: '250px',
+      paddingRight:'50px',
     },
     [theme.breakpoints.up("sm")]: {
       marginLeft: "50px",
-      maxWidth: '300px',
+      paddingRight:'50px',
+   
     },
     [theme.breakpoints.up("md")]: {
-      marginLeft: "50px",
-      maxWidth: '300px',
+      marginLeft: "100px",
+      paddingRight:'300px',
     },
     [theme.breakpoints.up("lg")]: {
-
-      marginLeft: "100px",
-      maxWidth: '700px',
+      paddingRight:'300px',
+      marginLeft: "200px",
+     
     },
 
 
@@ -59,8 +63,8 @@ const Slideshow = () => {
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
     fontSize: '1.5em',
-    textAlign: 'left',
-    color: '#1268B3',
+    textAlign: 'right',
+    color: 'black',
     fontFamily: 'SourceSansPro',
     fontWeight: 'bold',
 
@@ -71,7 +75,7 @@ const Slideshow = () => {
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
     fontSize: '1.0em',
-    textAlign: 'left',
+    textAlign: 'right',
     maxWidth: '30em',
     color: 'black',
     fontFamily: 'SourceSansPro',

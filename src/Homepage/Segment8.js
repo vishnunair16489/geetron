@@ -142,7 +142,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
                Geepas
                </Header>
                <Subtext variant="subtitle1" color="text.secondary" component="div">
-               Geepas is  committed to creating things for you that make a happy difference in your life.   When technology gives you convenience, you find yourself in a happy space.
+               Geepas is committed to creating things for you that make a happy difference in your life.   When technology gives you convenience, you find yourself in a happy space.
                </Subtext>
              </CardContent>
             

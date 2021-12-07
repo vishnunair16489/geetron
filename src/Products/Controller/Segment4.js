@@ -107,7 +107,7 @@ const App = () => {
                   <li> 9 Digital sensor interface</li>
                   <li>4 Analog Dimming Control </li>
                   <li>Direct Interface for  bell and welcome light</li>
-                  <li>simultanious DALI and Modbus interface</li>
+                  <li>Simultanious DALI and Modbus interface</li>
                   </ul>
                   </Myp>
                   </div>
