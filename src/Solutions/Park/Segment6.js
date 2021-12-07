@@ -78,7 +78,7 @@ const App = () => {
              
 
               
-              <Mypara>Our IoT based Panic Alarm System is there for you in case of an emergency which enables you to instantly  alert our monitoring Dashboard. Hopefully you never need to use our panic button but it's certainly great to know it's there if you do simply safe on.
+              <Mypara>Our IoT-based Panic Alarm System is there for you in case of an emergency which enables you to instantly alert our monitoring Dashboard. Hopefully, you never need to use our panic button but it's certainly great to know it's there if you do simply safe on.
                 </Mypara>
                 </div>
                      <Grid container direction="row" spacing={0}>

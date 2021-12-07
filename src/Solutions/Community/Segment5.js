@@ -76,7 +76,7 @@ const App = () => {
           <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" >
           
           
-                <Mypara>We have designed an automated waste bin capable of updating bin status to an IoT dashboard. Dashboard displays fill level of each zone  which increases the time management and employee efficiency</Mypara>
+                <Mypara>We have designed an automated waste bin capable of updating bin status to an IoT dashboard. Dashboard displays the fill level of each zone which increases the time management and employee efficiency</Mypara>
                 </div>
                 <Grid container direction="row" spacing={0}>
                 <Grid item  xs={12}  sm={6} md={6}>

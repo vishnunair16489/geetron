@@ -112,12 +112,12 @@ const App = () => {
           
               <MyStackfirst spacing={0}>
               <div data-aos="fade-right"  data-aos-easing="ease-out-quart" >
-                <Mypara>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra long range radio communication to eliminate all expensive in-field wiring. Our solar powered watering stations are environmentally friendly and maintenance free. In the backbone we have a full scale industrial irrigation controller, including access to IoT cloud for controller, intelligence, alarms and weather forecast trough mobile and web apps.
+                <Mypara>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free. In the backbone, we have a full-scale industrial irrigation controller, including access to the IoT cloud for the controller, intelligence, alarms, and weather forecast through mobile and web apps.
                 </Mypara>
                 </div>
                 <Mypara>
                 <div data-aos="fade-right"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
-Future of irrigation is now with wireless irrigation systems by using the latest radio technology, multiple sensors connected to cloud platform. Every water valve is controlled without any wires and runs on solar power. Saves 50% of water, increases crop yield by 30% and saves hundreds of work hours. Our irrigation system controls electrically operated valves from the central computer. Geetron Wireless Irrigation Controller use wireless two-way communication to open and close valves. ﻿The solution consists of several parts – Wireless Irrigation Controller, Cloud Based Control and Monitoring.
+                The future of irrigation is now with wireless irrigation systems by using the latest radio technology, multiple sensors connected to the cloud platform. Every water valve is controlled without any wires and runs on solar power. It Saves 50% of water, increases crop yield by 30%, and saves hundreds of work hours. Our irrigation system controls electrically operated valves from the central computer. Geetron Wireless Irrigation Controller uses wireless two-way communication to open and close valves. ﻿The solution consists of several parts – Wireless Irrigation Controller, Cloud-Based Control, and Monitoring.
 </div></Mypara>
               </MyStackfirst>
         

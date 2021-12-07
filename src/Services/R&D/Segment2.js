@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import segment2img from '../R&D/images/r&d1.jpg'
-
+import rd2 from '../R&D/images/r&d2.png'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
 
 import 'aos/dist/aos.css';
@@ -16,10 +16,33 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
 
   backgroundImage: `url(${segment2img})`,
   backgroundSize:'cover',
-  height:'300px',
  
-
+  [theme.breakpoints.up("xs")]: {
   
+    height:'150px',
+  }, 
+  [theme.breakpoints.up("sm")]: {
+   
+   
+    height:'300px',
+  },
+ 
+}));
+const MypicGrid1 = styled(Grid)(({ theme }) => ({
+
+  backgroundImage: `url(${rd2})`,
+  backgroundSize:'cover',
+ 
+  [theme.breakpoints.up("xs")]: {
+  
+    height:'220px',
+  }, 
+  [theme.breakpoints.up("sm")]: {
+   
+   
+    height:'300px',
+  },
+ 
 }));
 
 const MyDivider = styled(Divider)(({ theme }) => ({
@@ -72,9 +95,9 @@ const App = () => {
         <div data-aos="flip-left">
           <MyDivider textAlign="right">Our R&D Department</MyDivider>
         </div>
-        <MyGrid container spacing={2} >
+        <MyGrid container spacing={0} >
       
-      <MypicGrid container xs={12} md={4}></MypicGrid>
+      <MypicGrid container xs={12} md={5}></MypicGrid>
     
       <MyGrid item xs={12} md={6}>
     
@@ -128,9 +151,15 @@ Integration Activities.
             </Box>
       </MyGrid>
       </MyGrid>
-      <MyDivider/>
+      <MyDivider>Our Product Cycle</MyDivider>
+      <MyGrid container spacing={5} >
+      <MypicGrid1 container xs={12} md={5}></MypicGrid1>
+       </MyGrid>
+       <br/>   <br/>
       <MyGrid container spacing={2} >
+     
       <Grid  item  xs={12}  sm={6} md={4}>
+     
       <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="500" >
       <Mypara>
                <b>Our major Services</b>

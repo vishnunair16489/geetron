@@ -173,12 +173,12 @@ export default function NavTabs() {
               <img src={Industry}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
-            <Tooltip title="Communities" onClick={()=> navigate('Community')}>
+            <Tooltip title="Community" onClick={()=> navigate('Community')}>
               <IconButton size="small" sx={{ ml: 2 }}>
               <img src={Community}  height='30px'  alt="water" />
               </IconButton>
             </Tooltip>
-            <Tooltip title="Parks&Resorts" onClick={()=> navigate('Park')}>
+            <Tooltip title="Parks & Resorts" onClick={()=> navigate('Park')}>
               <IconButton size="small" sx={{ ml: 2 }}>
               <img src={Resort}  height='30px'  alt="water" />
               </IconButton>
@@ -244,7 +244,7 @@ export default function NavTabs() {
         <Tabs textColor="#1268B3"   value={value} onChange={handleChange} onMouseEnter ={()=>setImage({Logodark})} onMouseLeave={()=>setImage({Logolight})} aria-label="nav tabs example">
         <LinkTab    onMouseEnter={() => setValue(0)} onClick={()=> navigate('/')}   onMouseLeave={() => setValue(index)} label="Home"  />
         <LinkTab  onMouseEnter={() => setValue(1)} onClick={()=> navigate('/Aboutus')} onMouseLeave={() => setValue(index)} label="About Us" />
-        <LinkTab onMouseEnter={() =>  setValue(2)}  label="Product"  />
+        <LinkTab onMouseEnter={() =>  setValue(2)}  label="Products"  />
         <LinkTab id="trigger"  onMouseEnter={() => setValue(3)}  label="Solutions"/>
         <LinkTab  onMouseEnter={() => setValue(4)}  label="Services" />
         <LinkTab  onMouseEnter={() => setValue(5)}  onMouseLeave={() => setValue(index)} label="Contact Us" onClick={()=> navigate('Contact')} />

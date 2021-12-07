@@ -4,7 +4,7 @@ import smarthome from '../Ghomes/images/ghmomes.jpg'
 import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
-import {  Typography, Grid, Stack} from '@mui/material';
+import {  Typography, Grid, Stack,Box} from '@mui/material';
 const Slideshow = () => {
   const images = [
     smarthome
@@ -28,32 +28,14 @@ const Slideshow = () => {
 
 
   }
+
   const MyGrid = styled(Grid)(({ theme }) => ({
 
-    alignItems: "center",
-    justifyContent: "flex-end",
+    alignItems: "flex-end",
+  justifyContent: "center",
     height: '650px',
-    width:'100%',
    
 
-    [theme.breakpoints.up("xs")]: {
-      marginLeft: "25px",
-      paddingRight:'50px',
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: "50px",
-      paddingRight:'50px',
-   
-    },
-    [theme.breakpoints.up("md")]: {
-      marginLeft: "100px",
-      paddingRight:'300px',
-    },
-    [theme.breakpoints.up("lg")]: {
-      paddingRight:'300px',
-      marginLeft: "200px",
-     
-    },
 
 
   }));
@@ -63,10 +45,9 @@ const Slideshow = () => {
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
     fontSize: '1.5em',
-    textAlign: 'right',
-    color: 'black',
+    textAlign: 'left',
+    color: '#FFFFFF',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
 
 
   }));
@@ -74,16 +55,14 @@ const Slideshow = () => {
 
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
-    fontSize: '1.0em',
-    textAlign: 'right',
-    maxWidth: '30em',
-    color: 'black',
+    textAlign: 'justify',
+    color: 'white',
     fontFamily: 'SourceSansPro',
-    align:'justify'
+    
 
   }));
   const MyStack = styled(Stack)(({ theme }) => ({
-    marginTop: "10px",
+    margin: "10px",
 
 
   }));
@@ -92,7 +71,14 @@ const Slideshow = () => {
     alignItems: "center",
     backgroundPosition: 'center',
     height: '650px',
-    width: "100%"
+    width: "100%",
+    backgroundColor:'#f0f0f0',
+
+  }));
+
+  const MyBoxtext = styled(Box)(({ theme }) => ({
+  
+    backgroundColor: 'rgba(52, 52, 52, 0.7)'
 
   }));
  
@@ -105,7 +91,7 @@ const Slideshow = () => {
             <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'cover' }}>
               <MyGrid container spacing={0} >
 
-
+<MyBoxtext>
                 <MyStack spacing={1}>
                   <div data-aos="flip-left">
                     <Header>{header[index]}</Header>
@@ -116,7 +102,7 @@ const Slideshow = () => {
                 
 
                 </MyStack>
-
+                </MyBoxtext>
 
               </MyGrid>
             </MyBox>

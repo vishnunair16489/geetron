@@ -150,7 +150,7 @@ const App = () => {
               <MyStackfirst spacing={2}>
                 <img src={Ventor} width="40" alt="Logo" />
                 <Mytext>Different Venders</Mytext>
-                <Mypara>In this space many venders are using different technology to connect to their iot devices, thus making the life of customers who buy them hard. But here in geetron we try to make the steps as easy as possible and try to give the customers a seemless expericence</Mypara>
+                <Mypara>In this space many vendors are using different technology to connect to their IoT devices, thus making the life of customers who buy them hard. But here in geetron we try to make the steps as easy as possible and try to give the customers a seamless experience</Mypara>
               </MyStackfirst>
             </div>
             </Grid>
@@ -159,7 +159,7 @@ const App = () => {
               <MyStack spacing={2}>
                 <img src={Data} width="40" alt="Logo" />
                 <Mytext>Open Data </Mytext>
-                <Mypara>In almostt all the iot smart Homes service the user data is send direclty to the servers which could be used for advertisemnt purposes, But we make sure that your data is kept locally in your server and if need  by you it will be connected to  our secure online server.</Mypara>
+                <Mypara>In almost all the IoT smart Homes services the user data is sent directly to the servers which could be used for advertisement purposes, But we make sure that your data is kept locally in your server, and if needed by you it will be connected to our secure online server.</Mypara>
 
               </MyStack>
             </div>
@@ -173,7 +173,7 @@ const App = () => {
               <MyStackfirst spacing={2}>
                 <img src={Service} width="40" alt="Logo" />
                 <Mytext>Service  Difficulties</Mytext>
-                <Mypara>All the main players that are in the Iot sector focuses onlly on their sales and not after sales services,  we at geetron mainly focuses on the after sales services as a happy customer is always a good customer for business,we make it a point that you stay happy all the time
+                <Mypara>All the main players that are in the IoT sector focuses only on their sales and not after-sales services,  we at geetron mainly focuses on the after-sales services as a happy customer is always a good customer for business, we make it a point that you stay happy all the time
 
                 </Mypara>
               </MyStackfirst>
@@ -184,7 +184,7 @@ const App = () => {
               <MyStack spacing={2}>
                 <img src={Cost} width="40" alt="Logo" />
                 <Mytext>High Cost</Mytext>
-                <Mypara>The initital cost of making your home a smart home make a deep hole in your pocket, we know that and thus we make it a point that we deliver the best products to our cusotmers at the most reasonable price so that they can enjoy all the featuers that a Iot has to offer them</Mypara>
+                <Mypara>The initial cost of making your home a smart home make a deep hole in your pocket, we know that and thus we make it a point that we deliver the best products to our customers at the most reasonable price so that they can enjoy all the features that a IoT has to offer them</Mypara>
 
               </MyStack>
             </div>

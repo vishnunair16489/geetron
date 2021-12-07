@@ -75,7 +75,7 @@ const App = () => {
             <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart"  >
           
               
-                <Mypara>We Provide an IoT dashboard based lighting management system which is Smart and effective suitable for parks and resorts. This system is equiped with specially engineered light automation hardware and software. Connectivity of the software with the hardware can be wired or wireless.   System status, energy reading  all can be monitored in realtime using our system.
+                <Mypara>We Provide an IoT dashboard-based lighting management system that is Smart and effective suitable for parks and resorts. This system is equipped with specially engineered light automation hardware and software. The connectivity of the software with the hardware can be wired or wireless. System status, energy reading all can be monitored in real-time using our system.
                   
                 </Mypara>
                 </div>

@@ -5,6 +5,7 @@ import Segment3 from  '../Community/Segment3';
 
 import Segment5 from  '../Community/Segment5';
 import Segment6 from  '../Community/Segment6';
+import Segment7 from  '../Community/Segment7';
 import { CssBaseline,Grid } from '@mui/material';
 
 import { styled } from '@mui/material/styles';
@@ -45,7 +46,7 @@ const App = () => {
         <Segment1/> 
         
      
-      
+        <Segment7/>
         <Segment2/>
         <Segment3/>
      

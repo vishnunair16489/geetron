@@ -10,28 +10,18 @@ const containerStyle = {
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyDeDz5d3adllvD6zLcPn6IlawULXE6BNy8"
+    googleMapsApiKey: "AIzaSyANBQ8CxkifX3MDFZ_5i3XtXjYvklm1DOU"
   })
 
-  const [map, setMap] = React.useState(null)
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
+  
 
   return isLoaded ? (
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={{ lat:  24.936991, lng:  55.044685 }}
         zoom={16}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
+      
       
       >
     

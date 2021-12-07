@@ -7,7 +7,7 @@ import { styled } from '@mui/material/styles';
 import 'aos/dist/aos.css';
 import 'react-slideshow-image/dist/styles.css'
 
-import {  Typography, Grid, Stack} from '@mui/material';
+import {  Typography, Grid, Stack,Box} from '@mui/material';
 const Slideshow = () => {
   const images = [
     Tracking,
@@ -34,26 +34,11 @@ const Slideshow = () => {
   }
   const MyGrid = styled(Grid)(({ theme }) => ({
 
-    alignItems: "center",
+    alignItems: "flex-end",
+  justifyContent: "center",
     height: '650px',
+   
 
-    [theme.breakpoints.up("xs")]: {
-      marginLeft: "25px",
-      maxWidth: '250px',
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: "50px",
-      maxWidth: '300px',
-    },
-    [theme.breakpoints.up("md")]: {
-      marginLeft: "100px",
-      maxWidth: '300px',
-    },
-    [theme.breakpoints.up("lg")]: {
-
-      marginLeft: "200px",
-      maxWidth: '700px',
-    },
 
 
   }));
@@ -64,9 +49,8 @@ const Slideshow = () => {
     paddingLeft: "0.5em",
     fontSize: '1.5em',
     textAlign: 'left',
-    color: 'white',
+    color: '#FFFFFF',
     fontFamily: 'SourceSansPro',
-    fontWeight: 'bold',
 
 
   }));
@@ -74,16 +58,14 @@ const Slideshow = () => {
 
     paddingTop: "0.2em",
     paddingLeft: "0.5em",
-    fontSize: '1.0em',
-    textAlign: 'left',
-    maxWidth: '30em',
+    textAlign: 'justify',
     color: 'white',
     fontFamily: 'SourceSansPro',
-    align:'justify'
+    
 
   }));
   const MyStack = styled(Stack)(({ theme }) => ({
-    marginTop: "10px",
+    margin: "10px",
 
 
   }));
@@ -92,10 +74,17 @@ const Slideshow = () => {
     alignItems: "center",
     backgroundPosition: 'center',
     height: '650px',
-    width: "100%"
+    width: "100%",
+    backgroundColor:'#f0f0f0',
 
   }));
- 
+
+  const MyBoxtext = styled(Box)(({ theme }) => ({
+  
+    backgroundColor: 'rgba(52, 52, 52, 0.7)'
+
+  }));
+
   return (
     <Zoom {...zoomInProperties}>
       {images.map((each, index) => (
@@ -103,9 +92,9 @@ const Slideshow = () => {
 
           <div className="each-slide">
             <MyBox style={{ 'backgroundImage': `url(${each})`, 'background-size': 'cover' }}>
-              <MyGrid container spacing={0.5} >
+              <MyGrid container spacing={0} >
 
-
+              <MyBoxtext sx={{ borderRadius: 0 }}>
                 <MyStack spacing={2}>
                   <div data-aos="flip-left">
                     <Header>{header[index]}</Header>
@@ -116,7 +105,7 @@ const Slideshow = () => {
                 
 
                 </MyStack>
-
+</MyBoxtext>
 
               </MyGrid>
             </MyBox>

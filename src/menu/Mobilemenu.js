@@ -295,13 +295,13 @@ export default function PersistentDrawerRight() {
            <ListItemIcon>
            <img src={Community}  height='30px'  alt="water" />
            </ListItemIcon>
-           <ListItemText primary="Communities" />
+           <ListItemText primary="Community" />
          </ListItem>
          <ListItem button key="park" onClick={()=> handleDrawerClose('Park')}>
            <ListItemIcon>
            <img src={Resort}  height='30px'  alt="water" />
            </ListItemIcon>
-           <ListItemText primary="Park&Resort" />
+           <ListItemText primary="Park & Resort" />
          </ListItem>
          <ListItem button key="tracking"  onClick={()=> handleDrawerClose('Tracking')}>
            <ListItemIcon>
