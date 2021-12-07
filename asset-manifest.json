@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.809464ba.chunk.css",
-    "main.js": "/static/js/main.887cc912.chunk.js",
-    "main.js.map": "/static/js/main.887cc912.chunk.js.map",
+    "main.js": "/static/js/main.202627ec.chunk.js",
+    "main.js.map": "/static/js/main.202627ec.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.41ec8b71.js",
     "runtime-main.js.map": "/static/js/runtime-main.41ec8b71.js.map",
     "static/css/2.34c0a3fd.chunk.css": "/static/css/2.34c0a3fd.chunk.css",
@@ -12,6 +12,7 @@
     "static/css/2.34c0a3fd.chunk.css.map": "/static/css/2.34c0a3fd.chunk.css.map",
     "static/css/main.809464ba.chunk.css.map": "/static/css/main.809464ba.chunk.css.map",
     "static/js/2.b8d88137.chunk.js.LICENSE.txt": "/static/js/2.b8d88137.chunk.js.LICENSE.txt",
+    "static/media/INFOGRAPHICSFORCOMMUNITY.e56aafad.png": "/static/media/INFOGRAPHICSFORCOMMUNITY.e56aafad.png",
     "static/media/Masterloopcontroller.dc7ca937.png": "/static/media/Masterloopcontroller.dc7ca937.png",
     "static/media/R&D.78a4777a.png": "/static/media/R&D.78a4777a.png",
     "static/media/index.css": "/static/media/SourceSansPro-Light.201a9050.ttf",
@@ -59,8 +60,8 @@
     "static/media/industrychallenges.fb58eb8f.png": "/static/media/industrychallenges.fb58eb8f.png",
     "static/media/instagram.75e0546a.png": "/static/media/instagram.75e0546a.png",
     "static/media/irrigation.15520f14.jpg": "/static/media/irrigation.15520f14.jpg",
-    "static/media/irrigation.ced7d634.png": "/static/media/irrigation.ced7d634.png",
     "static/media/irrigation.e2840bfd.jpg": "/static/media/irrigation.e2840bfd.jpg",
+    "static/media/irrigation.e4a3b555.png": "/static/media/irrigation.e4a3b555.png",
     "static/media/irrigationpc.e71eac75.png": "/static/media/irrigationpc.e71eac75.png",
     "static/media/irrigationsmart.7c0bede1.png": "/static/media/irrigationsmart.7c0bede1.png",
     "static/media/lightcontroller.01125743.png": "/static/media/lightcontroller.01125743.png",
@@ -82,7 +83,7 @@
     "static/media/parallex.2c0be70b.jpg": "/static/media/parallex.2c0be70b.jpg",
     "static/media/parallex.7e0eb766.mp4": "/static/media/parallex.7e0eb766.mp4",
     "static/media/park.04c16ff0.jpg": "/static/media/park.04c16ff0.jpg",
-    "static/media/park.208856a1.jpg": "/static/media/park.208856a1.jpg",
+    "static/media/park.54504e89.jpg": "/static/media/park.54504e89.jpg",
     "static/media/park.feffd88f.jpg": "/static/media/park.feffd88f.jpg",
     "static/media/parking.699dd25c.png": "/static/media/parking.699dd25c.png",
     "static/media/parking.7a9c38cb.jpg": "/static/media/parking.7a9c38cb.jpg",
@@ -92,6 +93,7 @@
     "static/media/pro.b7849641.png": "/static/media/pro.b7849641.png",
     "static/media/r&d.698e182e.jpg": "/static/media/r&d.698e182e.jpg",
     "static/media/r&d1.07189997.jpg": "/static/media/r&d1.07189997.jpg",
+    "static/media/r&d2.2a4c9d39.png": "/static/media/r&d2.2a4c9d39.png",
     "static/media/radar.b37f75a2.png": "/static/media/radar.b37f75a2.png",
     "static/media/radarsmall.7fbfa740.png": "/static/media/radarsmall.7fbfa740.png",
     "static/media/relay.a493e20c.png": "/static/media/relay.a493e20c.png",
@@ -143,6 +145,6 @@
     "static/css/2.34c0a3fd.chunk.css",
     "static/js/2.b8d88137.chunk.js",
     "static/css/main.809464ba.chunk.css",
-    "static/js/main.887cc912.chunk.js"
+    "static/js/main.202627ec.chunk.js"
   ]
 }
