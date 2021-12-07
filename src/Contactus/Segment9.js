@@ -115,98 +115,93 @@ const App = () => {
            
           </div>
           <MyGrid container spacing={2} >
+          <MyGrid item xs={12} md={4}>
+      
+      <Grid  container  xs={12} md={12}>
+
+    
+<Grid direction='row' container spacing={2} >
+ <Grid   item xs={12} md={6} >
+    <TextField  sx={{ m:0 }}
+      id="outlined-required"
+      label="Full Name"
+      value={name} 
+      fullWidth
+      size="small"
+      onChange={(e) => setName(e.target.value)}
+    />
+     </Grid>
+     <Grid   item xs={12} md={6} >
+     <TextField  sx={{ m: 0}}
+      id="outlined-required"
+      label="E-Mail"
+      fullWidth
+      size="small"
+      value={email} 
+      onChange={(e) => setEmail(e.target.value)}
+    />
+    </Grid></Grid>
+    <Grid direction='row' container spacing={2} >
+      <Grid   item xs={12} md={6} >
+     <TextField  sx={{ m: 0,marginTop:'20px'}}
+      id="outlined-required"
+      fullWidth
+
+      size="small"
+      label="Phone Number"
+      value={phone} 
+      onChange={(e) => setPhone(e.target.value)}
+    />
+    </Grid>
+    <Grid   item xs={12} md={6} >
+     <TextField  sx={{ m:0,marginTop:'20px'}}
+      id="outlined-required"
+      label="Country"
+      fullWidth
+      size="small"
+      value={country} 
+      onChange={(e) => setCountry(e.target.value)}
+    />
+    </Grid>
+     </Grid>
+   
+   
+     <Grid direction='row' container spacing={0} >
+     <Grid container  justifyContent="flex-start"  alignItems="flex-start"   item xs={12} md={12} >
+     <TextField  sx={{ m:0,marginTop:'20px'}}
+      id="outlined-multiline-static"
+      label="Message"
+      fullWidth
+      multiline
+      rows={10}
+      value={message} 
+      onChange={(e) => setMessage(e.target.value)}
+    />
+ </Grid>
+     </Grid>
+  
+</Grid>
+
+  <Button onClick={Push}>Send Message</Button>
+ 
+  <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+      <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+     Thanks for your mail. Will Get back Soon.
+      </Alert>
+    </Snackbar>
+  
+      </MyGrid>  
   <MypicGrid item xs={12} md={4}>
-     <Googlemaps/>
+    
      
         </MypicGrid>
       
-        <MyGrid item xs={12} md={4}>
-      
-        <Grid  container  xs={12} md={12}>
-  
-      
-  <Grid direction='row' container spacing={2} >
-   <Grid   item xs={12} md={6} >
-      <TextField  sx={{ m:0 }}
-        id="outlined-required"
-        label="Full Name"
-        value={name} 
-        fullWidth
-        size="small"
-        onChange={(e) => setName(e.target.value)}
-      />
-       </Grid>
-       <Grid   item xs={12} md={6} >
-       <TextField  sx={{ m: 0}}
-        id="outlined-required"
-        label="E-Mail"
-        fullWidth
-        size="small"
-        value={email} 
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      </Grid></Grid>
-      <Grid direction='row' container spacing={2} >
-        <Grid   item xs={12} md={6} >
-       <TextField  sx={{ m: 0,marginTop:'20px'}}
-        id="outlined-required"
-        fullWidth
-
-        size="small"
-        label="Phone Number"
-        value={phone} 
-        onChange={(e) => setPhone(e.target.value)}
-      />
-      </Grid>
-      <Grid   item xs={12} md={6} >
-       <TextField  sx={{ m:0,marginTop:'20px'}}
-        id="outlined-required"
-        label="Country"
-        fullWidth
-        size="small"
-        value={country} 
-        onChange={(e) => setCountry(e.target.value)}
-      />
-      </Grid>
-       </Grid>
+          
+        </MyGrid>  
+        <Grid container  justifyContent="center"  alignItems="center" item xs={12} md={8}>
+        <Googlemaps/>
      
-     
-       <Grid direction='row' container spacing={0} >
-       <Grid container  justifyContent="flex-start"  alignItems="flex-start"   item xs={12} md={12} >
-       <TextField  sx={{ m:0,marginTop:'20px'}}
-        id="outlined-multiline-static"
-        label="Message"
-        fullWidth
-        multiline
-        rows={10}
-        value={message} 
-        onChange={(e) => setMessage(e.target.value)}
-      />
-   </Grid>
-       </Grid>
-    
-  </Grid>
- 
-    <Button onClick={Push}>Send Message</Button>
-   
-    <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-       Thanks for your mail. Will Get back Soon.
-        </Alert>
-      </Snackbar>
-    
-    
-  
-
-
-           
-          
-          
-          
-        </MyGrid>
-      
-        </MyGrid>
-      
+    </Grid>   
        
         </Stack>
     

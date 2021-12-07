@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { styled } from '@mui/material/styles';
 import img from '../Switch/images/capswitch.jpg'
 import { Grid, Stack,Divider } from '@mui/material';
@@ -74,6 +74,9 @@ const Myp = styled('p')(({ theme }) => ({
   },
  }));
 const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
 
   

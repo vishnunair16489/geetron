@@ -12,6 +12,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import {Hidden,Stack,Link,CssBaseline} from '@mui/material';
 
+import {useNavigate} from 'react-router-dom';
 
 const MyGrid = styled(Grid)(({ theme }) => ({  
      marginTop: "28px",
@@ -55,6 +56,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 const App = ()=>{
+  const navigate = useNavigate();
   return(  
       <MyGrid container   justifyContent="center"  alignItems="center">
        <CssBaseline/>
@@ -75,7 +77,7 @@ const App = ()=>{
             
               <MyStack style={{marginTop:'20px'}} spacing={0.5}>
               Solution
-              <MyLink href="/Ghomes" underline="none">{'GHomes'}</MyLink>
+              <MyLink  onClick={()=> navigate('Ghomes')} underline="none">{'GHomes'}</MyLink>
               <MyLink href="/Water" underline="none">{'Water'}</MyLink>
               <MyLink href="Hotel" underline="none">{'Hotel'}</MyLink>
               <MyLink href="Parking" underline="none">{'Parking'}</MyLink>

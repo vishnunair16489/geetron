@@ -53,7 +53,7 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
   fontFamily: 'SourceSansPro',
   padding:'0px 15px',
-  textAlign:'justify'
+  textAlign:'left'
  
   
  
@@ -80,7 +80,7 @@ const App = () => {
       
       <MypicGrid container xs={12} md={4}></MypicGrid>
     
-      <MyGrid item container xs={12} md={6} spacing={2}>
+      <MyGrid item container xs={12} md={6} spacing={1}>
      
           
           <Grid item  xs={12}  sm={4} md={4}>
@@ -90,9 +90,9 @@ const App = () => {
               
                 <Mypara color="text.secondary">
                 <ul>
-                <li>Loop Sensing</li>
-                            <li>Display Single</li>
-                            <li>Display Tower</li>       
+                <li>Loop Detector based</li>
+                            <li>Zone Count Display</li>
+                            <li>Total Count Tower</li>       
 
                   
               </ul>
@@ -111,9 +111,9 @@ const App = () => {
               
                <Mypara color="text.secondary">
                <ul>
-               <li>Parking Lot Senser</li>
-                            <li>Display Single</li>
-                            <li>Display Tower</li>            
+               <li>Parking Sensor based</li>
+               <li>Zone Count Display</li>
+                            <li>Total Count Tower</li>          
 
                  
              </ul>

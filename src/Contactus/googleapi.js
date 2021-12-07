@@ -11,10 +11,7 @@ function MyComponent() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyANBQ8CxkifX3MDFZ_5i3XtXjYvklm1DOU"
-  })
-
-
-  
+  })  
 
   return isLoaded ? (
       <GoogleMap

@@ -97,11 +97,12 @@ const App = () => {
                   <b>Benifits</b>
                   <ul>
 
-                    <li>Improve enivromental care</li>
+                 
+                  <li>Improve environmental care</li>
                     <li>Reduce traffic conjestion due to regular waste collection</li>
                     <li>Collection request on demand</li>
-                    <li>Auto alert wihen bins are full</li>
-                    <li>Delay the semi loasd and collect the full load </li>
+                    <li>Auto alert when bins are full</li>
+                    <li>Delay the semi load and collect the full load </li>
                   </ul>
                   </Mypara>
                   </div>
