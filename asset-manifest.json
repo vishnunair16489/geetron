@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.809464ba.chunk.css",
-    "main.js": "/static/js/main.6480037e.chunk.js",
-    "main.js.map": "/static/js/main.6480037e.chunk.js.map",
+    "main.js": "/static/js/main.887cc912.chunk.js",
+    "main.js.map": "/static/js/main.887cc912.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.41ec8b71.js",
     "runtime-main.js.map": "/static/js/runtime-main.41ec8b71.js.map",
     "static/css/2.34c0a3fd.chunk.css": "/static/css/2.34c0a3fd.chunk.css",
@@ -109,7 +109,7 @@
     "static/media/signage2.daa56904.jpg": "/static/media/signage2.daa56904.jpg",
     "static/media/signage3.5b921fdd.jpg": "/static/media/signage3.5b921fdd.jpg",
     "static/media/signage4.9c1db765.jpg": "/static/media/signage4.9c1db765.jpg",
-    "static/media/smart.82b68212.png": "/static/media/smart.82b68212.png",
+    "static/media/smart.28cec939.png": "/static/media/smart.28cec939.png",
     "static/media/smarthome.584f5e05.jpg": "/static/media/smarthome.584f5e05.jpg",
     "static/media/smarthswitch.f1dfc42b.png": "/static/media/smarthswitch.f1dfc42b.png",
     "static/media/smartparking.c3a79da1.png": "/static/media/smartparking.c3a79da1.png",
@@ -143,6 +143,6 @@
     "static/css/2.34c0a3fd.chunk.css",
     "static/js/2.b8d88137.chunk.js",
     "static/css/main.809464ba.chunk.css",
-    "static/js/main.6480037e.chunk.js"
+    "static/js/main.887cc912.chunk.js"
   ]
 }
