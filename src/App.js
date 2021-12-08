@@ -74,7 +74,7 @@ const App = ()=>{
       <Mobilemenu/>
       </Hidden>
       <Toolbar />
-    <Routes>
+    <Routes basename="/geetron">
           <Route path='/geetron' element={<Home/>}></Route>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/Ghomes' element={<Ghomes/>}></Route>
