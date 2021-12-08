@@ -53,9 +53,9 @@ const MyGridMain = styled(Grid)(({ theme }) => ({
 const MypicGrid = styled(Grid)(({ theme }) => ({
 
  
-  height:'400px',
-  width:'400px',
-  marginTop:'20px'
+ 
+  marginTop:'20px',
+ 
 
 }));
 
@@ -78,7 +78,6 @@ const Mytext = styled(Typography)(({ theme }) => ({
   color: '#1268B3',
   fontWeight: 'bold',
   fontFamily: 'SourceSansPro',
-  padding:'15px'
 }));
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -125,7 +124,7 @@ const App = () => {
     return (
 
       <div data-aos="fade-up">
-      <MyGridMain container spacing={2} >
+      <MyGridMain container spacing={0} >
         <Stack>
           <div data-aos="flip-left">
         
@@ -133,17 +132,18 @@ const App = () => {
          
            
           </div>
-          <MyGrid container spacing={2} >
+          <MyGrid sx={{padding:'30px'}} container spacing={0} >
           <MyGrid item xs={12} md={4}>
       
       <Grid  container  xs={12} md={12}>
 
     
 <Grid direction='row' container spacing={2} >
- <Grid   item xs={12} md={6} >
+ <Grid   item xs={12} md={6}  >
     <TextField  sx={{ m:0 }}
       id="outlined-required"
       label="Full Name"
+     
       value={name} 
       fullWidth
       size="small"
@@ -160,7 +160,7 @@ const App = () => {
       onChange={(e) => setEmail(e.target.value)}
     />
     </Grid></Grid>
-    <Grid direction='row' container spacing={2} >
+    <Grid direction='row' container spacing={0} >
       <Grid   item xs={12} md={6} >
      <TextField  sx={{ m: 0,marginTop:'20px'}}
       id="outlined-required"
@@ -215,14 +215,14 @@ const App = () => {
      
           
      <Grid item  xs={12}  sm={6} md={6}>
-     <Mytext >
+     <Mytext sx={{padding:'30px'}} >
      <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
      Geetron Control System
      <p>Dubai</p>
          
            <Mypara color="text.secondary">
            Plot No. TP 18742,
-           <br/>Technopark Dubai,<br/> UAE
+          Technopark Dubai, UAE
 
          </Mypara>
         </div>
@@ -233,7 +233,7 @@ const App = () => {
      <Grid item  xs={12} sm={6} md={6}>
     
   
-    <Mytext >
+    <Mytext sx={{padding:'30px'}}>
     <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
    <br/>
    <p>UK</p>
