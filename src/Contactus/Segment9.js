@@ -160,7 +160,7 @@ const App = () => {
       onChange={(e) => setEmail(e.target.value)}
     />
     </Grid></Grid>
-    <Grid direction='row' container spacing={0} >
+    <Grid direction='row' container spacing={2} >
       <Grid   item xs={12} md={6} >
      <TextField  sx={{ m: 0,marginTop:'20px'}}
       id="outlined-required"
