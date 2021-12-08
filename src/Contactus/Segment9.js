@@ -6,10 +6,20 @@ import MuiAlert from '@mui/material/Alert';
 
 import {useNavigate} from 'react-router-dom';
 import firebase from "./Firebase";
-import { Divider, Button, Grid, Stack ,TextField} from '@mui/material';
+import { Divider, Button, Grid, Stack ,TextField,Typography} from '@mui/material';
 
 
 import 'aos/dist/aos.css';
+const Mypara = styled(Typography)(({ theme }) => ({
+
+
+  fontFamily: 'SourceSansPro',
+  textAlign:'left'
+ 
+  
+ 
+
+}))
 const MyGrid = styled(Grid)(({ theme }) => ({
     justifyContent: "center",
     alignItems: "flex-start", 
@@ -60,6 +70,15 @@ const MyDivider = styled(Divider)(({ theme }) => ({
   fontWeight: 'bold',
 
 
+}));
+const Mytext = styled(Typography)(({ theme }) => ({
+
+  fontSize: '1.0em',
+  textAlign: 'left',
+  color: '#1268B3',
+  fontWeight: 'bold',
+  fontFamily: 'SourceSansPro',
+  padding:'15px'
 }));
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -192,16 +211,61 @@ const App = () => {
   
       </MyGrid>  
   <MypicGrid item xs={12} md={4}>
+  <MyGrid item container xs={12} md={12} spacing={1}>
+     
+          
+     <Grid item  xs={12}  sm={6} md={6}>
+     <Mytext >
+     <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="200" >
+     Geetron Control System
+     <p>Dubai</p>
+         
+           <Mypara color="text.secondary">
+           Plot No. TP 18742,
+           <br/>Technopark Dubai,<br/> UAE
+
+         </Mypara>
+        </div>
+         </Mytext>
+   
+     
+     </Grid>
+     <Grid item  xs={12} sm={6} md={6}>
     
+  
+    <Mytext >
+    <div data-aos="flip-left"  data-aos-easing="ease-out-quart" data-aos-delay="300" >
+   <br/>
+   <p>UK</p>
+          <Mypara color="text.secondary">
+          Unit 5,
+Alpha Business Park,
+Bevan Way,
+SmethWwick,
+B66 1BZ
+        </Mypara>
+        </div>
+         </Mytext>
+    
+    
+    </Grid>
+  
+    <Mypara color="text.secondary">
+        <p> <b>Email:</b> info@geetronme.com<br/><b>Phone No:</b> +971-561137132, +971-48163001</p>
+
+
+         </Mypara>
+ </MyGrid>
      
         </MypicGrid>
       
           
         </MyGrid>  
-        <Grid container  justifyContent="center"  alignItems="center" item xs={12} md={8}>
+        
+        <Grid container  justifyContent="center"  alignItems="center" item xs={12} md={12}>
         <Googlemaps/>
-     
-    </Grid>   
+   
+    </Grid>
        
         </Stack>
     
