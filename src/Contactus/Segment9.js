@@ -241,7 +241,7 @@ const App = () => {
           Unit 5,
 Alpha Business Park,
 Bevan Way,
-SmethWwick,
+Smeth Wick,
 B66 1BZ
         </Mypara>
         </div>

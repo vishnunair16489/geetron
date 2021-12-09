@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
+import Stack from '@mui/material/Stack';
 import Tab from '@mui/material/Tab';
 import Grid from '@mui/material/Grid';
 import Logodark from  '../menu/images/logodark.png';
 import Logolight from  '../menu/images/logolight.png';
-import {Tooltip,IconButton } from '@mui/material';
+import {Tooltip,IconButton ,Typography} from '@mui/material';
 import { styled } from '@mui/material/styles';  
 
 
@@ -59,7 +60,7 @@ const MyBox= styled(Grid)(({ theme }) => ({
  
   direction:"row",
   justifyContent:"flex-end",
-  maxWidth: `calc(100% - 20%)`,
+  maxWidth: `calc(100% - 15%)`,
   
   alignItems:"center",
   marginTop: "10px",
@@ -96,7 +97,14 @@ const Mydiv= styled(Grid)(({ theme }) => ({
   
 }))
 
+const Myp= styled(Typography)(({ theme }) => ({           
 
+color:'#1268B3',
+fontSize:'0.8em',
+padding:'10px'
+ 
+  
+}))
 
 export default function NavTabs() {
   const [value, setValue] = React.useState(0);
@@ -115,32 +123,40 @@ export default function NavTabs() {
       case 2:
         return    <React.Fragment>
             <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
-           <MyBox  container onMouseLeave={() => setValue(index)} >
-         <Tooltip title="Switches">
-          <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Switch')}>
+           <MyBox container onMouseLeave={() => setValue(index)} >
+           
+        <Stack   justifyContent="center" alignItems="center">
+          <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Switch')}>
           <img src={Switch} height='30px' alt="water" />
           </IconButton>
-        </Tooltip>
-        <Tooltip title="Timers">
-          <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Timmer')}>
+          <Myp> Switchs</Myp>
+          </Stack>
+       <Stack   justifyContent="center" alignItems="center">
+          <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Timmer')}>
           <img src={Timmer}  height='30px'  alt="water" />
           </IconButton>
-        </Tooltip>
-        <Tooltip title="Controllers">
-          <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Controller')}>
+       <Myp> Timmers</Myp>
+          </Stack>
+       <Stack   justifyContent="center" alignItems="center">
+          <IconButton  size="small" sx={{ ml: 0 }} onClick={()=> navigate('Controller')}>
           <img src={Controller}  height='30px'  alt="water" />
           </IconButton>
-        </Tooltip>
-        <Tooltip title="Locks">
-          <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Locks')}>
+           <Myp> Controllers</Myp>
+          </Stack>
+        <Stack   justifyContent="center" alignItems="center">
+          <IconButton  size="small" sx={{ ml:0 }} onClick={()=> navigate('Locks')}>
           <img src={Locks}  height='30px'  alt="water" />
           </IconButton>
-        </Tooltip>
-        <Tooltip title="Relays">
-          <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Relay')}>
+          <Myp> 
+          Locks</Myp>
+          </Stack>
+      <Stack   justifyContent="center" alignItems="center">
+          <IconButton  size="small" sx={{ ml: 0 }} onClick={()=> navigate('Relay')}>
           <img src={Relays}  height='30px'  alt="water" />
           </IconButton>
-        </Tooltip>
+         <Myp> Relays</Myp>
+          </Stack>
+       
       </MyBox>
       </div>
         </React.Fragment>;
@@ -148,56 +164,66 @@ export default function NavTabs() {
             return    <React.Fragment>
                <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
                <MyBox container onMouseLeave={() => setValue(index)} >
-             <Tooltip title="GHomes">
-             <IconButton aria-label="delete" onClick={()=> navigate('Ghomes')}>
+             <Stack   justifyContent="center" alignItems="center">
+             <IconButton size="small" onClick={()=> navigate('Ghomes')}>
              <img src={Ghome}  height='30px'  alt="water" />
       </IconButton>
-            </Tooltip>
-            <Tooltip title="Water">
-              <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Water')}>
+           <Myp> Ghomes</Myp>
+          </Stack>
+            <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Water')}>
               <img src={Water}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Hotel">
-              <IconButton  size="small" sx={{ ml: 2 }} onClick={()=> navigate('Hotels')}>
+             <Myp> Water</Myp>
+          </Stack>
+            <Stack   justifyContent="center" alignItems="center">
+              <IconButton  size="small" sx={{ ml: 0 }} onClick={()=> navigate('Hotels')}>
               <img src={Hotel}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Parking">
-              <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Parking')}>
+            <Myp> Hotels</Myp>
+          </Stack>
+            <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Parking')}>
               <img src={Parking}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Industry">
-              <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Industry')}>
+            <Myp> Parking</Myp>
+          </Stack>
+             <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Industry')}>
               <img src={Industry}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Community" onClick={()=> navigate('Community')}>
-              <IconButton size="small" sx={{ ml: 2 }}>
+            <Myp> Industry</Myp>
+          </Stack>
+        <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }}  onClick={()=> navigate('Community')}>
               <img src={Community}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Parks & Resorts" onClick={()=> navigate('Park')}>
-              <IconButton size="small" sx={{ ml: 2 }}>
+            <Myp> Community</Myp>
+          </Stack>
+             <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Pard')}>
               <img src={Resort}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Tracking" onClick={()=> navigate('Tracking')}>
-              <IconButton size="small" sx={{ ml: 2 }}>
+           <Myp> Parks & resorts</Myp>
+          </Stack>
+           <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Tracking')}>
               <img src={Tracking}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Digital Signage" onClick={()=> navigate('Signage')}>
-              <IconButton size="small" sx={{ ml: 2 }}>
+           <Myp> Tracking</Myp>
+          </Stack>
+            <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Signage')}>
               <img src={Signage}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Hospital">
-              <IconButton size="small" sx={{ ml: 2 }} onClick={()=> navigate('Hospital')}>
+         <Myp>Digital Hospital</Myp>
+          </Stack>
+           <Stack   justifyContent="center" alignItems="center">
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Hospital')}>
               <img src={Hospital}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
+             <Myp> Hospital</Myp>
+          </Stack>
           </MyBox>
           </div>
             </React.Fragment>;
@@ -205,21 +231,24 @@ export default function NavTabs() {
             return    <React.Fragment>
                 <div  data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
                <MyBox2 container onMouseLeave={() => setValue(index)} >
-             <Tooltip title="IoT Dashboard">
+          <Stack   justifyContent="center" alignItems="center">
               <IconButton size="small" sx={{ ml: 2 }}onClick={()=> navigate('Dashboard')}>
               <img src={Dashboard}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Mob Applications">
+            <Myp> IoT Dashboard</Myp>
+          </Stack>
+          <Stack   justifyContent="center" alignItems="center">
               <IconButton size="small" sx={{ ml: 2 }}onClick={()=> navigate('Mobile')}>
               <img src={Application}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="R&D">
+           <Myp> Mob Application</Myp>
+          </Stack>
+          <Stack   justifyContent="center" alignItems="center">
               <IconButton  size="small" sx={{ ml: 2 }}onClick={()=> navigate('R&D')}>
               <img src={RD}  height='30px'  alt="water" />
               </IconButton>
-            </Tooltip>
+            <Myp> R&D</Myp>
+          </Stack>
           
           </MyBox2>
           </div>
@@ -236,7 +265,7 @@ export default function NavTabs() {
          <MyGrid container spacing={2}>
        
          <Mydiv container item xs={4}  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-out-back"  >
-             <img src={Logodark}  alt="Logo" width="200" />
+             <img src={Logodark}  alt="Logo" width="200" onClick={()=> navigate('/')} />
              </Mydiv>
      
         <Grid   item xs={8} >

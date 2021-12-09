@@ -163,7 +163,7 @@ export default function PersistentDrawerRight() {
       <AppBar position="fixed" open={open}>
         <Toolbar>
           <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
-          <img src={Logo} width='100px' alt="Logo" />
+          <img src={Logo} width='100px' alt="Logo" onClick={()=> navigate('/')} />
           </Typography>
           <IconButton
             color="inherit"
