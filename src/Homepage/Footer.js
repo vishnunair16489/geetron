@@ -12,7 +12,6 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import {Hidden,Stack,Link,CssBaseline} from '@mui/material';
 
-import {useNavigate} from 'react-router-dom';
 
 const MyGrid = styled(Grid)(({ theme }) => ({  
      marginTop: "28px",
@@ -56,7 +55,6 @@ const MyGrid = styled(Grid)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 const App = ()=>{
-  const navigate = useNavigate();
   return(  
       <MyGrid container   justifyContent="center"  alignItems="center">
        <CssBaseline/>
@@ -66,7 +64,7 @@ const App = ()=>{
         
               <MyStack style={{marginTop:'20px'}}  spacing={0.5}>
               Product
-              <MyLink href="" onClick={()=> navigate('Switch')} underline="none">{'Switch'}</MyLink>
+              <MyLink href="Switch" underline="none">{'Switch'}</MyLink>
               <MyLink href="Timmer" underline="none">{'Timmer'}</MyLink>
               <MyLink href="Controller" underline="none">{'Controller'}</MyLink>
               <MyLink href="Locks" underline="none">{'Locks'}</MyLink>
@@ -77,31 +75,31 @@ const App = ()=>{
             
               <MyStack style={{marginTop:'20px'}} spacing={0.5}>
               Solution
-              <MyLink  onClick={()=> navigate('Ghomes')} underline="none">{'GHomes'}</MyLink>
-              <MyLink onClick={()=> navigate('Water')} underline="none">{'Water'}</MyLink>
-              <MyLink onClick={()=> navigate('Hotel')} underline="none">{'Hotel'}</MyLink>
-              <MyLink onClick={()=> navigate('Parking')} underline="none">{'Parking'}</MyLink>
-              <MyLink onClick={()=> navigate('Industry')}  underline="none">{'Industry'}</MyLink>
-              <MyLink onClick={()=> navigate('Community')} underline="none">{'Communities'}</MyLink>
-              <MyLink  onClick={()=> navigate('Park')} underline="none">{'Park&Rsort'}</MyLink>
-              <MyLink  onClick={()=> navigate('Tracking')} underline="none">{'Tracking'}</MyLink>
-              <MyLink  onClick={()=> navigate('Signage')} underline="none">{'Digital Signage'}</MyLink>
-              <MyLink  onClick={()=> navigate('Hospital')} underline="none">{'Hospital'}</MyLink>
+              <MyLink href="/Ghomes" underline="none">{'GHomes'}</MyLink>
+              <MyLink href="/Water" underline="none">{'Water'}</MyLink>
+              <MyLink href="Hotel" underline="none">{'Hotel'}</MyLink>
+              <MyLink href="Parking" underline="none">{'Parking'}</MyLink>
+              <MyLink href="Industry" underline="none">{'Industry'}</MyLink>
+              <MyLink href="Community" underline="none">{'Communities'}</MyLink>
+              <MyLink href="Park" underline="none">{'Park&Rsort'}</MyLink>
+              <MyLink href="Tracking" underline="none">{'Tracking'}</MyLink>
+              <MyLink href="Signage" underline="none">{'Digital Signage'}</MyLink>
+              <MyLink href="Hospital" underline="none">{'Hospital'}</MyLink>
            
               </MyStack>
               <MyStack style={{marginTop:'20px'}}  spacing={0.5}>
                 Services
-              <MyLink onClick={()=> navigate('Dashboard')} underline="none">{'Iot Dashboard'}</MyLink>
-              <MyLink onClick={()=> navigate('Mobile')} underline="none">{'Mobile Application'}</MyLink>
-              <MyLink onClick={()=> navigate('R&D')} underline="none">{'R&D'}</MyLink> 
+              <MyLink href="Dashboard" underline="none">{'Iot Dashboard'}</MyLink>
+              <MyLink href="Mobile" underline="none">{'Mobile Application'}</MyLink>
+              <MyLink href="R&D" underline="none">{'R&D'}</MyLink> 
              
            
               </MyStack>
               <MyStack style={{marginTop:'20px'}} spacing={0.5}>
                 Company
                 <MyLink href="/" underline="none">{'Home'}</MyLink>
-              <MyLink onClick={()=> navigate('Aboutus')} underline="none">{'About Us'}</MyLink>
-              <MyLink onClick={()=> navigate('Contact')} underline="none">{'Contact Us'}</MyLink>     
+              <MyLink href="Aboutus" underline="none">{'About Us'}</MyLink>
+              <MyLink href="Contact" underline="none">{'Contact Us'}</MyLink>     
              
            
               </MyStack>
