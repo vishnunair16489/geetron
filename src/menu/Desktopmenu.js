@@ -135,7 +135,7 @@ export default function NavTabs() {
           <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Timmer')}>
           <img src={Timmer}  height='30px'  alt="water" />
           </IconButton>
-       <Myp> Timmers</Myp>
+       <Myp> Timers</Myp>
           </Stack>
        <Stack   justifyContent="center" alignItems="center">
           <IconButton  size="small" sx={{ ml: 0 }} onClick={()=> navigate('Controller')}>
