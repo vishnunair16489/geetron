@@ -201,7 +201,7 @@ export default function NavTabs() {
             <Myp> Community</Myp>
           </Stack>
              <Stack   justifyContent="center" alignItems="center">
-              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Pard')}>
+              <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Park')}>
               <img src={Resort}  height='30px'  alt="water" />
               </IconButton>
            <Myp> Parks & resorts</Myp>

@@ -86,7 +86,7 @@ const App = () => {
                       <Mypara> <b>Features</b>
                         <ul>
                           <li>Automatic on/off </li>
-                          <li>Day/Night auto  timmer</li>
+                          <li>Day/Night auto  timer</li>
                           <li>Seasonal Mode - Water percentage</li>
                           <li>Weekend mode</li>
                           <li>Manual irrigation mode</li>

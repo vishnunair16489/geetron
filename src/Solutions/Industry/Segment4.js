@@ -64,7 +64,7 @@ const App = () => {
 
           <MyStack spacing={5}>
             <div data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-out-quart" >
-              <Header textAlign="center">Prducts </Header>
+              <Header textAlign="center">Products </Header>
             </div>
           
             <Box sx={{ flexGrow: 1 }}>

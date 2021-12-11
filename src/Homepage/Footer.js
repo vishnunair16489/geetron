@@ -65,7 +65,7 @@ const App = ()=>{
               <MyStack style={{marginTop:'20px'}}  spacing={0.5}>
               Product
               <MyLink href="Switch" underline="none">{'Switch'}</MyLink>
-              <MyLink href="Timmer" underline="none">{'Timmer'}</MyLink>
+              <MyLink href="Timmer" underline="none">{'Timer'}</MyLink>
               <MyLink href="Controller" underline="none">{'Controller'}</MyLink>
               <MyLink href="Locks" underline="none">{'Locks'}</MyLink>
               <MyLink href="Relay" underline="none">{'Relays'}</MyLink>
