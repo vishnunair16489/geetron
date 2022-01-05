@@ -127,8 +127,8 @@ const App = () => {
     return (
       <div>
       <Helmet>
-      <title>Contact us</title>
-      <meta name='description' content='Contact us if you have any question or requests'/>
+      <title>About us</title>
+   
   </Helmet>
  
 

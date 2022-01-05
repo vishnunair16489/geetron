@@ -42,6 +42,7 @@ import RD from  '../menu/images/R&D.png';
 
 
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
@@ -75,7 +76,23 @@ const AccordionSummary = styled((props) => (
     marginLeft: theme.spacing(1),
   },
 }));
-
+const AccordionSummary1 = styled((props) => (
+  <MuiAccordionSummary  
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === 'dark'
+      ? 'rgba(255, 255, 255, .05)'
+      : 'rgba(0, 0, 0, .03)',
+  flexDirection: 'row-reverse',
+  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+    transform: 'rotate(90deg)',
+  },
+  '& .MuiAccordionSummary-content': {
+    marginLeft: theme.spacing(2.5),
+  },
+}));
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   borderTop: '1px solid rgba(0, 0, 0, .125)',
@@ -200,14 +217,14 @@ export default function PersistentDrawerRight() {
         </DrawerHeader>
         <Divider />
         <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
-        <AccordionSummary   aria-controls="panel5a-content" id="panel5a-header">
+        <AccordionSummary1   aria-controls="panel5a-content" id="panel5a-header">
           <Typography button  onClick={()=> handleDrawerClose("/")  }>Home</Typography>
-        </AccordionSummary>      
+        </AccordionSummary1>      
       </Accordion>
         <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary   aria-controls="panel4a-content" id="panel4a-header">
+        <AccordionSummary1   aria-controls="panel4a-content" id="panel4a-header">
           <Typography  button  onClick={()=> handleDrawerClose('/Aboutus')}>About us</Typography>
-        </AccordionSummary>      
+        </AccordionSummary1>      
       </Accordion>
         <Divider />
       
@@ -357,9 +374,9 @@ export default function PersistentDrawerRight() {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
-        <AccordionSummary   aria-controls="panel6a-content" id="panel6a-header">
+        <AccordionSummary1   aria-controls="panel6a-content" id="panel6a-header">
           <Typography onClick={()=> handleDrawerClose("Contact")  }>Contact us</Typography>
-        </AccordionSummary>      
+        </AccordionSummary1>      
       </Accordion>
       </Drawer>
     </Box>
