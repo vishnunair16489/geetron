@@ -72,7 +72,7 @@ const Slideshow = () => {
     duration: 4000,
     pauseOnHover: false,
     canSwipe: true,
-    arrows: false
+    arrows: true
 
 
   }
