@@ -35,7 +35,8 @@ const App = () => {
     <div data-aos="fade-up">
         <CssBaseline />
         <MyGrid>
-        <Segment1/>  <Segment2/>
+        <Segment1/> 
+         <Segment2/>
         <Segment4/>
         <Segment5/>
       

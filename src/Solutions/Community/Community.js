@@ -31,30 +31,27 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 
 }));
-
 const App = () => {
-  
-    useEffect(() => {
-      window.scrollTo(0, 0)
-    }, [])
-  return (  
-    
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  return (
+    <React.Fragment>
+    <CssBaseline />
     <div data-aos="fade-up">
-        <CssBaseline />
-       <MyGrid>
-
+      
+        <MyGrid>
         <Segment1/> 
         
      
         <Segment7/>
         <Segment2/>
-        <Segment3/>
-     
-        <Segment5/>
-    
+        <Segment3/>     
+        <Segment5/>    
         <Segment6/>
        </MyGrid>  
       </div>
+      </React.Fragment>
   
   );
 }

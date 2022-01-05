@@ -10,6 +10,7 @@ import Sub3 from '../Aboutus/images/marquee3.png'
 import Sub4 from '../Aboutus/images/marquee4.png'
 import Marquee from "react-fast-marquee";
 import { Divider, Typography, Grid, Stack ,Hidden} from '@mui/material';
+import Helmet from 'react-helmet';
 
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
@@ -124,6 +125,12 @@ const App = () => {
   }, [])
 
     return (
+      <div>
+      <Helmet>
+      <title>Contact us</title>
+      <meta name='description' content='Contact us if you have any question or requests'/>
+  </Helmet>
+ 
 
       <div data-aos="fade-up">
       <MyGridMain container spacing={0} >
@@ -207,7 +214,7 @@ const App = () => {
       
   </MyGridMain>
   </div>
-   
+   </div>
   
     );
   }

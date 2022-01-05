@@ -243,7 +243,7 @@ export default function PersistentDrawerRight() {
            </ListItemIcon>
            <ListItemText primary="Locks" />
          </ListItem>
-         <ListItem button key="Relays" onClick={()=> navigate('Relay')}>
+         <ListItem button key="Relays" onClick={()=> handleDrawerClose('Relay')}>
            <ListItemIcon>
            <img src={Relays}  height='30px'  alt="water" />
            </ListItemIcon>
@@ -263,7 +263,7 @@ export default function PersistentDrawerRight() {
          
          <ListItem button key="ghomes"  onClick={()=> handleDrawerClose('Ghomes')}>
            <ListItemIcon>
-           <img src={Ghome}  height='30px'  alt="water" />
+           <img src={Ghome}  height='30px'  alt="ghomes" />
            </ListItemIcon>
            <ListItemText primary="GHomes" />
          </ListItem>

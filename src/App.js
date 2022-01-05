@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css';
-import { BrowserRouter, Routes , Route }  from "react-router-dom";
+import { BrowserRouter, Routes , Route}  from "react-router-dom";
 
 import {  Divider, useScrollTrigger } from '@mui/material';
 
@@ -18,7 +18,7 @@ import Signage from "./Solutions/Signage/Signage";
 import Hospital from "./Solutions/Hospital/Hospital"; 
 import Tracking from "./Solutions/Tracking/Tracking"; 
 import Community from "./Solutions/Community/Community"; 
-import Switch from "./Products/Switch/Switch"; 
+import Switch1 from "./Products/Switch/Switch"; 
 import Timmer from "./Products/Timmer/Timmer"; 
 import Relay from "./Products/Relay/Relay"; 
 import Locks from "./Products/Locks/Locks"; 
@@ -75,6 +75,7 @@ const App = ()=>{
       </Hidden>
       <Toolbar />
     <Routes >
+   
           <Route path='/geetron' element={<Home/>}></Route>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/Ghomes' element={<Ghomes/>}></Route>
@@ -88,7 +89,7 @@ const App = ()=>{
           <Route path='/Aboutus' element={<Aboutus/>}></Route>
           <Route path='/Community' element={<Community/>}></Route>
           <Route path='/Park' element={<Park/>}></Route>
-          <Route path='/Switch' element={<Switch/>}></Route>
+          <Route path='/Switch' element={<Switch1/>}></Route>
           <Route path='/Timmer' element={<Timmer/>}></Route>
           <Route path='/Controller' element={<Controller/>}></Route>
           <Route path='/Relay' element={<Relay/>}></Route>
@@ -97,6 +98,7 @@ const App = ()=>{
           <Route path='/Mobile' element={<Mobile/>}></Route>
           <Route path='/R&D' element={<RD/>}></Route>
           <Route path='/Contact' element={<Contact/>}></Route>
+        
         </Routes>  
         <Divider/>
         <Footer/>

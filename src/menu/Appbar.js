@@ -13,7 +13,7 @@ import Parralex from '../Homepage/images/parallex.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Box } from '@mui/system';
-
+import Helmet from 'react-helmet';
 
 const Mydivsegment3 = styled(Box)(({ theme }) => ({
   background: `url(${Parralex})`,
@@ -35,6 +35,12 @@ export default function ElevateAppBar(props) {
     window.scrollTo(0, 0)
   }, [])
   return (
+    <div>
+    <Helmet>
+    <title>Geetron</title>
+    <meta name='description' content='Iot Dubai, Electronic company, Best Iot Company in uae, Iot Uae, Smart Irrigation,Smart Home,Smart Parking, Digital Signage, smart Tracking, Iot Water '/>
+</Helmet>
+
     <React.Fragment>
       <CssBaseline />
     
@@ -52,5 +58,6 @@ export default function ElevateAppBar(props) {
       <Segment8/>
       </div>
     </React.Fragment>
+    </div>
   );
 }
