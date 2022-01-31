@@ -22,21 +22,21 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 
 }));
-  const App = () => {
-    useEffect(() => {
-      window.scrollTo(0, 0)
-    }, [])
+const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
+    
     <div data-aos="fade-up">
         <CssBaseline />
         <MyGrid>
         <Segment1/> 
-        <Segment2/>
-        <Segment3/>
+         <Segment2/>
+         <Segment3/>
         <Segment4/>
-      </MyGrid>
-       
-     
+      
+        </MyGrid>
        
       </div>
   

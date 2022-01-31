@@ -1,4 +1,7 @@
-import React from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+
 import './index.css';
 import { BrowserRouter, Routes , Route}  from "react-router-dom";
 
@@ -57,6 +60,9 @@ function ElevationScroll(props) {
 
 
 const App = ()=>{
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   return(  
     <BrowserRouter>
       <ElevationScroll  >
@@ -78,8 +84,8 @@ const App = ()=>{
    
           <Route path='/geetron' element={<Home/>}></Route>
           <Route path='/' element={<Home/>}></Route>
-          <Route path='/Ghomes' element={<Ghomes/>}></Route>
           <Route path='/Water' element={<Water/>}></Route>
+          <Route path='/Ghomes' element={<Ghomes/>}></Route>  
           <Route path='/Parking' element={<Parking/>}></Route>
           <Route path='/Hotels' element={<Hotels/>}></Route>
           <Route path='/Industry' element={<Industry/>}></Route>

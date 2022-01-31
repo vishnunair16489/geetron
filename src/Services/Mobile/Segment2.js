@@ -1,10 +1,12 @@
-import React from 'react'
+
 import { styled } from '@mui/material/styles';
 import segment2img from '../Mobile/images/mobiledevelpoemntimg2.jpg'
 
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
-
+import Aos from 'aos';
 import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 
@@ -66,6 +68,10 @@ const Mypara = styled(Typography)(({ theme }) => ({
 
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
+
   return (
 
   

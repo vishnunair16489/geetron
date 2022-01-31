@@ -292,49 +292,49 @@ export default function PersistentDrawerRight() {
          </ListItem>
          <ListItem button key="hotel" onClick={()=> handleDrawerClose('Hotels')}>
            <ListItemIcon>
-           <img src={Hotel}  height='30px'  alt="water" />
+           <img src={Hotel}  height='30px'  alt="hotels" />
            </ListItemIcon>
            <ListItemText primary="Hotel" />
          </ListItem>
          <ListItem button key="parking"  onClick={()=> handleDrawerClose('Parking')}>
            <ListItemIcon>
-           <img src={Parking}  height='30px'  alt="water" />
+           <img src={Parking}  height='30px'  alt="parking" />
            </ListItemIcon>
            <ListItemText primary="Parking" />
          </ListItem>
          <ListItem button key="Industry" onClick={()=> handleDrawerClose('Industry')}>
            <ListItemIcon>
-           <img src={Industry}  height='30px'  alt="water" />
+           <img src={Industry}  height='30px'  alt="industry" />
            </ListItemIcon>
            <ListItemText primary="Industry" />
          </ListItem>
          <ListItem button key="Communities" onClick={()=> handleDrawerClose('Community')}>
            <ListItemIcon>
-           <img src={Community}  height='30px'  alt="water" />
+           <img src={Community}  height='30px'  alt="community" />
            </ListItemIcon>
            <ListItemText primary="Community" />
          </ListItem>
          <ListItem button key="park" onClick={()=> handleDrawerClose('Park')}>
            <ListItemIcon>
-           <img src={Resort}  height='30px'  alt="water" />
+           <img src={Resort}  height='30px'  alt="park" />
            </ListItemIcon>
            <ListItemText primary="Park & Resort" />
          </ListItem>
          <ListItem button key="tracking"  onClick={()=> handleDrawerClose('Tracking')}>
            <ListItemIcon>
-           <img src={Tracking}  height='30px'  alt="water" />
+           <img src={Tracking}  height='30px'  alt="tracking" />
            </ListItemIcon>
            <ListItemText primary="Tracking" />
          </ListItem>
          <ListItem button key="digitalsignage" onClick={()=> handleDrawerClose('Signage')}>
            <ListItemIcon>
-           <img src={Signage}  height='30px'  alt="water" />
+           <img src={Signage}  height='30px'  alt="signage" />
            </ListItemIcon>
            <ListItemText primary="Digital Signage" />
          </ListItem>
          <ListItem button key="Hospital" onClick={()=> handleDrawerClose('Hospital')}>
            <ListItemIcon>
-           <img src={Hospital}  height='30px'  alt="water" />
+           <img src={Hospital}  height='30px'  alt="hospital" />
            </ListItemIcon>
            <ListItemText primary="Hospital" />
          </ListItem>

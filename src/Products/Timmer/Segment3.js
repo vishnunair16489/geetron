@@ -1,10 +1,12 @@
-import React from 'react'
+
 import { styled } from '@mui/material/styles';
 import img from '../Timmer/images/modbus.png'
 
 import {Divider, Grid, Stack,Box ,Hidden} from '@mui/material';
-
+import Aos from 'aos';
 import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 

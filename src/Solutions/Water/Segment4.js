@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { styled } from '@mui/material/styles';
 import Solar from './images/solar.png';
 import Wifi from './images/wifi.png';
 import Home from './images/home.jpg'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import {  Divider, Typography, Grid, Stack,Box  } from '@mui/material';
@@ -88,6 +90,10 @@ const MyCardmedia = styled(CardMedia)(({ theme }) => ({
 }))
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+
+  }, []);
   return (
 
   

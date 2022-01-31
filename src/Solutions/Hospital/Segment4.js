@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import segment2img from '../Hospital/images/disabledalarmsystem.jpg'
 import { Divider, Typography, Grid, Stack,Box } from '@mui/material';
-
+import Aos from 'aos';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",

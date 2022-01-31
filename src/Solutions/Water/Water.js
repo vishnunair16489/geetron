@@ -1,9 +1,11 @@
 import React,{useEffect} from 'react'
-import Segment1 from  './Segment1';
-import Segment2 from  './Segment2';
-import Segment4 from  './Segment4';
+import Segment1 from  '../Water/Segment1';
+import Segment2 from  '../Water/Segment2';
+import Segment4 from  '../Water/Segment4';
+import Segment5 from  '../Ghomes/Segment5';
 import { CssBaseline,Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
+
 const MyGrid = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
   
@@ -21,10 +23,13 @@ const MyGrid = styled(Grid)(({ theme }) => ({
 
 
 }));
-  const App = () => {
-    useEffect(() => {
-      window.scrollTo(0, 0)
-    }, [])
+
+
+
+const App = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     
     <div data-aos="fade-up">
@@ -33,7 +38,7 @@ const MyGrid = styled(Grid)(({ theme }) => ({
         <Segment1/> 
          <Segment2/>
         <Segment4/>
-      
+        <Segment5/>
       
         </MyGrid>
        

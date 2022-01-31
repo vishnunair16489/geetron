@@ -1,8 +1,11 @@
-import React from 'react'
+
 import { styled } from '@mui/material/styles';
 import img from '../Locks/images/locks.png'
 import { Grid, Stack,Divider, Typography } from '@mui/material';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 
@@ -70,6 +73,10 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
   
   }));
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
+
   return (
 
   

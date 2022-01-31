@@ -11,7 +11,7 @@ import Sub4 from '../Aboutus/images/marquee4.png'
 import Marquee from "react-fast-marquee";
 import { Divider, Typography, Grid, Stack ,Hidden} from '@mui/material';
 import Helmet from 'react-helmet';
-
+import Aos from 'aos';
 import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
     justifyContent: "center",
@@ -121,7 +121,9 @@ const MyStack = styled(Stack)(({ theme }) => ({
 const App = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0)    
+    Aos.init({ duration: 500 });
+
   }, [])
 
     return (

@@ -1,6 +1,9 @@
-import React from 'react'
+
 import { styled } from '@mui/material/styles';
 import img from '../Relay/images/sevenchannel.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
 
 import {Divider, Grid, Stack,Box ,Hidden,Typography} from '@mui/material';
 
@@ -61,6 +64,10 @@ const MypicGrid = styled(Grid)(({ theme }) => ({
   
   }));
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
+
   return (
 
   

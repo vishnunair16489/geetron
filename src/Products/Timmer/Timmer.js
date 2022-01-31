@@ -1,9 +1,13 @@
-import React,{useEffect} from 'react'
+
 import { styled } from '@mui/material/styles';
 import { Grid } from '@mui/material';
 import Segment2 from  './Segment2';
 import Segment3 from  './Segment3';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+
+
 
   
   const MyGridMain = styled(Grid)(({ theme }) => ({
@@ -28,7 +32,10 @@ import 'aos/dist/aos.css';
   }));
 const App = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0)  
+      Aos.init({ duration: 500 });
+
+  
   }, [])
   return (  
     <div data-aos="fade-up">

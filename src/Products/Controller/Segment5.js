@@ -1,11 +1,13 @@
-import React from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+
 import { styled } from '@mui/material/styles';
 
 import img from '../Controller/images/Masterloopcontroller.png'
 
 import {Divider, Grid, Stack,Box ,Hidden} from '@mui/material';
 
-import 'aos/dist/aos.css';
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 

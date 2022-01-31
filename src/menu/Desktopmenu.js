@@ -216,7 +216,7 @@ export default function NavTabs() {
               <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Signage')}>
               <img src={Signage}  height='30px'  alt="water" />
               </IconButton>
-         <Myp>Digital Hospital</Myp>
+         <Myp>Digital Signage</Myp>
           </Stack>
            <Stack   justifyContent="center" alignItems="center">
               <IconButton size="small" sx={{ ml: 0 }} onClick={()=> navigate('Hospital')}>

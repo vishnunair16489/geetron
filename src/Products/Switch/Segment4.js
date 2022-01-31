@@ -1,8 +1,11 @@
-import React from 'react'
+
 import { styled } from '@mui/material/styles';
 import img from '../Switch/images/mechanical.png'
 import { Grid, Stack,Divider } from '@mui/material';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+
 const MyGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "flex-start", 
@@ -74,6 +77,11 @@ const Myp = styled('p')(({ theme }) => ({
   },
  }));
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+
+  }, []);
+
   return (
 
   

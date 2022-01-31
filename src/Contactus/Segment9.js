@@ -251,7 +251,7 @@ B66 1BZ
     </Grid>
   
     <Mypara color="text.secondary">
-        <p> <b>Email:</b> info@geetronme.com<br/><b>Phone No:</b> +971-561137132, +971-48163001</p>
+        <p> <b>Email:</b> info@geetronme.com<br/><b>Phone No:</b> +971-561137134, +971-48163001</p>
 
 
          </Mypara>
