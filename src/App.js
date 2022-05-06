@@ -33,6 +33,7 @@ import Mobile from "./Services/Mobile/Mobile";
 import Aboutus from "./Aboutus/Aboutus"; 
 import Footer from "./Homepage/Footer"; 
 import Contact from "./Contactus/Segment9"; 
+import ReactGA from 'react-ga';
 const MyAppBar = styled(AppBar)(({ theme }) => ({
   
   backgroundColor: 'rgba(255,255,255,0.95)',
@@ -43,7 +44,8 @@ const MyAppBar = styled(AppBar)(({ theme }) => ({
   },
  
 }));
-
+const TRACKING_ID = "UA-223397721-1"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 function ElevationScroll(props) {
   const { children, window } = props;
   
