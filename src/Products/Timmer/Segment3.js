@@ -86,7 +86,7 @@ const App = () => {
   
       <Stack>
         <MyGridmain>
-        <MyDivider textAlign="left">ModBus Timmer</MyDivider>
+        <MyDivider textAlign="left">ModBus Timer</MyDivider>
         <MyGrid container spacing={2} >
       
        
