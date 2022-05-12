@@ -221,6 +221,7 @@ const App = () => {
      <p>Dubai</p>
          
            <Mypara color="text.secondary">
+             Geetron Electronic LLC,
            Plot No. TP 18742,
           Technopark Dubai, UAE
 
