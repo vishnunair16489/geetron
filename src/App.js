@@ -84,7 +84,7 @@ const App = ()=>{
       <Toolbar />
     <Routes >
    
-          <Route path='/geetron' element={<Home/>}></Route>
+          <Route path='/Geetron' element={<Home/>}></Route>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/Water' element={<Water/>}></Route>
           <Route path='/Ghomes' element={<Ghomes/>}></Route>  

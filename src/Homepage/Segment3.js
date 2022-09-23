@@ -120,7 +120,7 @@ const App = () => {
                          Smart Community
                         </Mytext>
                         <Mypara color="text.secondary">
-                        We provide sustainable services required to meet this urban influx effectively. We have a wide product range suitable for managing communities and districts. We have enginered varoius solutons  
+                        We provide sustainable services required to meet this urban influx effectively. We have a wide product range suitable for managing communities and districts. We have engineered varoius solutions  
                         </Mypara>
                          <CardActions>
                         <Button onClick={()=> navigate('Community')} size="small">Learn More</Button>

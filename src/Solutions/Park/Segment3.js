@@ -78,7 +78,7 @@ const App = () => {
 
 
 
-                  <Mypara>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free.
+                  <Mypara>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environment friendly and maintenance-free.
                   </Mypara>
                 </div>   <Grid container direction="row" spacing={0}>
                   <Grid item xs={12} sm={6} md={6}>

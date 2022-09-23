@@ -112,7 +112,7 @@ const App = () => {
           
               <MyStackfirst spacing={0}>
               <div data-aos="fade-right"  data-aos-easing="ease-out-quart" >
-                <Mypara>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free. In the backbone, we have a full-scale industrial irrigation controller, including access to the IoT cloud for the controller, intelligence, alarms, and weather forecast through mobile and web apps.
+                <Mypara>We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environment friendly and maintenance-free. In the backbone, we have a full-scale industrial irrigation controller, including access to the IoT cloud for the controller, intelligence, alarms, and weather forecast through mobile and web apps.
                 </Mypara>
                 </div>
                 <Mypara>

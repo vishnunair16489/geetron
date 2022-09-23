@@ -76,7 +76,7 @@ const App = () => {
                     <li>G-Homes Integration with AMX, Creston or Savant </li>
                     <li>Bacnet AC Integration  </li>
                     <li>Android/iPad user console   </li>
-                    <li>Tv Remote intergration </li>               
+                    <li>Tv Remote integration </li>               
 
                     
                 </ul>
@@ -119,8 +119,8 @@ const App = () => {
                  <ul>
                    <li>Smart Door Lock</li>
                    <li>Alarm System </li>
-                   <li>Winows door Gate </li>
-                   <li>Gate opening and closing Cnontroller</li>               
+                   <li>Windows door Gate </li>
+                   <li>Gate opening and closing Controller</li>               
 
                    
                </ul>

@@ -172,7 +172,7 @@ export default function SwipeableTemporaryDrawer(props) {
                 <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Myp> <b>Features</b>
                   <ul>
-                  <li>Mordern & Artistic Design</li>
+                  <li>Modern & Artistic Design</li>
                     <li>Wired or Wireless Options</li>
                     <li>Easy Installation</li>
                     <li>Create Custom Graphics Keypad</li>

@@ -87,7 +87,7 @@ const App = () => {
    
                 <Mypara> <b>Features</b>
                   <ul>
-                  <li>Wired and wireless opertion</li>
+                  <li>Wired and wireless operation</li>
                     <li>Low Power Consumption</li> 
                     <li>Solar Portable option</li>
                     <li>Multiple recieving options</li>

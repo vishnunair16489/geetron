@@ -105,7 +105,7 @@ const App = () => {
                     <li>Din Rail Mount design</li>
                     <li>Great Standard</li>
                     <li>In-built wifi server</li>
-                    <li>Safety Porotection</li>
+                    <li>Safety Protection</li>
                     <li>Factory Programmed Sun Timer</li>
                     <li>In Built RTC</li>
                     <li>Manual Override Latching Relays</li>

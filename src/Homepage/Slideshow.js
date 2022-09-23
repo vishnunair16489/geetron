@@ -44,7 +44,7 @@ const Slideshow = () => {
   ];
   const body = [
     "Homes are getting smarter, safe, and Secure. Geetron smart homes provide automated and innovative solutions that will have all the intelligent home features, including voice recognition.",
-    "We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environmentally friendly and maintenance-free.",
+    "We have developed an IoT wireless irrigation solution, which addresses the issues of mobility and affordability for customers. We use the latest ultra-long-range radio communication to eliminate all expensive in-field wiring. Our solar-powered watering stations are environment friendly and maintenance-free.",
     "Geetron GRMS offers Enhanced hospitality and provides a unique experience for guests. Our solutions work on Interactive technology that accomplishes the seamless experience you want for your guest and provides easy management for the operators.",
     "Smart Parking is a radar sensor device that allows the detection of parking availability indoors and outdoors.",
     "The challenge for companies in the field of Industry 4.0 is to obtain quality data that adds reliability and intelligence to the manufacturing processes and feeds the KPI's at each decision level. ",

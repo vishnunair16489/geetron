@@ -161,7 +161,7 @@ const App = () => {
               <MyStackfirst spacing={2}>
                 <img src={segment2hardware} width="40" alt="Logo" />
                 <Mytext>Hardware developers </Mytext>
-                <Mypara>Our team consists of a group of specialist engineers with a deep understanding of clients’ needs in the areas of software development, integration, quality assurance, interoperability, and cross-platform services.</Mypara>
+                <Mypara>Our team consists of a group of specialist engineers with a deep understanding of client’s needs in the areas of software development, integration, quality assurance, interoperability,and cross-platform services.</Mypara>
               </MyStackfirst>
             </div>
             </Grid>
@@ -180,7 +180,7 @@ const App = () => {
               <MyStack spacing={2}>
                 <img src={segment2custom} width="40" alt="Logo" />
                 <Mytext>Customized IoT projects</Mytext>
-                <Mypara>We can design and develop any  IoT solutions for you! If you cannot find your desired IoT solution in our catalog, we have developers who can develop customized IoT projects solely keeping in mind your requirements.</Mypara>
+                <Mypara>We can design and develop any  IoT solutions for you. If you cannot find your desired IoT solution in our catalog, we have developers who can develop customized IoT projects solely keeping in mind your requirements.</Mypara>
 
               </MyStack>
             </div>

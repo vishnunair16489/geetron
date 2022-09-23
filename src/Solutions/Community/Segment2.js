@@ -89,7 +89,7 @@ const App = () => {
                     <li>Geo tagging</li>
                     <li>Manual Control</li>
                     <li>Scheduling of lights</li>
-                    <li>Secured Communition</li>
+                    <li>Secured Communication</li>
                   </ul>
                   </Mypara>
                   </div>
@@ -103,7 +103,7 @@ const App = () => {
                     <li>Modbus Master for metering</li>
                     <li>Inbuilt real time clock</li>
                     <li>Inbuilt LCD display</li>
-                    <li>Wireless Communition</li>
+                    <li>Wireless Communication</li>
                   </ul>
                   </Mypara>
                   </div>

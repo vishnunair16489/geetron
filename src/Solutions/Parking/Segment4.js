@@ -132,7 +132,7 @@ const App = () => {
             
                <Mypara color="text.secondary">
                <ul>
-               <li>Billng System/kisok</li>
+               <li>Billng System/kiosk</li>
                             <li>Token Printer</li>
                             <li>Barrier Controller</li>          
 

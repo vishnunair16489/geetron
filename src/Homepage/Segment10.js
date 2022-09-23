@@ -87,7 +87,7 @@ const App = () => {
           <MyStack spacing={2}>
        
             <Header>Connect With Geetron Network </Header>
-            <Subtext>At geetron, we value our customers and we make it a point that you can reach us at any time and our ecosystem is available to you in every possible  manner, thus introducing Geetron mobile application both available in Android and IOS</Subtext>
+            <Subtext>At Geetron, we value our customers and we make it a point that you can reach us at any time and our ecosystem is available to you in every possible  manner, thus introducing Geetron mobile application both available in Android and IOS</Subtext>
             <Stack direction="row" spacing={2}>
               <img src={android} width="100" alt="Logo" />
               <img src={apple} width="100" alt="Logo" />

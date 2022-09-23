@@ -113,7 +113,7 @@ const App = () => {
                   <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                   <b>Reduces:</b>
                   <ul>
-                    <li>KM traveled for parking spot -30%</li>
+                    <li>KM travelled for parking spot -30%</li>
                     <li>Time spent for looking parking slot -43%</li>
                     <li>Greenhouse gas emission -40%</li>
                     <li>Traffic Volume -8%</li>

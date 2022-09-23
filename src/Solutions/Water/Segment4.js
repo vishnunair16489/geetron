@@ -125,12 +125,12 @@ const App = () => {
                         </Mytext>
                         <Mypara color="text.secondary">
                         <ul>
-                            <li>Wifi iriigation  Controlled</li>
+                            <li>Wifi irrigation  Controlled</li>
                             <li>Smart App</li>
                             <li>8 channel 4 schedule controller</li>
                             <li>24V coil voltage output</li>
                             <li>Season mode water percentage</li>
-                            <li>mannual ******</li>
+                            <li>manual ******</li>
                           
                         </ul>
                         </Mypara>
@@ -161,10 +161,10 @@ const App = () => {
                         <Mypara color="text.secondary">
                         <ul>
                             <li>Wireless RF connectivity</li>
-                            <li>Cloud Interration</li>
+                            <li>Cloud Integration</li>
                             <li>16 channel controller 4 schedule</li>
                             <li>24V coil voltage output</li>
-                            <li>Mannual override</li>
+                            <li>Manual override</li>
                             <li>weekend mode</li>
                         </ul>            
                         </Mypara>

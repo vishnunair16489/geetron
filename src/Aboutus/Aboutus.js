@@ -154,10 +154,10 @@ const App = () => {
         <MyGrid item xs={12} md={6}>
         <div  data-aos="fade-up"  data-aos-easing="ease-in-out-back"  data-aos-delay="200" >
             <Myparamain>
-              <p>Geetron is a division of the Western International Group that employs over 15,000 personnel which are spread across 12 countries. The Group continues to strengthen its presence across the Middle East, Africa, South Asia, Europe, and the subcontinent with new brands and divisions constantly enriching the portfolio. Geetron operates as the IoT division focused on delivering performance, quality, and innovation across various sectors. </p>
+              <p>Geetron is a division of the Western International Group that employees over 15,000 personnel which are spread across 12 countries. The Group continues to strengthen its presence across the Middle East, Africa, South Asia, Europe, and the subcontinent with new brands and divisions constantly enriching the portfolio. Geetron operates as the IoT division focused on delivering performance, quality, and innovation across various sectors. </p>
 
 
-<p>With a strong focus on efficiency, the Geetron division is one of the fastest-growing suppliers of IoT products and services and is recognized as the leading IoT service With a portfolio ranging from home automation, community and waste management, parking, park, and resorts to name a few. Geetron is the trusted brand in IoT products and services provider, with a framework of sales, and customer service capabilities, Geetron is working with customers to offer a great range of products. </p>
+<p>With a strong focus on efficiency, the Geetron division is one of the fastest-growing suppliers of IoT products and services and is recognized as the leading IoT service With a portfolio ranging from home automation, community and waste management, parking, parks and resorts to name a few. Geetron is the trusted brand in IoT products and services provider, with a framework of sales, and customer service capabilities, Geetron is working with customers to offer a great range of products. </p>
 </Myparamain>
             </div>
            
@@ -191,7 +191,7 @@ const App = () => {
                 <MyStack spacing={0}>
                   <img src={segment2custom} width="40" alt="Logo" />
                   <Mytext>Customized IoT projects</Mytext>
-                  <Mypara>We do more than engineering!  With Geeton you will get a world-class product development team of experts in wireless connectivity, and IoT platforms. Fast, affordable, and flexible IoT solution based on Geetron's existent  IoT ecosystem. </Mypara>
+                  <Mypara>We do more than engineering.  With Geeton you will get a world-class product development team of experts in wireless connectivity, and IoT platforms. Fast, affordable, and flexible IoT solution based on Geetron's existent  IoT ecosystem. </Mypara>
   
                 </MyStack>
               </div>

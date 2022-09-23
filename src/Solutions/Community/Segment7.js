@@ -89,7 +89,7 @@ const App = () => {
              
 
               
-              <Mypara>With geetron community management system you can be rest assured that all your community needs, that can be automated, can be maintained and developed by us.
+              <Mypara>With Geetron community management system you can be rest assured that all your community needs, that can be automated, can be maintained and developed by us.
                 with our all in one solution your community can be totally automated with features like  
                 </Mypara>
                 </div>
@@ -102,7 +102,7 @@ const App = () => {
                   <li>Light Automation</li>
                     <li>Irrigation Automation</li> 
                     <li>Waste Bin Automation</li>
-                    <li>Panic Alram Automation</li>
+                    <li>Panic Alarm Automation</li>
                   </ul>
                </Mypara>
                </div>

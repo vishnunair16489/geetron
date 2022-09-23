@@ -150,7 +150,7 @@ const App = () => {
               <MyStackfirst spacing={2}>
                 <img src={Ventor} width="40" alt="Logo" />
                 <Mytext>Different Venders</Mytext>
-                <Mypara>In this space many vendors are using different technology to connect to their IoT devices, thus making the life of customers who buy them hard. But here in geetron we try to make the steps as easy as possible and try to give the customers a seamless experience</Mypara>
+                <Mypara>In this space many vendors are using different technology to connect to their IoT devices, thus making the life of customers who buy them hard. But here in Geetron we try to make the steps as easy as possible and try to give the customers a seamless experience</Mypara>
               </MyStackfirst>
             </div>
             </Grid>
@@ -173,7 +173,7 @@ const App = () => {
               <MyStackfirst spacing={2}>
                 <img src={Service} width="40" alt="Logo" />
                 <Mytext>Service  Difficulties</Mytext>
-                <Mypara>All the main players that are in the IoT sector focuses only on their sales and not after-sales services,  we at geetron mainly focuses on the after-sales services as a happy customer is always a good customer for business, we make it a point that you stay happy all the time
+                <Mypara>All the main players that are in the IoT sector focuses only on their sales and not after-sales services,  we at Geetron mainly focuses on the after-sales services as a happy customer is always a good customer for business, we make it a point that you stay happy all the time
 
                 </Mypara>
               </MyStackfirst>

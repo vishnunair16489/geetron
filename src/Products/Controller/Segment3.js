@@ -112,7 +112,7 @@ const App = () => {
                 <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="200" >
                 <Myp> <b>Features</b>
                 <ul>
-                  <li>Work directly with geetron thermostat</li>
+                  <li>Work directly with Geetron thermostat</li>
                     <li>Address setting switch present inside</li>
                     <li>3 Fan speed</li>
                     <li>Digital and Analog Compressor Controller</li>
@@ -135,7 +135,7 @@ const App = () => {
  <li>Input: 4 dry contact input</li>
  <li>Interface: RS485 Modbus RTU </li>
  <li>Working temperature: -20~+70℃</li>
- <li>Mechaincal Life: 100000 times</li>
+ <li>Mechanical Life: 100000 times</li>
  
 
 </ul></Myp> 

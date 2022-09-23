@@ -171,7 +171,7 @@ export default function SwipeableTemporaryDrawer(props) {
                  <li>Dynalite compatible</li>
                  <li>Modbus interface</li>
                  <li>NO relay</li>
-                 <li>Easily replacable realy</li>
+                 <li>Easily replacable relay</li>
               
                </ul>
                </Myp>
@@ -190,7 +190,7 @@ export default function SwipeableTemporaryDrawer(props) {
                     </Grid>
                     <Grid item xs={12} sm={6}>
                     <Myp>
-                    7 cahnnel latch relay
+                    7 channel latch relay
                     <ul>
                  <li>Latching relay</li>
                  <li>Current 20A</li>

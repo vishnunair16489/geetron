@@ -98,8 +98,8 @@ const App = () => {
             <div data-aos="fade-right" data-aos-offset="" data-aos-easing="ease-out-quart" data-aos-delay="200" >
               <MyStackfirst spacing={0}>
               
-                <Mypara><p>Digital signage is an interactive way of communicating businesses directly engaging with the customer and audiences. As the world is advancing with Led technologies most of the customer experience with visual and touch. 
-Features
+                <Mypara><p>Digital signage is an interactive way of communicating businesses directly engaging with the customer and audiences. As the world is advancing with Led technologies most of the customer experience with visual and touch Features.
+
  </p><p>
    <b>Features</b>
 <ul>

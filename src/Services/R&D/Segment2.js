@@ -191,7 +191,7 @@ Integration Activities.
            
                </Mypara>
                <br></br>
-                 <Mypara>  Our digital design experience includes system-level, board-level and FPGA-Level design. The  the hardware team consists of the hardware engineers, supported by the PCB, Reliability andRegulatory Compliance Engineers. We can integrate communication like Wifi, Bluetooth, Lora, CAN, RS232, RS485, 12C, SPI, TCP IP etc to any device. Which helps customers with flexible connectivity  solutions.
+                 <Mypara>  Our digital design experience includes system-level, board-level and FPGA-Level design. The  the hardware team consists of the hardware engineers, supported by the PCB, Reliability and Regulatory Compliance Engineers. We can integrate communication like Wifi, Bluetooth, Lora, CAN, RS232, RS485, 12C, SPI, TCP IP etc to any device. Which helps customers with flexible connectivity  solutions.
 
 </Mypara>
 </div>

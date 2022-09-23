@@ -225,7 +225,7 @@ const App = () => {
              <Mypara color="text.secondary">   GSquare Electronics LLC,</Mypara>
            Plot No. TP 18742,
           Technopark Dubai
-          <Mypara color="text.secondary">United Arab Emirates</Mypara>
+          <Mypara color="text.secondary">United Arab Emirates </Mypara>
          </Mypara>
         </div>
          </Mytext>

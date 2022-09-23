@@ -122,7 +122,7 @@ const App = () => {
                       <CardContent>
                       <div data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-delay="400" >
                         <Mytext gutterBottom component="div">
-                        Gps Tracker Stanadrd
+                        Gps Tracker Standard
                         </Mytext>
                         <Mypara color="text.secondary">
                         <ul>

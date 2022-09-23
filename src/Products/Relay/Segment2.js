@@ -99,7 +99,7 @@ const App = () => {
 <li>Output 7 latching relay </li>
 <li>Working temperature: -20~+70℃</li>
 <li> Mechanical override</li>
-<li>communication RS485/Modbus RTU</li>
+<li>Communication RS485/Modbus RTU</li>
 </ul>
                   </Myp>  
                    </div>

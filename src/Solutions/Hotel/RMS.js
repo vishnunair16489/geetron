@@ -201,7 +201,7 @@ export default function SwipeableTemporaryDrawer(props) {
                    ModBus
                     <ul>
                  <li>Modbus Software Communication</li>
-                 <li>Modbus Thermmostat</li>
+                 <li>Modbus Thermostat</li>
 
                  </ul>
                  </MyP>

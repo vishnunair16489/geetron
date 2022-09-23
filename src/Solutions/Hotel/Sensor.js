@@ -170,8 +170,8 @@ export default function SwipeableTemporaryDrawer(props) {
                 <ul>
                            <li>RADAR</li>
                            <li>PIR</li>
-                           <li>Door Senser</li>
-                           <li>Window Senser</li>
+                           <li>Door Sensor</li>
+                           <li>Window Sensor</li>
                          </ul>
                </Myp> 
                  </div>

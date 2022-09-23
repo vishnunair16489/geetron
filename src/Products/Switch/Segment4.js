@@ -110,7 +110,7 @@ const App = () => {
                 <div  data-aos="fade-right"   data-aos-delay="200" >
                 <Myp> <b>Features</b>
                 <ul>
-                <li>Mordern & Artistic Design</li>
+                <li>Modern & Artistic Design</li>
                     <li>Wired or Wireless Options</li>
                     <li>Easy Installation</li>
                     <li>Ultra Clear Tempered Glass</li>
