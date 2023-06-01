@@ -254,12 +254,7 @@ export default function PersistentDrawerRight() {
            </ListItemIcon>
            <ListItemText primary="Controllers" />
          </ListItem>
-         <ListItem button key="Locks" onClick={()=> handleDrawerClose('Locks')}>
-           <ListItemIcon>
-           <img src={Locks}  height='30px'  alt="water" />
-           </ListItemIcon>
-           <ListItemText primary="Locks" />
-         </ListItem>
+        
          <ListItem button key="Relays" onClick={()=> handleDrawerClose('Relay')}>
            <ListItemIcon>
            <img src={Relays}  height='30px'  alt="water" />

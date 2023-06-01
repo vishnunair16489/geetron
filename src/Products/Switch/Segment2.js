@@ -90,7 +90,11 @@ const App = () => {
       <img src={img} width='200' alt="logo"/>
       </div>
       </MypicGrid>
-    
+      <MypicGrid container xs={12} md={4}>
+      <div data-aos="flip-right"   data-aos-delay="200" >
+      <img src={img} width='200' alt="logo"/>
+      </div>
+      </MypicGrid>
       <MyGrid item xs={12} md={6}>
    
           <Grid container spacing={0}>
